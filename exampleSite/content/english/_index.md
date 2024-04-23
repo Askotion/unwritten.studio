@@ -3,7 +3,7 @@
 banner:
   title: ""
   content: ""
-  image: "/images/unwritten-unscripted-1024x1024.png"
+  image: "/images/banner.png"
   button:
     enable: false
     ## label: "PROBIERE ES AUS"
