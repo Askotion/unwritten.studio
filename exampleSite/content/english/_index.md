@@ -3,11 +3,11 @@
 banner:
   title: ""
   content: ""
-  image: "/images/banner.png"
+  image: "/images/unwritten-unscripted-1024x1024.png"
   button:
     enable: false
-    label: "PROBIERE ES AUS"
-    link: "https://github.com/zeon-studio/hugoplate"
+    ## label: "PROBIERE ES AUS"
+    ## link: "https://github.com/zeon-studio/hugoplate"
 
 # Features
 features:
