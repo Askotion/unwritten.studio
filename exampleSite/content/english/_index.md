@@ -12,7 +12,7 @@ banner:
 # Features
 features:
   - title: "Das begehbare Buch"
-    ## image: "/images/service-1.png"
+    image: "/images/unwritten-unscripted-1024x1024.png"
     content: "Stell dir vor du könntest tief in dein Lieblingsbuch eintauchen. Jede Frage beantwortet bekommen. Jeden Winkel der Geschichte nochmal neu ausloten und noch einen Schritt weiter gehen. Einzig deine Phantasie ist das Limit."
     bulletpoints:
       - "Ultimative Immersion: tauche tief in die Welt deines Lieblingsromans ein"
