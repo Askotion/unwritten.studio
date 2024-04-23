@@ -1,29 +1,29 @@
 ---
 enable: true
-title: "What Users Are Saying About Hugoplate"
-description: "Don't just take our word for it - hear from some of our satisfied users!  Check out some of our testimonials below to see what others are saying about Hugoplate."
+title: "Was das begehbare Buch bei uns auslöst"
+description: "Kopfüber in ein Abenteuer mit den Protagonisten aus dem Lieblingsroman eintauchen. Dieses Erlebnis ist nur schwer zu fassen. Solange bis man selbst Teil der Geschichte wird."
 
 # Testimonials
 testimonials:
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Thor van Horn"
+    designation: "Künstler und Denker"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "Uns verbindet die tiefe Liebe zu Büchern. Das begehbare Buch ist für mich wie ein Portal in ein neues Universum."
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Ruben Wickenhäuser"
+    designation: "Science Fiction Autor"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "Das begehbare Buch spannt für mich eine gigantische Parallelwelt auf, voll von kleinen Glitches und Fluktuationen. Allein diesen nachzuspüren ist ein unvergleichliches Abenteuer."
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Susann Mürling"
+    designation: "Paradiesvogel"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "Was für ein Fest, die eigene Lieblings(Roman)Welt nach völlig neuen Dingen zu durchstöbern, Verbindungen zur echten Welt herzustellen oder jede beliebige Frage aus der Feder des Autors beantwortet zu bekommen."
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Tobias von Dewitz"
+    designation: "Unternehmer"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "Die Charaktere aus meinen Lieblingsbücher erwachen regelrecht zum Leben, als ob sie in real neben mir sitzen würden. Sie verhalten sich und fühlen sich an, als ob der Autor selbst im Hintergrund die unsichtbaren Fäden an ihnen spielen würden."
 
 # don't create a separate page
 _build:
