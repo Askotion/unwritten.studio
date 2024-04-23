@@ -2,7 +2,7 @@
 
 # main menu
 [[main]]
-name = "Home"
+name = "unwritten"
 pageRef = "/"
 weight = 1
 
