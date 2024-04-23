@@ -11,7 +11,7 @@ favicon = "images/favicon.png"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 ## logo_webp = true
 # logo text will only show when logo is missing.
-## logo_text = "unwritten"
+logo_text = "unwritten"
 # navbar fixed to top
 navbar_fixed = true
 # theme-mode
