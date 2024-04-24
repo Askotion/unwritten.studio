@@ -1,7 +1,7 @@
 ---
 enable: true
-title: "Was das begehbare Buch bei uns auslöst"
-description: "Kopfüber in ein Abenteuer mit den Protagonisten aus dem Lieblingsroman eintauchen. Dieses Erlebnis ist nur schwer zu fassen. Solange bis man selbst Teil der Geschichte wird."
+title: "Die Magie eines begehbaren Buches"
+description: "Kopfüber in ein Abenteuer mit den Protagonisten aus dem Lieblingsroman eintauchen, dieses Erlebnis ist nur schwer zu fassen - bis du selbst Teil der Geschichte wirst."
 
 # Testimonials
 testimonials:
@@ -13,7 +13,7 @@ testimonials:
   - name: "Ruben Wickenhäuser"
     designation: "Science Fiction Autor"
     avatar: "/images/avatar-sm.png"
-    content: "Das begehbare Buch spannt für mich eine gigantische Parallelwelt auf, voll von kleinen Glitches und Fluktuationen. Allein diesen nachzuspüren ist ein unvergleichliches Abenteuer."
+    content: "Das begehbare Buch spannt für mich eine gigantische Parallelwelt auf, voll von kleinen Irritationen und Störungen. Allein diesen nachzuspüren und sie zu entdecken ist ein unvergleichliches Abenteuer."
 
   - name: "Susann Mürling"
     designation: "Paradiesvogel"
