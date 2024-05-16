@@ -1,7 +1,7 @@
 ---
 enable: true
-title: "Die Magie eines begehbaren Buches"
-description: "Kopfüber in ein Abenteuer mit den Protagonisten aus dem Lieblingsroman eintauchen, dieses Erlebnis ist nur schwer zu fassen - bis du selbst Teil der Geschichte wirst."
+# title: "Die Magie eines begehbaren Buches"
+# description: "Kopfüber in ein Abenteuer mit den Protagonisten aus dem Lieblingsroman eintauchen, dieses Erlebnis ist nur schwer zu fassen - bis du selbst Teil der Geschichte wirst."
 
 # Testimonials
 testimonials:
