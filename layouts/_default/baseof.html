@@ -12,7 +12,8 @@
 
 
     <!-- style (always cache it) -->
-    {{ partialCached "essentials/style.html" . }}
+    {{ partial "essentials/style.html" . }}
+
   </head>
 
   <body>
@@ -29,13 +30,17 @@
     {{ end }}
 
 
-    <!-- cookie consent -->
+    <!-- announcement -->
+    {{ if not .IsHome }}
     {{ partialCached "announcement.html" . }}
+    {{ end }}
 
 
     <!-- header (don't cache it) -->
+    {{ if not .IsHome }}
     {{ partial "essentials/header.html" . }}
     {{ partial "search-modal.html" (dict "Context" . ) }}
+    {{ end }}
 
 
     <main>
@@ -43,7 +48,13 @@
     </main>
 
     <!-- footer -->
+    {{ if .IsHome }}
+    <div class="text-center pt-[150px] pb-10">
+      <p class="text-xl">Impressum | Datenschutz</p>
+    </div>
+    {{ else }}
     {{ partial "essentials/footer.html" . }}
+    {{ end }}
 
 
     <!-- script (always cache it) -->

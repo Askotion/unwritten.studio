@@ -40,11 +40,47 @@ main {
 
 // swiper pagination
 .swiper-pagination-bullet {
-  @apply bg-theme-light dark:bg-darkmode-theme-light h-2.5 w-2.5 opacity-100 mx-1.5 #{!important};
+  @apply bg-[#CFD0D2] dark:bg-darkmode-theme-light h-3 w-3 opacity-100 mx-1.5 #{!important};
 
   &-active {
-    @apply bg-primary dark:bg-darkmode-primary h-4 w-4 #{!important};
+    @apply bg-[#3087b9] dark:bg-darkmode-primary #{!important};
   }
+}
+
+.teams-slider .swiper-wrapper {
+  @apply items-center md:h-[368px] lg:h-[280px] #{!important};
+}
+
+.teams-slider .swiper-wrapper .swiper-slide {
+  @apply flex items-center;
+}
+
+.teams-slider .swiper-wrapper .swiper-slide img {
+  @apply md:scale-[0.682] lg:scale-[0.682];
+}
+
+.teams-slider .swiper-wrapper .swiper-slide-active img {
+  @apply md:scale-[1.5] lg:scale-[1.5];
+}
+
+.teams-slider .swiper-slide-prev {
+  @apply translate-x-[-38px] #{!important};
+}
+
+.teams-slider .swiper-slide-next {
+  @apply translate-x-[38px] #{!important};
+}
+
+.teams-slider .swiper-slide .team-name {
+  @apply hidden;
+}
+
+.teams-slider .swiper-slide.swiper-slide-active .team-name {
+  @apply block;
+}
+
+.teams-slider-pagination {
+  @apply translate-x-0 #{!important};
 }
 
 // content style
