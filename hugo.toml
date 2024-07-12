@@ -1,12 +1,12 @@
 ######################## default configuration ####################
 # The base URL of your site (required). This will be prepended to all relative URLs.
-baseURL = "/"
+baseURL = "https://unwritten.studio"
 # Title of your website (required).
-title = "Hugoplate"
+title = "Unwritten Studio"
 # Your theme name
 # theme = "hugoplate"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
-timeZone = "America/New_York"
+timeZone = "Europe/Berlin"
 # post pagination
 paginate = 2 # see https://gohugo.io/extras/pagination/
 # post excerpt
