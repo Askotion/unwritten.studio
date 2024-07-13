@@ -17,7 +17,7 @@ features:
       content: "Erlebe mit den Protagonisten unbeschreibliche Abenteuer"
     - title: "Multilinguale"
       subtitle: "Sprache"
-      content: "Kommuniziere mit den Charakteren in bellebiger Sprache"
+      content: "Unterhalte Dich mit der Geschichte in jeder Sprache"
 
 # Quotes
 quotes:
