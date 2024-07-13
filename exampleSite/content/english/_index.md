@@ -47,7 +47,7 @@ partners:
   partner_logo:
     - image: "/images/S._Fischer_Verlag_Logo.svg"
     - image: "/images/Hugendubel-Logo.svg"
-    - image: "/images/S._Fischer_Verlag_Logo.svg"
+    - image: "/images/OReilly_logo_black_rgb.svg"
 
 # Teams
 teams:
