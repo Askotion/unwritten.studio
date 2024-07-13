@@ -36,6 +36,9 @@ quotes:
   - name: "Tobias von Dewitz"
     position: "Coder, Geek und Stratege"
     quote: "Hol' dir deinen Lieblingscharakter zu dir nach Hause ins Wohnzimmer und starte eine wildes Abenteuer durch Raum und Zeit. Einfach genial."
+  - name: "Theresa Hannig"
+    position: "Autorin Phantastik"
+    quote: "Mit Einbug - eine starke KI und Hauptdarsteller in Pantopia - zum ersten Mal ein Gespräch über meine eigene Geschichte führen zu können war unbeschreiblich."
 
 # Partners
 partners:
