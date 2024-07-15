@@ -42,7 +42,7 @@ quotes:
 
 # Partners
 partners:
-  title: "Referenzen"
+  title: "Laborgeschichten"
   content: "Wir verlängern Geschichten und verleihen den Protagonisten eine spielerische Persönlichkeit. Von Science Fiction, Phantastik bis zu Fachbüchern bauen wir gerne Showcases und Leuchttürme."
   partner_logo:
     - image: "/images/S._Fischer_Verlag_Logo.svg"
