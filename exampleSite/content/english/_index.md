@@ -74,7 +74,7 @@ teams:
       name: Christoper de Nicolo
 
 # Contact
-contact:
-  title: "Pforte"
-  content: "Bist du bereit für die Welt des Ungeschriebenen?"
+# contact:
+#   title: "Pforte"
+#   content: "Bist du bereit für die Welt des Ungeschriebenen?"
 ---
