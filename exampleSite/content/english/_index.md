@@ -75,6 +75,6 @@ teams:
 
 # Contact
 contact:
-  title: "Neugierde"
-  content: "Bist du bereit für deine Reise in die unendliche Welt dessen, das noch nie zuvor Jemand aufgeschrieben hat?"
+  title: "Pforte"
+  content: "Bist du bereit für die Welt des Ungeschriebenen?"
 ---
