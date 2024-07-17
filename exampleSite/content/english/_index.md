@@ -15,8 +15,8 @@ features:
     - title: "Interaktive"
       subtitle: "Welten"
       content: "Erlebe mit den Protagonisten unbeschreibliche Abenteuer"
-    - title: "Multilinguale"
-      subtitle: "Sprache"
+    - title: "Beliebige"
+      subtitle: "Sprachen"
       content: "Unterhalte Dich mit der Geschichte in jeder Sprache"
 
 # Quotes
@@ -46,7 +46,7 @@ quotes:
 # Partners
 partners:
   title: "Laborgeschichten"
-  content: "Wir verlängern Geschichten und verleihen den Protagonisten eine spielerische Persönlichkeit. Von Science Fiction, Phantastik bis zu Fachbüchern bauen wir gerne Showcases und Leuchttürme."
+  content: "Wir verlängern Geschichten und verleihen den Protagonisten eine spielerische Persönlichkeit. Von Science Fiction, Phantastik bis zu Fachbüchern tüfteln wir gerne für euch an Showcases und Leuchttürmen."
   partner_logo:
     - image: "/images/S._Fischer_Verlag_Logo.svg"
     - image: "/images/Hugendubel-Logo.svg"
@@ -55,7 +55,7 @@ partners:
 # Teams
 teams:
   title: "Team"
-  content: "Die 'Unbeschreiblichen' sind eine bunte Truppe an Autoren, Künstlern, Philosophen, Technikern und Machern. Vereint durch unsere Leidenschaft für Bücher verlängern wir ihre Geschichten in völlig neue Welten."
+  content: "Die 'Unbeschreiblichen' sind ein Kollektiv an Autoren, Künstlern, Denkern und Machern. Vereint durch unsere Leidenschaft für Bücher verlängern wir deren Geschichten in nie zuvor erlebter Art."
   team:
     - image: "/images/team.png"
       name: Susann Mürling
