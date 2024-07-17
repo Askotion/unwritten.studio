@@ -24,9 +24,9 @@ quotes:
   - name: "Ruben Wickenhäuser"
     position: "Science Fiction Autor"
     quote: "Das begehbare Buch spannt für mich eine gigantische Parallelwelt auf, voll von kleinen Irritationen und Störungen. Allein diesen nachzuspüren und sie zu entdecken ist ein unvergleichliches Abenteuer."
-  - name: "Thor van Horn"
-    position: "Künstler und Denker"
-    quote: "Uns verbindet die tiefe Liebe zu Büchern. Das begehbare Buch ist für mich wie ein Portal in ein neues Universum."
+  - name: "Tim O'Reilly"
+    position: "Verleger"
+    quote: "This is really interesting, especially for fiction publishers and for booksellers because of its gamified aspects and the ability to explore a book before you buy. You’ve done a good job on creating something that’s fun as well as useful."
   - name: "Susann Mürling"
     position: "Paradiesvogel"
     quote: "Im Pen & Paper Modus übernimmt die KI den Game Master und liefert unvergessliche Spieleabende zum Buch."
@@ -39,6 +39,9 @@ quotes:
   - name: "Theresa Hannig"
     position: "Autorin Phantastik"
     quote: "Mit Einbug - eine starke KI und Hauptdarsteller in Pantopia - zum ersten Mal ein Gespräch über meine eigene Geschichte führen zu können war unbeschreiblich."
+  - name: "Thor van Horn"
+    position: "Künstler und Denker"
+    quote: "Uns verbindet die tiefe Liebe zu Büchern. Das begehbare Buch ist für mich wie ein Portal in ein neues Universum."
 
 # Partners
 partners:
