@@ -33,15 +33,15 @@ quotes:
   - name: "Stefan Probst"
     position: "Unruhestifer"
     quote: "Es fühlt sich an, als ob der Autor eigens für mich die Geschichte in Echtzeit fortschreibt. Was für ein verrücktes Erlebnis."
-  - name: "Tobias von Dewitz"
-    position: "Coder, Geek und Stratege"
-    quote: "Hol' dir deinen Lieblingscharakter zu dir nach Hause ins Wohnzimmer und starte eine wildes Abenteuer durch Raum und Zeit. Einfach genial."
   - name: "Theresa Hannig"
     position: "Autorin Phantastik"
     quote: "Mit Einbug - eine starke KI und Hauptdarsteller in Pantopia - zum ersten Mal ein Gespräch über meine eigene Geschichte führen zu können war unbeschreiblich."
   - name: "Thor van Horn"
     position: "Künstler und Denker"
     quote: "Uns verbindet die tiefe Liebe zu Büchern. Das begehbare Buch ist für mich wie ein Portal in ein neues Universum."
+#      - name: "Tobias von Dewitz"
+#    position: "Coder, Geek und Stratege"
+#    quote: "Hol' dir deinen Lieblingscharakter zu dir nach Hause ins Wohnzimmer und starte eine wildes Abenteuer durch Raum und Zeit. Einfach genial."
 
 # Partners
 partners:
