@@ -46,7 +46,7 @@ quotes:
 # Partners
 partners:
   title: "Laborgeschichten"
-  content: "Wir verlängern Geschichten und verleihen den Protagonisten eine spielerische Persönlichkeit. Von Science Fiction, Phantastik bis zu Fachbüchern tüfteln wir gerne für euch an Showcases und Leuchttürmen."
+  content: "Wir verlängern Geschichten über ihre Romanvorlagen hinaus und verleihen den Protagonisten eine spielerische Persönlichkeit. Von Science Fiction über Phantastik bis zu Fachbüchern tüfteln wir gerne für euch an spannenden Showcases und wegweisenden Leuchttürmen."
   partner_logo:
     - image: "/images/S._Fischer_Verlag_Logo.svg"
     - image: "/images/Hugendubel-Logo.svg"
@@ -55,7 +55,7 @@ partners:
 # Teams
 teams:
   title: "Team"
-  content: "Die 'Unbeschreiblichen' sind ein Kollektiv an Autoren, Künstlern, Denkern und Machern. Vereint durch unsere Leidenschaft für Bücher verlängern wir deren Geschichten in nie zuvor erlebter Art."
+  content: "Die 'Unbeschreiblichen' sind ein Kollektiv an Autoren, Künstlern, Denkern und Machern. Vereint durch unsere Leidenschaft für Bücher verlängern wir deren Geschichten in einer nie zuvor erlebten Art."
   team:
     - image: "/images/team.png"
       name: Susann Mürling
