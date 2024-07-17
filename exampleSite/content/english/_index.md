@@ -52,7 +52,7 @@ partners:
 # Teams
 teams:
   title: "Team"
-  content: "Die 'Unbeschreiblichen' sind eine bunte Truppe an Autoren, Künstlern, Philosophen, Technikern und Machern. Lernt uns kennen,"
+  content: "Die 'Unbeschreiblichen' sind eine bunte Truppe an Autoren, Künstlern, Philosophen, Technikern und Machern. Vereint durch unsere Leidenschaft für Bücher verlängern wir ihre Geschichten in völlig neue Welten."
   team:
     - image: "/images/team.png"
       name: Susann Mürling
