@@ -13,7 +13,7 @@ features:
       subtitle: "Charaktere"
       content: "Die Figuren entwickeln sich im Handlungsverlauf stetig weiter"
     - title: "Interaktive"
-      subtitle: "Erzahlstränge"
+      subtitle: "Welten"
       content: "Erlebe mit den Protagonisten unbeschreibliche Abenteuer"
     - title: "Multilinguale"
       subtitle: "Sprache"
