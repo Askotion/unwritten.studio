@@ -32,7 +32,7 @@ quotes:
     quote: "Was für ein Fest, die eigene Lieblings(Roman)Welt nach völlig neuen Dingen zu durchstöbern, Verbindungen zur echten Welt herzustellen oder jede beliebige Frage aus der Feder des Autors beantwortet zu bekommen."
   - name: "Tobias von Dewitz"
     position: "Unternehmer"
-    quote: "Die Charaktere aus meinen Lieblingsbücher erwachen regelrecht zum Leben, als ob sie in real neben mir sitzen würden. Sie verhalten sich und fühlen sich an, als ob der Autor selbst im Hintergrund die unsichtbaren Fäden an ihnen spielen würden."
+    quote: "Die Charaktere aus meinen Lieblingsbücher erwachen regelrecht zum Leben, als ob sie in real neben mir sitzen würden. Sie verhalten sich und fühlen sich an, als ob der Autor selbst im Hintergrund die unsichtbaren Fäden an ihnen ziehen würde."
   - name: "Theresa Hannig"
     position: "Autorin"
     quote: "Mit Einbug - eine starke KI und Hauptdarsteller in Pantopia - zum ersten Mal ein Gespräch über meine eigene Geschichte führen zu können war unbeschreiblich."
