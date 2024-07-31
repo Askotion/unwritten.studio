@@ -50,7 +50,9 @@
     <!-- footer -->
     {{ if .IsHome }}
     <div class="text-center pt-[150px] pb-10">
-      <p class="text-xl">(c) 2024 Unwritten GmbH | Impressum | Datenschutz</p>
+      <p class="text-xl">(c) 2024 Unwritten GmbH | <a href="/imprint">Impressum</a> | <a href="/privacy-policy">Datenschutz</a></p>
+    </div>
+    </div>
     </div>
     {{ else }}
     {{ partial "essentials/footer.html" . }}
