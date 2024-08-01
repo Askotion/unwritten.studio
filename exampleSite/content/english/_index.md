@@ -3,11 +3,11 @@
 banner:
   title: "Das begehbare Buch"
   content: "Stell dir vor, du könntest tief in dein Lieblingsbuch eintauchen. Jede Frage beantwortet bekommen. Jeden Winkel der Geschichte nochmal neu ausloten und noch einen Schritt weiter gehen. Einzig deine Phantasie ist das Limit."
-  image: "/images/Titelbild_Blau.jpg"
+  image: "/images/Titelbild_Blau_breit.jpg"
 
 # Features
 features:
-  image: "/images/feature-image.png"
+  image: "/images/feature-image.jpg"
   features_list:
     - title: "Lebendige"
       subtitle: "Charaktere"
