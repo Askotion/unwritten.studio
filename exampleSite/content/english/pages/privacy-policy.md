@@ -38,10 +38,10 @@ draft: false
 <p class="bodytext">Unwritten GmbH<br />
 Adlerweg 6<br />
 90530 Wendelstein<br />
-Gesetzlicher Vertreter: Tobias von Dewitz<br />
-Tel.: 01707979275<br />
+Gesetzlicher Vertreter: Susann Mürling<br />
+Tel.: 09129 1400929<br />
 
-<p class="bodytext">E-Mail: tobias@unwritten.studio</p>
+<p class="bodytext">E-Mail: post@unwritten.studio</p>
 
 
 <h3 class="smallsubtitle">3.Allgemeines zur Datenverarbeitung</h3>
@@ -124,13 +124,7 @@ Website: https://www.cloudflare.com/<br>
 Datenschutzerklärung: https://www.cloudflare.com/de-de/privacypolicy/<br>
 </p></p>
             
-        
-    
-        
-    
-        
-    
-        
+
     
         
             
@@ -316,7 +310,6 @@ Sie haben die Möglichkeit, im Zusammenhang mit der Nutzung von Diensten der Inf
 <p class="bodytext">Die Zuständigkeit der Aufsichtsbehörde richtet sich nach Ihrem Wohnort. Eine Liste der Aufsichtsbehörden finden Sie hier:</p>
 <p class="bodytext"><a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a></p>
 
-<p class="bodytext">Diese Datenschutzerklärung wurde erstellt durch die <a href="https://www.b2.legal/">b2.legal Rechtsanwälte.</a></p>
 
 <script type="text/javascript">
     let b_list = document.getElementsByTagName('h2');
