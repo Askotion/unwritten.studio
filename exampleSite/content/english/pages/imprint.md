@@ -3,7 +3,7 @@ title: "Impressum"
 # meta title
 meta_title: ""
 # meta description
-description: "Unwritten Studio Gmbh - Impressum"
+description: "Unwritten Studio GmbH - Impressum"
 # save as draft
 draft: false
 noindex: true
