@@ -1,6 +1,7 @@
 ---
-title: "Contact"
+title: "Schreibe uns!"
 meta_title: ""
-description: "this is meta description"
+description: "Schreibe uns eine Nachricht."
 draft: false
+noindex: true
 ---
