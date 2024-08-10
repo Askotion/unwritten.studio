@@ -1,12 +1,12 @@
+
 {{ define "main" }}
   {{ partial "page-header" . }}
-
 
   <section class="section-sm">
     <div class="container">
       <div class="row">
         <div class="md:col-10 lg:col-6 mx-auto">
-          <form action="{{ site.Params.contact_form_action }}" method="POST">
+          <form id="contact-form" action="{{ site.Params.contact_form_action }}" method="POST">
             <div class="mb-6">
               <label for="name" class="form-label">
                 Dein Name <span class="text-red-500">*</span>
@@ -42,6 +42,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
+          <div id="form-message" class="mt-4" style="display: none;"></div>
         </div>
       </div>
     </div>
@@ -116,5 +117,36 @@
     <script defer src="{{ $gmap.RelPermalink }}"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key={{ site.Params.google_map.map_api_key }}&libraries=places"></script>
   {{ end }}
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('contact-form');
+      const formMessage = document.getElementById('form-message');
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form)
+        })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          formMessage.textContent = 'Vielen Dank für Deine Nachricht.';
+          formMessage.style.display = 'block';
+          form.reset();
+        })
+        .catch(error => {
+          formMessage.textContent = 'Es tut uns leid. Irgendwas hat nicht geklappt.';
+          formMessage.style.display = 'block';
+        });
+      });
+    });
+  </script>
 
 {{ end }}
