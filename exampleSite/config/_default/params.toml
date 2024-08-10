@@ -27,7 +27,7 @@ google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright
-copyright = "Copyright @ 2024 unwritten GmbH i. Gr."
+copyright = "Copyright &copy; 2024 unwritten GmbH"
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
@@ -62,9 +62,9 @@ content = "You must replace the **baseURL** in **hugo.toml** file when deploying
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["Boilerplate", "Hugo"]
-description = "Hugo & Tailwindcss Starter"
-author = "zeon.studio"
+keywords = ["KI-Bucherlebnis", "Interaktive Literatur", "Charaktergespräche", "Virtuelle Buchexploration", "Begehbares Buch", "Immersives Lesen", "KI-Storytelling", "Buchfiguren-Chat", "Literarische KI-Technologie", "Digitale Buchinteraktion"]
+description = "Entdecken Sie das begehbare Buch von Unwritten Studio - eine revolutionäre KI-Technologie, die es Ihnen ermöglicht, mit Buchfiguren zu interagieren und in faszinierende literarische Welten einzutauchen. Erleben Sie Literatur auf eine völlig neue, immersive Art und Weise."
+author = "unwritten.studio"
 image = "images/og-image.png"
 
 
