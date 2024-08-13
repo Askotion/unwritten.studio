@@ -71,7 +71,7 @@ teams:
       name: Tobias von Dewitz
     - image: "/images/uw-stefan.png"
       name: Stefan Probst
-    - image: "/images/uw-female-placeholder.png"
+    - image: "/images/uw-female-placeholder.jpg"
       name: Theresa Hannig
 
 # Contact
