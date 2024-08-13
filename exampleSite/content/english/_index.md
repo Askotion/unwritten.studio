@@ -57,22 +57,22 @@ teams:
   title: "Team"
   content: "Die 'Unbeschreiblichen' sind ein Kollektiv an Autoren, Künstlern, Denkern und Machern. Vereint durch unsere Leidenschaft für Bücher verlängern wir deren Geschichten in einer nie zuvor erlebten Art."
   team:
-    - image: "/images/uw-susann.png"
-      name: Susann Mürling
+    - image: "/images/uw-bernd.png"
+      name: Bernhard Sommerfeld
     - image: "/images/uw-thor.png"
       name: Thor van Horn
-    - image: "/images/uw-theresa.png"
-      name: Theresa Hannig
     - image: "/images/uw-ruben.png"
       name: Ruben Wickenhäuser
+    - image: "/images/uw-susann.png"
+      name: Susann Mürling
     - image: "/images/uw-urs.png"
       name: Urs Bade
     - image: "/images/uw-tobias.png"
       name: Tobias von Dewitz
-    - image: "/images/uw-bernd.png"
-      name: Bernhard Sommerfeld
     - image: "/images/uw-stefan.png"
       name: Stefan Probst
+    - image: "/images/uw-female-placeholder"
+      name: Theresa Hannig
 
 # Contact
 # contact:
