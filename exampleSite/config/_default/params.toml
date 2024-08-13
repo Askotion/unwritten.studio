@@ -63,7 +63,7 @@ content = "You must replace the **baseURL** in **hugo.toml** file when deploying
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
 keywords = ["KI-Bucherlebnis", "Interaktive Literatur", "Charaktergespräche", "Virtuelle Buchexploration", "Begehbares Buch", "Immersives Lesen", "KI-Storytelling", "Buchfiguren-Chat", "Literarische KI-Technologie", "Digitale Buchinteraktion"]
-description = "Entdecken Sie das begehbare Buch von Unwritten Studio - eine revolutionäre KI-Technologie, die es Ihnen ermöglicht, mit Buchfiguren zu interagieren und in faszinierende literarische Welten einzutauchen. Erleben Sie Literatur auf eine völlig neue, immersive Art und Weise."
+description = "Stell dir vor, du könntest tief in dein Lieblingsbuch eintauchen. Jede Frage beantwortet bekommen. Jeden Winkel der Geschichte nochmal neu ausloten und noch einen Schritt weiter gehen. Einzig deine Phantasie ist das Limit."
 author = "unwritten.studio"
 image = "images/og-image.png"
 
