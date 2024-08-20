@@ -19,4 +19,6 @@ Geschäftsführer: Susann Mürling, Stefan Probst, Tobias von Dewitz<br>
 Inhaltlich verantwortlich nach § 18 Abs. 2 MStV: Susann Mürling<br>
 <br>
 Handelsregister: Amtsgericht Nürnberg<br>
-Registernummer: HRB 43168
+Registernummer: HRB 43168<br>
+<br>
+Umsatzsteueridentifikationsnummer (UST-Id.-Nr.): DE 368622583 
