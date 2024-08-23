@@ -8,7 +8,6 @@ description: "Unwritten Studio GmbH - Newsletteranmeldung"
 draft: false
 noindex: true
 
----
 <div id="mc_embed_shell">
       <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
   <style type="text/css">
@@ -25,18 +24,7 @@ noindex: true
     <form action="https://studio.us11.list-manage.com/subscribe/post?u=2be15d9421bd30e86635a36bd&amp;id=9aea578bcf&amp;v_id=4919&amp;f_id=00d324e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
         <div id="mc_embed_signup_scroll"><h2>Newsletteranmeldung</h2>
             <div class="indicates-required"><span class="asterisk">*</span> Angaben erforderlich</div>
-            <div class="mc-field-group"><label for="mce-EMAIL">E-Mail-Adresse <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div class="mc-field-group"><label for="mce-FNAME">Vorname </label><input type="text" name="FNAME" class=" text" id="mce-FNAME" value=""></div><div class="mc-field-group"><label for="mce-LNAME">Nachname </label><input type="text" name="LNAME" class=" text" id="mce-LNAME" value=""></div><div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group"><div class="content__gdpr"><label>Marketing-Berechtigungen</label>
-              
-              <p>Bitte wähle alle Möglichkeiten aus, wie du von uns auf dem Laufenden gehalten werden möchtest. Derzeit ist unser Hauptweg E-Mail. Daher wähle gerne diesen :)</p>
-              <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
-              <label class="checkbox subfield" for="gdpr47594">
-              <input type="checkbox" id="gdpr_47594" name="gdpr[47594]" class="gdpr" value="Y">
-              <span>Email</span>
-              </label></fieldset>
-              <p>Du kannst dich jederzeit abmelden, indem du auf den Link im Footer unserer E-Mails klickst. Weitere Informationen zu unseren Datenschutzpraktiken findest du auf unserer Website.</p>
-              </div>
-              <div class="content__gdprLegal"><p>
-              We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a href="https://mailchimp.com/legal/terms">Learn more</a> about Mailchimp's privacy practices.</p></div></div>
+            <div class="mc-field-group"><label for="mce-EMAIL">E-Mail-Adresse <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div class="mc-field-group"><label for="mce-FNAME">Vorname </label><input type="text" name="FNAME" class=" text" id="mce-FNAME" value=""></div><div class="mc-field-group"><label for="mce-LNAME">Nachname </label><input type="text" name="LNAME" class=" text" id="mce-LNAME" value=""></div><div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group"><div class="content__gdpr"><label>Kommunikationsweg</label><p>Bitte wähle alle Möglichkeiten aus, wie du von uns auf dem Laufenden gehalten werden möchtest. </p><fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field"><label class="checkbox subfield" for="gdpr47594"><input type="checkbox" id="gdpr_47594" name="gdpr[47594]" class="gdpr" value="Y"><span>Email</span></label></fieldset><p>Du kannst dich jederzeit abmelden, indem du auf den Link im Footer unserer E-Mails klickst. Weitere Informationen zu unseren Datenschutzpraktiken findest du auf unserer Website.</p></div><div class="content__gdprLegal"><p>We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a href="https://mailchimp.com/legal/terms">Learn more</a> about Mailchimp's privacy practices.</p></div></div>
         <div id="mce-responses" class="clear foot">
             <div class="response" id="mce-error-response" style="display: none;"></div>
             <div class="response" id="mce-success-response" style="display: none;"></div>
