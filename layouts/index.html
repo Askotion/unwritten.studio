@@ -155,7 +155,7 @@
         <!-- Text content on the right side, stacked vertically -->
         <div class="md:w-2/3 flex flex-col justify-between">
           {{ range .applications }}
-          <div class="application-text py-4">
+          <div class="application-text py-4 text-center md:text-left">
             <h3 class="font-tertiary text-2xl font-light mb-1"><span class="text-[#3e4447]">{{ .title }}</span> <span class="text-[#3087b9]">{{ .subtitle }}</span></h3>
             <p class="text-[#3e4447] font-tertiary text-base tracking-wider">{{ .content }}</p>
           </div>
