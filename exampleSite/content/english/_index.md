@@ -55,19 +55,19 @@ partners:
 
 # Anwendungen
 anwendungen:
-  title: "Anwendungen"
-  content: "Tauche ein in neue Welten."
+  title: "Showcases"
+  content: "Tauche direkt ein in unsere neue Welten."
   main_image: "/images/anwendungen.png"
   applications:
     - title: "Pantopia"
       subtitle: "World"
-      content: "Erlebe mit den Protagonisten unbeschreibliche Abenteuer"
+      content: "Lass' dir von Einbug berichten, wie die Sache mit der starken KI gut ausgegangen ist."
     - title: "Bernd"
       subtitle: "Sommerfeld"
-      content: "Erlebe mit den Protagonisten unbeschreibliche Abenteuer"
+      content: "Begib dich auf eine wilde Reise durch's Berlin der 90er Jahre in die Pionierzeit des Internets."
     - title: "Wasted"
       subtitle: "Wetware"
-      content: "Erlebe mit den Protagonisten unbeschreibliche Abenteuer"
+      content: "Lass' dir von Henry einen Drink einschenken und hol' dir deine daily News aus der KI Welt."
 
 
 # Teams
