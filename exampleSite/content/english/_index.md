@@ -55,7 +55,7 @@ partners:
 
 # Anwendungen
 anwendungen:
-  title: "Anwendungen"
+  title: "Showcases"
   content: "Tauche ein in neue Welten."
   main_image: "/images/anwendungen.png"
   applications:
