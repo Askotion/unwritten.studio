@@ -149,7 +149,7 @@
         <div class="md:w-1/3 pr-8">
           <!-- Make the image container square with equal width and height -->
           <div class="aspect-square w-full">
-            <img src="{{ .main_image }}" alt="Application image" class="w-full h-full object-cover" />
+            {{ partial "image" (dict "Src" .main_image "Alt" "Application image" "Loading" "eager" "Class" "w-full h-full object-cover" "DisplayXL" "280x" "DisplayMD" "360x" ) }}
           </div>
         </div>
         <!-- Text content on the right side, stacked vertically -->
