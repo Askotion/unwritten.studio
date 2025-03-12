@@ -57,7 +57,7 @@ partners:
 anwendungen:
   title: "Anwendungen"
   content: "Tauche ein in neue Welten."
-  main_image: "/images/anwendungen.jpg"
+  main_image: "/images/anwendungen.png"
   applications:
     - title: "Pantopia"
       subtitle: "World"
