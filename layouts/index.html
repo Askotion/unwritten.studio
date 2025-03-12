@@ -131,6 +131,44 @@
 {{ end }}
 <!-- /Quotes -->
 
+<!-- /Partners -->
+
+<!-- Anwendungen -->
+{{ with .Params.anwendungen }}
+<section class="anwendungen-section bg-white">
+  <div class="container max-w-screen-xl mx-auto pt-16 pb-16 lg:pt-20 lg:pb-20">
+    <header class="text-center">
+      <h2 class="text-[#3087b9] font-tertiary font-light mb-4">{{ .title | markdownify }}</h2>
+      <div>
+        <p class="text-[#3e4447] font-tertiary text-lg tracking-wider">{{ .content | markdownify }}</p>
+      </div>
+    </header>
+    <div class="lg:w-[84%] mx-auto pt-12">
+      <div class="md:flex md:items-stretch">
+        <!-- Image on the left side -->
+        <div class="md:w-1/3 pr-8">
+          <!-- Make the image container square with equal width and height -->
+          <div class="aspect-square w-full">
+            <img src="{{ .main_image }}" alt="Application image" class="w-full h-full object-cover" />
+          </div>
+        </div>
+        <!-- Text content on the right side, stacked vertically -->
+        <div class="md:w-2/3 flex flex-col justify-between">
+          {{ range .applications }}
+          <div class="application-text py-4">
+            <h3 class="font-tertiary text-2xl font-light mb-1"><span class="text-[#3e4447]">{{ .title }}</span> <span class="text-[#3087b9]">{{ .subtitle }}</span></h3>
+            <p class="text-[#3e4447] font-tertiary text-base tracking-wider">{{ .content }}</p>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- /Anwendungen -->
+
+
 <!-- Teams -->
 {{ with .Params.teams }}
 <section class="teams-section">

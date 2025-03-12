@@ -52,6 +52,24 @@ partners:
     - image: "/images/Hugendubel-Logo.svg"
     - image: "/images/OReilly_logo_black_rgb.svg"
 
+
+# Anwendungen
+anwendungen:
+  title: "Anwendungen"
+  content: "Tauche ein in neue Welten."
+  main_image: "/anwendungen.jpg"
+  applications:
+    - title: "Pantopia"
+      subtitle: "World"
+      content: "Erlebe mit den Protagonisten unbeschreibliche Abenteuer"
+    - title: "Bernd"
+      subtitle: "Sommerfeld"
+      content: "Erlebe mit den Protagonisten unbeschreibliche Abenteuer"
+    - title: "Wasted"
+      subtitle: "Wetware"
+      content: "Erlebe mit den Protagonisten unbeschreibliche Abenteuer"
+
+
 # Teams
 teams:
   title: "Team"
