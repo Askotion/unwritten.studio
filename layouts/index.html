@@ -193,9 +193,15 @@
               "DisplayXL" "280x" "DisplayMD" "360x" ) }}
             </div>
             <div
-              class="team-name absolute left-0 top-[105%] md:top-[105%] lg:top-[100%] xl:top-[105%] w-full text-center transition-all duration-200 ease-[ease]">
-              <p class="text-[#3e4447] font-tertiary text-lg tracking-wider mb-2">{{ .name | markdownify }}</p>
-              <p class="text-[#3e4447] font-tertiary text-base tracking-wider whitespace-nowrap">{{ .keywords | markdownify }}</p>
+              class="team-name absolute left-0 right-0 top-[105%] md:top-[105%] lg:top-[100%] xl:top-[105%] w-full text-center transition-all duration-200 ease-[ease]">
+              {{ $nameparts := split .name " " }}
+              {{ if gt (len $nameparts) 1 }}
+                <p class="text-[#3e4447] font-tertiary text-lg tracking-wider mb-0 text-center w-full">{{ index $nameparts 0 | markdownify }}</p>
+                <p class="text-[#3e4447] font-tertiary text-lg tracking-wider mb-2 text-center w-full">{{ delimit (after 1 $nameparts) " " | markdownify }}</p>
+              {{ else }}
+                <p class="text-[#3e4447] font-tertiary text-lg tracking-wider mb-2 text-center w-full">{{ .name | markdownify }}</p>
+              {{ end }}
+              <p class="text-[#3e4447] font-tertiary text-base tracking-wider text-center w-full">{{ .keywords | markdownify }}</p>
             </div>
           </div>
           {{ end }}
@@ -209,7 +215,7 @@
 </section>
 {{ end }}
 <!-- /Teams -->
-
+ 
 <!-- Contact -->
 {{ with .Params.contact }}
 <section class="teams-section bg-[#F5F5F5]">
