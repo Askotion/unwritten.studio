@@ -56,7 +56,7 @@ partners:
 # Anwendungen
 anwendungen:
   title: "Showcases"
-  content: "Tauche ein in neue Welten."
+  content: "Tauche direkt ein in unsere neue Welten."
   main_image: "/images/anwendungen.png"
   applications:
     - title: "Pantopia"
