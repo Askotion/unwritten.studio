@@ -56,7 +56,7 @@ partners:
 # Anwendungen
 anwendungen:
   title: "Showcases"
-  content: "Tauche direkt ein in neue Welten."
+  content: "Tauche direkt ein in neue Welten und erlebe das begehbare Buch."
   main_image: "/images/anwendungen.png"
   applications:
     - title: "Pantopia"
@@ -80,28 +80,28 @@ teams:
   team:
     - image: "/images/uw-bernd.png"
       name: Bernhard Sommerfeld
-      keywords: "Inspiration • Feuerwerk • Sinnhaftigkeit"
+      keywords: "Internet Pionier • Bücherwurm"
     - image: "/images/uw-thor.png"
       name: Thor van Horn
-      keywords: "Inspiration • Feuerwerk • Sinnhaftigkeit"
+      keywords: "Quantum Kunst • Story Telling"
     - image: "/images/uw-ruben.png"
       name: Ruben Wickenhäuser
-      keywords: "Inspiration • Feuerwerk • Sinnhaftigkeit"
+      keywords: "Perry Rhodan Autor • Alienbändiger"
     - image: "/images/uw-susann.png"
       name: Susann Mürling
-      keywords: "Inspiration • Feuerwerk • Sinnhaftigkeit"
+      keywords: "Paradiesvogel • Feuerwerk"
     - image: "/images/uw-urs.png"
       name: Urs Bade
-      keywords: "Inspiration • Feuerwerk • Sinnhaftigkeit"
+      keywords: "Designzauber • Stilsicher"
     - image: "/images/uw-tobias.png"
       name: Tobias von Dewitz
-      keywords: "Inspiration • Feuerwerk • Sinnhaftigkeit"
+      keywords: "Scraperwall • Datenbändiger"
     - image: "/images/uw-stefan.png"
       name: Stefan Probst
-      keywords: "Inspiration • Feuerwerk • Sinnhaftigkeit"
+      keywords: "Unruhestifter • Flohzirkusdirektor"
     - image: "/images/uw-female-placeholder.png"
       name: Theresa Hannig
-      keywords: "Inspiration • Feuerwerk • Sinnhaftigkeit"
+      keywords: "Weitsicht • Unbeugsam"
       
 # Contact
 # contact:
