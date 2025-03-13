@@ -67,7 +67,7 @@ anwendungen:
       content: "Begib dich auf eine wilde Reise durch's Berlin der 90er Jahre in die Pionierzeit des Internets."
     - title: "Wasted"
       subtitle: "Wetware"
-      content: "Lass' dir von Henry einen Drink einschenken und hol' dir deine daily News aus der KI Welt."
+      content: "Henry schenkt sich einen Drink ein und berichtet dir die ungeschönten Daily News aus der KI Welt."
 
 
 # Teams
