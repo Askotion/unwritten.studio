@@ -195,7 +195,7 @@
             <div
               class="team-name absolute left-0 top-[105%] md:top-[105%] lg:top-[100%] xl:top-[105%] w-full text-center transition-all duration-200 ease-[ease]">
               <p class="text-[#3e4447] font-tertiary text-lg tracking-wider mb-2">{{ .name | markdownify }}</p>
-              <p class="text-[#3e4447] font-tertiary text-base tracking-wider inline-block">{{ .keywords | markdownify }}</p>
+              <p class="text-[#3e4447] font-tertiary text-base tracking-wider">{{ replace .keywords "<br>" " • " | markdownify }}</p>
             </div>
           </div>
           {{ end }}
