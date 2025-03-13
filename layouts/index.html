@@ -144,16 +144,16 @@
       </div>
     </header>
     <div class="lg:w-[84%] mx-auto pt-12">
-      <div class="md:flex md:items-stretch">
-        <!-- Image on the left side -->
-        <div class="text-center md:text-left md:w-1/3 md:pr-8 md:flex md:items-center">
-          <!-- Image container - square on mobile, full height on desktop -->
-          <div class="aspect-square md:aspect-auto w-full max-w-[280px] mx-auto md:mx-0 md:h-full">
+      <div class="md:flex md:items-stretch md:gap-[10%]">
+        <!-- Image on the left side - full height and width -->
+        <div class="text-center md:text-left md:w-[45%]">
+          <!-- Image container - square on mobile, full size on desktop -->
+          <div class="aspect-square md:aspect-auto w-full max-w-[280px] md:max-w-none mx-auto md:mx-0 md:h-full">
             {{ partial "image" (dict "Src" .main_image "Alt" "Application image" "Loading" "eager" "Class" "w-full h-full object-cover" "DisplayXL" "280x" "DisplayMD" "360x" ) }}
           </div>
         </div>
         <!-- Text content on the right side, stacked vertically -->
-        <div class="md:w-2/3 flex flex-col justify-between">
+        <div class="md:w-[45%] flex flex-col justify-between">
           {{ range .applications }}
           <div class="application-text py-4 text-center md:text-left">
             <h3 class="font-tertiary text-2xl font-light mb-1">
