@@ -194,13 +194,13 @@
             </div>
             <div
               class="team-name absolute left-0 top-[105%] md:top-[105%] lg:top-[100%] xl:top-[105%] w-full text-center transition-all duration-200 ease-[ease]">
-              <p class="text-[#3e4447] font-tertiary text-lg tracking-wider">{{ .name | markdownify }}</p>
-              <p class="text-[#3e4447] font-tertiary text-sm tracking-wider mt-1 opacity-80">{{ .keywords | markdownify }}</p>
+              <p class="text-[#3e4447] font-tertiary text-lg tracking-wider mb-2">{{ .name | markdownify }}</p>
+              <p class="text-[#3e4447] font-tertiary text-base tracking-wider whitespace-nowrap">{{ .keywords | markdownify }}</p>
             </div>
           </div>
           {{ end }}
         </div>
-        <div class="flex justify-center pt-20">
+        <div class="flex justify-center pt-28">
           <div class="teams-slider-pagination flex items-center justify-center text-center"></div>
         </div>
       </div>
@@ -209,7 +209,7 @@
 </section>
 {{ end }}
 <!-- /Teams -->
- 
+
 <!-- Contact -->
 {{ with .Params.contact }}
 <section class="teams-section bg-[#F5F5F5]">
