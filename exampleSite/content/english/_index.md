@@ -80,21 +80,29 @@ teams:
   team:
     - image: "/images/uw-bernd.png"
       name: Bernhard Sommerfeld
+      keywords: "Inspiration • Feuerwerk • Sinnhaftigkeit"
     - image: "/images/uw-thor.png"
       name: Thor van Horn
+      keywords: "Inspiration • Feuerwerk • Sinnhaftigkeit"
     - image: "/images/uw-ruben.png"
       name: Ruben Wickenhäuser
+      keywords: "Inspiration • Feuerwerk • Sinnhaftigkeit"
     - image: "/images/uw-susann.png"
       name: Susann Mürling
+      keywords: "Inspiration • Feuerwerk • Sinnhaftigkeit"
     - image: "/images/uw-urs.png"
       name: Urs Bade
+      keywords: "Inspiration • Feuerwerk • Sinnhaftigkeit"
     - image: "/images/uw-tobias.png"
       name: Tobias von Dewitz
+      keywords: "Inspiration • Feuerwerk • Sinnhaftigkeit"
     - image: "/images/uw-stefan.png"
       name: Stefan Probst
+      keywords: "Inspiration • Feuerwerk • Sinnhaftigkeit"
     - image: "/images/uw-female-placeholder.png"
       name: Theresa Hannig
-
+      keywords: "Inspiration • Feuerwerk • Sinnhaftigkeit"
+      
 # Contact
 # contact:
 #   title: "Pforte"
