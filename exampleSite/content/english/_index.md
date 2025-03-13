@@ -60,7 +60,7 @@ anwendungen:
   main_image: "/images/anwendungen.png"
   applications:
     - title: "Pantopia"
-      subtitle: "World"
+      subtitle: "<a href="https://pantopia.world/" target="_blank">World</a>"
       content: "Lass' dir von Einbug berichten, wie die Sache mit der starken KI gut ausgegangen ist."
     - title: "Hallo"
       subtitle: "Welt"
