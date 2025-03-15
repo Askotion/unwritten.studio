@@ -101,7 +101,7 @@ teams:
       keywords: "Unruhestifter • Flohzirkusdirektor"
     - image: "/images/uw-female-placeholder.png"
       name: Theresa Hannig
-      keywords: "Weitsicht • Unbeugsam"
+      keywords: "Phantastisch • Unbeugsam"
       
 # Contact
 # contact:
