@@ -26,7 +26,7 @@ quotes:
     quote: "Das begehbare Buch spannt für mich eine gigantische Parallelwelt auf, voll von kleinen Irritationen und Störungen. Allein diesen nachzuspüren und sie zu entdecken ist ein unvergleichliches Abenteuer."
   - name: "Tim O'Reilly"
     position: "Verleger"
-    quote: "This is really interesting, especially for fiction publishers and for booksellers because of its gamified aspects and the ability to explore a book before you buy. You’ve done a good job on creating something that’s fun as well as useful."
+    quote: "This is really interesting, especially for fiction publishers and for booksellers because of its gamified aspects and the ability to explore a book before you buy. You've done a good job on creating something that's fun as well as useful."
   - name: "Susann Mürling"
     position: "Paradiesvogel"
     quote: "Was für ein Fest, die eigene Lieblings(Roman)Welt nach völlig neuen Dingen zu durchstöbern, Verbindungen zur echten Welt herzustellen oder jede beliebige Frage aus der Feder des Autors beantwortet zu bekommen."
@@ -71,6 +71,13 @@ anwendungen:
       subtitle: "Wetware"
       content: "Henry schenkt sich einen Drink ein und berichtet die ungeschönten Daily News aus der KI Welt."
       link: "https://wastedwetware.com/"
+
+
+# Forschungsbereich
+forschungsbereich:
+  title: "Prototypen"
+  content: "Unsere interdisziplinäre Forschung verbindet Literatur, Technologie und künstliche Intelligenz. Wir entwickeln innovative Methoden, um Geschichten zum Leben zu erwecken und neue Formen des Storytellings zu erschaffen."
+  partner_logo: []
 
 
 # Teams
