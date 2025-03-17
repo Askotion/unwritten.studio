@@ -64,7 +64,7 @@ anwendungen:
       content: "Lass' dir von Einbug berichten, wie die Sache mit der starken KI gut ausgegangen ist."
       link: "https://pantopia.world/"
     - title: "Hallo"
-      subtitle: "Welt"
+      subtitle: "World"
       content: "Begib dich auf eine wilde Reise durch's Berlin der 90er Jahre in die Pionierzeit des Internets."
       link: "https://bso2000.world/"
     - title: "Wasted"
