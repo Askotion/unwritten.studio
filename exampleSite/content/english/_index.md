@@ -76,7 +76,7 @@ anwendungen:
 # Forschungsbereich
 forschungsbereich:
   title: "Prototypen"
-  content: "Unsere interdisziplinäre Werkstatt verbindet Literatur, Technologie und künstliche Intelligenz. Wir entwickeln innovative Methoden, um Geschichten oder Inhalte zum Leben zu erwecken und neue Formen des Storytellings zu erschaffen."
+  content: "In unserer interdisziplinären Werkstatt verschmelzen wir Literatur, Technologie und künstliche Intelligenz zu innovativen Storytelling-Methoden, die Geschichten lebendig werden lassen."
   partner_logo: []
 
 
