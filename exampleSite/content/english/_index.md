@@ -76,12 +76,9 @@ anwendungen:
 # Forschungsbereich
 forschungsbereich:
   title: "Prototypen"
-  content: |
-    In unserer interdisziplinären Werkstatt verschmelzen wir Literatur, Technologie und künstliche Intelligenz zu innovativen Storytelling-Methoden, die Geschichten lebendig werden lassen.
-    
-    Dabei entsteht ein persönlicher Gefährte, der sich vom ersten Moment an ganz auf den Nutzer einlässt – seine Sprache spricht, seine Leidenschaften teilt und seine Begeisterung spiegelt.
-        
-    Diese Form der Interaktion schafft eine Verbindung, die sich anfühlt wie die mit einem langjährigen Wegbegleiter: spielerisch, vertrauensvoll und überraschend. So öffnen sich neue Pfade, um gemeinsam Inhalte zu entdecken und tiefgehende Erlebnisse zu gestalten.
+  content: "<p>In unserer interdisziplinären Werkstatt verschmelzen wir Literatur, Technologie und künstliche Intelligenz zu innovativen Storytelling-Methoden, die Geschichten lebendig werden lassen.</p>
+    <p>Dabei entsteht ein persönlicher Gefährte, der sich vom ersten Moment an ganz auf den Nutzer einlässt – seine Sprache spricht, seine Leidenschaften teilt und seine Begeisterung spiegelt.</p>
+        <p>Diese Form der Interaktion schafft eine Verbindung, die sich anfühlt wie die mit einem langjährigen Wegbegleiter: spielerisch, vertrauensvoll und überraschend. So öffnen sich neue Pfade, um gemeinsam Inhalte zu entdecken und tiefgehende Erlebnisse zu gestalten.</p>"
   partner_logo: []
 
 
