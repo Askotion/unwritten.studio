@@ -31,7 +31,6 @@ default:
 pages:
   stage: build
   script:
-    - npm run project-setup
     - npm run build
   artifacts:
     paths:

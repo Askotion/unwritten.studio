@@ -1,0 +1,8 @@
+// Add your own custom styles here
+.checkbox-checkmark:after {
+    @apply content-[''] absolute hidden left-[12px] top-[4px] w-[8px] h-[16px] border-r-[3px] border-b-[3px] border-solid border-white rotate-45;
+}
+
+.checkbox-input:checked~.checkbox-checkmark {
+    @apply bg-[#3087b9] border border-solid border-[#3087b9] after:block after:border-gray-100;
+}
