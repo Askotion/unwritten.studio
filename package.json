@@ -6,7 +6,7 @@
   "author": "zeon.studio",
   "scripts": {
     "dev": "hugo server",
-    "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
+    "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
