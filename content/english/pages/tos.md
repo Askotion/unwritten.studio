@@ -8,6 +8,8 @@ description: "Unwritten Studio GmbH - TOS"
 draft: false
 noindex: true
 
+---
+
 🤖 "Smart Bot, Not a Fortune Teller"
 Our Chatbots are designed to enhance your interaction experience, not to replace official materials. While the bot strives to provide accurate information, the sole responsibility for meeting e.g. course requirements (registrations, deadlines, formatting guidelines, etc.) remains with you as a user. Any information must be verified through authorized channels (course instructors, official website, academic regulations). Decisions made based on bot recommendations cannot be used as e.g. justification for exceptions to course rules.
 
@@ -22,6 +24,3 @@ During the use of our bot, conversation data is collected for system improvement
 
 ✅ "Consent - Quick and Painless"
 By using our bot, you acknowledge that you have read, understood, and agree to these Terms of Use. You confirm that you are at least 18 years old and e.g. enrolled at the university. We and our partners, e.g. universities reserves the right to change these terms at any time, with notice provided for substantial changes.
-
----
-TOS
