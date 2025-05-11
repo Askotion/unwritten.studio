@@ -1,9 +1,9 @@
 ---
-title: "TOS"
+title: "Unwritten Terms of Service / Nutzungsbedingungen"
 # meta title
 meta_title: ""
 # meta description
-description: "Unwritten Studio GmbH - TOS"
+description: "Unwritten Studio GmbH - Terms of Service"
 # save as draft
 draft: false
 noindex: true
