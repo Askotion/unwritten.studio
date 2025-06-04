@@ -88,7 +88,7 @@ teams:
     - image: "/images/uw-bernd.png"
       name: Bernhard Sommerfeld
       keywords: "Internet Pionier • Bücherwurm"
-    - image: "/images/uw-thor-3.png"
+    - image: "/images/uw-thor-5.png"
       name: Thor van Horn
       keywords: "Quantum Kunst • Story Telling"
     - image: "/images/uw-ruben.png"
