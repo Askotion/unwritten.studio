@@ -89,7 +89,7 @@ teams:
       name: Bernhard Sommerfeld
       keywords: "Internet Pionier • Bücherwurm"
     - image: "/images/uw-thor-5.png"
-      name: Thor van Horn
+      name: Thor van Horn 
       keywords: "Quantum Kunst • Story Telling"
     - image: "/images/uw-ruben.png"
       name: Ruben Wickenhäuser
@@ -112,6 +112,6 @@ teams:
       
 # Contact
 # contact:
-#   title: "Pforte"
+#   title: "Pforte "
 #   content: "Bist du bereit für die Welt des Ungeschriebenen?"
 ---
