@@ -2,7 +2,6 @@
 # Banner
 banner:
   title: "Interactive Content"
-  subtitle: "Statischen Content zum Leben erwecken"
   content: "Stell dir vor, du könntest statische, passive Inhalte zum Leben erwecken. Um sich mit den Nutzern zu unterhalten. Jede Frage beantworten. Jeden Kontext verstehen und sich anpassen. Personalisiert, intelligent, lebendig. Einzig die Vorstellungskraft ist das Limit."
   image: "/images/Titelbild_Blau_breit.jpg"
 
