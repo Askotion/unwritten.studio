@@ -57,7 +57,7 @@ partners:
 # Anwendungen
 anwendungen:
   title: "Showcases"
-  content: "Tauche ein in neue Welten und erlebe selbst die Kraft von interaktiven Inhalten."
+  content: "Laufende Experimente, die zeigen, was Interactive Content wirklich kann: überraschend, fesselnd, unbeschreiblich."
   main_image: "/images/anwendungen.png"
   applications:
     - title: "Pantopia"
