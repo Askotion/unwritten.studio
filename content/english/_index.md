@@ -10,15 +10,15 @@ banner:
 features:
   image: "/images/feature-image.jpg"
   features_list:
-    - title: "Lebendige"
-      subtitle: "Charaktere"
-      content: "Die Figuren entwickeln sich im Handlungsverlauf stetig weiter"
-    - title: "Interaktive"
-      subtitle: "Welten"
-      content: "Erlebe mit den Protagonisten unbeschreibliche Abenteuer"
-    - title: "Beliebige"
-      subtitle: "Sprachen"
-      content: "Unterhalte Dich mit der Geschichte in jeder Sprache"
+    - title: "Personalisierte"
+      subtitle: "Erlebnisse"
+      content: "Der Nutzer erhält die genau die Informationen, die zu seinem Wissensstand und Zielen passen"
+    - title: "Adaptive"
+      subtitle: "Inhalte"
+      content: "Zuvor statische Inhalte werden zu intelligenten Gesprächspartnern"
+    - title: "Natürliche"
+      subtitle: "Dialoge"
+      content: "Individuelle Gespräche, die sich vertraut und überraschend zugleich anfühlen"
 
 # Quotes
 quotes:
