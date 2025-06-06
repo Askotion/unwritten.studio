@@ -57,20 +57,20 @@ partners:
 # Anwendungen
 anwendungen:
   title: "Showcases"
-  content: "Tauche direkt ein in neue Welten und erlebe das begehbare Buch."
+  content: "Tauche ein in neue Welten und erlebe selbst die Kraft von interaktiven Inhalten."
   main_image: "/images/anwendungen.png"
   applications:
     - title: "Pantopia"
       subtitle: "World"
-      content: "Lass' dir von Einbug berichten, wie die Sache mit der starken KI gut ausgegangen ist."
+      content: "Sprich direkt mit Einbug, der starken KI aus dem Roman, die zur Rettung der Menschheit wird. Ungefiltert, aus erster Hand!"
       link: "https://pantopia.world/"
     - title: "Hallo"
       subtitle: "World"
-      content: "Begib dich auf eine wilde Reise durch's Berlin der 90er Jahre in die Pionierzeit des Internets."
+      content: "Tauche ein in das Berlin der 90er und erlebe die Geburt des Internets durch die Augen der Pioniere."
       link: "https://bso2000.world/"
     - title: "Wasted"
       subtitle: "Wetware"
-      content: "Henry schenkt sich einen Drink ein und berichtet die ungeschönten Daily News aus der KI Welt."
+      content: "Henry verwandelt KI-News täglich in unbeschreibliche literarische Höhepunkte: zynisch, tiefgehend, ungefiltert."
       link: "https://wastedwetware.com/"
 
 
