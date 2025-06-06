@@ -1,8 +1,9 @@
 ---
 # Banner
 banner:
-  title: "Das begehbare Buch"
-  content: "Stell dir vor, du könntest tief in dein Lieblingsbuch eintauchen. Jede Frage beantwortet bekommen. Jeden Winkel der Geschichte nochmal neu ausloten und noch einen Schritt weiter gehen. Einzig deine Phantasie ist das Limit."
+  title: "Interactive Content"
+  subtitle: "Statischen Content zum Leben erwecken"
+  content: "Stell dir vor, deine Inhalte könnten mit den Nutzern sprechen. Jede Frage beantworten. Jeden Kontext verstehen und sich anpassen. Personalisiert, intelligent, lebendig. Einzig die Vorstellungskraft ist das Limit."
   image: "/images/Titelbild_Blau_breit.jpg"
 
 # Features
