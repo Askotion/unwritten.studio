@@ -12,7 +12,7 @@ features:
   features_list:
     - title: "Personalisierte"
       subtitle: "Erlebnisse"
-      content: "Der Nutzer erhält die genau die Informationen, die zu seinem Wissensstand und Zielen passen"
+      content: "Der Nutzer erhält genau die Informationen, die zu seinem Wissensstand und Zielen passen"
     - title: "Adaptive"
       subtitle: "Inhalte"
       content: "Zuvor statische Inhalte werden zu intelligenten Gesprächspartnern"
