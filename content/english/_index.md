@@ -76,8 +76,9 @@ anwendungen:
 
 # Forschungsbereich
 forschungsbereich:
-  title: "Narrative Gefährten"
-  content: "In unserer interdisziplinären Werkstatt verschmelzen wir Literatur, Technologie und künstliche Intelligenz zu innovativen Storytelling-Methoden, die Geschichten lebendig werden lassen. Dabei entsteht ein persönlicher Gefährte, der sich vom ersten Moment an ganz auf den Nutzer einlässt – seine Sprache spricht, seine Leidenschaften teilt und seine Begeisterung spiegelt.\nDiese Form der Interaktion schafft eine Verbindung, die sich anfühlt wie die mit einem langjährigen Wegbegleiter: spielerisch, vertrauensvoll und überraschend. So öffnen sich neue Pfade, um gemeinsam Inhalte zu entdecken und tiefgehende Erlebnisse zu gestalten."
+  title: "Packende Gefährten"
+  content: "In unserer interdisziplinären Werkstatt verschmelzen wir Literatur, Technologie und KI zu Companions und Wegbegleitern, die statische Inhalte für Nutzer regelrecht zum Leben erwecken. Es entstehen persönliche Gefährten, die sich vom ersten Moment an ganz auf den Nutzer einlassen – seine Sprache sprechen, seine Leidenschaften teilen und seine Reise begleiten.\n
+  Diese Form der Interaktion schafft eine Verbindung, die sich anfühlt wie mit einer vertrauten Person: spielerisch, aufmerksam und überraschend echt. So öffnen sich völlig neue Wege, um Inhalte zu erleben - beim Lernen, bei der Beratung, in kreativen Projekten."
   partner_logo: []
 
 
