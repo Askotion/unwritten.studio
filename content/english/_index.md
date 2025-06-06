@@ -47,7 +47,7 @@ quotes:
 # Partners
 partners:
   title: "Laborgeschichten"
-  content: "Wir verlängern Geschichten über ihre Romanvorlagen hinaus und verleihen den Protagonisten eine spielerische Persönlichkeit. Von Science Fiction über Phantastik bis zu Fachbüchern tüfteln wir gerne für euch an spannenden Showcases und wegweisenden Leuchttürmen."
+  content: "Wir verwandeln zuvor statische Inhalte in lebendige, interaktive Erlebnisse. Von Unternehmenskommunikation über Experteninterviews bis hin zu kreativen Storytelling-Projekten entwickeln wir maßgeschneiderte Lösungen, die Menschen und Content auf überraschende Weise ganz neu verbinden."
   partner_logo:
     - image: "/images/S._Fischer_Verlag_Logo.svg"
     - image: "/images/Hugendubel-Logo.svg"
