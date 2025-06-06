@@ -3,7 +3,6 @@
 banner:
   title: "Interactive Content"
   content: "Stell dir vor, deine Inhalte könnten mit den Nutzern sprechen. Jede Frage beantworten. Jeden Kontext verstehen und sich individuell anpassen. 
-  
   Aus statischem Content werden personalisierte, aufregende Erlebnisse. Nur deine Vorstellungskraft ist das Limit."
   image: "/images/Titelbild_Blau_breit.jpg"
 
