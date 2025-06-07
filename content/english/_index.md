@@ -59,7 +59,7 @@ anwendungen:
   main_image: "/images/anwendungen.png"
   applications:
     - title: "Pantopia"
-      subtitle: "World"
+      # subtitle: "World"
       content: "Sprich direkt mit Einbug, der starken KI aus dem Roman, die zur Rettung der Menschheit wird. Ungefiltert, aus erster Hand!"
       link: "https://pantopia.world/"
     - title: "Hallo"
