@@ -32,7 +32,7 @@ quotes:
     position: "Paradiesvogel"
     quote: "Was für ein Fest, Inhalte nach völlig neuen Aspekten zu durchstöbern, Verbindungen zur Welt außenherum herzustellen - als hätte der Experte persönlich Zeit für ein langes Gespräch."
   - name: "Tobias von Dewitz"
-    position: "Unternehmer"
+    position: "Code Virtuose"
     quote: "Lernen wird durch interaktive Inhalte regelrecht revolutioniert. Komplexe Sachverhalte werden zu persönlichen, tiefen Gesprächen - als hätte man seinen ganz eigenen erfahrenen Mentor an der Seite."
   - name: "Theresa Hannig"
     position: "Autorin"
