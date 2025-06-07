@@ -84,8 +84,8 @@ forschungsbereich:
 
 # Teams
 teams:
-  title: "Team"
-  content: "Die 'Unbeschreiblichen' sind ein Kollektiv an Autoren, Künstlern, Denkern und Machern. Vereint durch unsere Leidenschaft für Bücher verlängern wir deren Geschichten in einer nie zuvor erlebten Art."
+  title: "Die Unbeschreiblichen"
+  content: "Wir experimentieren an der Grenze zwischen Inhalten und Gesprächen. Unsere Runde aus zwanzig Autoren, Künstlern, Denkern und Machern verbindet die Leidenschaft für Storytelling und packende Dialoge. Wir erschaffen Wegbegleiter die passive Inhalte in einzigartige, aktive Erlebnisse verwandeln."
   team:
     - image: "/images/uw-bernd.png"
       name: Bernhard Sommerfeld
