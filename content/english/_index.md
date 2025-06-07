@@ -24,25 +24,23 @@ features:
 quotes:
   - name: "Ruben Wickenhäuser"
     position: "Science Fiction Autor"
-    quote: "Das begehbare Buch spannt für mich eine gigantische Parallelwelt auf, voll von kleinen Irritationen und Störungen. Allein diesen nachzuspüren und sie zu entdecken ist ein unvergleichliches Abenteuer."
+    quote: "Interactive Content öffnet für mich völlig neue Erzählräume. Statische Inhalte werden zu lebendigen Welten voller Überraschungen, die Nutzer auf ihre ganz eigene Art entdecken können."
   - name: "Tim O'Reilly"
     position: "Verleger"
     quote: "This is really interesting, especially for fiction publishers and for booksellers because of its gamified aspects and the ability to explore a book before you buy. You've done a good job on creating something that's fun as well as useful."
   - name: "Susann Mürling"
     position: "Paradiesvogel"
-    quote: "Was für ein Fest, die eigene Lieblings(Roman)Welt nach völlig neuen Dingen zu durchstöbern, Verbindungen zur echten Welt herzustellen oder jede beliebige Frage aus der Feder des Autors beantwortet zu bekommen."
+    quote: "Was für ein Fest, Inhalte nach völlig neuen Aspekten zu durchstöbern, Verbindungen zur Welt außenherum herzustellen - als hätte der Experte persönlich Zeit für ein langes Gespräch."
   - name: "Tobias von Dewitz"
     position: "Unternehmer"
-    quote: "Die Charaktere aus meinen Lieblingsbücher erwachen regelrecht zum Leben, als ob sie in real neben mir sitzen würden. Sie verhalten sich und fühlen sich an, als ob der Autor selbst im Hintergrund die unsichtbaren Fäden an ihnen ziehen würde."
+    quote: "Lernen wird durch interaktive Inhalte regelrecht revolutioniert. Komplexe Sachverhalte werden zu persönlichen, tiefen Gesprächen - als hätte man seinen ganz eigenen erfahrenen Mentor an der Seite."
   - name: "Theresa Hannig"
     position: "Autorin"
-    quote: "Mit Einbug - eine starke KI und Hauptdarsteller in Pantopia - zum ersten Mal ein Gespräch über meine eigene Geschichte führen zu können war unbeschreiblich."
+    quote: "Mit Einbug - der starken KI aus Pantopia - über meine eigene Geschichte sprechen zu können, war unbeschreiblich. So stelle ich mir die Zukunft von Interactive Content vor."
   - name: "Thor van Horn"
     position: "Künstler und Denker"
-    quote: "Uns verbindet die tiefe Liebe zu Büchern. Das begehbare Buch ist für mich wie ein Portal in ein neues Universum."
-#      - name: "Tobias von Dewitz"
-#    position: "Coder, Geek und Stratege"
-#    quote: "Hol' dir deinen Lieblingscharakter zu dir nach Hause ins Wohnzimmer und starte eine wildes Abenteuer durch Raum und Zeit. Einfach genial."
+    quote: "Und urplötzlich wird jeder von uns zu einem Pionier, einem Entdecker neuer Welten. Interactive Content fühlt sich für mich wie ein Portal in ein neues Universum an. Jede Interaktion wird zu einer persönlichen Reise durch lebendige Inhalte."
+    
 
 # Partners
 partners:
