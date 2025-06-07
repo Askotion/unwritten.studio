@@ -78,7 +78,7 @@ anwendungen:
 forschungsbereich:
   title: "Packende Gefährten"
   content: "In unserer interdisziplinären Werkstatt verschmelzen wir Literatur, Technologie und KI zu Companions und Wegbegleitern, die statische Inhalte für Nutzer regelrecht zum Leben erwecken. Es entstehen persönliche Gefährten, die sich vom ersten Moment an ganz auf den Nutzer einlassen – seine Sprache sprechen, seine Leidenschaften teilen und seine Reise begleiten.\n
-  Diese Form der Interaktion schafft eine Verbindung, die sich anfühlt wie mit einer vertrauten Person: spielerisch, aufmerksam und überraschend echt. So öffnen sich völlig neue Wege, um Inhalte zu erleben - beim Lernen, bei der Beratung, in kreativen Projekten."
+  Diese Form der Interaktion schafft eine Verbindung, die sich anfühlt wie mit einer vertrauten Person: spielerisch, aufmerksam und überraschend echt. So öffnen sich völlig neue Wege, um Inhalte zu erleben - beim Lernen, bei der Beratung und überall dort, wo Neues entsteht."
   partner_logo: []
 
 
