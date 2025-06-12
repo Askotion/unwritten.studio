@@ -66,18 +66,19 @@ anwendungen:
       # title: "Academic"
       content: "Erlebe wissenschaftliches Arbeiten mit Nÿt - dem Companion, der Forschungsfragen schärft und methodische Klarheit in komplexe Thesen bringt."
       link: "https://nytchat.uni1.de/"
-    - subtitle: "Open Libraries"
-      # title: "Libby"
-      content: "Come in, we are open! Brückenbau zwischen Büchern und Menschen. Gestalte Bibliotheksräume, in denen jeder willkommen ist und niemand unsichtbar bleibt."
-      link: h"ttps://open-libraries.world/"
-   # - subtitle: "Hallo World"
-   #   # title: "Hallo"
-   #   content: "Tauche ein in das Berlin der 90er und erlebe die Geburt des Internets durch die Augen der Pioniere."
-   #   link: "https://bso2000.world/"
     - subtitle: "Wasted Wetware"
       # title: "Wasted"
       content: "Henry verwandelt KI-News täglich in unbeschreibliche literarische Höhepunkte: zynisch, tiefgehend, ungefiltert."
       link: "https://wastedwetware.com/"
+    - subtitle: "Open Libraries"
+      # title: "Libby"
+      content: "Come in, we are open! Brückenbau zwischen Büchern und Menschen. Räume, in denen jeder willkommen und niemand unsichtbar ist."
+      link: h"ttps://open-libraries.world/"
+    - subtitle: "Hallo World"
+      # title: "Hallo"
+      content: "Tauche ein in das Berlin der 90er und erlebe die Geburt des Internets durch die Augen der Pioniere."
+      link: "https://bso2000.world/"
+
 
 
 # Forschungsbereich
