@@ -73,7 +73,7 @@ anwendungen:
     - subtitle: "Open Libraries"
       # title: "Libby"
       content: "Come in, we are open! Brückenbau zwischen Büchern und Menschen. Räume, in denen jeder willkommen und niemand unsichtbar ist."
-      link: h"ttps://open-libraries.world/"
+      link: "https://open-libraries.world/"
     - subtitle: "Hallo World"
       # title: "Hallo"
       content: "Tauche ein in das Berlin der 90er und erlebe die Geburt des Internets durch die Augen der Pioniere."
