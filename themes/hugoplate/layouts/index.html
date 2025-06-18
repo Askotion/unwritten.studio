@@ -143,28 +143,27 @@
         <p class="text-[#3e4447] font-tertiary text-lg tracking-wider">{{ .content | markdownify }}</p>
       </div>
     </header>
-    <div class="lg:w-[84%] mx-auto pt-12">
-      <div class="md:flex md:items-stretch md:gap-[10%]">
-        <!-- Image on the left side - full height and width -->
-        <div class="text-center md:text-left md:w-[45%]">
-          <!-- Image container - square on mobile, full size on desktop -->
-          <div class="aspect-square md:aspect-auto w-full max-w-[280px] md:max-w-none mx-auto md:mx-0 md:h-full mt-6">
-            {{ partial "image" (dict "Src" .main_image "Alt" "Application image" "Loading" "eager" "Class" "w-full h-full object-cover" "DisplayXL" "280x" "DisplayMD" "360x" ) }}
+    <div class="lg:w-[90%] mx-auto pt-12">
+      <div class="space-y-6">
+        {{ range .applications }}
+        <div class="showcase-item flex flex-col md:flex-row items-center md:items-start gap-6">
+          <!-- Image on the left -->
+          <div class="flex-shrink-0">
+            <div class="w-[220px] h-[220px] lg:w-[270px] lg:h-[270px]">
+              {{ partial "image" (dict "Src" .image "Alt" (.subtitle | default "Showcase") "Loading" "eager" "Class" "w-full h-full object-cover" "DisplayXL" "270x" "DisplayMD" "220x" ) }}
+            </div>
           </div>
-        </div>
-        <!-- Text content on the right side, stacked vertically -->
-        <div class="md:w-[45%] flex flex-col justify-between">
-          {{ range .applications }}
-          <div class="application-text py-4 text-center md:text-left">
-            <h3 class="font-tertiary text-2xl font-light mb-1">
-              <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="hover:underline">
-                <span class="text-[#3e4447]">{{ .title }}</span> <span class="text-[#3087b9]">{{ .subtitle }}</span>
+          <!-- Text content on the right -->
+          <div class="flex-1 text-center md:text-left">
+            <h3 class="font-tertiary text-2xl lg:text-3xl font-light mb-3">
+              <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="text-[#3087b9] hover:underline">
+                {{ .subtitle }}
               </a>
             </h3>
-            <p class="text-[#3e4447] font-tertiary text-base tracking-wider">{{ .content }}</p>
+            <p class="text-[#3e4447] font-tertiary text-base lg:text-lg tracking-wider">{{ .content }}</p>
           </div>
-          {{ end }}
         </div>
+        {{ end }}
       </div>
     </div>
   </div>
