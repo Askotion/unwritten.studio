@@ -19,13 +19,6 @@
 	},
 	"remoteUser": "node",
 	"postCreateCommand": "npm install && npm run dev",
-	"forwardPorts": [1313],
+	"forwardPorts": [1313]
 
-	// 👇 Add these to support the 1Password SSH agent
-	"mounts": [
-		"type=bind,source=/private/tmp/com.apple.launchd.GVTjDCVJr5/Listeners,target=/ssh-agent"
-	],
-	"containerEnv": {
-		"SSH_AUTH_SOCK": "/ssh-agent"
-	}
 }
