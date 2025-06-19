@@ -55,7 +55,7 @@ partners:
 # Anwendungen
 anwendungen:
   title: "Showcases"
-  content: "Laufende Experimente, die zeigen, was Interactive Content wirklich kann:"
+  content: "Unsere laufenden Experimente, die zeigen, was Interactive Content bewirken kann:"
   applications:
     - subtitle: "Pantopia"
       image: "/images/pantopia-showcase.png"
