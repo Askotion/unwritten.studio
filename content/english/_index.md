@@ -120,6 +120,6 @@ teams:
       
 # Contact
 # contact:
-#   title: "Pforte "
+#   title: "Pforte  "
 #   content: "Bist du bereit für die Welt des Ungeschriebenen?"
 ---
