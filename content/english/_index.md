@@ -1,9 +1,9 @@
 ---
 # Banner
 banner:
-  title: "Interactive Content"
-  content: "Stell dir vor, deine Inhalte könnten mit den Nutzern sprechen. Jede Frage beantworten. Jeden Kontext verstehen und sich individuell anpassen. \n
-  Aus statischem Content werden personalisierte, aufregende Erlebnisse. Nur deine Vorstellungskraft ist das Limit."
+  title: "Worte werden Welten"
+  content: "Stell dir vor, deine Texte könnten mit den Nutzern sprechen. Jede Frage beantworten. Jeden Kontext verstehen. Spontane Begeisterung stifen. \n
+  Aus feststehenden Texten werden packende persönliche Erlebnisse. Nur deine Vorstellungskraft ist das Limit."
   image: "/images/Titelbild_Blau_breit.jpg"
 
 # Features
