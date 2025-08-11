@@ -45,7 +45,7 @@ quotes:
 # Partners
 partners:
   title: "Laborgeschichten"
-  content: "Wir verwandeln statische Inhalte in packende, interaktive Erlebnisse. Von Unternehmenskommunikation über Experteninterviews bis hin zu kreativen Storytelling-Projekten entwickeln wir maßgeschneiderte Lösungen, die Menschen und Inhalte auf überraschende Weise ganz neu verbinden."
+  content: "Wir erschaffen aus starren Texten lebendige Gesprächspartner, die sich ganz auf ihre Nutzer einlassen. Von Unternehmenskommunikation über Experteninterviews bis hin zu kreativen Storytelling-Projekten entwickeln wir maßgeschneiderte Lösungen, die Menschen und Inhalte auf überraschende Weise ganz neu verbinden."
   partner_logo:
     - image: "/images/S._Fischer_Verlag_Logo.svg"
     - image: "/images/Hugendubel-Logo.svg"
