@@ -99,6 +99,9 @@ teams:
     - image: "/images/uw-thor-5.png"
       name: Thor van Horn 
       keywords: "Quantum Kunst • Story Telling"
+    - image: "/images/uw-melanie.png"
+      name: Melanie Zucker
+      keywords: "Weltenfängerin • Seelenspiegel"
     - image: "/images/uw-ruben.png"
       name: Ruben Wickenhäuser
       keywords: "Perry Rhodan Autor • Alienbändiger"
