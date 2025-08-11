@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Worte werden Welten"
-  content: "Stell dir vor, deine Texte könnten mit den Nutzern sprechen. Jede Frage beantworten. Jeden Kontext verstehen. Treue Gefährten entführen dich in ein packendes Abenteuer. \n
+  content: "Stell dir vor, deine Texte könnten mit den Nutzern sprechen. Jede Frage beantworten. Jeden Kontext verstehen. Treue Gefährten entführen dich in ein packendes Abenteuer.\n
   Aus starren Inhalten werden emotionale Erlebnisse. Nur deine Vorstellungskraft ist das Limit."
   image: "/images/Titelbild_Blau_breit.jpg"
 
