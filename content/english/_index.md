@@ -39,7 +39,7 @@ quotes:
     quote: "Mit Einbug - der starken KI aus Pantopia - über meine eigene Geschichte sprechen zu können, war unbeschreiblich. So stelle ich mir die Zukunft mit KI vor."
   - name: "Thor van Horn"
     position: "Künstler und Denker"
-    quote: "Und urplötzlich wird jeder von uns zu einem Pionier, einem Entdecker neuer Welten. Der Bot öffnet für mich ein Portal zu einem neuen Universum. Jeder Dialog wird zu einer ganz persönlichen Reise durch zum Leben erweckte Inhalte."
+    quote: "Und urplötzlich wird jeder von uns zu einem Pionier, einem Entdecker neuer Welten. Die KI öffnet für mich ein Portal zu einem neuen Universum. Jeder Dialog wird zu einer ganz persönlichen Reise durch zum Leben erweckte Inhalte."
     
 
 # Partners
