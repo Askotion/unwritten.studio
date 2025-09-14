@@ -99,12 +99,12 @@ teams:
     - image: "/images/uw-thor-5.png"
       name: Thor van Horn 
       keywords: "Quantum Kunst • Story Telling"
-    - image: "/images/uw-frank.jpg"
-      name: Frank Gundermann
-      keywords: "Prompt Poet • Momentenfänger"
     - image: "/images/uw-melanie.png"
       name: Melanie Zucker
       keywords: "Weltenfängerin • Seelenspiegel"
+    - image: "/images/uw-frank.jpg"
+      name: Frank Gundermann
+      keywords: "Prompt Poet • Momentenfänger"
     - image: "/images/uw-ruben.png"
       name: Ruben Wickenhäuser
       keywords: "Perry Rhodan Autor • Alienbändiger"
