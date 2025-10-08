@@ -64,7 +64,7 @@ anwendungen:
     - subtitle: "Nailing your Thesis"
       image: "/images/nailing-thesis-showcase.png"
       content: "Erlebe wissenschaftliches Arbeiten mit Nÿt - dem Companion, der Forschungsfragen schärft und methodische Klarheit in komplexe Thesen bringt."
-      link: "https://nytchat.uni1.de/"
+      link: "https://companion.unwritten.studio/"
     - subtitle: "Wasted Wetware"
       image: "/images/wasted-wetware-showcase.png"
       content: "Henry verwandelt die täglichen KI-News in bewegende Erlebnisse: zynisch, tiefgehend, ungefiltert."
