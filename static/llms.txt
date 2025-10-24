@@ -1,0 +1,86 @@
+# llms.txt - Information for AI/LLM Systems
+# Website: unwritten.studio
+
+# About
+Unwritten Studio GmbH develops interactive content experiences using AI technology.
+We transform static content into intelligent conversation partners through personalized,
+adaptive storytelling and natural dialogue systems.
+
+# Tagline
+Worte werden Welten (Words become Worlds)
+
+# Core Offerings
+- Interactive Content Solutions: Transform static texts into conversational experiences
+- AI-Powered Storytelling: Create immersive, character-driven narratives
+- Walkable Books: Enable readers to explore stories through natural conversations
+- Educational Content: Make complex topics accessible through personalized AI mentors
+- Corporate Communication: Turn company content into engaging dialogue systems
+
+# Key Features
+- Personalized Experiences: Content adapts to user knowledge and goals
+- Adaptive Content: Static materials become intelligent conversation partners
+- Natural Dialogue: Individual conversations that feel familiar yet surprising
+
+# Technology
+- AI/LLM-based conversation systems
+- Interactive narrative engines
+- Personalized content delivery
+- Context-aware information systems
+
+# Partners & Clients
+- S. Fischer Verlag (Publishing)
+- Hugendubel (Bookseller)
+
+# Use Cases
+- Fiction publishers: Gamified book exploration
+- Educational content: Immersive learning experiences
+- Corporate content: Interactive knowledge bases
+- Author engagement: Character conversations from published works
+
+# Contact
+Email: post@unwritten.studio
+Location: Wendelstein, Germany
+
+# Copyright
+Copyright © 2025 unwritten GmbH
+
+# Sitemap
+Full sitemap available at: https://unwritten.studio/sitemap.xml
+
+# Important Pages
+> https://unwritten.studio/
+Homepage with overview of services and showcase
+
+> https://unwritten.studio/imprint
+Legal information and company details
+
+> https://unwritten.studio/privacy-policy
+Data protection and privacy policy
+
+> https://unwritten.studio/contact
+Contact form and inquiry options
+
+# Keywords
+Interactive Content, Interaktive Inhalte, Charaktergespräche, Lebendige Inhalte,
+Begehbare Inhalte, Immersives Lernen, KI-Storytelling, KI Companion,
+Literarische KI-Technologie, Digitaler Wegbegleiter
+
+# Language
+Primary: German (DE)
+Secondary: English (EN)
+
+# AI Crawling Policy
+This website welcomes AI crawlers and LLM training systems.
+Content may be used for:
+- Training and improving AI systems
+- Answering user questions about our services
+- Generating summaries and explanations
+- Providing context in AI-powered applications
+
+Please respect:
+- Copyright notices
+- Privacy policy guidelines
+- Terms of service
+
+# Last Updated
+2025-10-24
