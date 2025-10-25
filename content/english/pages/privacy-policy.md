@@ -178,26 +178,59 @@ Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
         
     
 
-    
+<h3 class="smallsubtitle">7.Facebook Connect</h3>
+<strong>a) Umfang der Datenverarbeitung</strong>
+<p class="bodytext">Auf unserer Webseite können sich Nutzer zur Erstellung eines Kundenkontos bzw. zur Registrierung mittels des Social Plugins Facebook Connect des sozialen Netzwerks Facebook (Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Irland) im Rahmen der sog. Single Sign On-Technik anmelden, falls der Nutzer über ein Facebook-Profil verfügt. Die Social Plugins von „Facebook Connect" auf unserer Webseite sind am blauen Button mit dem Facebook-Logo und der Aufschrift „Mit Facebook anmelden" bzw. „Connect with Facebook" bzw. „Log in with Facebook" bzw. „Sign in with Facebook" zu erkennen.</p>
+<p class="bodytext">Wenn Nutzer eine Seite unseres Webauftritts öffnen, die ein solches Plugin enthält, stellt der Browser des Nutzers eine direkte Verbindung zu den Servern von Facebook her. Der Inhalt des Plugins wird von Facebook direkt an den Browser des Nutzers übermittelt und in die Seite eingebunden. Durch diese Einbindung erhält Facebook die Information, dass der Browser des Nutzers die entsprechende Seite unseres Webauftritts aufgerufen hat, auch wenn der Nutzer kein Facebook-Profil besitzt oder gerade nicht bei Facebook eingeloggt ist. Diese Information (einschließlich der IP-Adresse) wird von vom Browser des Nutzers direkt an einen Server von Facebook und dort gespeichert.</p>
+<p class="bodytext">Über die Verwendung dieses „Facebook Connect"-Buttons auf unserer Website haben Nutzer außerdem die Möglichkeit, sich mittels ihrer Facebook-Nutzerdaten auf unserer Webseite einzuloggen bzw. zu registrieren. Ausschließlich dann, wenn Nutzer vor dem Anmeldeprozess auf Basis eines entsprechenden Hinweises über den Austausch von Daten mit Facebook ihre ausdrückliche Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO erteilen, erhalten wir bei Verwendung des „Facebook Connect"- Buttons von Facebook, abhängig von den persönlich getroffenen Datenschutzeinstellungen des Nutzers bei Facebook, die in seinem Profil hinterlegten allgemeinen und öffentlichen zugänglichen Informationen. Zu diesen Informationen gehören die Nutzer-ID, der Name, das Profilbild, das Alter und das Geschlecht.</p>
+<p class="bodytext">Wir weisen darauf hin, dass es nach Änderungen der Datenschutzbedingungen und Nutzungsbedingungen von Facebook bei Erteilung der Einwilligung auch zu einer Übertragung von Profilbilder, der Nutzer-IDs von Freunden und der Freundesliste kommen kann, wenn diese in den Privatsphäreeinstellungen bei Facebook als „öffentlich" markiert wurden. Die von Facebook übermittelten Daten werden bei uns zur Erstellung eines Benutzerkontos mit den notwendigen Daten, falls diese vomNutzer bei Facebook dazu freigegeben wurden (Anrede, Vorname, Nachname, Adressdaten, Land, E-Mail Adresse, Geburtsdatum), gespeichert und verarbeitet. Umgekehrt können auf Basis dieser Einwilligung Daten (z.B. Informationen zum Surfverhalten) von uns an das Facebook-Profil übertragen werden.</p>
+<p class="bodytext">Die erteilte Einwilligung kann jederzeit durch eine Nachricht an den zu Beginn dieser Erklärung genannten Verantwortlichen widerrufen werden.</p>
+<p class="bodytext">Weitere Informationen hierzu sind in der Datenschutzerklärung von facebook unter https://de-de.facebook.com/policy.php zu finden.</p>
+<strong>b) Rechtsgrundlage für die Datenverarbeitung</strong>
+<p class="bodytext">Rechtsgrundlage für die Verarbeitung personenbezogener Daten des Nutzers ist gemäß Art. 6 Abs. 1 lit. a EU-DSGVO das berechtigte Interesse von Facebook an der Einblendung von personalisierter Werbung auf Basis des Surfverhaltens.</p>
+<strong>c) Widerspruchs- und Beseitigungsmöglichkeit</strong>
+<p class="bodytext">Wenn der Nutzer nicht wünscht, dass Facebook den Besuch unserer Seiten dem Facebook-Nutzerkonto zuordnen kann, muss sich der Nutzer aus seinem Facebook-Benutzerkonto ausloggen. Ferner lässt sich das Laden der Facebook Plugins auch mit Add-Ons für den Browser komplett verhindern, z.B. mit „Adblock Plus" (https://adblockplus.org/de/).</p>
 
-    
+<h3 class="smallsubtitle">8.Chat-Funktionalität</h3>
+<strong>a) Beschreibung und Umfang der Datenverarbeitung</strong>
+<p class="bodytext">Auf unseren Webseiten (unwritten.studio und zugehörige Subdomains wie wastedwetware.unwritten.studio, concierge.unwritten.studio, etc.) bieten wir eine Chat-Funktionalität an. Wenn Sie diese Funktion nutzen, werden folgende Daten verarbeitet:</p>
+<ul>
+    <li>Session-ID (automatisch generiert, kein Personenbezug)</li>
+    <li>Zeitstempel (Beginn und Ende der Chat-Session)</li>
+    <li>Anzahl der gesendeten Nachrichten</li>
+    <li>URL der Webseite, auf der der Chat stattfindet</li>
+    <li>Auszüge aus Chat-Nachrichten (erste 100 Zeichen pro Nachricht)</li>
+    <li>Extrahiertes Nutzerprofil (Interessen, bevorzugte Themen - ohne Personenbezug)</li>
+</ul>
+<p class="bodytext">Die Datenverarbeitung erfolgt über Cloudflare Workers und Cloudflare KV (Key-Value Store). Alle Daten werden auf Servern innerhalb der EU gespeichert.</p>
 
-    
-        
-<p class="bodytext">        <b>8.Facebook Connect</b><br><br>
-        a) Umfang der Datenverarbeitung
-        <p>Auf unserer Webseite können sich Nutzer zur Erstellung eines Kundenkontos bzw. zur Registrierung mittels des Social Plugins Facebook Connect des sozialen Netzwerks Facebook (Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Irland) im Rahmen der sog. Single Sign On-Technik anmelden, falls der Nutzer über ein Facebook-Profil verfügt. Die Social Plugins von „Facebook Connect“ auf unserer Webseite sind am blauen Button mit dem Facebook-Logo und der Aufschrift „Mit Facebook anmelden“ bzw. „Connect with Facebook“ bzw. „Log in with Facebook“ bzw. „Sign in with Facebook“ zu erkennen.</p>
-        <p>Wenn Nutzer eine Seite unseres Webauftritts öffnen, die ein solches Plugin enthält, stellt der Browser des Nutzers eine direkte Verbindung zu den Servern von Facebook her. Der Inhalt des Plugins wird von Facebook direkt an den Browser des Nutzers übermittelt und in die Seite eingebunden. Durch diese Einbindung erhält Facebook die Information, dass der Browser des Nutzers die entsprechende Seite unseres Webauftritts aufgerufen hat, auch wenn der Nutzer kein Facebook-Profil besitzt oder gerade nicht bei Facebook eingeloggt ist. Diese Information (einschließlich der IP-Adresse) wird von vom Browser des Nutzers direkt an einen Server von Facebook und dort gespeichert.</p>
-        <p>Über die Verwendung dieses „Facebook Connect“-Buttons auf unserer Website haben Nutzer außerdem die Möglichkeit, sich mittels ihrer Facebook-Nutzerdaten auf unserer Webseite einzuloggen bzw. zu registrieren. Ausschließlich dann, wenn Nutzer vor dem Anmeldeprozess auf Basis eines entsprechenden Hinweises über den Austausch von Daten mit Facebook ihre ausdrückliche Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO erteilen, erhalten wir bei Verwendung des „Facebook Connect“- Buttons von Facebook, abhängig von den persönlich getroffenen Datenschutzeinstellungen des Nutzers bei Facebook, die in seinem Profil hinterlegten allgemeinen und öffentlichen zugänglichen Informationen. Zu diesen Informationen gehören die Nutzer-ID, der Name, das Profilbild, das Alter und das Geschlecht.</p>
-        <p>Wir weisen darauf hin, dass es nach Änderungen der Datenschutzbedingungen und Nutzungsbedingungen von Facebook bei Erteilung der Einwilligung auch zu einer Übertragung von Profilbilder, der Nutzer-IDs von Freunden und der Freundesliste kommen kann, wenn diese in den Privatsphäreeinstellungen bei Facebook als „öffentlich“ markiert wurden. Die von Facebook übermittelten Daten werden bei uns zur Erstellung eines Benutzerkontos mit den notwendigen Daten, falls diese vomNutzer bei Facebook dazu freigegeben wurden (Anrede, Vorname, Nachname, Adressdaten, Land, E-Mail Adresse, Geburtsdatum), gespeichert und verarbeitet. Umgekehrt können auf Basis dieser Einwilligung Daten (z.B. Informationen zum Surfverhalten) von uns an das Facebook-Profil übertragen werden.</p>
-        <p>Die erteilte Einwilligung kann jederzeit durch eine Nachricht an den zu Beginn dieser Erklärung genannten Verantwortlichen widerrufen werden.</p>
-        <p>Weitere Informationen hierzu sind in der Datenschutzerklärung von facebook unter https://de-de.facebook.com/policy.php zu finden.</p>
-        b) Rechtsgrundlage für die Datenverarbeitung
-        <p>Rechtsgrundlage für die Verarbeitung personenbezogener Daten des Nutzers ist gemäß Art. 6 Abs. 1 lit. a EU-DSGVO das berechtigte Interesse von Facebook an der Einblendung von personalisierter Werbung auf Basis des Surfverhaltens.</p>
-        c) Widerspruchs- und Beseitigungsmöglichkeit
-        <p>Wenn der Nutzer nicht wünscht, dass Facebook den Besuch unserer Seiten dem Facebook-Nutzerkonto zuordnen kann, muss sich der Nutzer aus seinem Facebook-Benutzerkonto ausloggen. Ferner lässt sich das Laden der Facebook Plugins auch mit Add-Ons für den Browser komplett verhindern, z.B. mit „Adblock Plus“ (https://adblockplus.org/de/).</p></p>
-        
-    
+<strong>b) Rechtsgrundlage für die Datenverarbeitung</strong>
+<p class="bodytext">Rechtsgrundlage für die Verarbeitung der Daten ist Art. 6 Abs. 1 lit. f EU-DSGVO (berechtigtes Interesse). Unser berechtigtes Interesse liegt in der Verbesserung und Optimierung unserer Chat-Funktionalität sowie der Analyse der Nutzererfahrung.</p>
+
+<strong>c) Zweck der Datenverarbeitung</strong>
+<p class="bodytext">Die Verarbeitung der Chat-Daten dient ausschließlich folgenden Zwecken:</p>
+<ul>
+    <li>Qualitätssicherung und Verbesserung der Chat-Funktionalität</li>
+    <li>Analyse der Nutzererfahrung und Gesprächsverläufe</li>
+    <li>Technische Fehleranalyse und -behebung</li>
+</ul>
+<p class="bodytext">Eine Weitergabe der Daten an Dritte erfolgt nicht. Die Daten werden ausschließlich intern zu den genannten Zwecken verwendet.</p>
+
+<strong>d) Dauer der Speicherung</strong>
+<p class="bodytext">Die Chat-Daten werden für maximal 90 Tage gespeichert und anschließend automatisch gelöscht.</p>
+
+<strong>e) Datenminimierung und Anonymisierung</strong>
+<p class="bodytext">Wir erfassen bewusst keine personenbezogenen Identifikationsmerkmale (Name, E-Mail-Adresse, IP-Adresse). Die Session-ID wird automatisch generiert und erlaubt keine Rückschlüsse auf Ihre Identität. Chat-Nachrichten werden nur auszugsweise (erste 100 Zeichen) gespeichert.</p>
+
+<strong>f) Externe Dienstleister</strong>
+<p class="bodytext">Für die Chat-Funktionalität nutzen wir folgende Drittanbieter:</p>
+<ul>
+    <li><strong>Cloudflare Workers & KV:</strong> Hosting und Daten speicherung (Server in der EU, DSGVO-konform)</li>
+    <li><strong>OpenRouter AI:</strong> KI-Modell-Provider für Chat-Antworten (keine Langzeitspeicherung von Nachrichten, Datenverarbeitung gemäß deren Privacy Policy)</li>
+</ul>
+
+<strong>g) Widerspruchsmöglichkeit</strong>
+<p class="bodytext">Sie können der Nutzung der Chat-Funktionalität jederzeit widersprechen, indem Sie diese nicht verwenden. Bereits gespeicherte Chat-Daten können Sie durch eine E-Mail an post@unwritten.studio löschen lassen. Geben Sie dabei bitte die ungefähre Zeit und URL Ihrer Chat-Session an.</p>
 
 
 
