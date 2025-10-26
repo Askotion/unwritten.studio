@@ -169,7 +169,7 @@ Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
 
 <h3 class="smallsubtitle">7. Google Schriftarten (Webfonts)</h3>
   
-<p>   a) Umfang der Datenverarbeitung</p>p>
+<p>   a) Umfang der Datenverarbeitung</p>
     <p>Unsere Webseite Seite nutzt zur Darstellung bestimmte Schriftarten von Google. Beim Aufruf einer Seite lädt der Browser des Nutzers diese Schriftarten. Dabei wird IP-Adresse des Nutzers samt der Seite (Internetadresse), die der Nutzer besucht hat, an einen Server der Google Inc. (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA) übertragen. Weitere Informationen zu den Google Schriftarten finden sind unter https://developers.google.com/fonts/faq und in der Datenschutzerklärung von Google unter https://www.google.com/policies/privacy/ zu finden.</p>
     b) Rechtsgrundlage für die Datenverarbeitung
     <p>Rechtsgrundlage für die Verarbeitung personenbezogener Daten des Nutzers ist Art. 6 Abs. 1 lit. f EU-DSGVO.</p>
