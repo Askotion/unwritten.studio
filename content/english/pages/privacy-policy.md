@@ -8,7 +8,7 @@ description: "Unwritten Studio GmbH - Datenschutzerklärung"
 draft: false
 ---
 <p class="bodytext">Wir nehmen als Betreiber dieser Webseite den Schutz Ihrer personenbezogenen Daten sehr ernst, behandeln diese vertraulich und entsprechend der aktuellen gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. Nachfolgend informieren wir Sie nach Artikel 13 der EU Datenschutz-Grundverordnung (EU-DSGVO) über die Verarbeitung Ihrer personenbezogenen Daten (im Folgenden nur noch „Daten“ genannt).</p>
-<h3 class="smallsubtitle">1.Begriffsbestimmung</h3>
+<h3 class="smallsubtitle">1. Begriffsbestimmung</h3>
 <p class="bodytext">Die nachfolgende Datenschutzerklärung beruht auf den Begrifflichkeiten, die durch den Europäischen Richtlinien- und Verordnungsgeber beim Erlass der EU-DSGVO verwendet wurden. Um eine einfache Lesbarkeit und Verständlichkeit zu gewährleisten, möchten erläutern wir vorab die verwendeten Begrifflichkeiten.</p>
 <p class="bodytext">Wir verwenden in dieser Datenschutzerklärung unter anderem die folgenden Begriffe:</p>
 <strong>a) personenbezogene Daten</strong>
@@ -34,7 +34,7 @@ draft: false
 <strong>k) Einwilligung</strong>
 <p class="bodytext">Einwilligung ist jede von der betroffenen Person freiwillig für den bestimmten Fall in informierter Weise und unmissverständlich abgegebene Willensbekundung in Form einer Erklärung oder einer sonstigen eindeutigen bestätigenden Handlung, mit der die betroffene Person zu verstehen gibt, dass sie mit der Verarbeitung der sie betreffenden personenbezogenen Daten einverstanden ist.</p>
 
-<h3 class="smallsubtitle">2.Für die Verarbeitung Verantwortlicher</h3>
+<h3 class="smallsubtitle">2. Für die Verarbeitung Verantwortlicher</h3>
 <p class="bodytext">Unwritten GmbH<br />
 Adlerweg 6<br />
 90530 Wendelstein<br />
@@ -44,7 +44,7 @@ Tel.: 09129 1400929<br />
 <p class="bodytext">E-Mail: post@unwritten.studio</p>
 
 
-<h3 class="smallsubtitle">3.Allgemeines zur Datenverarbeitung</h3>
+<h3 class="smallsubtitle">3. Allgemeines zur Datenverarbeitung</h3>
 <strong>a) Umfang der Datenverarbeitung</strong>
 <p class="bodytext">Wir verarbeiten personenbezogene Daten unserer Nutzer grundsätzlich nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist. Die Verarbeitung personenbezogener Daten unserer Nutzer erfolgt regelmäßig nur nach Einwilligung des Nutzers. Eine Ausnahme gilt in solchen Fällen, in denen eine vorherige Einholung einer Einwilligung aus tatsächlichen Gründen nicht möglich ist und die Verarbeitung der Daten durch gesetzliche Vorschriften gestattet ist.</p>
 <strong>b) Rechtsgrundlage für die Datenverarbeitung</strong>
@@ -57,12 +57,12 @@ Tel.: 09129 1400929<br />
 <p class="bodytext">Solange Sie nicht widersprechen, werden wir Ihre Daten im Rahmen unserer vertrauensvollen Geschäftsbeziehung zu beiderseitigem Vorteil nutzen.</p>
 <p class="bodytext">Sollten Sie die Löschung Ihrer Daten wünschen, werden wir die Löschung unverzüglich vornehmen, soweit der Löschung nicht rechtliche Aufbewahrungspflichten entgegenstehen.</p>
 
-<h3 class="smallsubtitle">4.SSL-Verschlüsselung</h3>
+<h3 class="smallsubtitle">4. SSL-Verschlüsselung</h3>
 <p class="bodytext">Diese Website nutzt die SSL-Verschlüsselung (Secure Socket Layer) für die Übertragung von Daten Ihres Browsers zu unserem Server und zu Servern, die Dateien bereitstellen, welche wir auf unserer Webseite einbinden. Sie erkennen das Vorhandensein der SSL-Verschlüsselung anhand des vorangestellten Textes "https" vor der Adresse der Webseite, die sie im Browser aufrufen.</p>
 
 
 
-<h3 class="smallsubtitle">5.Verwendung von Cookies</h3>
+<h3 class="smallsubtitle">5. Verwendung von Cookies</h3>
 <strong>a) Beschreibung und Umfang der Datenverarbeitung</strong>
 <p class="bodytext">Unsere Webseite verwendet Cookies. Bei Cookies handelt es sich um Textdateien, die im Internetbrowser bzw. vom Internetbrowser auf dem Computersystem des Nutzers gespeichert werden. Ruft ein Nutzer eine Website auf, so kann ein Cookie auf dem Betriebssystem des Nutzers gespeichert werden. Dieser Cookie enthält eine charakteristische Zeichenfolge, die eine eindeutige Identifizierung des Browsers beim erneuten Aufrufen der Website ermöglicht.</p>
 <p class="bodytext">Wir setzen Cookies ein, um unsere Website nutzerfreundlicher zu gestalten. Einige Elemente unserer Webseite erfordern es, dass der aufrufende Browser auch nach einem Seitenwechsel identifiziert werden kann. Wir verwenden auf unserer Website darüber hinaus Cookies, die eine Analyse des Surfverhaltens der Nutzer ermöglichen.</p>
@@ -79,7 +79,7 @@ Tel.: 09129 1400929<br />
 <p class="bodytext">Cookies werden auf dem Rechner des Nutzers gespeichert und von diesem an unserer Seite übermittelt. Daher haben Sie als Nutzer auch die volle Kontrolle über die Verwendung von Cookies. Durch eine Änderung der Einstellungen in Ihrem Internetbrowser können Sie die Übertragung von Cookies deaktivieren oder einschränken. Bereits gespeicherte Cookies können jederzeit gelöscht werden. Dies kann auch automatisiert erfolgen. Werden Cookies für unsere Website deaktiviert, können möglicherweise nicht mehr alle Funktionen der Website vollumfänglich genutzt werden.</p>
 
 
-<h3 class="smallsubtitle">6.Online-Marketing</h3>
+<h3 class="smallsubtitle">6. Online-Marketing</h3>
 
 <strong>a) Beschreibung und Umfang der Datenverarbeitung</strong>
 <p class="bodytext">Auf unserer Webseite verarbeiten wir personenbezogene Daten zu Zwecken des Onlinemarketings, worunter insbesondere die Darstellung von werbenden und sonstigen Inhalten (zusammenfassend als "Inhalte" bezeichnet) anhand potentieller Interessen der Nutzer sowie die Messung ihrer Effektivität fallen.</p>
@@ -165,10 +165,11 @@ Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
         
     
 
-    
-        
-<p class="bodytext">    <b>7.Google Schriftarten (Webfonts)</b><br><br>
-    a) Umfang der Datenverarbeitung
+
+
+<h3 class="smallsubtitle">7. Google Schriftarten (Webfonts)</h3>
+  
+<p>   a) Umfang der Datenverarbeitung</p>
     <p>Unsere Webseite Seite nutzt zur Darstellung bestimmte Schriftarten von Google. Beim Aufruf einer Seite lädt der Browser des Nutzers diese Schriftarten. Dabei wird IP-Adresse des Nutzers samt der Seite (Internetadresse), die der Nutzer besucht hat, an einen Server der Google Inc. (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA) übertragen. Weitere Informationen zu den Google Schriftarten finden sind unter https://developers.google.com/fonts/faq und in der Datenschutzerklärung von Google unter https://www.google.com/policies/privacy/ zu finden.</p>
     b) Rechtsgrundlage für die Datenverarbeitung
     <p>Rechtsgrundlage für die Verarbeitung personenbezogener Daten des Nutzers ist Art. 6 Abs. 1 lit. f EU-DSGVO.</p>
@@ -178,64 +179,58 @@ Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
         
     
 
-<h3 class="smallsubtitle">7.Facebook Connect</h3>
-<strong>a) Umfang der Datenverarbeitung</strong>
-<p class="bodytext">Auf unserer Webseite können sich Nutzer zur Erstellung eines Kundenkontos bzw. zur Registrierung mittels des Social Plugins Facebook Connect des sozialen Netzwerks Facebook (Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Irland) im Rahmen der sog. Single Sign On-Technik anmelden, falls der Nutzer über ein Facebook-Profil verfügt. Die Social Plugins von „Facebook Connect" auf unserer Webseite sind am blauen Button mit dem Facebook-Logo und der Aufschrift „Mit Facebook anmelden" bzw. „Connect with Facebook" bzw. „Log in with Facebook" bzw. „Sign in with Facebook" zu erkennen.</p>
-<p class="bodytext">Wenn Nutzer eine Seite unseres Webauftritts öffnen, die ein solches Plugin enthält, stellt der Browser des Nutzers eine direkte Verbindung zu den Servern von Facebook her. Der Inhalt des Plugins wird von Facebook direkt an den Browser des Nutzers übermittelt und in die Seite eingebunden. Durch diese Einbindung erhält Facebook die Information, dass der Browser des Nutzers die entsprechende Seite unseres Webauftritts aufgerufen hat, auch wenn der Nutzer kein Facebook-Profil besitzt oder gerade nicht bei Facebook eingeloggt ist. Diese Information (einschließlich der IP-Adresse) wird von vom Browser des Nutzers direkt an einen Server von Facebook und dort gespeichert.</p>
-<p class="bodytext">Über die Verwendung dieses „Facebook Connect"-Buttons auf unserer Website haben Nutzer außerdem die Möglichkeit, sich mittels ihrer Facebook-Nutzerdaten auf unserer Webseite einzuloggen bzw. zu registrieren. Ausschließlich dann, wenn Nutzer vor dem Anmeldeprozess auf Basis eines entsprechenden Hinweises über den Austausch von Daten mit Facebook ihre ausdrückliche Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO erteilen, erhalten wir bei Verwendung des „Facebook Connect"- Buttons von Facebook, abhängig von den persönlich getroffenen Datenschutzeinstellungen des Nutzers bei Facebook, die in seinem Profil hinterlegten allgemeinen und öffentlichen zugänglichen Informationen. Zu diesen Informationen gehören die Nutzer-ID, der Name, das Profilbild, das Alter und das Geschlecht.</p>
-<p class="bodytext">Wir weisen darauf hin, dass es nach Änderungen der Datenschutzbedingungen und Nutzungsbedingungen von Facebook bei Erteilung der Einwilligung auch zu einer Übertragung von Profilbilder, der Nutzer-IDs von Freunden und der Freundesliste kommen kann, wenn diese in den Privatsphäreeinstellungen bei Facebook als „öffentlich" markiert wurden. Die von Facebook übermittelten Daten werden bei uns zur Erstellung eines Benutzerkontos mit den notwendigen Daten, falls diese vomNutzer bei Facebook dazu freigegeben wurden (Anrede, Vorname, Nachname, Adressdaten, Land, E-Mail Adresse, Geburtsdatum), gespeichert und verarbeitet. Umgekehrt können auf Basis dieser Einwilligung Daten (z.B. Informationen zum Surfverhalten) von uns an das Facebook-Profil übertragen werden.</p>
-<p class="bodytext">Die erteilte Einwilligung kann jederzeit durch eine Nachricht an den zu Beginn dieser Erklärung genannten Verantwortlichen widerrufen werden.</p>
-<p class="bodytext">Weitere Informationen hierzu sind in der Datenschutzerklärung von facebook unter https://de-de.facebook.com/policy.php zu finden.</p>
-<strong>b) Rechtsgrundlage für die Datenverarbeitung</strong>
-<p class="bodytext">Rechtsgrundlage für die Verarbeitung personenbezogener Daten des Nutzers ist gemäß Art. 6 Abs. 1 lit. a EU-DSGVO das berechtigte Interesse von Facebook an der Einblendung von personalisierter Werbung auf Basis des Surfverhaltens.</p>
-<strong>c) Widerspruchs- und Beseitigungsmöglichkeit</strong>
-<p class="bodytext">Wenn der Nutzer nicht wünscht, dass Facebook den Besuch unserer Seiten dem Facebook-Nutzerkonto zuordnen kann, muss sich der Nutzer aus seinem Facebook-Benutzerkonto ausloggen. Ferner lässt sich das Laden der Facebook Plugins auch mit Add-Ons für den Browser komplett verhindern, z.B. mit „Adblock Plus" (https://adblockplus.org/de/).</p>
+    
 
-<h3 class="smallsubtitle">8.Chat-Funktionalität</h3>
+    
+
+    
+      
+<h3 class="smallsubtitle">8. Facebook Connect</h3>
+
+     <p>a) Umfang der Datenverarbeitung</p>
+        <p>Auf unserer Webseite können sich Nutzer zur Erstellung eines Kundenkontos bzw. zur Registrierung mittels des Social Plugins Facebook Connect des sozialen Netzwerks Facebook (Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Irland) im Rahmen der sog. Single Sign On-Technik anmelden, falls der Nutzer über ein Facebook-Profil verfügt. Die Social Plugins von „Facebook Connect“ auf unserer Webseite sind am blauen Button mit dem Facebook-Logo und der Aufschrift „Mit Facebook anmelden“ bzw. „Connect with Facebook“ bzw. „Log in with Facebook“ bzw. „Sign in with Facebook“ zu erkennen.</p>
+        <p>Wenn Nutzer eine Seite unseres Webauftritts öffnen, die ein solches Plugin enthält, stellt der Browser des Nutzers eine direkte Verbindung zu den Servern von Facebook her. Der Inhalt des Plugins wird von Facebook direkt an den Browser des Nutzers übermittelt und in die Seite eingebunden. Durch diese Einbindung erhält Facebook die Information, dass der Browser des Nutzers die entsprechende Seite unseres Webauftritts aufgerufen hat, auch wenn der Nutzer kein Facebook-Profil besitzt oder gerade nicht bei Facebook eingeloggt ist. Diese Information (einschließlich der IP-Adresse) wird von vom Browser des Nutzers direkt an einen Server von Facebook und dort gespeichert.</p>
+        <p>Über die Verwendung dieses „Facebook Connect“-Buttons auf unserer Website haben Nutzer außerdem die Möglichkeit, sich mittels ihrer Facebook-Nutzerdaten auf unserer Webseite einzuloggen bzw. zu registrieren. Ausschließlich dann, wenn Nutzer vor dem Anmeldeprozess auf Basis eines entsprechenden Hinweises über den Austausch von Daten mit Facebook ihre ausdrückliche Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO erteilen, erhalten wir bei Verwendung des „Facebook Connect“- Buttons von Facebook, abhängig von den persönlich getroffenen Datenschutzeinstellungen des Nutzers bei Facebook, die in seinem Profil hinterlegten allgemeinen und öffentlichen zugänglichen Informationen. Zu diesen Informationen gehören die Nutzer-ID, der Name, das Profilbild, das Alter und das Geschlecht.</p>
+        <p>Wir weisen darauf hin, dass es nach Änderungen der Datenschutzbedingungen und Nutzungsbedingungen von Facebook bei Erteilung der Einwilligung auch zu einer Übertragung von Profilbilder, der Nutzer-IDs von Freunden und der Freundesliste kommen kann, wenn diese in den Privatsphäreeinstellungen bei Facebook als „öffentlich“ markiert wurden. Die von Facebook übermittelten Daten werden bei uns zur Erstellung eines Benutzerkontos mit den notwendigen Daten, falls diese vomNutzer bei Facebook dazu freigegeben wurden (Anrede, Vorname, Nachname, Adressdaten, Land, E-Mail Adresse, Geburtsdatum), gespeichert und verarbeitet. Umgekehrt können auf Basis dieser Einwilligung Daten (z.B. Informationen zum Surfverhalten) von uns an das Facebook-Profil übertragen werden.</p>
+        <p>Die erteilte Einwilligung kann jederzeit durch eine Nachricht an den zu Beginn dieser Erklärung genannten Verantwortlichen widerrufen werden.</p>
+        <p>Weitere Informationen hierzu sind in der Datenschutzerklärung von facebook unter https://de-de.facebook.com/policy.php zu finden.</p>
+        b) Rechtsgrundlage für die Datenverarbeitung
+        <p>Rechtsgrundlage für die Verarbeitung personenbezogener Daten des Nutzers ist gemäß Art. 6 Abs. 1 lit. a EU-DSGVO das berechtigte Interesse von Facebook an der Einblendung von personalisierter Werbung auf Basis des Surfverhaltens.</p>
+        c) Widerspruchs- und Beseitigungsmöglichkeit
+        <p>Wenn der Nutzer nicht wünscht, dass Facebook den Besuch unserer Seiten dem Facebook-Nutzerkonto zuordnen kann, muss sich der Nutzer aus seinem Facebook-Benutzerkonto ausloggen. Ferner lässt sich das Laden der Facebook Plugins auch mit Add-Ons für den Browser komplett verhindern, z.B. mit „Adblock Plus“ (https://adblockplus.org/de/).</p></p>
+        
+    
+
+
+
+
+<h3 class="smallsubtitle">9. Chat-Funktionalität</h3>
 <strong>a) Beschreibung und Umfang der Datenverarbeitung</strong>
-<p class="bodytext">Auf unseren Webseiten (unwritten.studio und zugehörige Subdomains wie wastedwetware.unwritten.studio, concierge.unwritten.studio, etc.) bieten wir eine Chat-Funktionalität an. Wenn Sie diese Funktion nutzen, werden folgende Daten verarbeitet:</p>
+<p class="bodytext">Auf unseren Webseiten (unwritten.studio und zugehörige Subdomains wie concierge.unwritten.studio, wastedwetware.unwritten.studio, flow.unwritten.studio) bieten wir eine Chat-Funktionalität an, die es Nutzern ermöglicht, mit KI-gestützten Assistenten zu interagieren. Diese Funktion dient dazu, die Nutzerfreundlichkeit zu erhöhen und personalisierte Inhalte bereitzustellen.</p>
+<p class="bodytext">Im Rahmen der Chat-Funktionalität werden folgende Daten verarbeitet:</p>
 <ul>
-    <li>Session-ID (automatisch generiert, kein Personenbezug)</li>
-    <li>Zeitstempel (Beginn und Ende der Chat-Session)</li>
-    <li>Anzahl der gesendeten Nachrichten</li>
-    <li>URL der Webseite, auf der der Chat stattfindet</li>
-    <li>Auszüge aus Chat-Nachrichten (erste 100 Zeichen pro Nachricht)</li>
-    <li>Extrahiertes Nutzerprofil (Interessen, bevorzugte Themen - ohne Personenbezug)</li>
+    <li><strong>Session-ID</strong> (automatisch generiert, kein Personenbezug)</li>
+    <li><strong>Zeitstempel</strong> (Beginn und Ende der Chat-Session)</li>
+    <li><strong>Anzahl der gesendeten Nachrichten</strong></li>
+    <li><strong>URL der Webseite</strong>, auf der der Chat genutzt wird</li>
+    <li><strong>Auszüge aus Chat-Nachrichten</strong> (erste 100 Zeichen jeder Nachricht)</li>
+    <li><strong>Extrahierte Nutzerprofile</strong> (z.B. Rolle, Interessen, Lernstil – anonymisiert)</li>
 </ul>
-<p class="bodytext">Die Datenverarbeitung erfolgt über Cloudflare Workers und Cloudflare KV (Key-Value Store). Alle Daten werden auf Servern innerhalb der EU gespeichert.</p>
-
-<strong>b) Rechtsgrundlage für die Datenverarbeitung</strong>
-<p class="bodytext">Rechtsgrundlage für die Verarbeitung der Daten ist Art. 6 Abs. 1 lit. f EU-DSGVO (berechtigtes Interesse). Unser berechtigtes Interesse liegt in der Verbesserung und Optimierung unserer Chat-Funktionalität sowie der Analyse der Nutzererfahrung.</p>
-
+<p class="bodytext">Die Daten werden auf Servern von Cloudflare (Cloudflare Workers & KV Storage) in der EU gespeichert und nach 90 Tagen automatisch gelöscht.</p>
+<strong>b) Rechtsgrundlage</strong>
+<p class="bodytext">Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f EU-DSGVO (berechtigtes Interesse). Unser berechtigtes Interesse liegt darin, die Qualität unserer Dienste zu verbessern und Nutzern eine personalisierte Erfahrung zu bieten.</p>
 <strong>c) Zweck der Datenverarbeitung</strong>
-<p class="bodytext">Die Verarbeitung der Chat-Daten dient ausschließlich folgenden Zwecken:</p>
+<p class="bodytext">Die Chat-Daten werden ausschließlich zur Verbesserung der Nutzerfreundlichkeit und zur Analyse der Chat-Performance verwendet. Es erfolgt keine Weitergabe an Dritte, außer an die folgenden Dienstleister:</p>
 <ul>
-    <li>Qualitätssicherung und Verbesserung der Chat-Funktionalität</li>
-    <li>Analyse der Nutzererfahrung und Gesprächsverläufe</li>
-    <li>Technische Fehleranalyse und -behebung</li>
+    <li><strong>Cloudflare Inc.</strong> (Hosting & Speicherung)</li>
+    <li><strong>OpenRouter AI</strong> (KI-Modell-Zugang für Chat-Antworten)</li>
 </ul>
-<p class="bodytext">Eine Weitergabe der Daten an Dritte erfolgt nicht. Die Daten werden ausschließlich intern zu den genannten Zwecken verwendet.</p>
-
 <strong>d) Dauer der Speicherung</strong>
-<p class="bodytext">Die Chat-Daten werden für maximal 90 Tage gespeichert und anschließend automatisch gelöscht.</p>
+<p class="bodytext">Alle Chat-Logs werden nach 90 Tagen automatisch gelöscht (Time-to-Live in Cloudflare KV).</p>
+<strong>e) Widerspruchsrecht</strong>
+<p class="bodytext">Sie haben jederzeit das Recht, der Verarbeitung Ihrer Daten zu widersprechen. Kontaktieren Sie uns dazu unter post@unwritten.studio.</p>
 
-<strong>e) Datenminimierung und Anonymisierung</strong>
-<p class="bodytext">Wir erfassen bewusst keine personenbezogenen Identifikationsmerkmale (Name, E-Mail-Adresse, IP-Adresse). Die Session-ID wird automatisch generiert und erlaubt keine Rückschlüsse auf Ihre Identität. Chat-Nachrichten werden nur auszugsweise (erste 100 Zeichen) gespeichert.</p>
-
-<strong>f) Externe Dienstleister</strong>
-<p class="bodytext">Für die Chat-Funktionalität nutzen wir folgende Drittanbieter:</p>
-<ul>
-    <li><strong>Cloudflare Workers & KV:</strong> Hosting und Daten speicherung (Server in der EU, DSGVO-konform)</li>
-    <li><strong>OpenRouter AI:</strong> KI-Modell-Provider für Chat-Antworten (keine Langzeitspeicherung von Nachrichten, Datenverarbeitung gemäß deren Privacy Policy)</li>
-</ul>
-
-<strong>g) Widerspruchsmöglichkeit</strong>
-<p class="bodytext">Sie können der Nutzung der Chat-Funktionalität jederzeit widersprechen, indem Sie diese nicht verwenden. Bereits gespeicherte Chat-Daten können Sie durch eine E-Mail an post@unwritten.studio löschen lassen. Geben Sie dabei bitte die ungefähre Zeit und URL Ihrer Chat-Session an.</p>
-
-
-
-
-<h3 class="smallsubtitle">9.Kontaktformular und E-Mail-Kontakt</h3>
+<h3 class="smallsubtitle">10. Kontaktformular und E-Mail-Kontakt</h3>
 <strong>a) Beschreibung und Umfang der Datenverarbeitung</strong>
 <p class="bodytext">Auf unserer Webseite ist ein Kontaktformular vorhanden, welches für die elektronische Kontaktaufnahme genutzt werden kann. Nimmt ein Nutzer diese Möglichkeit wahr, so werden die in der Eingabemaske eingegeben Daten an uns übermittelt und gespeichert. Diese Daten sind:</p>
 <ul>
@@ -267,7 +262,7 @@ Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
 
 
 
-<h3 class="smallsubtitle">10.Ihre Rechte als betroffene Person</h3>
+<h3 class="smallsubtitle">11. Ihre Rechte als betroffene Person</h3>
 <p class="bodytext">Gemäß der EU-DSGVO haben Sie folgende Rechte:</p>
 <strong>a) Auskunftsrecht</strong>
 <p class="bodytext">Sie können von dem Verantwortlichen eine Bestätigung darüber verlangen, ob personenbezogene Daten, die Sie betreffen, von uns verarbeitet werden.<br>
