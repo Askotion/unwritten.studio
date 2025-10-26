@@ -8,7 +8,7 @@ description: "Unwritten Studio GmbH - Datenschutzerklärung"
 draft: false
 ---
 <p class="bodytext">Wir nehmen als Betreiber dieser Webseite den Schutz Ihrer personenbezogenen Daten sehr ernst, behandeln diese vertraulich und entsprechend der aktuellen gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. Nachfolgend informieren wir Sie nach Artikel 13 der EU Datenschutz-Grundverordnung (EU-DSGVO) über die Verarbeitung Ihrer personenbezogenen Daten (im Folgenden nur noch „Daten“ genannt).</p>
-<h3 class="smallsubtitle">1.Begriffsbestimmung</h3>
+<h3 class="smallsubtitle">1. Begriffsbestimmung</h3>
 <p class="bodytext">Die nachfolgende Datenschutzerklärung beruht auf den Begrifflichkeiten, die durch den Europäischen Richtlinien- und Verordnungsgeber beim Erlass der EU-DSGVO verwendet wurden. Um eine einfache Lesbarkeit und Verständlichkeit zu gewährleisten, möchten erläutern wir vorab die verwendeten Begrifflichkeiten.</p>
 <p class="bodytext">Wir verwenden in dieser Datenschutzerklärung unter anderem die folgenden Begriffe:</p>
 <strong>a) personenbezogene Daten</strong>
@@ -34,7 +34,7 @@ draft: false
 <strong>k) Einwilligung</strong>
 <p class="bodytext">Einwilligung ist jede von der betroffenen Person freiwillig für den bestimmten Fall in informierter Weise und unmissverständlich abgegebene Willensbekundung in Form einer Erklärung oder einer sonstigen eindeutigen bestätigenden Handlung, mit der die betroffene Person zu verstehen gibt, dass sie mit der Verarbeitung der sie betreffenden personenbezogenen Daten einverstanden ist.</p>
 
-<h3 class="smallsubtitle">2.Für die Verarbeitung Verantwortlicher</h3>
+<h3 class="smallsubtitle">2. Für die Verarbeitung Verantwortlicher</h3>
 <p class="bodytext">Unwritten GmbH<br />
 Adlerweg 6<br />
 90530 Wendelstein<br />
@@ -44,7 +44,7 @@ Tel.: 09129 1400929<br />
 <p class="bodytext">E-Mail: post@unwritten.studio</p>
 
 
-<h3 class="smallsubtitle">3.Allgemeines zur Datenverarbeitung</h3>
+<h3 class="smallsubtitle">3. Allgemeines zur Datenverarbeitung</h3>
 <strong>a) Umfang der Datenverarbeitung</strong>
 <p class="bodytext">Wir verarbeiten personenbezogene Daten unserer Nutzer grundsätzlich nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist. Die Verarbeitung personenbezogener Daten unserer Nutzer erfolgt regelmäßig nur nach Einwilligung des Nutzers. Eine Ausnahme gilt in solchen Fällen, in denen eine vorherige Einholung einer Einwilligung aus tatsächlichen Gründen nicht möglich ist und die Verarbeitung der Daten durch gesetzliche Vorschriften gestattet ist.</p>
 <strong>b) Rechtsgrundlage für die Datenverarbeitung</strong>
@@ -57,12 +57,12 @@ Tel.: 09129 1400929<br />
 <p class="bodytext">Solange Sie nicht widersprechen, werden wir Ihre Daten im Rahmen unserer vertrauensvollen Geschäftsbeziehung zu beiderseitigem Vorteil nutzen.</p>
 <p class="bodytext">Sollten Sie die Löschung Ihrer Daten wünschen, werden wir die Löschung unverzüglich vornehmen, soweit der Löschung nicht rechtliche Aufbewahrungspflichten entgegenstehen.</p>
 
-<h3 class="smallsubtitle">4.SSL-Verschlüsselung</h3>
+<h3 class="smallsubtitle">4. SSL-Verschlüsselung</h3>
 <p class="bodytext">Diese Website nutzt die SSL-Verschlüsselung (Secure Socket Layer) für die Übertragung von Daten Ihres Browsers zu unserem Server und zu Servern, die Dateien bereitstellen, welche wir auf unserer Webseite einbinden. Sie erkennen das Vorhandensein der SSL-Verschlüsselung anhand des vorangestellten Textes "https" vor der Adresse der Webseite, die sie im Browser aufrufen.</p>
 
 
 
-<h3 class="smallsubtitle">5.Verwendung von Cookies</h3>
+<h3 class="smallsubtitle">5. Verwendung von Cookies</h3>
 <strong>a) Beschreibung und Umfang der Datenverarbeitung</strong>
 <p class="bodytext">Unsere Webseite verwendet Cookies. Bei Cookies handelt es sich um Textdateien, die im Internetbrowser bzw. vom Internetbrowser auf dem Computersystem des Nutzers gespeichert werden. Ruft ein Nutzer eine Website auf, so kann ein Cookie auf dem Betriebssystem des Nutzers gespeichert werden. Dieser Cookie enthält eine charakteristische Zeichenfolge, die eine eindeutige Identifizierung des Browsers beim erneuten Aufrufen der Website ermöglicht.</p>
 <p class="bodytext">Wir setzen Cookies ein, um unsere Website nutzerfreundlicher zu gestalten. Einige Elemente unserer Webseite erfordern es, dass der aufrufende Browser auch nach einem Seitenwechsel identifiziert werden kann. Wir verwenden auf unserer Website darüber hinaus Cookies, die eine Analyse des Surfverhaltens der Nutzer ermöglichen.</p>
@@ -79,7 +79,7 @@ Tel.: 09129 1400929<br />
 <p class="bodytext">Cookies werden auf dem Rechner des Nutzers gespeichert und von diesem an unserer Seite übermittelt. Daher haben Sie als Nutzer auch die volle Kontrolle über die Verwendung von Cookies. Durch eine Änderung der Einstellungen in Ihrem Internetbrowser können Sie die Übertragung von Cookies deaktivieren oder einschränken. Bereits gespeicherte Cookies können jederzeit gelöscht werden. Dies kann auch automatisiert erfolgen. Werden Cookies für unsere Website deaktiviert, können möglicherweise nicht mehr alle Funktionen der Website vollumfänglich genutzt werden.</p>
 
 
-<h3 class="smallsubtitle">6.Online-Marketing</h3>
+<h3 class="smallsubtitle">6. Online-Marketing</h3>
 
 <strong>a) Beschreibung und Umfang der Datenverarbeitung</strong>
 <p class="bodytext">Auf unserer Webseite verarbeiten wir personenbezogene Daten zu Zwecken des Onlinemarketings, worunter insbesondere die Darstellung von werbenden und sonstigen Inhalten (zusammenfassend als "Inhalte" bezeichnet) anhand potentieller Interessen der Nutzer sowie die Messung ihrer Effektivität fallen.</p>
@@ -165,10 +165,11 @@ Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
         
     
 
-    
-        
-<p class="bodytext">    <b>7.Google Schriftarten (Webfonts)</b><br><br>
-    a) Umfang der Datenverarbeitung
+
+
+<h3 class="smallsubtitle">7. Google Schriftarten (Webfonts)</h3>
+  
+<p>   a) Umfang der Datenverarbeitung</p>p>
     <p>Unsere Webseite Seite nutzt zur Darstellung bestimmte Schriftarten von Google. Beim Aufruf einer Seite lädt der Browser des Nutzers diese Schriftarten. Dabei wird IP-Adresse des Nutzers samt der Seite (Internetadresse), die der Nutzer besucht hat, an einen Server der Google Inc. (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA) übertragen. Weitere Informationen zu den Google Schriftarten finden sind unter https://developers.google.com/fonts/faq und in der Datenschutzerklärung von Google unter https://www.google.com/policies/privacy/ zu finden.</p>
     b) Rechtsgrundlage für die Datenverarbeitung
     <p>Rechtsgrundlage für die Verarbeitung personenbezogener Daten des Nutzers ist Art. 6 Abs. 1 lit. f EU-DSGVO.</p>
@@ -183,9 +184,10 @@ Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
     
 
     
-        
-<p class="bodytext">        <b>8.Facebook Connect</b><br><br>
-        a) Umfang der Datenverarbeitung
+      
+<h3 class="smallsubtitle">8. Facebook Connect</h3>
+
+     <p>a) Umfang der Datenverarbeitung</p>
         <p>Auf unserer Webseite können sich Nutzer zur Erstellung eines Kundenkontos bzw. zur Registrierung mittels des Social Plugins Facebook Connect des sozialen Netzwerks Facebook (Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Irland) im Rahmen der sog. Single Sign On-Technik anmelden, falls der Nutzer über ein Facebook-Profil verfügt. Die Social Plugins von „Facebook Connect“ auf unserer Webseite sind am blauen Button mit dem Facebook-Logo und der Aufschrift „Mit Facebook anmelden“ bzw. „Connect with Facebook“ bzw. „Log in with Facebook“ bzw. „Sign in with Facebook“ zu erkennen.</p>
         <p>Wenn Nutzer eine Seite unseres Webauftritts öffnen, die ein solches Plugin enthält, stellt der Browser des Nutzers eine direkte Verbindung zu den Servern von Facebook her. Der Inhalt des Plugins wird von Facebook direkt an den Browser des Nutzers übermittelt und in die Seite eingebunden. Durch diese Einbindung erhält Facebook die Information, dass der Browser des Nutzers die entsprechende Seite unseres Webauftritts aufgerufen hat, auch wenn der Nutzer kein Facebook-Profil besitzt oder gerade nicht bei Facebook eingeloggt ist. Diese Information (einschließlich der IP-Adresse) wird von vom Browser des Nutzers direkt an einen Server von Facebook und dort gespeichert.</p>
         <p>Über die Verwendung dieses „Facebook Connect“-Buttons auf unserer Website haben Nutzer außerdem die Möglichkeit, sich mittels ihrer Facebook-Nutzerdaten auf unserer Webseite einzuloggen bzw. zu registrieren. Ausschließlich dann, wenn Nutzer vor dem Anmeldeprozess auf Basis eines entsprechenden Hinweises über den Austausch von Daten mit Facebook ihre ausdrückliche Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO erteilen, erhalten wir bei Verwendung des „Facebook Connect“- Buttons von Facebook, abhängig von den persönlich getroffenen Datenschutzeinstellungen des Nutzers bei Facebook, die in seinem Profil hinterlegten allgemeinen und öffentlichen zugänglichen Informationen. Zu diesen Informationen gehören die Nutzer-ID, der Name, das Profilbild, das Alter und das Geschlecht.</p>
