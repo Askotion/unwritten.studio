@@ -204,7 +204,33 @@ Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
 
 
 
-<h3 class="smallsubtitle">9.Kontaktformular und E-Mail-Kontakt</h3>
+<h3 class="smallsubtitle">9. Chat-Funktionalität</h3>
+<strong>a) Beschreibung und Umfang der Datenverarbeitung</strong>
+<p class="bodytext">Auf unseren Webseiten (unwritten.studio und zugehörige Subdomains wie concierge.unwritten.studio, wastedwetware.unwritten.studio, flow.unwritten.studio) bieten wir eine Chat-Funktionalität an, die es Nutzern ermöglicht, mit KI-gestützten Assistenten zu interagieren. Diese Funktion dient dazu, die Nutzerfreundlichkeit zu erhöhen und personalisierte Inhalte bereitzustellen.</p>
+<p class="bodytext">Im Rahmen der Chat-Funktionalität werden folgende Daten verarbeitet:</p>
+<ul>
+    <li><strong>Session-ID</strong> (automatisch generiert, kein Personenbezug)</li>
+    <li><strong>Zeitstempel</strong> (Beginn und Ende der Chat-Session)</li>
+    <li><strong>Anzahl der gesendeten Nachrichten</strong></li>
+    <li><strong>URL der Webseite</strong>, auf der der Chat genutzt wird</li>
+    <li><strong>Auszüge aus Chat-Nachrichten</strong> (erste 100 Zeichen jeder Nachricht)</li>
+    <li><strong>Extrahierte Nutzerprofile</strong> (z.B. Rolle, Interessen, Lernstil – anonymisiert)</li>
+</ul>
+<p class="bodytext">Die Daten werden auf Servern von Cloudflare (Cloudflare Workers & KV Storage) in der EU gespeichert und nach 90 Tagen automatisch gelöscht.</p>
+<strong>b) Rechtsgrundlage</strong>
+<p class="bodytext">Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f EU-DSGVO (berechtigtes Interesse). Unser berechtigtes Interesse liegt darin, die Qualität unserer Dienste zu verbessern und Nutzern eine personalisierte Erfahrung zu bieten.</p>
+<strong>c) Zweck der Datenverarbeitung</strong>
+<p class="bodytext">Die Chat-Daten werden ausschließlich zur Verbesserung der Nutzerfreundlichkeit und zur Analyse der Chat-Performance verwendet. Es erfolgt keine Weitergabe an Dritte, außer an die folgenden Dienstleister:</p>
+<ul>
+    <li><strong>Cloudflare Inc.</strong> (Hosting & Speicherung)</li>
+    <li><strong>OpenRouter AI</strong> (KI-Modell-Zugang für Chat-Antworten)</li>
+</ul>
+<strong>d) Dauer der Speicherung</strong>
+<p class="bodytext">Alle Chat-Logs werden nach 90 Tagen automatisch gelöscht (Time-to-Live in Cloudflare KV).</p>
+<strong>e) Widerspruchsrecht</strong>
+<p class="bodytext">Sie haben jederzeit das Recht, der Verarbeitung Ihrer Daten zu widersprechen. Kontaktieren Sie uns dazu unter post@unwritten.studio.</p>
+
+<h3 class="smallsubtitle">10. Kontaktformular und E-Mail-Kontakt</h3>
 <strong>a) Beschreibung und Umfang der Datenverarbeitung</strong>
 <p class="bodytext">Auf unserer Webseite ist ein Kontaktformular vorhanden, welches für die elektronische Kontaktaufnahme genutzt werden kann. Nimmt ein Nutzer diese Möglichkeit wahr, so werden die in der Eingabemaske eingegeben Daten an uns übermittelt und gespeichert. Diese Daten sind:</p>
 <ul>
@@ -236,7 +262,7 @@ Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
 
 
 
-<h3 class="smallsubtitle">10.Ihre Rechte als betroffene Person</h3>
+<h3 class="smallsubtitle">11. Ihre Rechte als betroffene Person</h3>
 <p class="bodytext">Gemäß der EU-DSGVO haben Sie folgende Rechte:</p>
 <strong>a) Auskunftsrecht</strong>
 <p class="bodytext">Sie können von dem Verantwortlichen eine Bestätigung darüber verlangen, ob personenbezogene Daten, die Sie betreffen, von uns verarbeitet werden.<br>
