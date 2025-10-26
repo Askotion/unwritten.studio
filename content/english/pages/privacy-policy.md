@@ -168,14 +168,12 @@ Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
 
 
 <h3 class="smallsubtitle">7. Google Schriftarten (Webfonts)</h3>
-  
-<p>   a) Umfang der Datenverarbeitung</p>
-    <p>Unsere Webseite Seite nutzt zur Darstellung bestimmte Schriftarten von Google. Beim Aufruf einer Seite lädt der Browser des Nutzers diese Schriftarten. Dabei wird IP-Adresse des Nutzers samt der Seite (Internetadresse), die der Nutzer besucht hat, an einen Server der Google Inc. (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA) übertragen. Weitere Informationen zu den Google Schriftarten finden sind unter https://developers.google.com/fonts/faq und in der Datenschutzerklärung von Google unter https://www.google.com/policies/privacy/ zu finden.</p>
-    b) Rechtsgrundlage für die Datenverarbeitung
-    <p>Rechtsgrundlage für die Verarbeitung personenbezogener Daten des Nutzers ist Art. 6 Abs. 1 lit. f EU-DSGVO.</p>
-    c) Zweck der Datenverarbeitung
-    <p>Die Verwendung von Google Schriftarten dient der visuellen Darstellung von Textinhalten.</p>
-</p>
+<strong>a) Umfang der Datenverarbeitung</strong>
+<p class="bodytext">Unsere Webseite Seite nutzt zur Darstellung bestimmte Schriftarten von Google. Beim Aufruf einer Seite lädt der Browser des Nutzers diese Schriftarten. Dabei wird IP-Adresse des Nutzers samt der Seite (Internetadresse), die der Nutzer besucht hat, an einen Server der Google Inc. (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA) übertragen. Weitere Informationen zu den Google Schriftarten finden sind unter https://developers.google.com/fonts/faq und in der Datenschutzerklärung von Google unter https://www.google.com/policies/privacy/ zu finden.</p>
+<strong>b) Rechtsgrundlage für die Datenverarbeitung</strong>
+<p class="bodytext">Rechtsgrundlage für die Verarbeitung personenbezogener Daten des Nutzers ist Art. 6 Abs. 1 lit. f EU-DSGVO.</p>
+<strong>c) Zweck der Datenverarbeitung</strong>
+<p class="bodytext">Die Verwendung von Google Schriftarten dient der visuellen Darstellung von Textinhalten.</p>
         
     
 
@@ -186,18 +184,17 @@ Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
     
       
 <h3 class="smallsubtitle">8. Facebook Connect</h3>
-
-     <p>a) Umfang der Datenverarbeitung</p>
-        <p>Auf unserer Webseite können sich Nutzer zur Erstellung eines Kundenkontos bzw. zur Registrierung mittels des Social Plugins Facebook Connect des sozialen Netzwerks Facebook (Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Irland) im Rahmen der sog. Single Sign On-Technik anmelden, falls der Nutzer über ein Facebook-Profil verfügt. Die Social Plugins von „Facebook Connect“ auf unserer Webseite sind am blauen Button mit dem Facebook-Logo und der Aufschrift „Mit Facebook anmelden“ bzw. „Connect with Facebook“ bzw. „Log in with Facebook“ bzw. „Sign in with Facebook“ zu erkennen.</p>
-        <p>Wenn Nutzer eine Seite unseres Webauftritts öffnen, die ein solches Plugin enthält, stellt der Browser des Nutzers eine direkte Verbindung zu den Servern von Facebook her. Der Inhalt des Plugins wird von Facebook direkt an den Browser des Nutzers übermittelt und in die Seite eingebunden. Durch diese Einbindung erhält Facebook die Information, dass der Browser des Nutzers die entsprechende Seite unseres Webauftritts aufgerufen hat, auch wenn der Nutzer kein Facebook-Profil besitzt oder gerade nicht bei Facebook eingeloggt ist. Diese Information (einschließlich der IP-Adresse) wird von vom Browser des Nutzers direkt an einen Server von Facebook und dort gespeichert.</p>
-        <p>Über die Verwendung dieses „Facebook Connect“-Buttons auf unserer Website haben Nutzer außerdem die Möglichkeit, sich mittels ihrer Facebook-Nutzerdaten auf unserer Webseite einzuloggen bzw. zu registrieren. Ausschließlich dann, wenn Nutzer vor dem Anmeldeprozess auf Basis eines entsprechenden Hinweises über den Austausch von Daten mit Facebook ihre ausdrückliche Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO erteilen, erhalten wir bei Verwendung des „Facebook Connect“- Buttons von Facebook, abhängig von den persönlich getroffenen Datenschutzeinstellungen des Nutzers bei Facebook, die in seinem Profil hinterlegten allgemeinen und öffentlichen zugänglichen Informationen. Zu diesen Informationen gehören die Nutzer-ID, der Name, das Profilbild, das Alter und das Geschlecht.</p>
-        <p>Wir weisen darauf hin, dass es nach Änderungen der Datenschutzbedingungen und Nutzungsbedingungen von Facebook bei Erteilung der Einwilligung auch zu einer Übertragung von Profilbilder, der Nutzer-IDs von Freunden und der Freundesliste kommen kann, wenn diese in den Privatsphäreeinstellungen bei Facebook als „öffentlich“ markiert wurden. Die von Facebook übermittelten Daten werden bei uns zur Erstellung eines Benutzerkontos mit den notwendigen Daten, falls diese vomNutzer bei Facebook dazu freigegeben wurden (Anrede, Vorname, Nachname, Adressdaten, Land, E-Mail Adresse, Geburtsdatum), gespeichert und verarbeitet. Umgekehrt können auf Basis dieser Einwilligung Daten (z.B. Informationen zum Surfverhalten) von uns an das Facebook-Profil übertragen werden.</p>
-        <p>Die erteilte Einwilligung kann jederzeit durch eine Nachricht an den zu Beginn dieser Erklärung genannten Verantwortlichen widerrufen werden.</p>
-        <p>Weitere Informationen hierzu sind in der Datenschutzerklärung von facebook unter https://de-de.facebook.com/policy.php zu finden.</p>
-        b) Rechtsgrundlage für die Datenverarbeitung
-        <p>Rechtsgrundlage für die Verarbeitung personenbezogener Daten des Nutzers ist gemäß Art. 6 Abs. 1 lit. a EU-DSGVO das berechtigte Interesse von Facebook an der Einblendung von personalisierter Werbung auf Basis des Surfverhaltens.</p>
-        c) Widerspruchs- und Beseitigungsmöglichkeit
-        <p>Wenn der Nutzer nicht wünscht, dass Facebook den Besuch unserer Seiten dem Facebook-Nutzerkonto zuordnen kann, muss sich der Nutzer aus seinem Facebook-Benutzerkonto ausloggen. Ferner lässt sich das Laden der Facebook Plugins auch mit Add-Ons für den Browser komplett verhindern, z.B. mit „Adblock Plus“ (https://adblockplus.org/de/).</p></p>
+<strong>a) Umfang der Datenverarbeitung</strong>
+<p class="bodytext">Auf unserer Webseite können sich Nutzer zur Erstellung eines Kundenkontos bzw. zur Registrierung mittels des Social Plugins Facebook Connect des sozialen Netzwerks Facebook (Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Irland) im Rahmen der sog. Single Sign On-Technik anmelden, falls der Nutzer über ein Facebook-Profil verfügt. Die Social Plugins von „Facebook Connect" auf unserer Webseite sind am blauen Button mit dem Facebook-Logo und der Aufschrift „Mit Facebook anmelden" bzw. „Connect with Facebook" bzw. „Log in with Facebook" bzw. „Sign in with Facebook" zu erkennen.</p>
+<p class="bodytext">Wenn Nutzer eine Seite unseres Webauftritts öffnen, die ein solches Plugin enthält, stellt der Browser des Nutzers eine direkte Verbindung zu den Servern von Facebook her. Der Inhalt des Plugins wird von Facebook direkt an den Browser des Nutzers übermittelt und in die Seite eingebunden. Durch diese Einbindung erhält Facebook die Information, dass der Browser des Nutzers die entsprechende Seite unseres Webauftritts aufgerufen hat, auch wenn der Nutzer kein Facebook-Profil besitzt oder gerade nicht bei Facebook eingeloggt ist. Diese Information (einschließlich der IP-Adresse) wird von vom Browser des Nutzers direkt an einen Server von Facebook und dort gespeichert.</p>
+<p class="bodytext">Über die Verwendung dieses „Facebook Connect"-Buttons auf unserer Website haben Nutzer außerdem die Möglichkeit, sich mittels ihrer Facebook-Nutzerdaten auf unserer Webseite einzuloggen bzw. zu registrieren. Ausschließlich dann, wenn Nutzer vor dem Anmeldeprozess auf Basis eines entsprechenden Hinweises über den Austausch von Daten mit Facebook ihre ausdrückliche Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO erteilen, erhalten wir bei Verwendung des „Facebook Connect"- Buttons von Facebook, abhängig von den persönlich getroffenen Datenschutzeinstellungen des Nutzers bei Facebook, die in seinem Profil hinterlegten allgemeinen und öffentlichen zugänglichen Informationen. Zu diesen Informationen gehören die Nutzer-ID, der Name, das Profilbild, das Alter und das Geschlecht.</p>
+<p class="bodytext">Wir weisen darauf hin, dass es nach Änderungen der Datenschutzbedingungen und Nutzungsbedingungen von Facebook bei Erteilung der Einwilligung auch zu einer Übertragung von Profilbilder, der Nutzer-IDs von Freunden und der Freundesliste kommen kann, wenn diese in den Privatsphäreeinstellungen bei Facebook als „öffentlich" markiert wurden. Die von Facebook übermittelten Daten werden bei uns zur Erstellung eines Benutzerkontos mit den notwendigen Daten, falls diese vomNutzer bei Facebook dazu freigegeben wurden (Anrede, Vorname, Nachname, Adressdaten, Land, E-Mail Adresse, Geburtsdatum), gespeichert und verarbeitet. Umgekehrt können auf Basis dieser Einwilligung Daten (z.B. Informationen zum Surfverhalten) von uns an das Facebook-Profil übertragen werden.</p>
+<p class="bodytext">Die erteilte Einwilligung kann jederzeit durch eine Nachricht an den zu Beginn dieser Erklärung genannten Verantwortlichen widerrufen werden.</p>
+<p class="bodytext">Weitere Informationen hierzu sind in der Datenschutzerklärung von facebook unter https://de-de.facebook.com/policy.php zu finden.</p>
+<strong>b) Rechtsgrundlage für die Datenverarbeitung</strong>
+<p class="bodytext">Rechtsgrundlage für die Verarbeitung personenbezogener Daten des Nutzers ist gemäß Art. 6 Abs. 1 lit. a EU-DSGVO das berechtigte Interesse von Facebook an der Einblendung von personalisierter Werbung auf Basis des Surfverhaltens.</p>
+<strong>c) Widerspruchs- und Beseitigungsmöglichkeit</strong>
+<p class="bodytext">Wenn der Nutzer nicht wünscht, dass Facebook den Besuch unserer Seiten dem Facebook-Nutzerkonto zuordnen kann, muss sich der Nutzer aus seinem Facebook-Benutzerkonto ausloggen. Ferner lässt sich das Laden der Facebook Plugins auch mit Add-Ons für den Browser komplett verhindern, z.B. mit „Adblock Plus" (https://adblockplus.org/de/).</p>
         
     
 
@@ -232,16 +229,7 @@ Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
 
 <h3 class="smallsubtitle">10. Kontaktformular und E-Mail-Kontakt</h3>
 <strong>a) Beschreibung und Umfang der Datenverarbeitung</strong>
-<p class="bodytext">Auf unserer Webseite ist ein Kontaktformular vorhanden, welches für die elektronische Kontaktaufnahme genutzt werden kann. Nimmt ein Nutzer diese Möglichkeit wahr, so werden die in der Eingabemaske eingegeben Daten an uns übermittelt und gespeichert. Diese Daten sind:</p>
-<ul>
-    
-        <li>contact_fields</li>
-    
-        <li>additional</li>
-    
-</ul>
-<p class="bodytext">Zudem werden folgende Daten bei der Anmeldung erhoben:</p>
-
+<p class="bodytext">Auf unserer Webseite ist ein Kontaktformular vorhanden, welches für die elektronische Kontaktaufnahme genutzt werden kann. Nimmt ein Nutzer diese Möglichkeit wahr, so werden die in der Eingabemaske eingegeben Daten an uns übermittelt und gespeichert.</p>
 <p class="bodytext">Für die Verarbeitung der Daten wird im Rahmen des Absendevorgangs Ihre Einwilligung eingeholt und auf diese Datenschutzerklärung verwiesen.</p>
 <p class="bodytext">Alternativ ist eine Kontaktaufnahme über die bereitgestellte E-Mail-Adresse möglich. In diesem Fall werden die mit der E-Mail übermittelten personenbezogenen Daten des Nutzers gespeichert.</p>
 <p class="bodytext">Es erfolgt in diesem Zusammenhang keine Weitergabe der Daten an Dritte. Die Daten werden ausschließlich für die Verarbeitung der Konversation verwendet.</p>
