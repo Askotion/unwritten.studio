@@ -123,9 +123,9 @@ teams:
     - image: "/images/uw-stefan.png"
       name: Stefan Probst
       keywords: "Unruhestifter • Flohzirkusdirektor"
-    - image: "/images/uw-female-placeholder.png"
-      name: Theresa Hannig
-      keywords: "Phantastisch • Unbeugsam"
+    - image: "/images/uw-timo.png"
+      name: Timo Tischer
+      keywords: "Stimmengeber • Systemflüsterer"
       
 # Contact
 # contact:
