@@ -11,16 +11,6 @@
 <!-- canonical url -->
 <link rel="canonical" href="{{ .Permalink }}" />
 
-<!-- pagination rel links -->
-{{ if not .IsPage }}
-  {{ if .Paginator.HasPrev }}
-    <link rel="prev" href="{{ .Paginator.Prev.URL }}" />
-  {{ end }}
-  {{ if .Paginator.HasNext }}
-    <link rel="next" href="{{ .Paginator.Next.URL }}" />
-  {{ end }}
-{{ end }}
-
 <!-- favicon -->
 {{ partialCached "favicon" . }}
 
