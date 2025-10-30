@@ -122,7 +122,7 @@ Tel.: 09129 1400929<br />
 Dienstanbieter: Cloudflare Inc., 101 Townsend St, San Francisco, CA 94107, USA <br>
 Website: https://www.cloudflare.com/<br>
 Datenschutzerklärung: https://www.cloudflare.com/de-de/privacypolicy/<br>
-</p></p>
+</p>
             
 
     
@@ -131,7 +131,7 @@ Datenschutzerklärung: https://www.cloudflare.com/de-de/privacypolicy/<br>
 <p class="bodytext"><b>Google Analytics</b><br>
 <p>Dienstanbieter: Google LLC. (Mountain View, Kalifornien, USA)<br>
 Website: https://analytics.google.com/<br>
-Datenschutzerklärung: https://policies.google.com/privacy?hl=de<br></p></p>
+Datenschutzerklärung: https://policies.google.com/privacy?hl=de<br></p>
             
         
     
@@ -140,7 +140,7 @@ Datenschutzerklärung: https://policies.google.com/privacy?hl=de<br></p></p>
 <p class="bodytext"><b>Google Tag Manager</b><br>
 <p>Dienstanbieter: Google LLC. (Mountain View, Kalifornien, USA)<br>
 Website: https://marketingplatform.google.com/intl/de/about/tag-manager/<br>
-Datenschutzerklärung: https://marketingplatform.google.com/about/analytics/tag-manager/use-policy/ https://policies.google.com/privacy?hl=de<br></p></p>
+Datenschutzerklärung: https://marketingplatform.google.com/about/analytics/tag-manager/use-policy/ https://policies.google.com/privacy?hl=de<br></p>
             
         
     
@@ -161,7 +161,7 @@ Datenschutzerklärung: https://marketingplatform.google.com/about/analytics/tag-
 <p>Dienstanbieter: Twitter Inc. ,1355 Market Street, Suite 900, San Francisco, CA 94103, USA<br>
 Webseite: https://www.twitter.com/;<br>
 Datenschutzerklärung: https://twitter.com/de/privacy<br>
-Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
+Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p>
         
     
 
@@ -197,7 +197,7 @@ Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
         b) Rechtsgrundlage für die Datenverarbeitung
         <p>Rechtsgrundlage für die Verarbeitung personenbezogener Daten des Nutzers ist gemäß Art. 6 Abs. 1 lit. a EU-DSGVO das berechtigte Interesse von Facebook an der Einblendung von personalisierter Werbung auf Basis des Surfverhaltens.</p>
         c) Widerspruchs- und Beseitigungsmöglichkeit
-        <p>Wenn der Nutzer nicht wünscht, dass Facebook den Besuch unserer Seiten dem Facebook-Nutzerkonto zuordnen kann, muss sich der Nutzer aus seinem Facebook-Benutzerkonto ausloggen. Ferner lässt sich das Laden der Facebook Plugins auch mit Add-Ons für den Browser komplett verhindern, z.B. mit „Adblock Plus“ (https://adblockplus.org/de/).</p></p>
+        <p>Wenn der Nutzer nicht wünscht, dass Facebook den Besuch unserer Seiten dem Facebook-Nutzerkonto zuordnen kann, muss sich der Nutzer aus seinem Facebook-Benutzerkonto ausloggen. Ferner lässt sich das Laden der Facebook Plugins auch mit Add-Ons für den Browser komplett verhindern, z.B. mit „Adblock Plus“ (https://adblockplus.org/de/).</p>
         
     
 
