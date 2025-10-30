@@ -118,7 +118,7 @@
           <div
             class="w-[86%] md:w-[190px] lg:w-[190px] h-[60px] md:h-[98px] lg:h-[98px] mx-auto bg-[url('/images/Glaskugel.png')] bg-cover bg-no-repeat bg-top flex justify-center items-end pb-4">
             <div class="w-1/2">
-              {{ partial "image" (dict "Src" .image "Alt" "brand" "Loading" "lazy" "Class" "w-full h-auto"
+              {{ partial "image" (dict "Src" .image "Alt" (.alt | default "Partner logo") "Loading" "lazy" "Class" "w-full h-auto"
               "DisplayXL" "260x" "DisplayMD" "360x" ) }}
             </div>
           </div>

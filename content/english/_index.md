@@ -48,8 +48,11 @@ partners:
   content: "Wir erschaffen aus starren Texten lebendige Gesprächspartner, die sich ganz auf ihre Nutzer einlassen. Von Unternehmenskommunikation über Experteninterviews bis hin zu kreativen Storytelling-Projekten entwickeln wir maßgeschneiderte Lösungen, die Menschen und Inhalte auf überraschende Weise ganz neu verbinden."
   partner_logo:
     - image: "/images/S._Fischer_Verlag_Logo.svg"
+      alt: "S. Fischer Verlag Partner Logo"
     - image: "/images/Hugendubel-Logo.svg"
+      alt: "Hugendubel Partner Logo"
     - image: "/images/OReilly_logo_black_rgb.svg"
+      alt: "O'Reilly Media Partner Logo"
 
 
 # Anwendungen
