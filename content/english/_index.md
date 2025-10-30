@@ -93,7 +93,7 @@ forschungsbereich:
 
 # Microsites
 microsites:
-  title: "Tauchgänge"
+  title: "Abtauchen"
   microsites:
     - name: "Lagerfeuer"
       url: "https://lagerfeuer.unwritten.studio/"
