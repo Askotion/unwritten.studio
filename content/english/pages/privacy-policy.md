@@ -3,7 +3,7 @@ title: "Datenschutzerklärung"
 # meta title
 meta_title: ""
 # meta description
-description: "Unwritten Studio GmbH - Datenschutzerklärung"
+description: "Datenschutzerklärung von Unwritten Studio. Erfahren Sie wie wir Ihre personenbezogenen Daten schützen und gemäß DSGVO verarbeiten. Alle Informationen zu Datenverarbeitung, Cookies und Ihren Datenschutzrechten."
 # save as draft
 draft: false
 ---
