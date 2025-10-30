@@ -91,6 +91,32 @@ forschungsbereich:
   partner_logo: []
 
 
+# Microsites
+microsites:
+  title: "Tauchgänge"
+  microsites:
+    - name: "Lagerfeuer"
+      url: "https://lagerfeuer.unwritten.studio/"
+      image: "/images/uw-lagerfeuer.jpeg"
+      description: "Wissensbewahrung am Lagerfeuer"
+    - name: "Companion"
+      url: "https://companion.unwritten.studio/"
+      image: "/images/uw-penny-crystal.jpeg"
+      description: "Deine Lernbegleiterin mit Persönlichkeit"
+    - name: "Concierge"
+      url: "https://concierge.unwritten.studio/"
+      image: "/images/uw-concierge.jpeg"
+      description: "Das Ende von Zielgruppen"
+    - name: "Henry"
+      url: "https://wastedwetware.unwritten.studio/"
+      image: "/images/uw-wastedwetware-001.jpeg"
+      description: "Übermenschlich, ungefiltert, tiefgründig"
+    - name: "Flow"
+      url: "https://flow.unwritten.studio/"
+      image: "/images/uw-flow.jpg"
+      description: "EU AI Act? Kein Drama."
+
+
 # Teams
 teams:
   title: "Die Unbeschreiblichen"
