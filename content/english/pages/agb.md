@@ -3,7 +3,7 @@ title: "AGB"
 # meta title
 meta_title: ""
 # meta description
-description: "Unwritten Studio GmbH - AGB"
+description: "Allgemeine Geschäftsbedingungen (AGB) der Unwritten Studio GmbH. Lesen Sie unsere Nutzungsbedingungen für Softwaredienstleistungen, SaaS, AI-Bots und Beratungsleistungen. Rechte und Pflichten für die Zusammenarbeit mit uns."
 # save as draft
 draft: false
 noindex: true

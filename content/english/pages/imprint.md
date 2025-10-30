@@ -3,7 +3,7 @@ title: "Impressum"
 # meta title
 meta_title: ""
 # meta description
-description: "Unwritten Studio GmbH - Impressum"
+description: "Impressum der Unwritten Studio GmbH. Kontaktdaten, Geschäftsführer und rechtliche Informationen. Adresse: Adlerweg 6, 90530 Wendelstein. Fragen? Kontaktieren Sie uns unter post@unwritten.studio."
 # save as draft
 draft: false
 noindex: true
