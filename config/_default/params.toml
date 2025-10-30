@@ -70,12 +70,19 @@ image = "images/og-image.png"
 
 # site verifications
 # verification module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/site-verifications
+# HOW TO: Add your verification codes from Google Search Console and Bing Webmaster Tools
 [site_verification]
-google = ""   # Your verification code
-bing = ""     # Your verification code
-baidu = ""    # Your verification code
-facebook = "" # Your verification code
-mastodon = "" # Your verification code
+# Google Search Console: https://search.google.com/search-console
+# Copy the verification code from: Settings > Ownership verified > HTML tag
+google = ""   # Insert Google meta verification code here
+
+# Bing Webmaster Tools: https://www.bing.com/webmaster
+# Copy the verification code from: Verify your site > HTML tag method
+bing = ""     # Insert Bing meta verification code here
+
+baidu = ""    # Baidu verification (optional, for China market)
+facebook = "" # Facebook verification (optional)
+mastodon = "" # Mastodon verification (optional)
 
 # cookies
 # cookies module: https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent
