@@ -204,7 +204,7 @@
           {{ range $index, $team := .team }}
           <div class="swiper-slide relative">
             <div class="swiper-image">
-              {{ partial "image" (dict "Src" .image "Alt" "Swiper image" "Loading" "lazy" "Class" "w-full h-auto" "DisplayXL" "280x" "DisplayMD" "360x" ) }}
+              {{ partial "image" (dict "Src" .image "Alt" "Swiper image" "Loading" "eager" "Class" "w-full h-auto" "DisplayXL" "280x" "DisplayMD" "360x" ) }}
             </div>
             <div class="team-name absolute left-1/2 transform -translate-x-1/2 top-[105%] md:top-[105%] lg:top-[100%] xl:top-[105%] w-[150%] text-center transition-all duration-200 ease-[ease]">
               <p class="text-[#3e4447] font-tertiary text-lg tracking-wider mb-2">{{ .name | markdownify }}</p>
