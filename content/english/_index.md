@@ -105,6 +105,9 @@ teams:
     - image: "/images/uw-melanie.png"
       name: Melanie Zucker
       keywords: "Weltenfängerin • Seelenspiegel"
+    - image: "/images/uw-timo.png"
+      name: Timo Tischer
+      keywords: "Stimmengeber • Systemflüsterer"
     - image: "/images/uw-frank.jpg"
       name: Frank Gundermann
       keywords: "Prompt Poet • Momentenfänger"
@@ -123,10 +126,7 @@ teams:
     - image: "/images/uw-stefan.png"
       name: Stefan Probst
       keywords: "Unruhestifter • Flohzirkusdirektor"
-    - image: "/images/uw-timo.png"
-      name: Timo Tischer
-      keywords: "Stimmengeber • Systemflüsterer"
-      
+
 # Contact
 # contact:
 #   title: "Pforte  "
