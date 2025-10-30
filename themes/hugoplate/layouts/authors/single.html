@@ -13,6 +13,7 @@
               alt="{{ .Title }}"
               height="200"
               width="200"
+              loading="lazy"
               src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon" />
           {{ end }}
           <h1 class="h3 mt-10">{{ .Title }}</h1>

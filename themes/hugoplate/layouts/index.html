@@ -7,7 +7,7 @@
       <div class="relative">
         <div class="absolute top-0 left-0 w-full flex justify-center lg:justify-end">
           <div class="w-[200px] lg:w-[300px] flex-none pt-3 lg:pr-12">
-            <img src="/images/Logo_unwritten_black_RGB.svg" alt="">
+            <img src="/images/Logo_unwritten_black_RGB.svg" alt="Unwritten Studio Logo" loading="eager">
           </div>
         </div>
       </div>
@@ -118,7 +118,7 @@
           <div
             class="w-[86%] md:w-[190px] lg:w-[190px] h-[60px] md:h-[98px] lg:h-[98px] mx-auto bg-[url('/images/Glaskugel.png')] bg-cover bg-no-repeat bg-top flex justify-center items-end pb-4">
             <div class="w-1/2">
-              {{ partial "image" (dict "Src" .image "Alt" "brand" "Loading" "eager" "Class" "w-full h-auto"
+              {{ partial "image" (dict "Src" .image "Alt" "brand" "Loading" "lazy" "Class" "w-full h-auto"
               "DisplayXL" "260x" "DisplayMD" "360x" ) }}
             </div>
           </div>
@@ -159,7 +159,7 @@
           <!-- Image - appears second on mobile, first on desktop -->
           <div class="flex-shrink-0 order-2 md:order-1">
             <div class="w-[80%] mx-auto md:w-[220px] md:mx-0 lg:w-[270px]">
-              {{ partial "image" (dict "Src" .image "Alt" (.subtitle | default "Showcase") "Loading" "eager" "Class" "w-full h-auto" "DisplayXL" "270x" "DisplayMD" "220x" ) }}
+              {{ partial "image" (dict "Src" .image "Alt" (.subtitle | default "Showcase") "Loading" "lazy" "Class" "w-full h-auto" "DisplayXL" "270x" "DisplayMD" "220x" ) }}
             </div>
           </div>
         </div>
@@ -204,7 +204,7 @@
           {{ range $index, $team := .team }}
           <div class="swiper-slide relative">
             <div class="swiper-image">
-              {{ partial "image" (dict "Src" .image "Alt" "Swiper image" "Loading" "eager" "Class" "w-full h-auto" "DisplayXL" "280x" "DisplayMD" "360x" ) }}
+              {{ partial "image" (dict "Src" .image "Alt" "Swiper image" "Loading" "lazy" "Class" "w-full h-auto" "DisplayXL" "280x" "DisplayMD" "360x" ) }}
             </div>
             <div class="team-name absolute left-1/2 transform -translate-x-1/2 top-[105%] md:top-[105%] lg:top-[100%] xl:top-[105%] w-[150%] text-center transition-all duration-200 ease-[ease]">
               <p class="text-[#3e4447] font-tertiary text-lg tracking-wider mb-2">{{ .name | markdownify }}</p>
