@@ -126,14 +126,10 @@ Datenschutzerklärung: https://www.cloudflare.com/de-de/privacypolicy/<br>
 
 
 
-
-
 <p class="bodytext"><b>Google Analytics</b><br>
 <p>Dienstanbieter: Google LLC. (Mountain View, Kalifornien, USA)<br>
 Website: https://analytics.google.com/<br>
 Datenschutzerklärung: https://policies.google.com/privacy?hl=de<br></p></p>
-
-
 
 
 
@@ -147,22 +143,11 @@ Datenschutzerklärung: https://marketingplatform.google.com/about/analytics/tag-
 
 <br>
 
-
-
-
-
-
-
-
-
-
-
 <p class="bodytext"><b>Twitter Remarketing</b><br>
 <p>Dienstanbieter: Twitter Inc. ,1355 Market Street, Suite 900, San Francisco, CA 94103, USA<br>
 Webseite: https://www.twitter.com/;<br>
 Datenschutzerklärung: https://twitter.com/de/privacy<br>
 Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
-
 
 
 
@@ -175,11 +160,6 @@ Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
 <p class="bodytext">Rechtsgrundlage für die Verarbeitung personenbezogener Daten des Nutzers ist Art. 6 Abs. 1 lit. f EU-DSGVO.</p>
 <strong>c) Zweck der Datenverarbeitung</strong>
 <p class="bodytext">Die Verwendung von Google Schriftarten dient der visuellen Darstellung von Textinhalten.</p>
-
-
-
-
-
 
 
 
@@ -197,8 +177,6 @@ Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
         <p class="bodytext">Rechtsgrundlage für die Verarbeitung personenbezogener Daten des Nutzers ist gemäß Art. 6 Abs. 1 lit. a EU-DSGVO das berechtigte Interesse von Facebook an der Einblendung von personalisierter Werbung auf Basis des Surfverhaltens.</p>
         <strong>c) Widerspruchs- und Beseitigungsmöglichkeit</strong>
         <p class="bodytext">Wenn der Nutzer nicht wünscht, dass Facebook den Besuch unserer Seiten dem Facebook-Nutzerkonto zuordnen kann, muss sich der Nutzer aus seinem Facebook-Benutzerkonto ausloggen. Ferner lässt sich das Laden der Facebook Plugins auch mit Add-Ons für den Browser komplett verhindern, z.B. mit „Adblock Plus" (https://adblockplus.org/de/).</p>
-
-
 
 
 
