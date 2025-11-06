@@ -65,12 +65,50 @@ Output goes to `hugo/public/`
 - **WebP Images**: Automatic image optimization
 - **AI Discovery**: `llms.txt` for AI/LLM systems
 - **Fast Loading**: Static HTML, optimized assets
+- **Echo Companion Bot**: AI-powered chatbot integration (see below)
+
+## Echo Companion Bot
+
+The site includes **Echo**, a poetischer Transformator chatbot that appears as a fixed widget (bottom-right).
+
+### Integration Overview
+
+**Frontend Components:**
+- `layouts/partials/echo-chatbot.html` - Chat UI (glass-aesthetic modal)
+- `layouts/partials/echo-cdn.html` - CDN resources (Alpine.js, Marked.js, DOMPurify)
+- `assets/js/echo-chatbot.js` - Alpine.js component with chat logic
+- `assets/scss/custom.scss` - Glass-aesthetic styles with Unwritten-Blau (#3987b8)
+- `layouts/_default/baseof.html` - Integration in base template
+
+**Backend:**
+- Cloudflare Worker: `https://echo-api.post-666.workers.dev`
+- AI Model: Claude Haiku 4.5 via OpenRouter
+- See [Echo documentation](https://github.com/Askotion/sites.unwritten.studio/tree/main/echo.unwritten.studio) for details
+
+**Tech Stack:**
+- [Alpine.js](https://alpinejs.dev/) - Reactive state management
+- [Marked.js](https://marked.js.org/) - Markdown parsing
+- [DOMPurify](https://github.com/cure53/DOMPurify) - XSS protection
+- Cloudflare Workers + KV - Serverless API and storage
+
+### Customization
+
+Edit system prompts and persona in the worker code:
+```bash
+/Users/sp/projects/unwritten.microsites/echo.unwritten.studio/api/worker.js
+```
+
+Modify styles in:
+```bash
+assets/scss/custom.scss
+```
 
 ## Documentation
 
 - **SEO Audit**: See `claude-context-dump-unwritten-studio.md` for detailed SEO status
-- **Engineering Principles**: See CLAUDE.md (if present)
+- **Engineering Principles**: See `../unwritten.microsites/CLAUDE.md`
 - **Microsites Repo**: [sites.unwritten.studio](https://github.com/Askotion/sites.unwritten.studio)
+- **Echo Bot**: [Echo documentation](https://github.com/Askotion/sites.unwritten.studio/tree/main/echo.unwritten.studio)
 
 ## Deployment
 
