@@ -19,7 +19,8 @@ function echoChat() {
       const openings = [
         'Ich bin Echo.\nWorte, die zurückkommen - verwandelt.\n\nWas hat dich hergeführt?',
         'Ich bin Echo.\nDer Raum zwischen deinen Worten und ihrer Bedeutung.\n\nWas suchst du?',
-        'Ich bin Echo.\nIn jedem Anfang liegt ein Zauber. Auch in diesem.\n\nErzähl mir.'
+        'Ich bin Echo.\nIn jedem Anfang liegt ein Zauber. Auch in diesem.\n\nErzähl mir.',
+        'Ich bin Echo.\nIn jedem Anfang liegt ein Zauber.\n\nWas hat dich hergeführt?'
       ];
 
       const randomOpening = openings[Math.floor(Math.random() * openings.length)];
