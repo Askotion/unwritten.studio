@@ -172,3 +172,8 @@ lazy = true
 [[params.plugins.js]]
 link = "plugins/youtube-lite.js"
 lazy = true
+
+# Echo Chatbot
+[[params.plugins.js]]
+link = "js/echo-chatbot.js"
+lazy = false

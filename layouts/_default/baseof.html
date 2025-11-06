@@ -1,0 +1,82 @@
+<!doctype html>
+<html
+  itemscope
+  class="{{- if not site.Params.theme_switcher -}}
+    {{- site.Params.theme_default -}}
+  {{- end -}}"
+  lang="{{ site.LanguageCode | default `en-US` }}"
+  itemtype="http://schema.org/WebPage">
+  <head>
+    <!-- head (don't cache it) -->
+    {{ partial "essentials/head.html" . }}
+
+
+    <!-- style (always cache it) -->
+    {{ partial "essentials/style.html" . }}
+
+    <!-- Echo Chatbot CDN Resources -->
+    {{ partial "echo-cdn.html" . }}
+
+    <!-- mailchimp connection -->
+    <script id="mcjs">!function(c,h,i,m,p)
+    {m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}
+    (document,"script","https://chimpstatic.com/mcjs-connected/js/users/2be15d9421bd30e86635a36bd/1fe2097e65974fe707a99c741.js");
+    </script>
+  </head>
+
+  <body>
+    <!-- cache partial only in production -->
+    {{ if hugo.IsProduction }}
+      {{ partialCached "preloader.html" . }}
+      {{ partialCached "gtm-noscript.html" . }}
+    {{ else }}
+      {{ partial "preloader.html" . }}
+
+
+      <!-- tailwind size indicator -->
+      {{ partial "components/tw-size-indicator.html" . }}
+    {{ end }}
+
+
+    <!-- announcement -->
+    {{ if not .IsHome }}
+    {{ partialCached "announcement.html" . }}
+    {{ end }}
+
+
+    <!-- header (don't cache it) -->
+    {{ if not .IsHome }}
+    {{ partial "essentials/header.html" . }}
+    {{ partial "search-modal.html" (dict "Context" . ) }}
+    {{ end }}
+
+
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <!-- footer -->
+    {{ if .IsHome }}
+    <div class="text-center pt-[150px] pb-10">
+      <p class="text-xs">&copy; 2025 Unwritten GmbH |
+        <a href="https://www.linkedin.com/company/unwritten-studio/" target="_blank">LinkedIn</a> |
+        <a href="/imprint">Impressum</a> |
+        <a href="/privacy-policy">Datenschutz</a> |
+        <a href="mailto:post@unwritten.studio">Post 📬</a> |
+        <a href="/newsletter">Newsletter</a>
+      </p>
+    </div>
+    </div>
+    </div>
+    {{ else }}
+    {{ partial "essentials/footer.html" . }}
+    {{ end }}
+
+
+    <!-- script (always cache it) -->
+    {{ partialCached "essentials/script.html" . }}
+
+    <!-- Echo Chatbot Widget -->
+    {{ partial "echo-chatbot.html" . }}
+  </body>
+</html>
