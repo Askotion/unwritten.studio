@@ -43,16 +43,13 @@
   <div class="echo-modal-container">
     <!-- Header -->
     <div class="echo-header">
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-8">
         <div class="echo-avatar">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
-            <path d="M12 3v2m0 14v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
+          <img src="/echo-logo.png" alt="Echo" class="echo-logo" />
         </div>
         <div>
           <h2 class="echo-title">Echo</h2>
-          <p class="echo-subtitle">Worte werden Welten</p>
+          <p class="echo-subtitle">Worte, die zurückkommen - verwandelt</p>
         </div>
       </div>
 
@@ -95,7 +92,7 @@
       <input
         type="text"
         class="echo-input"
-        placeholder="Schreib deine Gedanken..."
+        placeholder="Lass mich dich verwandeln..."
         x-model="userInput"
         @keyup.enter="sendMessage()"
         :disabled="isTyping"
