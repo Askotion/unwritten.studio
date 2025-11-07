@@ -1,0 +1,60 @@
+<!-- Open Graph Meta Tags -->
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:site_name" content="{{ site.Title }}" />
+
+{{ with .Params.image }}
+<meta property="og:image" content="{{ . | absURL }}" />
+<meta property="og:image:type" content="image/jpeg" />
+{{ else }}
+{{ with site.Params.logo }}
+<meta property="og:image" content="{{ . | absURL }}" />
+{{ end }}
+{{ end }}
+
+{{ if .IsPage }}
+<meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}" />
+{{ with .Lastmod }}
+<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}" />
+{{ end }}
+{{ end }}
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ .Title }}" />
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}" />
+
+{{ with .Params.image }}
+<meta name="twitter:image" content="{{ . | absURL }}" />
+{{ else }}
+{{ with site.Params.logo }}
+<meta name="twitter:image" content="{{ . | absURL }}" />
+{{ end }}
+{{ end }}
+
+{{ with site.Params.twitter_handle }}
+<meta name="twitter:creator" content="@{{ . }}" />
+{{ end }}
+
+<!-- Meta Description (fallback) -->
+{{ if not .Description }}
+<meta name="description" content="{{ .Summary | plainify }}" />
+{{ else }}
+<meta name="description" content="{{ .Description }}" />
+{{ end }}
+
+<!-- Keywords -->
+{{ if .Keywords }}
+<meta name="keywords" content="{{ delimit .Keywords ", " }}" />
+{{ else }}
+{{ with site.Params.keywords }}
+<meta name="keywords" content="{{ delimit . ", " }}" />
+{{ end }}
+{{ end }}
+
+<!-- Additional SEO Meta Tags -->
+<meta name="author" content="{{ with .Params.author }}{{ . }}{{ else }}{{ site.Params.author }}{{ end }}" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="{{ site.LanguageCode }}" />
