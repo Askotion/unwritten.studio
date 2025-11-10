@@ -1,128 +1,93 @@
-# Unwritten.Studio
+# Unwritten.Studio – Hauptwebseite
 
-Main website for Unwritten Studio GmbH – AI-first content platform.
+Agentur-Webseite für Unwritten GmbH (https://unwritten.studio) mit integriertem **Echo Bot**.
 
-**Live Site**: [unwritten.studio](https://unwritten.studio)
+## Struktur
 
-## Overview
+```
+unwritten.studio/                     # Hugo site root
+├── content/                          # Hugo content (German)
+├── static/                           # Assets (images, fonts, etc.)
+├── themes/hugoplate/                 # Hugo theme (customized)
+├── config.toml                       # Hugo configuration
+└── README.md                         # This file
+```
 
-The corporate website for Unwritten Studio, showcasing our AI-powered microsites and services. Built with Hugo for performance and TailwindCSS for modern styling.
+## Echo Bot Integration
+
+Die Hauptseite hat den **Echo Bot** integriert — einen poetischen Transformator, der auf der unwritten.studio Startseite verfügbar ist.
+
+### Echo Bot Features
+- **Persona**: Poetischer Transformator & Appetitmacher
+- **Model**: Claude Haiku 4.5 via OpenRouter (Temperatur: 0.8)
+- **Gesprächsführung**: 3-phasig (Begegnung → Verwandlung → Einladung)
+- **Integration**: Pulsierende Glas-Sphäre (bottom-right, fixed position)
+- **Technologie**: Alpine.js + Marked.js + DOMPurify
+- **UI**: Avatar mit Leserin-Grafik, Unwritten Design System Fonts, fester Opening-Text
+
+### Echo Bot API
+- **Endpoint**: `https://echo-api.post-666.workers.dev`
+- **Cloudflare Worker**: `/Users/sp/projects/unwritten/sites.unwritten.studio/echo.unwritten.studio/api/worker.js`
+- **Logs**: Cloudflare KV Storage (90 Tage TTL)
+- **Session IDs**: Deterministisch
+
+### ⚠️ WICHTIG: GitHub ist Source of Truth
+**Das Echo Bot Widget MUSS vollständig im Repository unter Version Control sein.** Die Live-Site wird direkt aus diesem Repo generiert (Hugo → GitHub Pages).
+
+- **Keine manuellen Änderungen auf der Live-Site ohne Commit!**
+- Alle UI-Verbesserungen müssen in den Source-Dateien (HTML/CSS/JS) passieren
+- Nach Änderungen: `hugo` ausführen, testen, dann committen & pushen
+
+Vollständige Dokumentation: siehe `sites.unwritten.studio/echo.unwritten.studio/README.md`
 
 ## Tech Stack
 
-- **Static Site Generator**: Hugo v0.123.7+ (extended)
-- **CSS Framework**: TailwindCSS 3.x
-- **Theme**: Custom (forked from zeon-studio/hugoplate)
-- **Deployment**: Cloudflare Pages (auto-deploy from `main`)
-- **Build Tools**: PostCSS, PurgeCSS, Prettier
+- **Generator**: Hugo (static site generator)
+- **Theme**: Hugoplate (customized)
+- **Language**: German (de)
+- **Hosting**: GitHub Pages
+- **Chat Integration**: Echo Bot (Cloudflare Worker)
 
-## Project Structure
+## Development
 
-```
-hugo/
-├── assets/           # Source files (CSS, JS, images)
-├── content/english/  # Markdown content
-├── data/             # Data files
-├── static/           # Static assets (robots.txt, llms.txt)
-├── themes/hugoplate/ # Hugo theme
-├── config/           # Hugo config files
-├── hugo.toml         # Main Hugo config
-├── tailwind.config.js
-└── postcss.config.js
-```
-
-## Local Development
-
-### Prerequisites
-
-- Hugo Extended v0.123.7+ ([installation guide](https://gohugo.io/installation/))
-- Node.js 18+ (for TailwindCSS)
-- npm or yarn
-
-### Setup
-
+### Hugo Server starten
 ```bash
-cd hugo
-npm install
-hugo server
+cd /Users/sp/projects/unwritten/unwritten.studio
+hugo server -D
 ```
 
-The site will be available at `http://localhost:1313`
+Öffnet dann http://localhost:1313
 
-### Build for Production
+### Echo Bot testen
+1. Hugo Server läuft auf http://localhost:1313
+2. Klick auf Echo-Sphäre (bottom-right)
+3. Chat wird via `https://echo-api.post-666.workers.dev` connected
 
+Für Lokal-Testen des Workers:
 ```bash
-cd hugo
-hugo --minify
+cd /Users/sp/projects/unwritten/sites.unwritten.studio/echo.unwritten.studio/api
+npx wrangler dev --env=""
+# Dann den API_URL in der Hugo-Datei auf http://localhost:8787 ändern
 ```
 
-Output goes to `hugo/public/`
+## Git Workflow
 
-## Key Features
+- **Default**: Feature Branches → PRs → Code Review → Merge zu `main`
+- **Main Branch**: Triggert automatisches Deployment auf GitHub Pages
+- **Commits**: Immer mit aussagekräftiger Message + Doku
 
-- **Responsive Design**: Mobile-first approach
-- **SEO Optimized**: Meta tags, JSON-LD schema, sitemap
-- **WebP Images**: Automatic image optimization
-- **AI Discovery**: `llms.txt` for AI/LLM systems
-- **Fast Loading**: Static HTML, optimized assets
-- **Echo Companion Bot**: AI-powered chatbot integration (see below)
+## Verwandte Projekte
 
-## Echo Companion Bot
+- **Microsites**: `/Users/sp/projects/unwritten/sites.unwritten.studio` (separate Repo)
+  - Flow Bot (https://flow.unwritten.studio)
+  - Concierge Bot (https://concierge.unwritten.studio)
+  - Henry Bot (https://wastedwetware.unwritten.studio)
+  - Companion, Lagerfeuer, Analytics
 
-The site includes **Echo**, a poetischer Transformator chatbot that appears as a fixed widget (bottom-right).
+- **Dokumentation**: Siehe `sites.unwritten.studio/README.md` für komplette Bot-Infrastruktur
 
-### Integration Overview
+## Weitere Infos
 
-**Frontend Components:**
-- `layouts/partials/echo-chatbot.html` - Chat UI (glass-aesthetic modal)
-- `layouts/partials/echo-cdn.html` - CDN resources (Alpine.js, Marked.js, DOMPurify)
-- `assets/js/echo-chatbot.js` - Alpine.js component with chat logic
-- `assets/scss/custom.scss` - Glass-aesthetic styles with Unwritten-Blau (#3987b8)
-- `layouts/_default/baseof.html` - Integration in base template
-
-**Backend:**
-- Cloudflare Worker: `https://echo-api.post-666.workers.dev`
-- AI Model: Claude Haiku 4.5 via OpenRouter
-- See [Echo documentation](https://github.com/Askotion/sites.unwritten.studio/tree/main/echo.unwritten.studio) for details
-
-**Tech Stack:**
-- [Alpine.js](https://alpinejs.dev/) - Reactive state management
-- [Marked.js](https://marked.js.org/) - Markdown parsing
-- [DOMPurify](https://github.com/cure53/DOMPurify) - XSS protection
-- Cloudflare Workers + KV - Serverless API and storage
-
-### Customization
-
-Edit system prompts and persona in the worker code:
-```bash
-/Users/sp/projects/unwritten.microsites/echo.unwritten.studio/api/worker.js
-```
-
-Modify styles in:
-```bash
-assets/scss/custom.scss
-```
-
-## Documentation
-
-- **SEO Audit**: See `claude-context-dump-unwritten-studio.md` for detailed SEO status
-- **Engineering Principles**: See `../unwritten.microsites/CLAUDE.md`
-- **Microsites Repo**: [sites.unwritten.studio](https://github.com/Askotion/sites.unwritten.studio)
-- **Echo Bot**: [Echo documentation](https://github.com/Askotion/sites.unwritten.studio/tree/main/echo.unwritten.studio)
-
-## Deployment
-
-The site auto-deploys to Cloudflare Pages when changes are pushed to `main`.
-
-**Important**: Always test locally with `hugo server` before pushing.
-
-## Contact & Support
-
-**Unwritten Studio GmbH**
-- Email: post@unwritten.studio
-- Phone: +49 9129 1400929
-- Address: Adlerweg 6, 90530 Wendelstein, Germany
-
-## License
-
-MIT License (see LICENSE file)
+- **Engineering Principles**: `CLAUDE.md`
+- **Privacy Policy**: `content/english/pages/privacy-policy.md`
+- **Hugo Docs**: https://gohugo.io/documentation/
