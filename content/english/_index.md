@@ -135,7 +135,7 @@ teams:
       name: Timo Tischer
       keywords: "Stimmengeber • Systemflüsterer"
     - image: "/images/uw-frank.jpg"
-      name: Frank Gundermann
+      name: Frank Gunderman
       keywords: "Prompt Poet • Momentenfänger"
     - image: "/images/uw-ruben.png"
       name: Ruben Wickenhäuser
