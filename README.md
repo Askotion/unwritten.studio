@@ -86,13 +86,8 @@ npx wrangler dev --env=""
 
 - **Dokumentation**: Siehe `sites.unwritten.studio/README.md` für komplette Bot-Infrastruktur
 
-## Dokumentation
+## Weitere Infos
 
-**Start hier:** Komplette Dokumentation im [`sites.unwritten.studio`](https://github.com/Askotion/sites.unwritten.studio) Repository:
-- **[DEVELOPMENT.md](https://github.com/Askotion/sites.unwritten.studio/blob/main/DEVELOPMENT.md)** - Complete PR workflow, testing checklist, branch naming
-- **[README.md](https://github.com/Askotion/sites.unwritten.studio/blob/main/README.md)** - Bot infrastructure, microsites overview, engineering principles
-
-Weitere Ressourcen:
 - **Engineering Principles**: `CLAUDE.md`
 - **Privacy Policy**: `content/english/pages/privacy-policy.md`
 - **Hugo Docs**: https://gohugo.io/documentation/
