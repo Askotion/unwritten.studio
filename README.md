@@ -1,6 +1,6 @@
-# Unwritten.Studio – Hauptwebseite
+# Unwritten.Studio – Main Website
 
-Agentur-Webseite für Unwritten GmbH (https://unwritten.studio) mit integriertem **Echo Bot**.
+Main Website für Unwritten (https://unwritten.studio) mit integriertem **Echo Bot**.
 
 ## Struktur
 
@@ -31,12 +31,13 @@ Die Hauptseite hat den **Echo Bot** integriert — einen poetischen Transformato
 - **Logs**: Cloudflare KV Storage (90 Tage TTL)
 - **Session IDs**: Deterministisch
 
-### ⚠️ WICHTIG: GitHub ist Source of Truth
-**Das Echo Bot Widget MUSS vollständig im Repository unter Version Control sein.** Die Live-Site wird direkt aus diesem Repo generiert (Hugo → GitHub Pages).
+### ⚠️ WICHTIG: GitHub ist "the one and only source of truth"
+**Das Echo Bot Widget MUSS vollständig im Repository unter Version Control sein.** 
+Die Live-Site wird direkt aus diesem Repo generiert (Hugo → GitHub Pages).
 
 - **Keine manuellen Änderungen auf der Live-Site ohne Commit!**
 - Alle UI-Verbesserungen müssen in den Source-Dateien (HTML/CSS/JS) passieren
-- Nach Änderungen: `hugo` ausführen, testen, dann committen & pushen
+- Nach Änderungen: `hugo` lokal ausführen, testen, dann committen & pr generieren
 
 Vollständige Dokumentation: siehe `sites.unwritten.studio/echo.unwritten.studio/README.md`
 
@@ -82,7 +83,9 @@ npx wrangler dev --env=""
   - Flow Bot (https://flow.unwritten.studio)
   - Concierge Bot (https://concierge.unwritten.studio)
   - Henry Bot (https://wastedwetware.unwritten.studio)
-  - Companion, Lagerfeuer, Analytics
+  - Companion (https://companion.unwritten.studio)
+  - Expert Debriefing (https://lagerfeuer.unwritten.studio)
+  - Analytics (Dashboard für die Nutzerdialoge)
 
 - **Dokumentation**: Siehe `sites.unwritten.studio/README.md` für komplette Bot-Infrastruktur
 
