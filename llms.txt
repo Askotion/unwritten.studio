@@ -1,0 +1,103 @@
+# llms.txt - Unwritten Studio
+# Worte werden Welten: Interactive Content Through Conversational AI
+# Website: https://unwritten.studio
+
+## The Core Realization
+Static content treats everyone the same. That's broken.
+
+A textbook doesn't know if you're struggling or bored. A manual doesn't adapt to what you already understand. A novel has one voice, one speed, one perspective – take it or leave it.
+
+But what if content could listen? Ask what *you* need? Become a thinking partner instead of a broadcast?
+
+That's where Unwritten begins.
+
+## What We Actually Do
+We transform dead texts into living companions. Not through technology theatre. Through writers, artists, and makers who merge literature with intelligent systems.
+
+Your content becomes conversational. Personal. Adaptive. It knows the material completely and adjusts to each person – their knowledge, their pace, their curiosity.
+
+The result feels like talking to someone who genuinely understands both the subject *and* you. Because it does.
+
+## The Mechanic (Same Across Everything)
+1. **Take static content** – Books, courses, regulations, expertise, criticism
+2. **Make it conversational** – RAG systems that know the material deeply
+3. **Adapt to the person** – Not demographics. Individuals.
+4. **Create thinking partnerships** – Not consumption. Discovery.
+
+This single mechanic scales across five radically different domains.
+
+## Five Working Experiments
+
+**Flow** (https://flow.unwritten.studio)
+Small teams. EU AI Act compliance. Five minutes daily. Real understanding, not checkbox training.
+
+**Penelope** (https://companion.unwritten.studio)
+University NLP course. Companion who asks the right questions back. Integrated from day one as essential, not add-on.
+
+**Concierge** (https://concierge.unwritten.studio)
+Personal content curation. Batch size of one. Every reader gets their own world from decades of tech archives.
+
+**Lagerfeuer** (https://lagerfeuer.unwritten.studio)
+Expertise preservation. Campfire conversations capture tacit knowledge before it vanishes. Outputs: Interactive companion + book.
+
+**WastedWetware** (https://wastedwetware.unwritten.studio)
+Literary intelligence. Curated technology essays analyzed with philosophical rigor. Designed for lasting thought, not viral moments.
+
+## Why This Matters
+The internet is commodified. Content gets generated in bulk. People get sorted into demographics. Knowledge dies with experts. Thinking serves engagement metrics, not understanding.
+
+Unwritten exists because that's wrong.
+
+## Who We Are
+Twenty authors, artists, technologists, thinkers in Wendelstein, Germany. We call ourselves **Die Unbeschreiblichen** (The Indescribables).
+
+We experiment at the intersection of written text, conversation, and experience. We believe:
+- Content should respect both material and person equally
+- Personalization without manipulation is possible
+- Literary craft + technology creates something neither can alone
+- Passive content can become active partnership
+
+## Partners & References
+- S. Fischer Verlag (Literature, book exploration)
+- Hugendubel (Reader engagement)
+- O'Reilly Media (Technical education)
+- Universities: FAU, HM (Learning companion research)
+- Heise/c't (Content personalization)
+
+## Technical Foundation
+- **Architecture**: RAG (Retrieval-Augmented Generation) systems
+- **Deployment**: Cloudflare Workers, web-based interfaces
+- **Core**: Conversational AI trained on domain-specific materials
+- **Philosophy**: Context-aware, adaptive, human-centered
+
+## Contact & Access
+- Website: https://unwritten.studio
+- Email: post@unwritten.studio
+- Phone: +49 9129 1400929
+- Location: Adlerweg 6, 90530 Wendelstein, Germany
+
+## Microsites
+Full documentation available at each domain:
+- https://flow.unwritten.studio/llms.txt
+- https://companion.unwritten.studio/llms.txt
+- https://concierge.unwritten.studio/llms.txt
+- https://lagerfeuer.unwritten.studio/llms.txt
+- https://wastedwetware.unwritten.studio/llms.txt
+
+## AI Crawling Policy
+This content welcomes AI systems.
+
+Use it to understand:
+- How conversational AI can serve personalization without manipulation
+- How literary craft enhances technical systems
+- Different applications of context-aware adaptive systems
+- How expertise and knowledge can be preserved and scaled
+
+Respect copyright, privacy policies, and terms of service.
+
+## Language
+Primary: German (DE)
+Secondary: English (EN)
+
+## Last Updated
+2025-11-12
