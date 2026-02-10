@@ -205,9 +205,9 @@
         {{ range $index, $microsite := .microsites }}
         <a href="{{ $microsite.url }}" target="_blank" rel="noopener noreferrer" class="group block">
           {{ if eq (mod $index 2) 0 }}
-            <!-- LEFT: Image left, Text right - offset toward right -->
-            <div class="flex flex-col lg:flex-row items-start gap-3 lg:gap-4 p-6 rounded bg-white lg:w-[94%] lg:ml-auto">
-              <div class="flex-shrink-0 w-full lg:w-[75px] lg:h-[75px] h-[75px] overflow-hidden rounded bg-gray-100 flex items-center justify-center">
+            <!-- LEFT: Image left, Text right -->
+            <div class="flex flex-row items-start gap-3 lg:gap-4 p-6 rounded bg-white lg:w-[94%] lg:ml-auto">
+              <div class="flex-shrink-0 w-[60px] h-[60px] lg:w-[75px] lg:h-[75px] overflow-hidden rounded bg-gray-100 flex items-center justify-center">
                 {{ partial "image" (dict "Src" $microsite.image "Alt" $microsite.name "Loading" "lazy" "Class" "w-full h-full object-cover" "DisplayXL" "75x75" "DisplayMD" "75x75") }}
               </div>
               <div class="flex-1">
@@ -220,8 +220,8 @@
               </div>
             </div>
           {{ else }}
-            <!-- RIGHT: Text left, Image right - offset toward left -->
-            <div class="flex flex-col lg:flex-row items-start gap-3 lg:gap-4 p-6 rounded bg-white lg:w-[94%] lg:mr-auto lg:justify-end">
+            <!-- RIGHT: Image left on mobile, reversed on desktop for zigzag -->
+            <div class="flex flex-row-reverse items-start gap-3 lg:gap-4 p-6 rounded bg-white lg:w-[94%] lg:mr-auto lg:flex-row">
               <div class="flex-1 lg:text-right">
                 <h3 class="text-[#3087b9] font-tertiary text-lg lg:text-xl font-light mb-2 group-hover:underline transition-colors">
                   {{ $microsite.name }}
@@ -230,7 +230,7 @@
                   {{ $microsite.description }}
                 </p>
               </div>
-              <div class="flex-shrink-0 w-full lg:w-[75px] lg:h-[75px] h-[75px] overflow-hidden rounded bg-gray-100 flex items-center justify-center">
+              <div class="flex-shrink-0 w-[60px] h-[60px] lg:w-[75px] lg:h-[75px] overflow-hidden rounded bg-gray-100 flex items-center justify-center">
                 {{ partial "image" (dict "Src" $microsite.image "Alt" $microsite.name "Loading" "lazy" "Class" "w-full h-full object-cover" "DisplayXL" "75x75" "DisplayMD" "75x75") }}
               </div>
             </div>
