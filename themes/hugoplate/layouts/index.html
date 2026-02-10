@@ -199,45 +199,47 @@
       </div>
     </header>
 
-    <!-- Zigzag Layout - Single column with fixed text width -->
-    <div class="max-w-3xl mx-auto space-y-10 -mx-6 px-6">
+    <!-- Zigzag Layout - Alternating left/right offset, centered under header -->
+    <div class="flex justify-center w-full">
+      <div class="max-w-7xl space-y-6 md:space-y-10 px-4 md:px-6">
       {{ range $index, $microsite := .microsites }}
       <a href="{{ $microsite.url }}" target="_blank" rel="noopener noreferrer"
          class="group block">
 
         {{ if eq (mod $index 2) 0 }}
-          <!-- LEFT: Image left, Text right (fixed width) -->
-          <div class="flex flex-col lg:flex-row items-start gap-4 lg:gap-6 p-6 rounded bg-white">
-            <div class="flex-shrink-0 w-full lg:w-[75px] lg:h-[75px] h-[75px] overflow-hidden rounded bg-gray-100 flex items-center justify-center">
+          <!-- LEFT: Image left, Text right - offset toward left -->
+          <div class="flex flex-row items-start gap-3 md:gap-6 p-4 md:p-6 rounded bg-white w-[94%] mr-[6%]">
+            <div class="flex-shrink-0 w-[60px] h-[60px] md:w-[75px] md:h-[75px] overflow-hidden rounded bg-gray-100 flex items-center justify-center">
               {{ partial "image" (dict "Src" $microsite.image "Alt" $microsite.name "Loading" "lazy" "Class" "w-full h-full object-contain" "DisplayXL" "75x75" "DisplayMD" "75x75") }}
             </div>
-            <div class="flex-1 max-w-2xl">
-              <h3 class="text-[#3087b9] font-tertiary text-lg lg:text-xl font-light mb-2 group-hover:underline transition-colors">
+            <div class="flex-1">
+              <h3 class="text-[#3087b9] font-tertiary text-base md:text-lg lg:text-xl font-light mb-2 group-hover:underline transition-colors">
                 {{ $microsite.name }}
               </h3>
-              <p class="text-[#3e4447] font-tertiary text-base tracking-wider leading-relaxed">
+              <p class="text-[#3e4447] font-tertiary text-sm md:text-base tracking-wider leading-relaxed">
                 {{ $microsite.description }}
               </p>
             </div>
           </div>
         {{ else }}
-          <!-- RIGHT: Text left (fixed width), Image right -->
-          <div class="flex flex-col lg:flex-row items-start gap-4 lg:gap-6 lg:justify-end p-6 rounded bg-white">
-            <div class="flex-1 max-w-2xl lg:text-right">
-              <h3 class="text-[#3087b9] font-tertiary text-lg lg:text-xl font-light mb-2 group-hover:underline transition-colors">
+          <!-- RIGHT: Text left, Image right - offset toward right -->
+          <div class="flex flex-row items-start gap-3 md:gap-6 lg:justify-end p-4 md:p-6 rounded bg-white w-[94%] ml-[6%]">
+            <div class="flex-1 lg:text-right">
+              <h3 class="text-[#3087b9] font-tertiary text-base md:text-lg lg:text-xl font-light mb-2 group-hover:underline transition-colors">
                 {{ $microsite.name }}
               </h3>
-              <p class="text-[#3e4447] font-tertiary text-base tracking-wider leading-relaxed">
+              <p class="text-[#3e4447] font-tertiary text-sm md:text-base tracking-wider leading-relaxed">
                 {{ $microsite.description }}
               </p>
             </div>
-            <div class="flex-shrink-0 w-full lg:w-[75px] lg:h-[75px] h-[75px] overflow-hidden rounded bg-gray-100 flex items-center justify-center">
+            <div class="flex-shrink-0 w-[60px] h-[60px] md:w-[75px] md:h-[75px] overflow-hidden rounded bg-gray-100 flex items-center justify-center order-first lg:order-last">
               {{ partial "image" (dict "Src" $microsite.image "Alt" $microsite.name "Loading" "lazy" "Class" "w-full h-full object-contain" "DisplayXL" "75x75" "DisplayMD" "75x75") }}
             </div>
           </div>
         {{ end }}
       </a>
       {{ end }}
+      </div>
     </div>
   </div>
 </section>
