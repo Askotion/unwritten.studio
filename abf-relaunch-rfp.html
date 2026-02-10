@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFP: ABF Unternehmensverbund Website Relaunch 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Unwritten Brand Colors */
+            --color-blue: #3987b8;
+            --color-black: #3e4447;
+            --color-light-gray: #f4f5f5;
+            --color-white: #ffffff;
+            --color-accent: #2c6a91;
+
+            /* Typography */
+            --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --line-height-ratio: 1.167;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 18.67px;
+            color: var(--color-black);
+            background: var(--color-white);
+        }
+
+        /* Layout */
+        .hero {
+            background: var(--color-blue);
+            color: var(--color-white);
+            padding: 120px 40px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 56px;
+            margin-bottom: 20px;
+        }
+
+        .hero .subtitle {
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: 300;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .hero .meta {
+            font-size: 14px;
+            line-height: 16.34px;
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        section:nth-child(even) {
+            background: var(--color-light-gray);
+        }
+
+        h2 {
+            font-size: 36px;
+            line-height: 42px;
+            font-weight: 700;
+            color: var(--color-blue);
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: 600;
+            color: var(--color-black);
+            margin: 40px 0 20px;
+        }
+
+        h4 {
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 600;
+            color: var(--color-blue);
+            margin: 30px 0 15px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 18.67px;
+            margin-bottom: 20px;
+        }
+
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            font-size: 16px;
+            line-height: 18.67px;
+            margin-bottom: 12px;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+
+        /* Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .card {
+            background: var(--color-white);
+            border: 1px solid #e0e0e0;
+            padding: 30px;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(57, 135, 184, 0.15);
+        }
+
+        .card h4 {
+            margin-top: 0;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: var(--color-white);
+        }
+
+        th, td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        th {
+            background: var(--color-blue);
+            color: var(--color-white);
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16.34px;
+        }
+
+        td {
+            font-size: 14px;
+            line-height: 16.34px;
+        }
+
+        tr:hover {
+            background: var(--color-light-gray);
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: var(--color-light-gray);
+            border-left: 4px solid var(--color-blue);
+            padding: 24px;
+            margin: 30px 0;
+        }
+
+        .info-box.highlight {
+            background: #e8f4f8;
+            border-left-color: var(--color-accent);
+        }
+
+        .info-box.warning {
+            background: #fff9e6;
+            border-left-color: #f39c12;
+        }
+
+        .info-box strong {
+            color: var(--color-blue);
+            font-weight: 600;
+        }
+
+        /* Status Badges */
+        .badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 16px;
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        .badge.required { background: #e74c3c; color: white; }
+        .badge.optional { background: #95a5a6; color: white; }
+        .badge.preferred { background: #3498db; color: white; }
+
+        /* Checklist */
+        .checklist {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .checklist li {
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .checklist li::before {
+            content: '☐';
+            position: absolute;
+            left: 0;
+            color: var(--color-blue);
+            font-size: 18px;
+        }
+
+        /* Quote Box */
+        .quote-box {
+            background: var(--color-white);
+            border: 2px solid var(--color-blue);
+            padding: 30px;
+            margin: 40px 0;
+            border-radius: 8px;
+        }
+
+        .quote-box h3 {
+            margin-top: 0;
+            color: var(--color-blue);
+        }
+
+        /* Timeline */
+        .timeline-simple {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 0;
+            padding: 30px;
+            background: var(--color-white);
+            border-radius: 8px;
+        }
+
+        .timeline-step {
+            text-align: center;
+            flex: 1;
+            padding: 0 15px;
+        }
+
+        .timeline-step .date {
+            font-weight: 700;
+            color: var(--color-blue);
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 10px;
+        }
+
+        .timeline-step .label {
+            font-size: 14px;
+            line-height: 16.34px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 80px 20px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+                line-height: 37.34px;
+            }
+
+            .hero .subtitle {
+                font-size: 18px;
+                line-height: 21px;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            section {
+                padding: 50px 0;
+            }
+
+            h2 {
+                font-size: 28px;
+                line-height: 32.67px;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-simple {
+                flex-direction: column;
+            }
+
+            .timeline-step {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            .hero {
+                background: var(--color-white);
+                color: var(--color-black);
+                border-bottom: 3px solid var(--color-blue);
+            }
+
+            section {
+                page-break-inside: avoid;
+            }
+
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Request for Proposal</h1>
+        <p class="subtitle">Website Relaunch ABF Unternehmensverbund</p>
+        <div class="meta">
+            Projekt-ID: ABF-WEB-2025 | Ausschreibung: Januar 2025 | Angebotsfrist: 28. Februar 2025
+        </div>
+    </div>
+
+    <!-- Executive Summary -->
+    <section>
+        <div class="container">
+            <h2>1. Über diese Ausschreibung</h2>
+
+            <div class="info-box highlight">
+                <p><strong>Sehr geehrte Agentur,</strong></p>
+                <p>der ABF Unternehmensverbund sucht einen kompetenten Partner für den umfassenden Relaunch unserer Unternehmenswebsite. Wir möchten unsere digitale Präsenz modernisieren und unsere vier Zielgruppen – Patienten, Fachkreise, Bewerber und Geschäftspartner – optimal ansprechen.</p>
+                <p style="margin-bottom: 0;"><strong>Diese RFP enthält alle Informationen, die Sie für die Erstellung eines qualifizierten Angebots benötigen.</strong></p>
+            </div>
+
+            <h3>Projekt-Eckdaten</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Auftraggeber</strong></td>
+                        <td>ABF Unternehmensverbund, Fürth (Metropolregion Nürnberg)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Projektart</strong></td>
+                        <td>Kompletter Website-Relaunch mit Design-System, Development & CMS</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gewünschter Go-Live</strong></td>
+                        <td>Q2 2025 (Juni 2025)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Budget-Rahmen</strong></td>
+                        <td>€80.000 - €160.000 (je nach Leistungsumfang)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Angebotsfrist</strong></td>
+                        <td>28. Februar 2025, 17:00 Uhr</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Projektdauer</strong></td>
+                        <td>ca. 17 Wochen (März - Juni 2025)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Präferierte Tech-Stack</strong></td>
+                        <td>Next.js 14+, React, TypeScript, Headless CMS (Sanity bevorzugt)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Timeline der Ausschreibung</h3>
+
+            <div class="timeline-simple">
+                <div class="timeline-step">
+                    <div class="date">05.02.2025</div>
+                    <div class="label">RFP veröffentlicht</div>
+                </div>
+                <div class="timeline-step">
+                    <div class="date">14.02.2025</div>
+                    <div class="label">Fragen-Deadline</div>
+                </div>
+                <div class="timeline-step">
+                    <div class="date">28.02.2025</div>
+                    <div class="label">Angebots-Deadline</div>
+                </div>
+                <div class="timeline-step">
+                    <div class="date">10.03.2025</div>
+                    <div class="label">Agentur-Pitches</div>
+                </div>
+                <div class="timeline-step">
+                    <div class="date">17.03.2025</div>
+                    <div class="label">Beauftragung</div>
+                </div>
+                <div class="timeline-step">
+                    <div class="date">24.03.2025</div>
+                    <div class="label">Projekt-Kickoff</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Background -->
+    <section>
+        <div class="container">
+            <h2>2. Über ABF Unternehmensverbund</h2>
+
+            <h3>Unternehmensprofil</h3>
+            <p>Der ABF Unternehmensverbund ist ein familiengeführtes pharmazeutisches Unternehmen mit über 45 Jahren Erfahrung in der Versorgung von Patienten. Wir verstehen uns als pharmazeutischer Rundumversorger mit Fokus auf spezialisierte Therapiebereiche.</p>
+
+            <h4>Kernwerte</h4>
+            <ul>
+                <li><strong>Vertrauen verpflichtet</strong> – Familiäre Unternehmensführung seit über 45 Jahren</li>
+                <li><strong>Patientenzentrierung</strong> – Individualisierte pharmazeutische Versorgung</li>
+                <li><strong>Regionale Verwurzelung</strong> – Standort in der Metropolregion Nürnberg</li>
+                <li><strong>Nachhaltigkeit</strong> – Vier Säulen: Ökologie, Soziales, Ökonomie, Governance</li>
+            </ul>
+
+            <h3>Unternehmensbereiche</h3>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h4>ABF-Apotheke</h4>
+                    <p>Retail-Apotheke mit digitalen Services, Medikamentenbestellung und spezialisierte Beratung für Patienten</p>
+                </div>
+                <div class="card">
+                    <h4>ABF-Pharmazie</h4>
+                    <p>GMP-konforme Herstellung, Lohnproduktion, Zytostatika-Herstellung und individuelle pharmazeutische Lösungen</p>
+                </div>
+                <div class="card">
+                    <h4>ABF-Synergie</h4>
+                    <p>Shared Services und administrative Dienstleistungen für alle Unternehmensbereiche</p>
+                </div>
+                <div class="card">
+                    <h4>ABF-Campus</h4>
+                    <p>Fort- und Weiterbildung für Ärzte und medizinisches Fachpersonal (Onkologie, Ophthalmologie, etc.)</p>
+                </div>
+            </div>
+
+            <h3>Zielgruppen</h3>
+
+            <ol>
+                <li><strong>Patienten (B2C):</strong> Chronisch kranke Patienten mit spezialisiertem Therapiebedarf (Onkologie, Hämatologie, MS, etc.)</li>
+                <li><strong>Fachkreise (B2B):</strong> Ärzte, Apotheker und medizinisches Personal mit Bedarf an Fachinformationen, Bestellportalen und Fortbildungen</li>
+                <li><strong>Bewerber:</strong> Potenzielle Mitarbeiter, insbesondere PTAs, Pharmazeuten und medizinisches Fachpersonal</li>
+                <li><strong>Geschäftspartner/Investoren:</strong> Business Development, Unternehmenskommunikation, Nachhaltigkeitsreporting</li>
+            </ol>
+
+            <h3>Aktuelle Website</h3>
+            <p><strong>URL:</strong> <a href="http://a-b-f.de" style="color: var(--color-blue);">http://a-b-f.de</a></p>
+            <p>Die aktuelle Website ist funktional, aber nicht mehr zeitgemäß. Hauptprobleme:</p>
+            <ul>
+                <li>Veraltetes Design und Technologie</li>
+                <li>Suboptimale Performance (hohe JavaScript-Last)</li>
+                <li>Fehlende SEO-Optimierung (keine Alt-Texte, Social-Media-Tags)</li>
+                <li>Nicht optimal für Multi-Audience-Ansprache</li>
+                <li>Mobile-Optimierung verbesserungswürdig</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Project Scope -->
+    <section>
+        <div class="container">
+            <h2>3. Projektumfang & Anforderungen</h2>
+
+            <h3>3.1 Leistungsumfang</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Leistung</th>
+                        <th>Status</th>
+                        <th>Beschreibung</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Strategische Beratung & Konzeption</td>
+                        <td><span class="badge required">REQUIRED</span></td>
+                        <td>Informationsarchitektur, User Journeys, Content-Strategie</td>
+                    </tr>
+                    <tr>
+                        <td>UX/UI Design</td>
+                        <td><span class="badge required">REQUIRED</span></td>
+                        <td>Wireframes, Design-System, High-Fidelity-Designs, Prototyping</td>
+                    </tr>
+                    <tr>
+                        <td>Frontend Development</td>
+                        <td><span class="badge required">REQUIRED</span></td>
+                        <td>Next.js 14+, React, TypeScript, Responsive, Performance-optimiert</td>
+                    </tr>
+                    <tr>
+                        <td>Headless CMS Integration</td>
+                        <td><span class="badge required">REQUIRED</span></td>
+                        <td>Sanity (bevorzugt) oder vergleichbar, Content-Modeling, Editor-Training</td>
+                    </tr>
+                    <tr>
+                        <td>SEO-Optimierung</td>
+                        <td><span class="badge required">REQUIRED</span></td>
+                        <td>On-Page-SEO, Schema.org, Meta-Tags, Sitemap, Performance</td>
+                    </tr>
+                    <tr>
+                        <td>Content-Migration</td>
+                        <td><span class="badge preferred">PREFERRED</span></td>
+                        <td>Migration wichtigster Inhalte von alter Website (ca. 50-80 Seiten)</td>
+                    </tr>
+                    <tr>
+                        <td>Accessibility (WCAG 2.1 AA)</td>
+                        <td><span class="badge required">REQUIRED</span></td>
+                        <td>Barrierefreie Umsetzung, Audit, Testing</td>
+                    </tr>
+                    <tr>
+                        <td>Testing & QA</td>
+                        <td><span class="badge required">REQUIRED</span></td>
+                        <td>Cross-Browser, Devices, Performance, Accessibility, Security</td>
+                    </tr>
+                    <tr>
+                        <td>Redaktionsschulung</td>
+                        <td><span class="badge required">REQUIRED</span></td>
+                        <td>CMS-Training für internes Team (2-3 Personen)</td>
+                    </tr>
+                    <tr>
+                        <td>Dokumentation</td>
+                        <td><span class="badge required">REQUIRED</span></td>
+                        <td>Design-System-Docs, Technical Docs, Content-Guidelines</td>
+                    </tr>
+                    <tr>
+                        <td>Go-Live Support</td>
+                        <td><span class="badge required">REQUIRED</span></td>
+                        <td>Deployment, Launch-Support, 2 Monate Post-Launch-Support</td>
+                    </tr>
+                    <tr>
+                        <td>Analytics-Integration</td>
+                        <td><span class="badge optional">OPTIONAL</span></td>
+                        <td>Matomo oder Plausible (DSGVO-konform)</td>
+                    </tr>
+                    <tr>
+                        <td>Portal-Integrationen</td>
+                        <td><span class="badge optional">OPTIONAL</span></td>
+                        <td>Integration bestehender Bestellportale (Login-Bereiche)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3.2 Technische Anforderungen</h3>
+
+            <h4>Must-Have (verpflichtend):</h4>
+            <ul>
+                <li><strong>Frontend:</strong> Next.js 14+ (App Router), React 18+, TypeScript</li>
+                <li><strong>Styling:</strong> Tailwind CSS oder CSS-in-JS (styled-components, Emotion)</li>
+                <li><strong>CMS:</strong> Headless CMS (Sanity bevorzugt, alternativ: Contentful, Strapi)</li>
+                <li><strong>Hosting:</strong> Vercel, Netlify oder vergleichbare Edge-Plattform</li>
+                <li><strong>Performance:</strong> Lighthouse Score 95+, LCP &lt; 2.5s, CLS &lt; 0.1</li>
+                <li><strong>SEO:</strong> Server-Side Rendering, dynamische Sitemaps, Schema.org Markup</li>
+                <li><strong>Accessibility:</strong> WCAG 2.1 Level AA konform</li>
+                <li><strong>Responsive:</strong> Mobile-First, optimiert für alle Geräte</li>
+            </ul>
+
+            <h4>Nice-to-Have (optional):</h4>
+            <ul>
+                <li>Storybook für Komponenten-Dokumentation</li>
+                <li>E2E-Testing mit Playwright oder Cypress</li>
+                <li>CI/CD mit GitHub Actions</li>
+                <li>Monorepo-Setup (Turborepo/NX) für skalierbare Architektur</li>
+            </ul>
+
+            <h3>3.3 Design-Anforderungen</h3>
+
+            <div class="info-box">
+                <strong>Unwritten Studio Styleguide:</strong>
+                <p>Die Website soll basierend auf dem Unwritten Studio Styleguide gestaltet werden:</p>
+                <ul style="margin-bottom: 0;">
+                    <li><strong>Primärfarbe:</strong> Blue #3987b8 (PANTONE 281C)</li>
+                    <li><strong>Sekundärfarben:</strong> Schwarz #3e4447, Hellgrau #f4f5f5</li>
+                    <li><strong>Typografie:</strong> Plus Jakarta Sans (Light 300)</li>
+                    <li><strong>Bildsprache:</strong> Blau-Schwarz, Origami-Stil, Glaskugel als Metapher</li>
+                    <li><strong>Branding:</strong> Einheitliche Corporate Identity über alle Bereiche</li>
+                </ul>
+            </div>
+
+            <p><strong>Der vollständige Styleguide wird nach Beauftragung bereitgestellt.</strong></p>
+
+            <h4>Design-Deliverables:</h4>
+            <ul>
+                <li>Informationsarchitektur & Sitemap</li>
+                <li>User Flows für alle 4 Personas</li>
+                <li>Low-Fidelity Wireframes (Startseite + 5-8 Template-Typen)</li>
+                <li>Design-System in Figma (Colors, Typography, Components, Spacing)</li>
+                <li>High-Fidelity Designs (Desktop + Mobile):
+                    <ul>
+                        <li>Startseite</li>
+                        <li>Über ABF</li>
+                        <li>Division-Seite (Template)</li>
+                        <li>Therapiebereich-Seite (Template)</li>
+                        <li>Karriere-Seite</li>
+                        <li>News-Übersicht & Detail</li>
+                        <li>Kontaktformular</li>
+                    </ul>
+                </li>
+                <li>Interaktiver Prototyp (Figma/Adobe XD)</li>
+                <li>Design-System-Dokumentation</li>
+            </ul>
+
+            <h3>3.4 Content-Scope</h3>
+
+            <h4>Primäre Seitenstruktur (MVP für Launch):</h4>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bereich</th>
+                        <th>Anzahl Seiten</th>
+                        <th>Bemerkung</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Startseite</td>
+                        <td>1</td>
+                        <td>Hub mit Audience-Segmentierung</td>
+                    </tr>
+                    <tr>
+                        <td>Über ABF</td>
+                        <td>5-7</td>
+                        <td>Unternehmen, Geschichte, Nachhaltigkeit, Standort, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Unternehmensbereiche</td>
+                        <td>4</td>
+                        <td>Apotheke, Pharmazie, Synergie, Campus</td>
+                    </tr>
+                    <tr>
+                        <td>Therapiebereiche</td>
+                        <td>10-15</td>
+                        <td>Onkologie, Ophthalmologie, Hämatologie, MS, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Karriere</td>
+                        <td>5-8</td>
+                        <td>Stellenangebote, Benefits, Bewerbung, Team</td>
+                    </tr>
+                    <tr>
+                        <td>News/Aktuelles</td>
+                        <td>15-20</td>
+                        <td>Aktuelle Meldungen (älter als 12 Monate optional)</td>
+                    </tr>
+                    <tr>
+                        <td>Service-Seiten</td>
+                        <td>8-12</td>
+                        <td>Bestellung, Beratung, Portale, Kontakt, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Rechtliches</td>
+                        <td>3</td>
+                        <td>Impressum, Datenschutz, AGB</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr style="font-weight: bold;">
+                        <td>Gesamt (ca.)</td>
+                        <td>50-70 Seiten</td>
+                        <td>MVP-Scope für Q2 2025 Launch</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <div class="info-box warning">
+                <strong>Content-Migration:</strong> Die Migration und Aufbereitung der Inhalte kann entweder durch die Agentur erfolgen (bevorzugt) oder intern durch ABF-Team. Bitte beide Varianten im Angebot ausweisen.
+            </div>
+        </div>
+    </section>
+
+    <!-- Proposal Requirements -->
+    <section>
+        <div class="container">
+            <h2>4. Anforderungen an Ihr Angebot</h2>
+
+            <h3>4.1 Formale Anforderungen</h3>
+
+            <div class="info-box">
+                <p><strong>Bitte reichen Sie Ihr Angebot bis spätestens 28. Februar 2025, 17:00 Uhr ein.</strong></p>
+                <p><strong>Einreichung per E-Mail an:</strong> [E-Mail-Adresse hier einfügen]</p>
+                <p><strong>Format:</strong> PDF (max. 20 MB), Dateiname: "ABF-RFP-2025_[Agenturname].pdf"</p>
+            </div>
+
+            <h3>4.2 Pflichtinhalte Ihres Angebots</h3>
+
+            <ul class="checklist">
+                <li><strong>Executive Summary</strong> (max. 1 Seite) – Zusammenfassung Ihres Ansatzes</li>
+                <li><strong>Agenturprofil</strong> (2-3 Seiten) – Team, Expertise, Referenzen</li>
+                <li><strong>Projektverständnis</strong> (2-3 Seiten) – Wie verstehen Sie die Aufgabe?</li>
+                <li><strong>Lösungsansatz</strong> (4-6 Seiten) – Konzeptioneller und technischer Ansatz</li>
+                <li><strong>Vorgeschlagener Tech-Stack</strong> (1-2 Seiten) – Begründung der Technologie-Wahl</li>
+                <li><strong>Projektplan & Timeline</strong> (2-3 Seiten) – Phasen, Meilensteine, Abhängigkeiten</li>
+                <li><strong>Team-Zusammensetzung</strong> (1-2 Seiten) – Rollen, Personen, Kapazitäten</li>
+                <li><strong>Referenzen</strong> (2-4 Seiten) – Min. 3 vergleichbare Projekte (Next.js, Healthcare/B2B)</li>
+                <li><strong>Preismodell & Kostenaufstellung</strong> (2-3 Seiten) – Detaillierte Kalkulation</li>
+                <li><strong>AGB & Vertragliches</strong> (1 Seite) – Zahlungsbedingungen, Haftung, IP-Rechte</li>
+            </ul>
+
+            <h3>4.3 Optionale Inhalte (Bonus-Punkte)</h3>
+
+            <ul>
+                <li>Initiale Design-Ideen oder Mood-Boards</li>
+                <li>Technische Proof-of-Concept (z.B. Performance-Benchmark)</li>
+                <li>Vorschlag für Nachhaltigkeits-Features (Green Hosting, CO2-Tracking)</li>
+                <li>Ideen für Personalisierung oder KI-Integration</li>
+                <li>Post-Launch-Optimierung & Wartungskonzept</li>
+            </ul>
+
+            <h3>4.4 Bewertungskriterien</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kriterium</th>
+                        <th>Gewichtung</th>
+                        <th>Beschreibung</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Konzeptionelle Qualität</td>
+                        <td>25%</td>
+                        <td>Lösungsansatz, Kreativität, UX-Denken</td>
+                    </tr>
+                    <tr>
+                        <td>Technische Kompetenz</td>
+                        <td>25%</td>
+                        <td>Next.js-Expertise, Performance, Skalierbarkeit</td>
+                    </tr>
+                    <tr>
+                        <td>Referenzen & Track Record</td>
+                        <td>15%</td>
+                        <td>Vergleichbare Projekte, Kundenzufriedenheit</td>
+                    </tr>
+                    <tr>
+                        <td>Team & Ressourcen</td>
+                        <td>10%</td>
+                        <td>Qualifikationen, Verfügbarkeit, Kommunikation</td>
+                    </tr>
+                    <tr>
+                        <td>Projektplan & Methodik</td>
+                        <td>10%</td>
+                        <td>Realistische Timeline, agile Methoden, Risikomanagement</td>
+                    </tr>
+                    <tr>
+                        <td>Preis-Leistungs-Verhältnis</td>
+                        <td>15%</td>
+                        <td>Transparenz, Fairness, Gesamtkosten</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr style="font-weight: bold;">
+                        <td>Gesamt</td>
+                        <td>100%</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </section>
+
+    <!-- Technical Requirements Deep Dive -->
+    <section>
+        <div class="container">
+            <h2>5. Detaillierte technische Spezifikationen</h2>
+
+            <h3>5.1 Frontend-Requirements</h3>
+
+            <h4>Framework & Libraries:</h4>
+            <ul>
+                <li><strong>Next.js 14+</strong> mit App Router (nicht Pages Router)</li>
+                <li><strong>React 18+</strong> mit Server Components</li>
+                <li><strong>TypeScript</strong> (strict mode)</li>
+                <li><strong>Styling:</strong> Tailwind CSS (bevorzugt) oder CSS-in-JS</li>
+                <li><strong>State Management:</strong> React Context, Zustand oder Redux (falls nötig)</li>
+                <li><strong>Forms:</strong> React Hook Form + Zod/Yup Validation</li>
+            </ul>
+
+            <h4>Performance-Anforderungen:</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Metrik</th>
+                        <th>Zielwert</th>
+                        <th>Messung</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lighthouse Score</td>
+                        <td>95+</td>
+                        <td>PageSpeed Insights (Desktop & Mobile)</td>
+                    </tr>
+                    <tr>
+                        <td>LCP (Largest Contentful Paint)</td>
+                        <td>&lt; 2.5s</td>
+                        <td>Core Web Vitals</td>
+                    </tr>
+                    <tr>
+                        <td>FID (First Input Delay)</td>
+                        <td>&lt; 100ms</td>
+                        <td>Core Web Vitals</td>
+                    </tr>
+                    <tr>
+                        <td>CLS (Cumulative Layout Shift)</td>
+                        <td>&lt; 0.1</td>
+                        <td>Core Web Vitals</td>
+                    </tr>
+                    <tr>
+                        <td>TTFB (Time to First Byte)</td>
+                        <td>&lt; 600ms</td>
+                        <td>WebPageTest</td>
+                    </tr>
+                    <tr>
+                        <td>Bundle Size (Initial)</td>
+                        <td>&lt; 200 KB</td>
+                        <td>Webpack Bundle Analyzer</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>5.2 CMS-Requirements</h3>
+
+            <h4>Präferierte Lösung: Sanity.io</h4>
+            <ul>
+                <li>Strukturiertes Content-Modeling (Schemas für alle Content-Types)</li>
+                <li>GROQ-Queries für flexible Content-Abfrage</li>
+                <li>Preview-Funktion (Draft-Mode in Next.js)</li>
+                <li>Asset-Management (Bilder, PDFs, Videos)</li>
+                <li>Versionierung & Content-Historie</li>
+                <li>Mehrsprachigkeit-Vorbereitung (auch wenn initial nur DE)</li>
+                <li>Custom Workflows (Optional: Approval-Prozesse)</li>
+            </ul>
+
+            <h4>Alternative CMS (falls begründet):</h4>
+            <ul>
+                <li>Contentful</li>
+                <li>Strapi (selbst gehostet)</li>
+                <li>Payload CMS</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>Wichtig:</strong> Das CMS muss redakteurfreundlich sein. Technische Kenntnisse des Content-Teams sind begrenzt. Intuitives UI ist entscheidend.
+            </div>
+
+            <h3>5.3 SEO & Accessibility</h3>
+
+            <h4>SEO-Features (verpflichtend):</h4>
+            <ul>
+                <li>Server-Side Rendering (SSR) oder Static Site Generation (SSG) wo möglich</li>
+                <li>Dynamische Meta-Tags (Title, Description) pro Seite via CMS</li>
+                <li>Open Graph & Twitter Cards für alle Seiten</li>
+                <li>Schema.org Markup:
+                    <ul>
+                        <li>Organization</li>
+                        <li>LocalBusiness</li>
+                        <li>BreadcrumbList</li>
+                        <li>Service/Product (für Therapiebereiche)</li>
+                        <li>JobPosting (für Karriere-Seiten)</li>
+                    </ul>
+                </li>
+                <li>XML-Sitemap (automatisch generiert)</li>
+                <li>Robots.txt</li>
+                <li>Canonical URLs</li>
+                <li>Alt-Texte (Pflichtfeld im CMS)</li>
+                <li>Semantisches HTML (korrekte Heading-Hierarchie)</li>
+            </ul>
+
+            <h4>Accessibility-Features (WCAG 2.1 AA):</h4>
+            <ul>
+                <li>Keyboard-Navigation für alle Interaktionen</li>
+                <li>Screen-Reader-Optimierung (ARIA-Labels wo nötig)</li>
+                <li>Farbkontraste min. 4.5:1 (Text) und 3:1 (UI-Elemente)</li>
+                <li>Touch-Targets min. 44x44px</li>
+                <li>Focus-Indikatoren für alle interaktiven Elemente</li>
+                <li>Skip-Links für Navigation</li>
+                <li>Responsive Text-Sizing (kein fixed px)</li>
+                <li>Accessibility-Testing mit axe DevTools oder WAVE</li>
+            </ul>
+
+            <h3>5.4 Hosting & Infrastructure</h3>
+
+            <h4>Anforderungen:</h4>
+            <ul>
+                <li><strong>Edge-Network:</strong> CDN für schnelle weltweite Auslieferung</li>
+                <li><strong>SSL/TLS:</strong> HTTPS (A+ Rating bei SSL Labs)</li>
+                <li><strong>Uptime:</strong> 99.9% SLA</li>
+                <li><strong>Backups:</strong> Automatisch, täglich</li>
+                <li><strong>Monitoring:</strong> Uptime-Monitoring, Error-Tracking (z.B. Sentry)</li>
+                <li><strong>Environments:</strong> Production, Staging, Preview</li>
+                <li><strong>CI/CD:</strong> Automatisches Deployment bei Git-Push</li>
+            </ul>
+
+            <h4>Bevorzugte Plattformen:</h4>
+            <ul>
+                <li>Vercel (bevorzugt für Next.js)</li>
+                <li>Netlify</li>
+                <li>Cloudflare Pages</li>
+            </ul>
+
+            <h3>5.5 Security & Compliance</h3>
+
+            <ul>
+                <li><strong>DSGVO-Compliance:</strong> Cookie-Banner, Datenschutz-Seite, Impressum</li>
+                <li><strong>Security Headers:</strong> CSP, X-Frame-Options, etc.</li>
+                <li><strong>Form-Security:</strong> CSRF-Protection, Rate-Limiting, Captcha (bei Bedarf)</li>
+                <li><strong>Dependency-Scanning:</strong> Automatische Checks auf vulnerable Packages</li>
+                <li><strong>Code-Signing:</strong> Nur signierte Commits (optional)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Project Management -->
+    <section>
+        <div class="container">
+            <h2>6. Projektmanagement & Kommunikation</h2>
+
+            <h3>6.1 Projektmethodik</h3>
+
+            <div class="info-box">
+                <strong>Wir bevorzugen agile Projektmethoden mit iterativen Sprints und regelmäßigen Reviews.</strong>
+            </div>
+
+            <h4>Erwartete Methodik:</h4>
+            <ul>
+                <li><strong>Sprints:</strong> 2-Wochen-Sprints mit Sprint Planning, Daily Standups (optional), Sprint Review, Retrospektive</li>
+                <li><strong>Kommunikation:</strong> Slack/Teams für tägliche Kommunikation, wöchentliche Status-Calls</li>
+                <li><strong>Tools:</strong> Jira, Asana, Linear oder vergleichbar für Task-Management</li>
+                <li><strong>Versionskontrolle:</strong> Git (GitHub, GitLab oder Bitbucket)</li>
+                <li><strong>Design-Collaboration:</strong> Figma (bevorzugt) oder Adobe XD</li>
+            </ul>
+
+            <h3>6.2 Stakeholder & Entscheidungswege</h3>
+
+            <h4>ABF-seitige Ansprechpartner:</h4>
+            <ul>
+                <li><strong>Projekt-Owner:</strong> Geschäftsführung (finale Freigaben)</li>
+                <li><strong>Projekt-Manager:</strong> Interne Koordination (täglicher Kontakt)</li>
+                <li><strong>Fachliche Ansprechpartner:</strong> Vertreter aus allen 4 Divisions</li>
+                <li><strong>Content-Team:</strong> 2-3 Personen für Content-Erstellung und -Pflege</li>
+            </ul>
+
+            <h4>Freigabeprozesse:</h4>
+            <ul>
+                <li><strong>Design-Freigaben:</strong> Wireframes → Design-System → Designs (pro Template-Typ)</li>
+                <li><strong>Content-Freigaben:</strong> Pro Bereich (Über ABF, Divisions, etc.)</li>
+                <li><strong>Development-Freigaben:</strong> Pro Sprint (funktionale Increments)</li>
+                <li><strong>Go-Live-Freigabe:</strong> Nach finaler QA und Abnahme</li>
+            </ul>
+
+            <h3>6.3 Meetings & Reporting</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Meeting-Typ</th>
+                        <th>Frequenz</th>
+                        <th>Teilnehmer</th>
+                        <th>Dauer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kickoff-Workshop</td>
+                        <td>1x (Projektstart)</td>
+                        <td>Alle Stakeholder</td>
+                        <td>4-6 Stunden</td>
+                    </tr>
+                    <tr>
+                        <td>Sprint Planning</td>
+                        <td>Alle 2 Wochen</td>
+                        <td>PM, Tech Lead, Designer</td>
+                        <td>1-2 Stunden</td>
+                    </tr>
+                    <tr>
+                        <td>Weekly Status Call</td>
+                        <td>Wöchentlich</td>
+                        <td>PM, Agentur-Lead</td>
+                        <td>30-60 Min</td>
+                    </tr>
+                    <tr>
+                        <td>Sprint Review</td>
+                        <td>Alle 2 Wochen</td>
+                        <td>Stakeholder, Team</td>
+                        <td>1 Stunde</td>
+                    </tr>
+                    <tr>
+                        <td>Design-Reviews</td>
+                        <td>Nach Bedarf (3-5x)</td>
+                        <td>Design-Stakeholder</td>
+                        <td>1-2 Stunden</td>
+                    </tr>
+                    <tr>
+                        <td>Go-Live-Meeting</td>
+                        <td>1x (vor Launch)</td>
+                        <td>Alle Stakeholder</td>
+                        <td>2 Stunden</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>Reporting-Anforderungen:</h4>
+            <ul>
+                <li><strong>Wöchentlich:</strong> Status-Update per E-Mail (Fortschritt, Risiken, nächste Schritte)</li>
+                <li><strong>Nach Sprint:</strong> Sprint-Report (Completed Tasks, Burndown, Velocity)</li>
+                <li><strong>Monatlich:</strong> Projekt-Report (Budget, Timeline, Milestones)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Budget & Pricing -->
+    <section>
+        <div class="container">
+            <h2>7. Budget & Preismodell</h2>
+
+            <h3>7.1 Budget-Rahmen</h3>
+
+            <div class="info-box highlight">
+                <p><strong>Geplantes Budget:</strong> €80.000 - €160.000</p>
+                <p>Das Budget variiert je nach Leistungsumfang (z.B. mit/ohne Content-Migration, Portal-Integrationen, etc.)</p>
+            </div>
+
+            <h3>7.2 Anforderungen an Ihre Kostenkalkulation</h3>
+
+            <h4>Bitte gliedern Sie Ihr Angebot wie folgt:</h4>
+
+            <div class="quote-box">
+                <h3>Kostenaufstellung (Muster)</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Leistungsbereich</th>
+                            <th>Personentage</th>
+                            <th>Tagessatz</th>
+                            <th>Summe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Konzeption & Strategie</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 30px;">Strategische Beratung</td>
+                            <td>5 PT</td>
+                            <td>€XXX</td>
+                            <td>€XXX</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 30px;">Informationsarchitektur</td>
+                            <td>3 PT</td>
+                            <td>€XXX</td>
+                            <td>€XXX</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 30px;">User Research & Personas</td>
+                            <td>4 PT</td>
+                            <td>€XXX</td>
+                            <td>€XXX</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Zwischensumme Konzeption</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong>€XXX</strong></td>
+                        </tr>
+                        <tr style="background: var(--color-light-gray);">
+                            <td colspan="4"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. UX/UI Design</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 30px;">Wireframes</td>
+                            <td>8 PT</td>
+                            <td>€XXX</td>
+                            <td>€XXX</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 30px;">Design-System</td>
+                            <td>10 PT</td>
+                            <td>€XXX</td>
+                            <td>€XXX</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 30px;">High-Fidelity Designs</td>
+                            <td>20 PT</td>
+                            <td>€XXX</td>
+                            <td>€XXX</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 30px;">Prototyping</td>
+                            <td>5 PT</td>
+                            <td>€XXX</td>
+                            <td>€XXX</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Zwischensumme Design</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong>€XXX</strong></td>
+                        </tr>
+                        <tr style="background: var(--color-light-gray);">
+                            <td colspan="4"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Frontend Development</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 30px;">Setup & Architektur</td>
+                            <td>8 PT</td>
+                            <td>€XXX</td>
+                            <td>€XXX</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 30px;">Komponenten-Entwicklung</td>
+                            <td>25 PT</td>
+                            <td>€XXX</td>
+                            <td>€XXX</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 30px;">Seiten-Templates</td>
+                            <td>20 PT</td>
+                            <td>€XXX</td>
+                            <td>€XXX</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 30px;">Responsive-Optimierung</td>
+                            <td>10 PT</td>
+                            <td>€XXX</td>
+                            <td>€XXX</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Zwischensumme Frontend</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong>€XXX</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p style="margin-top: 20px; font-size: 14px; line-height: 16.34px;"><em>... weitere Bereiche analog (CMS, Testing, Projektmanagement, etc.)</em></p>
+            </div>
+
+            <h4>Pflichtangaben in der Kostenkalkulation:</h4>
+            <ul>
+                <li>Aufschlüsselung nach Leistungsbereichen (siehe Muster)</li>
+                <li>Personentage pro Leistungsbereich</li>
+                <li>Tagessätze nach Rollen (Senior Dev, Junior Dev, Designer, PM, etc.)</li>
+                <li>Optionale Leistungen separat ausgewiesen</li>
+                <li>Lizenzen, Tools, Infrastruktur (falls relevant)</li>
+                <li>Zahlungsmeilensteine (z.B. 30% bei Kickoff, 40% nach Design, 30% nach Go-Live)</li>
+            </ul>
+
+            <h3>7.3 Nicht im Budget enthalten (ABF-seitig):</h3>
+            <ul>
+                <li>Domain-Kosten</li>
+                <li>Laufende Hosting-Kosten (nach Go-Live)</li>
+                <li>CMS-Lizenzen (falls kostenpflichtig)</li>
+                <li>Fotografie/Videoproduktion (falls neue Medien benötigt)</li>
+                <li>Copywriting (Content wird intern erstellt oder migriert)</li>
+            </ul>
+
+            <h3>7.4 Wartung & Support (Post-Launch)</h3>
+
+            <div class="info-box">
+                <p><strong>Bitte bieten Sie optional an:</strong></p>
+                <ul style="margin-bottom: 0;">
+                    <li>2 Monate Post-Launch-Support (im Hauptangebot enthalten)</li>
+                    <li>Wartungsvertrag ab Monat 3 (optional, separate Kalkulation):
+                        <ul>
+                            <li>Bronze: Bug-Fixes (SLA 48h)</li>
+                            <li>Silber: Bug-Fixes + kleine Änderungen (SLA 24h)</li>
+                            <li>Gold: Bug-Fixes + Änderungen + Optimierungen + 1 Entwicklertag/Monat</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evaluation & Selection -->
+    <section>
+        <div class="container">
+            <h2>8. Auswahlprozess & Timeline</h2>
+
+            <h3>8.1 Auswahlkriterien (Recap)</h3>
+
+            <ol>
+                <li><strong>Konzeptionelle Qualität (25%):</strong> Wie überzeugend ist Ihr Lösungsansatz?</li>
+                <li><strong>Technische Kompetenz (25%):</strong> Expertise in Next.js, Performance, Skalierbarkeit</li>
+                <li><strong>Referenzen (15%):</strong> Vergleichbare Projekte (Healthcare, B2B, Multi-Audience)</li>
+                <li><strong>Team (10%):</strong> Qualifikationen, Verfügbarkeit, Cultural Fit</li>
+                <li><strong>Projektplan (10%):</strong> Realistische Timeline, Risikomanagement</li>
+                <li><strong>Preis-Leistung (15%):</strong> Transparenz, Fairness, Gesamtkosten</li>
+            </ol>
+
+            <h3>8.2 Auswahlprozess</h3>
+
+            <div class="timeline-simple">
+                <div class="timeline-step">
+                    <div class="date">05.02.2025</div>
+                    <div class="label">RFP veröffentlicht</div>
+                </div>
+                <div class="timeline-step">
+                    <div class="date">14.02.2025</div>
+                    <div class="label">Fragen-Deadline<br>(per E-Mail)</div>
+                </div>
+                <div class="timeline-step">
+                    <div class="date">17.02.2025</div>
+                    <div class="label">Antworten auf Fragen<br>(per E-Mail an alle)</div>
+                </div>
+                <div class="timeline-step">
+                    <div class="date">28.02.2025</div>
+                    <div class="label">Angebots-Deadline<br>(17:00 Uhr)</div>
+                </div>
+                <div class="timeline-step">
+                    <div class="date">05.03.2025</div>
+                    <div class="label">Shortlist<br>(3-5 Agenturen)</div>
+                </div>
+                <div class="timeline-step">
+                    <div class="date">10-12.03.2025</div>
+                    <div class="label">Agentur-Pitches<br>(je 90 Min)</div>
+                </div>
+                <div class="timeline-step">
+                    <div class="date">17.03.2025</div>
+                    <div class="label">Beauftragung</div>
+                </div>
+                <div class="timeline-step">
+                    <div class="date">24.03.2025</div>
+                    <div class="label">Kickoff</div>
+                </div>
+            </div>
+
+            <h3>8.3 Pitch-Format (Shortlist-Agenturen)</h3>
+
+            <div class="info-box">
+                <p><strong>Falls Sie in die Shortlist kommen, erwarten wir:</strong></p>
+                <ul style="margin-bottom: 0;">
+                    <li><strong>Dauer:</strong> 90 Minuten (60 Min Präsentation + 30 Min Q&A)</li>
+                    <li><strong>Ort:</strong> ABF-Standort Fürth oder Remote (Teams/Zoom)</li>
+                    <li><strong>Teilnehmer (Agentur-seitig):</strong> Account Lead, Tech Lead, Creative Lead</li>
+                    <li><strong>Teilnehmer (ABF-seitig):</strong> Geschäftsführung, PM, Division-Vertreter</li>
+                    <li><strong>Inhalte:</strong>
+                        <ul>
+                            <li>Vorstellung Team & Agentur (10 Min)</li>
+                            <li>Lösungsansatz & Konzept (25 Min)</li>
+                            <li>Design-Ideen (Mood-Board) (10 Min)</li>
+                            <li>Technischer Ansatz (10 Min)</li>
+                            <li>Projektplan & Timeline (5 Min)</li>
+                            <li>Q&A (30 Min)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <h3>8.4 Entscheidungskriterien für Pitch</h3>
+
+            <ul>
+                <li>Überzeugungskraft der Präsentation</li>
+                <li>Cultural Fit & Chemie mit ABF-Team</li>
+                <li>Qualität der Design-Ideen</li>
+                <li>Klarheit der technischen Argumentation</li>
+                <li>Realismus des Projektplans</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Questions & Contact -->
+    <section>
+        <div class="container">
+            <h2>9. Fragen & Kontakt</h2>
+
+            <h3>9.1 Fragen zur Ausschreibung</h3>
+
+            <div class="info-box warning">
+                <p><strong>Fragen-Deadline: 14. Februar 2025, 17:00 Uhr</strong></p>
+                <p>Bitte senden Sie alle Fragen per E-Mail an: <strong>[E-Mail-Adresse hier einfügen]</strong></p>
+                <p>Alle Fragen und Antworten werden am 17. Februar 2025 anonymisiert an alle Bieter verschickt.</p>
+            </div>
+
+            <h4>Typische Fragen könnten sein:</h4>
+            <ul>
+                <li>Technische Details zu bestehenden Systemen (Portale, APIs)</li>
+                <li>Verfügbarkeit von Content, Bildmaterial, Branding-Assets</li>
+                <li>Präferenzen bei Technologie-Alternativen</li>
+                <li>Interne Ressourcen (wer macht Content-Migration?)</li>
+                <li>Zahlungsmodalitäten</li>
+            </ul>
+
+            <h3>9.2 Kontakt für Rückfragen</h3>
+
+            <div class="card" style="background: var(--color-light-gray);">
+                <h4 style="margin-top: 0;">Ansprechpartner</h4>
+                <p><strong>Name:</strong> [Name hier einfügen]</p>
+                <p><strong>Position:</strong> Projektleiter Website Relaunch</p>
+                <p><strong>E-Mail:</strong> [E-Mail hier einfügen]</p>
+                <p><strong>Telefon:</strong> [Telefon hier einfügen]</p>
+                <p style="margin-bottom: 0;"><em>Bitte nutzen Sie primär E-Mail für Fragen zur Ausschreibung.</em></p>
+            </div>
+
+            <h3>9.3 Vertraulichkeit</h3>
+
+            <p>Diese RFP und alle bereitgestellten Informationen sind vertraulich und ausschließlich für den Zweck der Angebotserstellung bestimmt. Bitte geben Sie keine Informationen an Dritte weiter.</p>
+
+            <h3>9.4 Rechte & IP</h3>
+
+            <ul>
+                <li><strong>Eigentum:</strong> Alle im Projekt erstellten Werke (Design, Code, Content) gehen nach vollständiger Bezahlung in das Eigentum von ABF über.</li>
+                <li><strong>Lizenzen:</strong> Open-Source-Lizenzen sind erlaubt (MIT, Apache 2.0), aber bitte deklarieren.</li>
+                <li><strong>Referenz:</strong> ABF gestattet die Nutzung des Projekts als Referenz (inkl. Screenshots) nach Go-Live.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Appendix -->
+    <section>
+        <div class="container">
+            <h2>10. Anhang & Ressourcen</h2>
+
+            <h3>10.1 Bereitgestellte Dokumente</h3>
+
+            <p>Nach Beauftragung stellen wir folgende Dokumente bereit:</p>
+
+            <ul class="checklist">
+                <li>Vollständiger Unwritten Studio Styleguide (PDF)</li>
+                <li>Aktuelles Logo-Paket (SVG, PNG in verschiedenen Größen)</li>
+                <li>Content-Export der aktuellen Website (XML/CSV)</li>
+                <li>Bildmaterial-Archiv (soweit vorhanden)</li>
+                <li>Bestehende Portal-Dokumentation (API-Specs falls Integration gewünscht)</li>
+                <li>Brand-Guidelines ABF (falls vorhanden)</li>
+            </ul>
+
+            <h3>10.2 Nützliche Links</h3>
+
+            <ul>
+                <li><strong>Aktuelle Website:</strong> <a href="http://a-b-f.de" style="color: var(--color-blue);">http://a-b-f.de</a></li>
+                <li><strong>Unwritten Studio:</strong> <a href="https://unwritten.studio" style="color: var(--color-blue);">https://unwritten.studio</a></li>
+                <li><strong>LinkedIn ABF:</strong> [Link hier einfügen]</li>
+                <li><strong>Metropolregion Nürnberg:</strong> <a href="https://www.metropolregionnuernberg.de" style="color: var(--color-blue);">metropolregionnuernberg.de</a></li>
+            </ul>
+
+            <h3>10.3 Glossar</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Begriff</th>
+                        <th>Bedeutung</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GMP</td>
+                        <td>Good Manufacturing Practice – Qualitätsstandards pharmazeutische Herstellung</td>
+                    </tr>
+                    <tr>
+                        <td>Zytostatika</td>
+                        <td>Medikamente zur Behandlung von Krebs (Chemotherapie)</td>
+                    </tr>
+                    <tr>
+                        <td>PTA</td>
+                        <td>Pharmazeutisch-technische Assistentin</td>
+                    </tr>
+                    <tr>
+                        <td>Therapiebereiche</td>
+                        <td>Spezialisierte medizinische Fachgebiete (z.B. Onkologie, Ophthalmologie)</td>
+                    </tr>
+                    <tr>
+                        <td>SSR</td>
+                        <td>Server-Side Rendering (Next.js Technologie)</td>
+                    </tr>
+                    <tr>
+                        <td>WCAG</td>
+                        <td>Web Content Accessibility Guidelines (Barrierefreiheit)</td>
+                    </tr>
+                    <tr>
+                        <td>LCP/FID/CLS</td>
+                        <td>Core Web Vitals (Google Performance-Metriken)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Final Notes -->
+    <section>
+        <div class="container">
+            <h2>11. Schlussbemerkungen</h2>
+
+            <div class="quote-box">
+                <h3>Worauf wir uns freuen</h3>
+                <p>Wir suchen einen Partner, nicht nur einen Dienstleister. Jemanden, der:</p>
+                <ul>
+                    <li>Unsere Vision versteht und mit Begeisterung umsetzt</li>
+                    <li>Proaktiv Ideen einbringt und uns berät</li>
+                    <li>Technische Exzellenz mit gestalterischer Kreativität verbindet</li>
+                    <li>Transparent kommuniziert und verlässlich liefert</li>
+                    <li>Langfristig denkt und uns über den Launch hinaus begleitet</li>
+                </ul>
+            </div>
+
+            <div class="info-box highlight">
+                <p><strong>Vielen Dank für Ihr Interesse an diesem Projekt!</strong></p>
+                <p>Wir freuen uns auf Ihr Angebot und darauf, Sie hoffentlich bald persönlich kennenzulernen.</p>
+                <p style="margin-bottom: 0;"><em>Mit freundlichen Grüßen,<br>Das ABF Website-Relaunch Team</em></p>
+            </div>
+
+            <h3 style="text-align: center; margin-top: 60px; color: var(--color-blue);">Eingabefrist: 28. Februar 2025, 17:00 Uhr</h3>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section style="background: var(--color-black); color: var(--color-white); padding: 60px 0;">
+        <div class="container" style="text-align: center;">
+            <p style="font-size: 14px; line-height: 16.34px; margin-bottom: 10px;"><strong>ABF Unternehmensverbund</strong></p>
+            <p style="font-size: 12px; line-height: 14px; opacity: 0.7; margin-bottom: 15px;">Metropolregion Nürnberg | Fürth</p>
+            <p style="font-size: 12px; line-height: 14px; opacity: 0.7; margin-bottom: 0;">RFP erstellt mit Unterstützung von Unwritten Studio</p>
+        </div>
+    </section>
+</body>
+</html>
