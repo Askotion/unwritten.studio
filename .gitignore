@@ -16,3 +16,9 @@ hugo_stats.json
 go.sum
 yarn.lock
 hugo
+
+# Local source/reference files — not for git
+signal-*.mp4
+signal-*.jpeg
+signal-*.jpg
+static/images/hero-image-unwritten.mp4

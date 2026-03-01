@@ -1,12 +1,23 @@
 // Hero Video crossfade: static image → video.
-// Video is declared in HTML with <source> so browsers (incl. Safari) can autoplay
-// it from the initial parse. Starts opacity:0 so the static image shows first.
-// When video begins playing, crossfade to video and hide the image.
+// Desktop Safari is excluded: autoplay is unreliable there and shows a native
+// play button. Video element is removed before Safari can render its media UI.
+// iOS Safari works fine (muted autoplay with playsinline is supported).
 (function () {
   'use strict';
 
   var video = document.getElementById('hero-video');
   if (!video) return;
+
+  // Detect desktop Safari (excludes Chrome/Brave which also contain "Safari" in UA)
+  var ua = navigator.userAgent;
+  var isSafari = /^((?!chrome|android).)*safari/i.test(ua);
+  var isIOS = /iPhone|iPad|iPod/i.test(ua);
+
+  if (isSafari && !isIOS) {
+    // Remove video — static hero image stays, no play button appears
+    video.parentNode.removeChild(video);
+    return;
+  }
 
   var img = document.querySelector('#hero-media img');
 

@@ -6,7 +6,7 @@
     <div id="hero-media" class="relative">
       {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "w-full h-auto block" "DisplayMD" "1080x" "DisplayXL" "2000x" ) }}
       {{ if site.Params.heroVideo }}
-      <video id="hero-video" autoplay muted playsinline loop
+      <video id="hero-video" autoplay muted playsinline loop aria-hidden="true"
         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;will-change:opacity;transition:opacity 300ms ease;">
         <source src="/images/hero-video.mp4" type="video/mp4">
       </video>
