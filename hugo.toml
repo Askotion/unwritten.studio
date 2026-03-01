@@ -177,3 +177,8 @@ lazy = true
 [[params.plugins.js]]
 link = "js/echo-chatbot.js"
 lazy = false
+
+# Hero Video
+[[params.plugins.js]]
+link = "js/hero-video.js"
+lazy = false

@@ -1,4 +1,8 @@
 #################### default parameters ################################
+
+# Hero Video — set false to instantly disable the video crossfade feature.
+# The static hero image will show instead. Safe to toggle at any time.
+heroVideo = true
 # favicon module: https://github.com/gethugothemes/hugo-modules/tree/master/images#favicon-implementation
 favicon = "images/favicon.png"
 # logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
