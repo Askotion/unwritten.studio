@@ -19,13 +19,11 @@
     return;
   }
 
-  var img = document.querySelector('#hero-media img');
-
+  // Fade video in only — do NOT fade the image out.
+  // If the image fades out, the white page background bleeds through and causes
+  // a visible brightness flash. The video at opacity 1 fully covers the image
+  // anyway, so the image never needs to disappear.
   video.addEventListener('playing', function () {
     video.style.opacity = '1';
-    if (img) {
-      img.style.transition = 'opacity 300ms ease';
-      img.style.opacity = '0';
-    }
   }, { once: true });
 }());
