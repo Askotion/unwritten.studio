@@ -200,39 +200,42 @@
       </div>
     </header>
 
-    <!-- Zigzag Layout - Alternating left/right with offsets -->
-    <div class="flex justify-center">
-      <div class="max-w-xl space-y-6 md:space-y-10 w-full px-4">
+    <!-- Wegweiser Layout: cards meet at a central vertical pole -->
+    <div class="relative max-w-6xl mx-auto px-6 lg:px-10">
+      <!-- Central pole: visible in the gap between left and right cards -->
+      <div class="hidden lg:block absolute left-1/2 inset-y-0 w-0.5 bg-gray-300 -translate-x-px"></div>
+
+      <div class="space-y-4 lg:space-y-5">
         {{ range $index, $microsite := .microsites }}
         <a href="{{ $microsite.url }}" target="_blank" rel="noopener noreferrer" class="group block">
           {{ if eq (mod $index 2) 0 }}
-            <!-- LEFT: Image left, Text right -->
-            <div class="flex flex-row items-start gap-3 lg:gap-4 p-6 rounded bg-white lg:w-[94%] lg:ml-auto">
-              <div class="flex-shrink-0 w-[60px] h-[60px] lg:w-[75px] lg:h-[75px] overflow-hidden rounded bg-gray-100 flex items-center justify-center">
-                {{ partial "image" (dict "Src" $microsite.image "Alt" $microsite.name "Loading" "lazy" "Class" "w-full h-full object-cover" "DisplayXL" "75x75" "DisplayMD" "75x75") }}
+            <!-- Left card: ends just before center pole (2% left margin, 47% width → ends at 49%) -->
+            <div class="flex flex-row items-center gap-3 px-4 py-3 rounded bg-white w-full lg:w-[47%] lg:ml-[2%]">
+              <div class="flex-shrink-0 w-[96px] h-[54px] overflow-hidden rounded">
+                <img src="{{ $microsite.image }}" alt="{{ $microsite.name }}" loading="lazy" class="w-full h-full object-cover block">
               </div>
-              <div class="flex-1">
-                <h3 class="text-[#3087b9] font-tertiary text-lg lg:text-xl font-light mb-2 group-hover:underline transition-colors">
+              <div class="flex-1 min-w-0">
+                <h3 class="text-[#3087b9] font-tertiary text-base lg:text-lg font-light mb-0.5 group-hover:underline transition-colors">
                   {{ $microsite.name }}
                 </h3>
-                <p class="text-[#3e4447] font-tertiary text-base tracking-wider leading-relaxed">
+                <p class="text-[#3e4447] font-tertiary text-sm tracking-wider leading-snug">
                   {{ $microsite.description }}
                 </p>
               </div>
             </div>
           {{ else }}
-            <!-- RIGHT: Image left on mobile, reversed on desktop for zigzag -->
-            <div class="flex flex-row-reverse items-start gap-3 lg:gap-4 p-6 rounded bg-white lg:w-[94%] lg:mr-auto lg:flex-row">
-              <div class="flex-1 lg:text-right">
-                <h3 class="text-[#3087b9] font-tertiary text-lg lg:text-xl font-light mb-2 group-hover:underline transition-colors">
+            <!-- Right card: starts just after center pole (51% left margin, 47% width → ends at 98%) -->
+            <div class="flex flex-row-reverse lg:flex-row items-center gap-3 px-4 py-3 rounded bg-white w-full lg:w-[47%] lg:ml-[51%]">
+              <div class="flex-1 min-w-0 lg:text-right">
+                <h3 class="text-[#3087b9] font-tertiary text-base lg:text-lg font-light mb-0.5 group-hover:underline transition-colors">
                   {{ $microsite.name }}
                 </h3>
-                <p class="text-[#3e4447] font-tertiary text-base tracking-wider leading-relaxed">
+                <p class="text-[#3e4447] font-tertiary text-sm tracking-wider leading-snug">
                   {{ $microsite.description }}
                 </p>
               </div>
-              <div class="flex-shrink-0 w-[60px] h-[60px] lg:w-[75px] lg:h-[75px] overflow-hidden rounded bg-gray-100 flex items-center justify-center">
-                {{ partial "image" (dict "Src" $microsite.image "Alt" $microsite.name "Loading" "lazy" "Class" "w-full h-full object-cover" "DisplayXL" "75x75" "DisplayMD" "75x75") }}
+              <div class="flex-shrink-0 w-[96px] h-[54px] overflow-hidden rounded">
+                <img src="{{ $microsite.image }}" alt="{{ $microsite.name }}" loading="lazy" class="w-full h-full object-cover block">
               </div>
             </div>
           {{ end }}
