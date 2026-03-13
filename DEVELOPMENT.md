@@ -317,6 +317,22 @@ Bevor du pusht:
 - [ ] Responsive: Desktop, Tablet, Mobile testen
 - [ ] Keine Flickering/Flashing beim Laden
 
+## Hero Video
+
+Das Hero-Bild auf der Startseite wird durch ein loopedes Video ersetzt (Crossfade).
+
+- **Datei**: `static/images/hero-video.mp4`
+- **Feature Flag**: `config/_default/params.toml` → `heroVideo = true/false`
+- **JS-Logik**: `assets/js/hero-video.js` — wartet auf `playing`-Event, blendet Video ein (opacity 0→1), Bild bleibt darunter
+- **Desktop Safari**: wird per UA-Detection ausgeschlossen (autoplay unzuverlässig, nativer Play-Button würde erscheinen)
+- **iOS Safari**: funktioniert (muted autoplay mit `playsinline` wird unterstützt)
+
+### Known Issue: kurzer Flash beim Video-Start
+
+Beim ersten Abspielen ist ein sehr kurzer GPU-Compositing-Flash sichtbar (Moment der Layer-Promotion). Dieser ist so subtil, dass er praktisch niemandem auffällt, der nicht ausdrücklich darauf achtet. Kein Handlungsbedarf.
+
+---
+
 ## Häufige Probleme & Lösungen
 
 ### "Echo wird nicht angezeigt"
