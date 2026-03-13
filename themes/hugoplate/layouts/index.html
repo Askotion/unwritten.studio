@@ -150,17 +150,17 @@
         <div class="showcase-item flex flex-col md:flex-row items-center md:items-start gap-8">
           <!-- Text content - appears first on mobile, second on desktop -->
           <div class="flex-1 text-center md:text-left order-1 md:order-2">
-            <h3 class="font-tertiary text-2xl lg:text-3xl font-light mb-3">
+            <h3 class="font-tertiary text-xl lg:text-2xl font-light mb-3">
               <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="text-[#3087b9] hover:underline">
                 {{ .subtitle }}
               </a>
             </h3>
-            <p class="text-[#3e4447] font-tertiary text-base lg:text-lg tracking-wider">{{ .content }}</p>
+            <p class="text-[#3e4447] font-tertiary text-sm lg:text-base tracking-wider">{{ .content }}</p>
           </div>
           <!-- Image - appears second on mobile, first on desktop -->
           <div class="flex-shrink-0 order-2 md:order-1">
-            <div class="w-[80%] mx-auto md:w-[220px] md:mx-0 lg:w-[270px]">
-              {{ partial "image" (dict "Src" .image "Alt" (.subtitle | default "Showcase") "Loading" "lazy" "Class" "w-full h-auto" "DisplayXL" "270x" "DisplayMD" "220x" ) }}
+            <div class="w-[70%] mx-auto md:w-[190px] md:mx-0 lg:w-[230px] aspect-[4/3] overflow-hidden rounded">
+              {{ partial "image" (dict "Src" .image "Alt" (.subtitle | default "Showcase") "Loading" "lazy" "Class" "w-full h-full object-cover" "DisplayXL" "230x" "DisplayMD" "190x" ) }}
             </div>
           </div>
         </div>
