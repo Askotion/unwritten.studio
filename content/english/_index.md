@@ -66,7 +66,7 @@ anwendungen:
       link: "https://pantopia.world/"
     - subtitle: "Übermorgen"
       image: "/images/uebermorgen-showcase.jpeg"
-      content: "Felix aus Theresa Hannigs Roman fragt dich: Glaubst du, dass wir in einer besseren Welt leben werden? Geschichten aus einer Zukunft, die noch möglich ist."
+      content: "Felix aus Theresa Hannig's Essayband fragt dich: Glaubst du, dass wir in einer besseren Welt leben werden? Geschichten aus einer Zukunft, die noch möglich ist."
       link: "https://uebermorgen.world/"
     - subtitle: "Wasted Wetware"
       image: "/images/wasted-wetware-showcase.png"
