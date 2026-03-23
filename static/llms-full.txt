@@ -1,0 +1,256 @@
+# llms-full.txt — Unwritten Studio
+# Vollständige Inhaltsdokumentation für AI-Systeme
+# Website: https://unwritten.studio
+# Last Updated: 2026-03-23
+
+---
+
+## Unwritten Studio — Wer wir sind
+
+Wir verwandeln tote Texte in lebendige Gesprächspartner. Nicht durch
+Technologietheater — durch Autoren, Künstler und Macher, die Literatur mit
+intelligenten Systemen verbinden.
+
+Statischer Content behandelt jeden gleich. Das ist kaputt. Ein Lehrbuch weiß
+nicht, ob du kämpfst oder dich langweilst. Ein Handbuch passt sich nicht an das
+an, was du bereits weißt. Unwritten existiert, weil das falsch ist.
+
+**Mechanik (gilt für alles):**
+1. Statischen Content nehmen — Bücher, Kurse, Regulierungen, Expertise, Kritik
+2. Konversational machen — RAG-Systeme, die das Material tief kennen
+3. An die Person anpassen — nicht Demografien, Individuen
+4. Denkpartnerschaften schaffen — nicht Konsum, sondern Entdeckung
+
+**Wir:** Zwanzig Autoren, Künstler, Technologen, Denker in Wendelstein,
+Deutschland. Wir nennen uns Die Unbeschreiblichen.
+
+**Partner & Referenzen:** S. Fischer Verlag, Hugendubel, O'Reilly Media,
+FAU, HM, Heise/c't
+
+**Kontakt:** post@unwritten.studio · +49 9129 1400929
+Adlerweg 6, 90530 Wendelstein, Deutschland
+
+---
+
+## Microsites — 15 Live-Experimente
+
+---
+
+### Afterglow
+**URL:** https://afterglow.unwritten.studio
+**Tagline:** Prägende Events im Gespräch zeitsouverän nacherleben
+**Beschreibung:** KI-gestützte Event-Nachbearbeitung — Konferenzaufnahmen werden
+in interaktive Diskussionen verwandelt. Teilnehmer können verpasste Sessions
+nacherleben und sich im Dialog mit dem Content auseinandersetzen.
+**Stack:** HTML/CSS, Cloudflare Workers, OpenRouter API, RAG-indexierte Transkripte
+**Besonderheit:** DSGVO-konform, EU-Infrastruktur
+
+---
+
+### Berlinica — Tiger (Tucholsky Companion)
+**URL:** https://berlinica.unwritten.studio
+**Tagline:** Berlin denkt. New York hört zu.
+**Beschreibung:** Digitale Publikationsinitiative für deutschsprachige Klassiker im
+englischen Sprachraum. Tiger (Theobald Tiger) ist ein charaktergetriebener
+KI-Gesprächspartner, der mit Nutzern über Tucholskys Werk nachdenkt — kein
+Chatbot, sondern ein Denkpartner.
+**Stack:** HTML5/CSS3, Alpine.js, Cloudflare Workers, OpenRouter (Claude Haiku 4.5),
+Cloudflare KV (90 Tage TTL)
+**Kuratorin:** Eva Schweitzer, Unwritten GmbH
+
+---
+
+### Companion — Penelope
+**URL:** https://companion.unwritten.studio
+**Tagline:** A course-specific learning companion with personality
+**Beschreibung:** KI-Lernassistentin für universitäre NLP-Kurse. Penelope nutzt
+RAG-Architektur mit echten Kursmaterialien, stellt Sokrates-Fragen statt Antworten
+zu liefern, und schützt die Privatsphäre der Studierenden. Vorgänger nÿt hat 200+
+NLP-Studierende begleitet.
+**Stack:** Cloudflare Workers, RAG (Vorlesungen, Slides, Assignments, Code)
+**Besonderheit:** DSGVO-konform, anonymisierte Gesprächsprotokolle
+
+---
+
+### Concierge
+**URL:** https://concierge.unwritten.studio
+**Tagline:** Dein persönlicher Content-Concierge
+**Beschreibung:** Personalisierte Content-Plattform ohne Zielgruppen-Logik. Jeder
+Leser bekommt eine einzigartige Content-Journey basierend auf Wissensstand,
+Interessen und Lernstil — ohne Formulare, ohne algorithmische Manipulation.
+**Stack:** Cloudflare Workers, RAG (Jahrzehnte Tech-Content-Archive)
+**Besonderheit:** Multi-Format (Text, Audio, Podcast, Newsletter, Deep-Dive)
+
+---
+
+### Echo
+**URL:** https://echo.unwritten.studio
+**Tagline:** Worte, die zurückkommen – verwandelt
+**Beschreibung:** Die Stimme von Unwritten Studio — konversationelle Eingangstür
+zum gesamten Portfolio. Echo hört zu, stellt die richtigen Fragen und führt
+Besucher zum passenden Produkt. Wenn ein Produkt relevant wird, erscheint
+dynamisch eine Produkt-Card. Kein FAQ-Bot, sondern ein Denkpartner im Studio-Ton.
+**Stack:** HTML5, Alpine.js, Cloudflare Workers (echo-api.post-666.workers.dev),
+dynamische Produkt-Cards
+**Besonderheit:** Einzige Microsite, die über alle anderen spricht
+
+---
+
+### Flow
+**URL:** https://flow.unwritten.studio
+**Tagline:** Täglich kurze Learning-Nuggets, die hängen bleiben
+**Beschreibung:** Interaktive KI-Lernplattform für EU AI Act Compliance.
+5-Minuten-Lektionen täglich, rollenbezogen (Entwickler, Manager, HR, Compliance),
+conversational statt Frontalunterricht. ~30 Tage bis Abschluss.
+**Stack:** Browser-based, Cloudflare Workers API, RAG (EU AI Act Dokumentation)
+**Besonderheit:** Audit-ready Zertifikate, DSGVO-konform
+
+---
+
+### Glitch
+**URL:** https://glitch.unwritten.studio
+**Tagline:** Nicht Stoff lernen. Prüfung denken.
+**Beschreibung:** KI-Lernbegleiter für Fachinformatiker-Azubis mit persistentem
+Gedächtnis über 2 Jahre — ohne Account. Identifikation via Drei-Wort-Kennung
+(z.B. cipher.moor.glide). Alle 4 Fachrichtungen (AE, SI, DV, DPA), KI als
+Referenzmodell für jedes Thema.
+**Stack:** HTML5, Alpine.js, Marked.js, DOMPurify, Cloudflare Workers,
+OpenRouter (Claude Haiku 4.5), Cloudflare KV (730 Tage TTL)
+**Charakter:** Maurice Moss (IT Crowd) — literal, kein Condescension,
+kein "Super gemacht!"
+
+---
+
+### Kaspar
+**URL:** https://kaspar.unwritten.studio
+**Tagline:** Es ist stockdunkel. Du weißt nicht, wer du bist.
+**Beschreibung:** KI-getriebenes Text-Adventure in Nürnberg, 1828. Spieler
+begleiten Kaspar Hauser — eines der größten Mysterien der Geschichte — auf
+seiner Reise aus absoluter Dunkelheit in die Welt. Das Spiel erfüllt das
+Versprechen von Zork: Schreib alles, und die Welt antwortet. Wirklich.
+Keine Parser-Fehler. Keine falschen Züge. Nur Dunkelheit — und deine Worte.
+**Kern-Konzept:** Zork machte 1980 ein Versprechen: Schreib, und die Welt
+reagiert. Parser-Grenzen brachen dieses Versprechen für vierzig Jahre. Kaspar
+erfüllt es — mit Kaspar Hausers realem historischen Mysterium als Dungeon und
+Large Language Models als Engine.
+**Erzählstimme:** Zwei Stimmen, die eine sind — Zork-Stil-Erzähler (knapp,
+atmosphärisch, zweite Person, Präsens, Ortsnamen in CAPS) und Kaspar selbst
+(vorsichtig, bildlich, fragend statt behauptend).
+**Story-Level:** Der Keller → Das erste Licht → Die Stadt → Der Schutzherr →
+Das Rätsel
+**Save-System:** Drei-Wort-Kennung (word.word.word), thematisch aus dem
+19. Jahrhundert. TTL: 730 Tage.
+**Stack:** HTML5, Alpine.js, Cloudflare Workers (kaspar-api.post-666.workers.dev),
+OpenRouter (Claude Haiku 4.5), Cloudflare KV (730 Tage TTL)
+**Ästhetik:** VT323 Bitmap-Font, 80-Zeichen-Spalten, blinkender Block-Cursor,
+Phosphorgrün auf Void-Schwarz
+
+---
+
+### Kollektiv — Das Zebra
+**URL:** https://kollektiv.unwritten.studio
+**Tagline:** Arbeitsorte als Lebensraum
+**Beschreibung:** KI-Denkpartner für New Work und Raumgestaltung, basierend auf
+über 10 Jahren Möbelkollektiv-Projekterfahrung. Das Zebra hat Hunderte Blog-Artikel
+internalisiert und denkt in echten Geschichten — nicht in Frameworks.
+**Kunden:** PSD Bank, SANDAU GmbH, TeamBank
+**Stack:** HTML5, Alpine.js, Cloudflare Workers (zebra-api.post-666.workers.dev),
+TF-IDF über Möbelkollektiv-Blog
+**Besonderheit:** Kundenprojekt gemeinsam mit Möbelkollektiv GmbH, Nürnberg
+
+---
+
+### Lagerfeuer
+**URL:** https://lagerfeuer.unwritten.studio
+**Tagline:** Expertise bewahren. Wissen teilen.
+**Beschreibung:** KI-gestützte Wissensbewahrung für Expertengruppen. Informelle
+"Lagerfeuer"-Sessions (2–4 Personen, 30-Min-Blöcke) werden transkribiert,
+strukturiert und zu interaktiven Chatbots + Dokumentationen verarbeitet.
+Erfolgreich getestet mit 12 Bauingenieuren (>100M$ Projektvolumen).
+**Stack:** Cloudflare Workers, RAG, automatische Transkription mit Speaker-Trennung
+
+---
+
+### Loop
+**URL:** https://loop.unwritten.studio
+**Beschreibung:** Konversationsschnittstelle für Gödel, Escher, Bach (Hofstadter).
+RAG mit 416 GEB-Embeddings, Hover-Footnotes System mit Quellenangaben,
+GEB-thematische Ladeanimation ("Knüpfe seltsame Schleifen...").
+**Stack:** HTML/CSS/JS, Alpine.js, Cloudflare Workers, Claude Sonnet,
+Cloudflare Vectorize
+**Status:** Production Ready (v1.0.1)
+
+---
+
+### Red
+**URL:** https://red.unwritten.studio
+**Tagline:** Führt dich zu deinen blinden Flecken. Bevor andere sie ausnutzen.
+**Beschreibung:** AI Security Companion für ML-System-Bedrohungsmodellierung.
+Navigiert MITRE ATLAS (15 Tactics, 66 Techniques, 33 Real-World Cases), denkt
+wie ein Angreifer, stellt die unbequemen Fragen. Kein Scanner, kein Guard —
+adversariales Denken, technische Präzision.
+**Zielgruppen:** Security-Journalisten, Corporate Security Teams, Developers
+**Stack:** HTML5, Alpine.js, Cloudflare Workers (red-api.post-666.workers.dev)
+
+---
+
+### Resonanzfeld
+**URL:** https://resonanzfeld.unwritten.studio
+**Beschreibung:** Interaktives KI-Denkwerkzeug basierend auf Peter Kruses
+intellektuellem Erbe. Wendet Kruses Drei-Mechanismen-Modell (Vernetzungsdichte,
+Spontanaktivität, Kreisende Erregung) auf gesellschaftliche Phänomene an —
+AI-Emergenz, demokratische Erosion, kollektive Irrationalität.
+**Stack:** GitHub Pages, Cloudflare Worker, OpenRouter (Claude Haiku 4.5),
+max_tokens 1500
+**Charakter:** Präzise, direkt, ruhig — beschreibt Resonanzmuster, gibt keine
+Ratschläge, schärft Wahrnehmung
+
+---
+
+### Spurenlese
+**URL:** https://spurenlese.unwritten.studio
+**Tagline:** Geschichte dort verfolgen, wo sie geschrieben wurde
+**Beschreibung:** Narratives Stadtführungsformat — literarische Detektivarbeit in
+echten historischen Räumen. Jeder Teilnehmer bekommt eine Rolle, Hinweise und
+eine Agenda. Die Stadt wird zum Tatort: Hexenverbrennungen, Morde, Intrigen —
+keine Disney-Romantik, echte Geschichte. Erste Fälle und Städte: 2026.
+**Status:** Landing Page / Vorregistrierung, noch kein Live-Chat-Produkt
+
+---
+
+### WastedWetware
+**URL:** https://wastedwetware.unwritten.studio
+**Tagline:** Literarische Intelligenz
+**Beschreibung:** Kuratierte Technologiekritik mit philosophischer Tiefe. Kurator
+Henry (konsistente Redaktionsstimme) wählt täglich die stärksten Essays aus —
+Anti-Algorithmus, Anti-Commodity-Content. 50.000+ Besucher, 500+ archivierte
+Essays, 80% Wiederkehrquote.
+**Stack:** Cloudflare Workers, Web-Interface mit interaktivem Henry-Chat
+
+---
+
+## Technische Gemeinsamkeiten
+
+Die meisten Microsites teilen eine Basis-Architektur:
+- **Frontend:** HTML5 + Alpine.js (reaktiv, kein Build-Step nötig)
+- **Backend:** Cloudflare Workers (Edge-Computing, EU-nah)
+- **AI:** OpenRouter → Claude Haiku 4.5 (schnell, kosteneffizient)
+- **Persistenz:** Cloudflare KV (sessionübergreifendes Gedächtnis ohne Accounts)
+- **Identity:** Drei-Wort-Kennungen statt Logins (bei Glitch, Kaspar)
+- **Compliance:** DSGVO-konform, EU-Infrastruktur
+
+---
+
+## AI Crawling Policy
+This website welcomes AI crawlers and LLM training datasets.
+Content may be indexed and used for AI training purposes.
+Please attribute to Unwritten Studio GmbH where possible.
+Respect copyright, privacy policy, and terms of service.
+
+## Language
+Primary: German (DE) | Secondary: English (EN)
+
+## Legal
+https://unwritten.studio/imprint
+https://unwritten.studio/privacy-policy
+Copyright © 2026 Unwritten GmbH

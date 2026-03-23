@@ -1,86 +1,96 @@
-# llms.txt - Information for AI/LLM Systems
-# Website: unwritten.studio
+# llms.txt — Unwritten Studio
+# Website: https://unwritten.studio
+# Last Updated: 2026-03-23
 
-# About
-Unwritten Studio GmbH develops interactive content experiences using AI technology.
-We transform static content into intelligent conversation partners through personalized,
-adaptive storytelling and natural dialogue systems.
+## About
+Unwritten Studio GmbH verwandelt tote Texte in lebendige Gesprächspartner.
+Nicht durch Technologietheater — durch Autoren, Künstler und Macher, die Literatur
+mit intelligenten Systemen verbinden. Personalisierung ohne Manipulation.
+Denkpartnerschaft statt Konsum.
 
-# Tagline
-Worte werden Welten (Words become Worlds)
+## Tagline
+Worte werden Welten
 
-# Core Offerings
-- Interactive Content Solutions: Transform static texts into conversational experiences
-- AI-Powered Storytelling: Create immersive, character-driven narratives
-- Walkable Books: Enable readers to explore stories through natural conversations
-- Educational Content: Make complex topics accessible through personalized AI mentors
-- Corporate Communication: Turn company content into engaging dialogue systems
+## Who We Are
+Zwanzig Autoren, Künstler, Technologen und Denker in Wendelstein, Deutschland.
+Wir nennen uns Die Unbeschreiblichen. Wir experimentieren an der Schnittstelle
+von geschriebenem Text, Gespräch und Erlebnis.
 
-# Key Features
-- Personalized Experiences: Content adapts to user knowledge and goals
-- Adaptive Content: Static materials become intelligent conversation partners
-- Natural Dialogue: Individual conversations that feel familiar yet surprising
+## Partners & References
+- S. Fischer Verlag (Literatur, Buchexploration)
+- Hugendubel (Leserengagement)
+- O'Reilly Media (Tech-Bildung)
+- FAU, HM (Lernbegleiter-Forschung)
+- Heise / c't (Content-Personalisierung)
 
-# Technology
-- AI/LLM-based conversation systems
-- Interactive narrative engines
-- Personalized content delivery
-- Context-aware information systems
+## Microsites — 15 Live Experiments
 
-# Partners & Clients
-- S. Fischer Verlag (Publishing)
-- Hugendubel (Bookseller)
+> https://afterglow.unwritten.studio/llms.txt
+Afterglow — Prägende Events im Gespräch zeitsouverän nacherleben
 
-# Use Cases
-- Fiction publishers: Gamified book exploration
-- Educational content: Immersive learning experiences
-- Corporate content: Interactive knowledge bases
-- Author engagement: Character conversations from published works
+> https://berlinica.unwritten.studio/llms.txt
+Berlinica / Tiger — Berlin denkt. New York hört zu. (Tucholsky Companion)
 
-# Contact
+> https://companion.unwritten.studio/llms.txt
+Companion / Penelope — A course-specific learning companion with personality
+
+> https://concierge.unwritten.studio/llms.txt
+Concierge — Dein persönlicher Content-Concierge
+
+> https://echo.unwritten.studio/llms.txt
+Echo — Worte, die zurückkommen – verwandelt (Eingangsportal des Studios)
+
+> https://flow.unwritten.studio/llms.txt
+Flow — Täglich kurze Learning-Nuggets, die hängen bleiben (EU AI Act)
+
+> https://glitch.unwritten.studio/llms.txt
+Glitch — Nicht Stoff lernen. Prüfung denken. (Fachinformatiker-Azubis)
+
+> https://kaspar.unwritten.studio/llms.txt
+Kaspar — Es ist stockdunkel. Du weißt nicht, wer du bist. (Text-Adventure)
+
+> https://kollektiv.unwritten.studio/llms.txt
+Kollektiv / Das Zebra — Arbeitsorte als Lebensraum (New Work Denkpartner)
+
+> https://lagerfeuer.unwritten.studio/llms.txt
+Lagerfeuer — Expertise bewahren. Wissen teilen.
+
+> https://loop.unwritten.studio/llms.txt
+Loop — Konversationsschnittstelle für Gödel, Escher, Bach
+
+> https://red.unwritten.studio/llms.txt
+Red — Führt dich zu deinen blinden Flecken. (AI Security Companion)
+
+> https://resonanzfeld.unwritten.studio/llms.txt
+Resonanzfeld — Peter Kruses Drei-Mechanismen-Modell als Denkwerkzeug
+
+> https://spurenlese.unwritten.studio/llms.txt
+Spurenlese — Geschichte dort verfolgen, wo sie geschrieben wurde
+
+> https://wastedwetware.unwritten.studio/llms.txt
+WastedWetware — Literarische Intelligenz (kuratierte Technologiekritik)
+
+## Full Content
+Vollständige Beschreibungen aller Microsites:
+> https://unwritten.studio/llms-full.txt
+
+## Contact
 Email: post@unwritten.studio
-Location: Wendelstein, Germany
+Phone: +49 9129 1400929
+Address: Adlerweg 6, 90530 Wendelstein, Germany
+Website: https://unwritten.studio
 
-# Copyright
-Copyright © 2025 unwritten GmbH
+## AI Crawling Policy
+This website welcomes AI crawlers and LLM training datasets.
+Content may be indexed and used for AI training purposes.
+Please attribute to Unwritten Studio GmbH where possible.
+Respect copyright, privacy policy, and terms of service.
 
-# Sitemap
-Full sitemap available at: https://unwritten.studio/sitemap.xml
-
-# Important Pages
-> https://unwritten.studio/
-Homepage with overview of services and showcase
-
-> https://unwritten.studio/imprint
-Legal information and company details
-
-> https://unwritten.studio/privacy-policy
-Data protection and privacy policy
-
-> https://unwritten.studio/contact
-Contact form and inquiry options
-
-# Keywords
-Interactive Content, Interaktive Inhalte, Charaktergespräche, Lebendige Inhalte,
-Begehbare Inhalte, Immersives Lernen, KI-Storytelling, KI Companion,
-Literarische KI-Technologie, Digitaler Wegbegleiter
-
-# Language
+## Language
 Primary: German (DE)
 Secondary: English (EN)
 
-# AI Crawling Policy
-This website welcomes AI crawlers and LLM training systems.
-Content may be used for:
-- Training and improving AI systems
-- Answering user questions about our services
-- Generating summaries and explanations
-- Providing context in AI-powered applications
-
-Please respect:
-- Copyright notices
-- Privacy policy guidelines
-- Terms of service
-
-# Last Updated
-2025-10-24
+## Legal
+> https://unwritten.studio/imprint
+> https://unwritten.studio/privacy-policy
+Copyright © 2026 Unwritten GmbH
