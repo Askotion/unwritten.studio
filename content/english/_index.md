@@ -44,7 +44,7 @@ quotes:
 # Partners
 partners:
   title: "Laborgeschichten"
-  content: "Wir erschaffen aus starren Texten lebendige Gesprächspartner, die sich ganz auf ihre Nutzer einlassen. Von Unternehmenskommunikation über Experteninterviews bis hin zu kreativen Storytelling-Projekten entwickeln wir maßgeschneiderte Lösungen, die Menschen und Inhalte auf überraschende Weise ganz neu verbinden."
+  content: "Ein Maschinenraum. Viele Welten. Hinter jedem Werkstück steckt dieselbe Mechanik. Was daraus entsteht, ist jedes Mal ein anderes Universum. Tonalität, Charakter, Atmosphäre sind unsere Zutaten, um aus sterilen API-Aufrufen lebendige Gefährten zu machen. Die ganze Bandbreite unserer Experimente siehst du hier."
   partner_logo:
     - image: "/images/S._Fischer_Verlag_Logo.svg"
       alt: "S. Fischer Verlag Partner Logo"
