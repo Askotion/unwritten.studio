@@ -32,13 +32,13 @@ quotes:
     quote: "Was für ein Fest, Texte nach völlig neuen Aspekten zu durchstöbern, Verbindungen zur Welt außenherum herzustellen - als hätte der Experte persönlich Zeit für ein langes Gespräch."
   - name: "Tobias von Dewitz"
     position: "Code Virtuose"
-    quote: "Lernen wird durch Bücher, die den Lernenen lesen regelrecht revolutioniert. Komplexe Sachverhalte werden zu persönlichen, tiefen Gesprächen - als hätte man seinen ganz persönlichen Mentor an der Seite."
+    quote: "Start in den Tag: starker Kaffee, dazu Henry mit seinem zynischen Blick auf den ungebremsten Irrsinn der KI-Welt. Und anschließend eine Laborrunde - was ist über Nacht  möglich geworden, das gestern noch undenkbar war? Täglich frisch serviert."
   - name: "Theresa Hannig"
     position: "Autorin"
     quote: "Mit Einbug - der starken KI aus Pantopia - über meine eigene Geschichte sprechen zu können, war unbeschreiblich. So stelle ich mir die Zukunft mit KI vor."
   - name: "Thor van Horn"
     position: "Künstler und Denker"
-    quote: "Und urplötzlich wird jeder von uns zu einem Pionier, einem Entdecker neuer Welten. Die KI öffnet für mich ein Portal zu einem neuen Universum. Jeder Dialog wird zu einer ganz persönlichen Reise durch zum Leben erweckte Inhalte."
+    quote: "Und urplötzlich wird jeder von uns zu einem Pionier, einem Entdecker neuer Welten. Die KI öffnet für mich ein Portal zu einem neuen Universum. Jeder Dialog wird zu einer ganz persönlichen Reise durch Räume, die sich allein für Dich öffnen."
     
 
 # Partners
