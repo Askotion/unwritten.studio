@@ -2,23 +2,22 @@
 # Banner
 banner:
   title: "Worte werden Welten"
-  content: "Stell dir vor, deine Texte könnten mit den Nutzern sprechen. Jede Frage beantworten. Jeden Kontext verstehen. Treue Gefährten entführen dich in ein packendes Abenteuer.\n
-  Aus starren Inhalten werden emotionale Erlebnisse. Nur deine Vorstellungskraft ist das Limit."
+  content: "Wir sind ein atmendes Labor. Wir stellen Hypothesen auf, bauen Prototypen, stellen sie live. Was dabei entsteht, sind keine fertigen Produkte — sondern lebendige Experimente, die man unmittelbar erleben kann."
   image: "/images/Titelbild_Blau_breit.jpg"
 
 # Features
 features:
   image: "/images/feature-image.jpg"
   features_list:
-    - title: "Personalisierte"
-      subtitle: "Erlebnisse"
-      content: "Der Nutzer erhält genau die Informationen, die zu seinem Wissensstand und Zielen passen"
-    - title: "Adaptive"
-      subtitle: "Inhalte"
-      content: "Statische Inhalte werden zu intelligenten Gesprächspartnern"
-    - title: "Natürliche"
-      subtitle: "Dialoge"
-      content: "Individuelle Gespräche, die sich vertraut und überraschend zugleich anfühlen"
+    - title: "Funke"
+      subtitle: "Zündung"
+      content: "Eine wilde Idee. Ein \"Was wäre, wenn?\" Moment, der nicht mehr loslässt. Jedes Experiment beginnt mit einem Funken, der nicht mehr ignoriert werden kann. Der Gestalt sucht."
+    - title: "Schmiede"
+      subtitle: "Rohbau"
+      content: "Kein Konzept in der Schublade. Wir bauen, was wir denken — roh, direkt, ohne Anspruch auf Perfektion. Ein erster Prototyp. Sofort live. Reale Interaktionen. Dann wissen wir mehr."
+    - title: "Sog"
+      subtitle: "Tiefgang"
+      content: "Was dabei entsteht, fesselt sofort. Nicht weil es schick aussieht, sondern weil es antwortet. Weil es sich anfühlt wie eine echte Begegnung, nicht wie eine glatte Oberfläche."
 
 # Quotes
 quotes:
