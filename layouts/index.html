@@ -210,7 +210,7 @@
         <a href="{{ $microsite.url }}" target="_blank" rel="noopener noreferrer" class="group block">
           {{ if eq (mod $index 2) 0 }}
             <!-- Left card: ends just before center pole (2% left margin, 47% width → ends at 49%) -->
-            <div class="flex flex-row items-center gap-3 px-4 py-3 rounded bg-white w-full lg:w-[47%] lg:ml-[2%] transition-all duration-700 ease-out group-hover:-translate-y-2 group-hover:shadow-sm">
+            <div class="flex flex-row items-center gap-3 px-4 py-3 rounded bg-white w-full lg:w-[47%] lg:ml-[2%] transition-transform duration-700 ease-out group-hover:-translate-y-2 group-hover:shadow-sm">
               <div class="flex-shrink-0 w-[96px] h-[54px] overflow-hidden rounded relative">
                 <img src="{{ $microsite.image }}" alt="{{ $microsite.name }}" loading="lazy" class="w-full h-full object-cover block">
                 <div class="absolute inset-0 bg-[#3087b9]/20 mix-blend-multiply"></div>
@@ -226,7 +226,7 @@
             </div>
           {{ else }}
             <!-- Right card: starts just after center pole (51% left margin, 47% width → ends at 98%) -->
-            <div class="flex flex-row-reverse lg:flex-row items-center gap-3 px-4 py-3 rounded bg-white w-full lg:w-[47%] lg:ml-[51%] transition-all duration-700 ease-out group-hover:-translate-y-2 group-hover:shadow-sm">
+            <div class="flex flex-row-reverse lg:flex-row items-center gap-3 px-4 py-3 rounded bg-white w-full lg:w-[47%] lg:ml-[51%] transition-transform duration-700 ease-out group-hover:-translate-y-2 group-hover:shadow-sm">
               <div class="flex-1 min-w-0 lg:text-right">
                 <h3 class="text-[#3087b9] font-tertiary text-base lg:text-lg font-light mb-0.5 group-hover:underline transition-colors">
                   {{ $microsite.name }}
