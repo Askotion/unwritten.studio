@@ -140,11 +140,11 @@
   <div class="container max-w-screen-xl mx-auto pt-16 pb-16 lg:pt-20 lg:pb-20">
     <header class="text-center">
       <h2 class="text-[#3087b9] font-tertiary font-light mb-4">{{ .title | markdownify }}</h2>
-      <div>
+      {{ if .content }}<div>
         <p class="text-[#3e4447] font-tertiary text-lg tracking-wider">{{ .content | markdownify }}</p>
-      </div>
+      </div>{{ end }}
     </header>
-    <div class="lg:w-[90%] mx-auto pt-20">
+    <div class="lg:w-[90%] mx-auto {{ if .content }}pt-20{{ else }}pt-12{{ end }}">
       <div class="space-y-20 md:space-y-20">
         {{ range .applications }}
         <div class="showcase-item flex flex-col md:flex-row items-center md:items-start gap-8">
@@ -159,8 +159,8 @@
           </div>
           <!-- Image - appears second on mobile, first on desktop -->
           <div class="flex-shrink-0 order-2 md:order-1">
-            <div class="w-[70%] mx-auto md:w-[190px] md:mx-0 lg:w-[230px] aspect-[4/3] overflow-hidden rounded">
-              {{ partial "image" (dict "Src" .image "Alt" (.subtitle | default "Showcase") "Loading" "lazy" "Class" "w-full h-full object-cover" "DisplayXL" "230x" "DisplayMD" "190x" ) }}
+            <div class="w-[70%] mx-auto md:w-[190px] md:mx-0 lg:w-[230px] aspect-[16/9] overflow-hidden rounded">
+              <img src="{{ .image }}" alt="{{ .subtitle | default "Showcase" }}" loading="lazy" class="w-full h-full object-cover block">
             </div>
           </div>
         </div>
@@ -211,8 +211,9 @@
           {{ if eq (mod $index 2) 0 }}
             <!-- Left card: ends just before center pole (2% left margin, 47% width → ends at 49%) -->
             <div class="flex flex-row items-center gap-3 px-4 py-3 rounded bg-white w-full lg:w-[47%] lg:ml-[2%]">
-              <div class="flex-shrink-0 w-[96px] h-[54px] overflow-hidden rounded">
+              <div class="flex-shrink-0 w-[96px] h-[54px] overflow-hidden rounded relative">
                 <img src="{{ $microsite.image }}" alt="{{ $microsite.name }}" loading="lazy" class="w-full h-full object-cover block">
+                <div class="absolute inset-0 bg-[#3087b9]/20 mix-blend-multiply"></div>
               </div>
               <div class="flex-1 min-w-0">
                 <h3 class="text-[#3087b9] font-tertiary text-base lg:text-lg font-light mb-0.5 group-hover:underline transition-colors">
@@ -234,8 +235,9 @@
                   {{ $microsite.description }}
                 </p>
               </div>
-              <div class="flex-shrink-0 w-[96px] h-[54px] overflow-hidden rounded">
+              <div class="flex-shrink-0 w-[96px] h-[54px] overflow-hidden rounded relative">
                 <img src="{{ $microsite.image }}" alt="{{ $microsite.name }}" loading="lazy" class="w-full h-full object-cover block">
+                <div class="absolute inset-0 bg-[#3087b9]/20 mix-blend-multiply"></div>
               </div>
             </div>
           {{ end }}
