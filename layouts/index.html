@@ -147,23 +147,23 @@
     <div class="lg:w-[90%] mx-auto {{ if .content }}pt-20{{ else }}pt-12{{ end }}">
       <div class="space-y-20 md:space-y-20">
         {{ range .applications }}
-        <div class="showcase-item flex flex-col md:flex-row items-center md:items-start gap-8">
+        <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="showcase-item group flex flex-col md:flex-row items-center md:items-start gap-8 block transition-transform duration-700 ease-out hover:-translate-y-4">
           <!-- Text content - appears first on mobile, second on desktop -->
           <div class="flex-1 text-center md:text-left order-1 md:order-2">
             <h3 class="font-tertiary text-xl lg:text-2xl font-light mb-3">
-              <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="text-[#3087b9] hover:underline">
+              <span class="text-[#3087b9] group-hover:underline">
                 {{ .subtitle }}
-              </a>
+              </span>
             </h3>
             <p class="text-[#3e4447] font-tertiary text-sm lg:text-base tracking-wider leading-relaxed">{{ .content }}</p>
           </div>
           <!-- Image - appears second on mobile, first on desktop -->
           <div class="flex-shrink-0 order-2 md:order-1">
             <div class="w-[70%] mx-auto md:w-[190px] md:mx-0 lg:w-[230px] aspect-[16/9] overflow-hidden rounded">
-              <img src="{{ .image }}" alt="{{ .subtitle | default "Showcase" }}" loading="lazy" class="w-full h-full object-cover block">
+              <img src="{{ .image }}" alt="{{ .subtitle | default "Showcase" }}" loading="lazy" class="w-full h-full object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
             </div>
           </div>
-        </div>
+        </a>
         {{ end }}
       </div>
     </div>
@@ -210,7 +210,7 @@
         <a href="{{ $microsite.url }}" target="_blank" rel="noopener noreferrer" class="group block">
           {{ if eq (mod $index 2) 0 }}
             <!-- Left card: ends just before center pole (2% left margin, 47% width → ends at 49%) -->
-            <div class="flex flex-row items-center gap-3 px-4 py-3 rounded bg-white w-full lg:w-[47%] lg:ml-[2%]">
+            <div class="flex flex-row items-center gap-3 px-4 py-3 rounded bg-white w-full lg:w-[47%] lg:ml-[2%] transition-all duration-700 ease-out group-hover:-translate-y-2 group-hover:shadow-sm">
               <div class="flex-shrink-0 w-[96px] h-[54px] overflow-hidden rounded relative">
                 <img src="{{ $microsite.image }}" alt="{{ $microsite.name }}" loading="lazy" class="w-full h-full object-cover block">
                 <div class="absolute inset-0 bg-[#3087b9]/20 mix-blend-multiply"></div>
@@ -226,7 +226,7 @@
             </div>
           {{ else }}
             <!-- Right card: starts just after center pole (51% left margin, 47% width → ends at 98%) -->
-            <div class="flex flex-row-reverse lg:flex-row items-center gap-3 px-4 py-3 rounded bg-white w-full lg:w-[47%] lg:ml-[51%]">
+            <div class="flex flex-row-reverse lg:flex-row items-center gap-3 px-4 py-3 rounded bg-white w-full lg:w-[47%] lg:ml-[51%] transition-all duration-700 ease-out group-hover:-translate-y-2 group-hover:shadow-sm">
               <div class="flex-1 min-w-0 lg:text-right">
                 <h3 class="text-[#3087b9] font-tertiary text-base lg:text-lg font-light mb-0.5 group-hover:underline transition-colors">
                   {{ $microsite.name }}
