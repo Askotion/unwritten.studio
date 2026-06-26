@@ -23,7 +23,7 @@
       <h1 class="text-[#3087b9] text-[2.25rem] lg:text-[2.7rem] font-tertiary font-light mb-4">
         {{ .title | markdownify }}
       </h1>
-      <div>
+      <div class="max-w-2xl mx-auto">
         <p class="text-[#3e4447] font-tertiary text-lg tracking-wider">{{ .content | markdownify }}</p>
       </div>
     </div>
@@ -108,11 +108,11 @@
   <div class="container max-w-screen-xl mx-auto pt-16 lg:pt-20">
     <header class="text-center">
       <h2 class="text-gray-100 font-tertiary font-light mb-4">{{ .title | markdownify }}</h2>
-      <div>
+      <div class="max-w-2xl mx-auto">
         <p class="text-gray-100 font-tertiary text-lg font-light tracking-wider">{{ .content | markdownify }}</p>
       </div>
     </header>
-    <div class="lg:w-[86%] mx-auto pt-12">
+    <div class="lg:w-[86%] mx-auto pt-20">
       <div class="grid grid-cols-12">
         {{ range .partner_logo }}
         <div class="col-span-4">
@@ -147,11 +147,11 @@
     <div class="lg:w-[90%] mx-auto {{ if .content }}pt-20{{ else }}pt-12{{ end }}">
       <div class="space-y-20 md:space-y-20">
         {{ range .applications }}
-        <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="showcase-item group flex flex-col md:flex-row items-center md:items-start gap-8 block transition-transform duration-700 ease-out hover:-translate-y-4">
+        <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="showcase-item group flex flex-col md:flex-row items-center md:items-start gap-8 block transition-transform duration-700 ease-in hover:ease-out hover:-translate-y-2">
           <!-- Text content - appears first on mobile, second on desktop -->
           <div class="flex-1 text-center md:text-left order-1 md:order-2">
             <h3 class="font-tertiary text-xl lg:text-2xl font-light mb-3">
-              <span class="text-[#3087b9] group-hover:underline">
+              <span class="text-[#3087b9]">
                 {{ .subtitle }}
               </span>
             </h3>
@@ -160,7 +160,7 @@
           <!-- Image - appears second on mobile, first on desktop -->
           <div class="flex-shrink-0 order-2 md:order-1">
             <div class="w-[70%] mx-auto md:w-[190px] md:mx-0 lg:w-[230px] aspect-[16/9] overflow-hidden rounded">
-              <img src="{{ .image }}" alt="{{ .subtitle | default "Showcase" }}" loading="lazy" class="w-full h-full object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+              <img src="{{ .image }}" alt="{{ .subtitle | default "Showcase" }}" loading="lazy" class="w-full h-full object-cover block transition-transform duration-700 ease-in hover:ease-out group-hover:scale-[1.03]">
             </div>
           </div>
         </a>
@@ -178,7 +178,7 @@
   <div class="container max-w-screen-xl mx-auto pt-16 pb-16 lg:pt-20 lg:pb-24">
     <header class="text-center">
       <h2 class="text-gray-100 font-tertiary font-light mb-4">{{ .title | markdownify }}</h2>
-      <div class="space-y-4">
+      <div class="space-y-4 max-w-2xl mx-auto">
         {{ range (split .content "\n") }}
           <p class="text-gray-100 font-tertiary text-lg font-light tracking-wider">{{ . | markdownify }}</p>
         {{ end }}
@@ -193,7 +193,7 @@
 {{ with .Params.microsites }}
 <section class="microsites-section bg-[#f3f4f6]">
   <div class="container max-w-screen-xl mx-auto pt-16 pb-16 lg:pt-20 lg:pb-20">
-    <header class="text-center mb-16">
+    <header class="text-center mb-28">
       <h2 class="text-[#3087b9] font-tertiary font-light mb-4">{{ .title | markdownify }}</h2>
       <div>
         <p class="text-[#3e4447] font-tertiary text-lg tracking-wider max-w-3xl mx-auto">{{ .content | markdownify }}</p>
@@ -210,13 +210,13 @@
         <a href="{{ $microsite.url }}" target="_blank" rel="noopener noreferrer" class="group block">
           {{ if eq (mod $index 2) 0 }}
             <!-- Left card: ends just before center pole (2% left margin, 47% width → ends at 49%) -->
-            <div class="flex flex-row items-center gap-3 px-4 py-3 rounded bg-white w-full lg:w-[47%] lg:ml-[2%] transition-transform duration-700 ease-out group-hover:-translate-y-2 group-hover:shadow-sm">
+            <div class="flex flex-row items-center gap-3 px-4 py-3 rounded bg-white w-full lg:w-[47%] lg:ml-[2%] transition-transform duration-700 ease-in hover:ease-out group-hover:-translate-y-1 group-hover:shadow-sm">
               <div class="flex-shrink-0 w-[96px] h-[54px] overflow-hidden rounded relative">
-                <img src="{{ $microsite.image }}" alt="{{ $microsite.name }}" loading="lazy" class="w-full h-full object-cover block">
+                <img src="{{ $microsite.image }}" alt="{{ $microsite.name }}" loading="lazy" class="w-full h-full object-cover block transition-transform duration-700 ease-in hover:ease-out group-hover:scale-[1.08]">
                 <div class="absolute inset-0 bg-[#3087b9]/20 mix-blend-multiply"></div>
               </div>
               <div class="flex-1 min-w-0">
-                <h3 class="text-[#3087b9] font-tertiary text-base lg:text-lg font-light mb-0.5 group-hover:underline transition-colors">
+                <h3 class="text-[#3087b9] font-tertiary text-base lg:text-lg font-light mb-0.5 transition-colors">
                   {{ $microsite.name }}
                 </h3>
                 <p class="text-[#3e4447] font-tertiary text-sm tracking-wider leading-snug">
@@ -226,9 +226,9 @@
             </div>
           {{ else }}
             <!-- Right card: starts just after center pole (51% left margin, 47% width → ends at 98%) -->
-            <div class="flex flex-row-reverse lg:flex-row items-center gap-3 px-4 py-3 rounded bg-white w-full lg:w-[47%] lg:ml-[51%] transition-transform duration-700 ease-out group-hover:-translate-y-2 group-hover:shadow-sm">
+            <div class="flex flex-row-reverse lg:flex-row items-center gap-3 px-4 py-3 rounded bg-white w-full lg:w-[47%] lg:ml-[51%] transition-transform duration-700 ease-in hover:ease-out group-hover:-translate-y-1 group-hover:shadow-sm">
               <div class="flex-1 min-w-0 lg:text-right">
-                <h3 class="text-[#3087b9] font-tertiary text-base lg:text-lg font-light mb-0.5 group-hover:underline transition-colors">
+                <h3 class="text-[#3087b9] font-tertiary text-base lg:text-lg font-light mb-0.5 transition-colors">
                   {{ $microsite.name }}
                 </h3>
                 <p class="text-[#3e4447] font-tertiary text-sm tracking-wider leading-snug">
@@ -236,7 +236,7 @@
                 </p>
               </div>
               <div class="flex-shrink-0 w-[96px] h-[54px] overflow-hidden rounded relative">
-                <img src="{{ $microsite.image }}" alt="{{ $microsite.name }}" loading="lazy" class="w-full h-full object-cover block">
+                <img src="{{ $microsite.image }}" alt="{{ $microsite.name }}" loading="lazy" class="w-full h-full object-cover block transition-transform duration-700 ease-in hover:ease-out group-hover:scale-[1.08]">
                 <div class="absolute inset-0 bg-[#3087b9]/20 mix-blend-multiply"></div>
               </div>
             </div>
@@ -256,7 +256,7 @@
   <div class="container max-w-screen-xl mx-auto pt-16 pb-16 lg:pt-20 lg:pb-24">
     <header class="text-center">
       <h2 class="text-[#3087b9] font-tertiary font-light mb-4">{{ .title | markdownify }}</h2>
-      <div>
+      <div class="max-w-2xl mx-auto">
         <p class="text-[#3e4447] font-tertiary text-lg tracking-wider">{{ .content | markdownify }}</p>
       </div>
     </header>
@@ -293,7 +293,7 @@
   <div class="container max-w-screen-xl mx-auto pt-16 pb-16 lg:pt-20 lg:pb-20">
     <header class="text-center">
       <h2 class="text-[#3087b9] font-tertiary font-light mb-4">{{ .title | markdownify }}</h2>
-      <div>
+      <div class="max-w-2xl mx-auto">
         <p class="text-[#3e4447] font-tertiary text-lg tracking-wider">{{ .content | markdownify }}</p>
       </div>
     </header>

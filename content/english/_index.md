@@ -85,15 +85,14 @@ anwendungen:
 # Forschungsbereich
 forschungsbereich:
   title: "Packende Gefährten"
-  content: "In unserer interdisziplinären Werkstatt verschmelzen wir Literatur, Technologie und KI zu Companions und Wegbegleitern, die statische Inhalte für Nutzer regelrecht zum Leben erwecken. Es entstehen persönliche Gefährten, die sich vom ersten Moment an ganz auf den Nutzer einlassen – seine Sprache sprechen, seine Leidenschaften teilen und seine Reise begleiten.\n
-  Diese Form der Interaktion schafft eine Verbindung, die sich anfühlt wie mit einer vertrauten Person: spielerisch, aufmerksam und überraschend echt. So öffnen sich völlig neue Wege, um Inhalte zu erleben - beim Lernen, in der Beratung oder überall dort, wo Neues entsteht."
+  content: "Wir erschaffen Gefährten — aus Tonalität, Charakter und Haltung. Jeder Companion trägt seine unverwechselbare Handschrift. Eine Stimme, die du wiedererkennst. Eine klare Haltung. Kerzengerade. Ein Erlebnis, das dich zurückkehren lässt."
   partner_logo: []
 
 
 # Microsites
 microsites:
-  title: "Abtauchen"
-  content: "Entdecke unsere Laborräume. Jeder zeigt ein eigenes Universum. Jeder eine andere Art zu denken, zu lernen, zu entdecken. Du kommst, wählst, tauchst ab. In deinem Tempo. Mit deiner Frage. Manche Räume sind klein und zart, andere groß und wild. Gemeinsam zeigen sie: Wie vielfältig können Worte werden, wenn sie mit dir sprechen?"
+  title: "Eintauchen"
+  content: "Petrischale, Prüfstand, Spielfeld - offen, unfertig, lebendig. Keine Ausstellung, kein Shop. Hier passiert etwas zwischen dir, einer Frage und einem Raum, der antwortet. Manche sind klein und zart, andere groß und wild."
   microsites:
     - name: "Afterglow"
       url: "https://afterglow.unwritten.studio/"
