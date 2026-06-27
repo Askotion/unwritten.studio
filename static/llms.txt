@@ -1,6 +1,6 @@
 # llms.txt — Unwritten Studio
 # Website: https://unwritten.studio
-# Last Updated: 2026-03-23
+# Last Updated: 2026-06-27
 
 ## About
 Unwritten Studio GmbH verwandelt tote Texte in lebendige Gesprächspartner.
@@ -23,10 +23,13 @@ von geschriebenem Text, Gespräch und Erlebnis.
 - FAU, HM (Lernbegleiter-Forschung)
 - Heise / c't (Content-Personalisierung)
 
-## Microsites — 15 Live Experiments
+## Microsites — 16 Live Experiments
 
 > https://afterglow.unwritten.studio/llms.txt
 Afterglow — Prägende Events im Gespräch zeitsouverän nacherleben
+
+> https://buchleim.unwritten.studio/llms.txt
+Buchleim — Vom Zettelkasten zum gebundenen Buch. Ein Verfahren in zehn Schritten.
 
 > https://berlinica.unwritten.studio/llms.txt
 Berlinica / Tiger — Berlin denkt. New York hört zu. (Tucholsky Companion)
