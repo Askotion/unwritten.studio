@@ -112,25 +112,6 @@ Datenschutzerklärung: https://www.cloudflare.com/de-de/privacypolicy/<br>
 
 
 
-<p class="bodytext"><b>Google Analytics</b><br>
-<p>Dienstanbieter: Google LLC. (Mountain View, Kalifornien, USA)<br>
-Website: https://analytics.google.com/<br>
-Datenschutzerklärung: https://policies.google.com/privacy?hl=de<br></p></p>
-
-
-
-<p class="bodytext"><b>Google Tag Manager</b><br>
-<p>Dienstanbieter: Google LLC. (Mountain View, Kalifornien, USA)<br>
-Website: https://marketingplatform.google.com/intl/de/about/tag-manager/<br>
-Datenschutzerklärung: https://marketingplatform.google.com/about/analytics/tag-manager/use-policy/ https://policies.google.com/privacy?hl=de<br></p></p>
-
-<p class="bodytext"><b>Twitter Remarketing</b><br>
-<p>Dienstanbieter: Twitter Inc. ,1355 Market Street, Suite 900, San Francisco, CA 94103, USA<br>
-Webseite: https://www.twitter.com/;<br>
-Datenschutzerklärung: https://twitter.com/de/privacy<br>
-Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
-
-
 
 
 <h3 class="smallsubtitle">7. Webanalyse mit Plausible</h3>
