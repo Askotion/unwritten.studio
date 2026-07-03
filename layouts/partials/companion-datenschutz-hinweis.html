@@ -1,0 +1,73 @@
+{{/* Dezenter Datenschutzhinweis für alle Companions
+     Usage: {{ partial "companion-datenschutz-hinweis.html" (dict "companion" "Echo") }}
+     Optional: "companion" = Name des Companions für personalisierten Text */}}
+
+{{ $companion := .companion | default "dieser Companion" }}
+
+<div class="companion-privacy-hint" role="note" aria-label="Datenschutzhinweis">
+  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="10"/>
+    <line x1="12" y1="8" x2="12" y2="12"/>
+    <line x1="12" y1="16" x2="12.01" y2="16"/>
+  </svg>
+  <span>
+    Gespräche werden zur Qualitätssicherung gespeichert.
+    <a href="/privacy-policy" target="_blank" rel="noopener">Datenschutz</a>
+  </span>
+</div>
+
+<style>
+  .companion-privacy-hint {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px 8px;
+    font-size: 11px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 0.01em;
+  }
+
+  .companion-privacy-hint svg {
+    flex-shrink: 0;
+    opacity: 0.5;
+  }
+
+  .companion-privacy-hint span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .companion-privacy-hint a {
+    color: rgba(255, 255, 255, 0.45);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .companion-privacy-hint a:hover {
+    color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+  /* Hell-Hintergrund Variante (für Companions mit hellem Design) */
+  .companion-privacy-hint.light {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .companion-privacy-hint.light svg {
+    stroke: rgba(0, 0, 0, 0.3);
+  }
+
+  .companion-privacy-hint.light a {
+    color: rgba(0, 0, 0, 0.4);
+    border-color: rgba(0, 0, 0, 0.15);
+  }
+
+  .companion-privacy-hint.light a:hover {
+    color: rgba(0, 0, 0, 0.65);
+    border-color: rgba(0, 0, 0, 0.35);
+  }
+</style>
