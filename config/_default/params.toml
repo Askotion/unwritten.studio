@@ -33,6 +33,10 @@ custom_script = ""
 # copyright
 copyright = "Copyright &copy; 2026 unwritten GmbH"
 
+# plausible analytics (testweise), see https://plausible.io/ — Snippet in layouts/partials/plausible-analytics.html
+[plausible]
+enable = true
+
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
 [preloader]

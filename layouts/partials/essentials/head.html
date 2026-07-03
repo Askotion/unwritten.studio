@@ -1,0 +1,90 @@
+<meta charset="utf-8" />
+
+<!-- responsive meta -->
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=5" />
+
+<!-- theme meta -->
+<meta name="theme-name" content="hugoplate" />
+
+<!-- canonical url -->
+<link rel="canonical" href="{{ .Permalink }}" />
+
+<!-- favicon -->
+{{ partialCached "favicon" . }}
+
+
+<!-- manifest -->
+{{ partialCached "manifest" . }}
+
+
+<!-- site verifications -->
+{{ partialCached "site-verifications.html" . }}
+
+
+<!-- opengraph and twitter card -->
+{{ partial "basic-seo.html" . }}
+
+
+<!-- JSON-LD Organization Schema -->
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ site.Title }}",
+  "url": "{{ site.BaseURL }}",
+  {{ with site.Params.logo }}"logo": "{{ site.BaseURL }}{{ . }}",{{ end }}
+  {{ with site.Params.metadata.description }}"description": "{{ . }}",{{ end }}
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Adlerweg 6",
+    "addressLocality": "Wendelstein",
+    "postalCode": "90530",
+    "addressCountry": "DE"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+49 9129 1400929",
+    "contactType": "customer service",
+    "email": "post@unwritten.studio"
+  }
+}
+</script>
+{{ end }}
+
+
+<!-- custom script -->
+{{ partialCached "custom-script.html" . }}
+
+
+<!-- google analytics -->
+{{ if and site.Config.Services.GoogleAnalytics.ID (ne site.Config.Services.GoogleAnalytics.ID "G-MEASUREMENT_ID") }}
+  {{ template "_internal/google_analytics.html" . }}
+{{ end }}
+
+
+<!-- google tag manager -->
+{{ partialCached "gtm.html" . }}
+
+
+<!-- search index -->
+{{ partial "search-index.html" . }}
+
+
+<!-- matomo analytics -->
+{{/* {{ partialCached "matomo-analytics.html" . }} */}}
+
+<!--  Baidu analytics -->
+{{/* {{ partialCached "baidu-analytics.html" . }} */}}
+
+<!-- Plausible Analytics -->
+{{ partialCached "plausible-analytics.html" . }}
+
+<!-- Counter Analytics -->
+{{/* {{ partialCached "counter-analytics.html" . }} */}}
+
+<!-- Crisp Chat -->
+{{/* {{ partialCached "crisp-chat.html" . }} */}}
+

@@ -133,7 +133,23 @@ Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
 
 
 
-<h3 class="smallsubtitle">7. Google Schriftarten (Webfonts)</h3>
+<h3 class="smallsubtitle">7. Webanalyse mit Plausible</h3>
+
+<strong>a) Beschreibung und Umfang der Datenverarbeitung</strong>
+<p class="bodytext">Auf unserer Webseite setzen wir den datenschutzfreundlichen Webanalysedienst Plausible Analytics ein. Dienstanbieter ist die Plausible Insights OÜ, Västriku tn 2, 50403 Tartu, Estland (im Folgenden „Plausible").</p>
+<p class="bodytext">Plausible verwendet keine Cookies und speichert keine personenbezogenen Daten. Erfasst werden ausschließlich aggregierte Nutzungsinformationen, insbesondere aufgerufene Seiten, die Verweisquelle (Referrer), der ungefähre Standort auf Länderebene, der verwendete Browser, das Betriebssystem und der Gerätetyp. Die IP-Adresse des Nutzers wird nicht gespeichert; sie wird lediglich flüchtig zur Bildung eines gekürzten, täglich wechselnden Hash-Wertes verwendet und ist damit weder rückverfolgbar noch geräteübergreifend verknüpfbar. Eine Nachverfolgung einzelner Nutzer über verschiedene Webseiten oder Tage hinweg findet nicht statt.</p>
+<p class="bodytext">Sämtliche Daten werden ausschließlich auf Servern innerhalb der Europäischen Union verarbeitet und gespeichert.</p>
+
+<strong>b) Rechtsgrundlage für die Datenverarbeitung</strong>
+<p class="bodytext">Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. f EU-DSGVO. Unser berechtigtes Interesse liegt in der statistischen Analyse der Nutzung unserer Webseite, um unser Angebot zu verbessern. Da Plausible keine Cookies setzt und keine personenbezogenen Daten speichert, ist keine Einwilligung erforderlich.</p>
+
+<strong>c) Zweck der Datenverarbeitung</strong>
+<p class="bodytext">Die Verarbeitung dient ausschließlich der Reichweitenmessung und der Verbesserung unserer Webseite und ihrer Inhalte. Die Daten werden nicht zu Werbezwecken genutzt und nicht an Dritte weitergegeben.</p>
+
+<strong>d) Dauer der Speicherung und weitere Informationen</strong>
+<p class="bodytext">Es werden ausschließlich aggregierte Statistiken ohne Personenbezug gespeichert. Weitere Informationen finden Sie in der Datenschutzerklärung von Plausible unter <a href="https://plausible.io/privacy">https://plausible.io/privacy</a> sowie in der Datenrichtlinie unter <a href="https://plausible.io/data-policy">https://plausible.io/data-policy</a>.</p>
+
+<h3 class="smallsubtitle">8. Google Schriftarten (Webfonts)</h3>
 
 <strong>a) Umfang der Datenverarbeitung</strong>
 <p class="bodytext">Unsere Webseite nutzt zur Darstellung bestimmte Schriftarten von Google. Beim Aufruf einer Seite lädt der Browser des Nutzers diese Schriftarten. Dabei wird IP-Adresse des Nutzers samt der Seite (Internetadresse), die der Nutzer besucht hat, an einen Server der Google Inc. (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA) übertragen. Weitere Informationen zu den Google Schriftarten finden sind unter https://developers.google.com/fonts/faq und in der Datenschutzerklärung von Google unter https://www.google.com/policies/privacy/ zu finden.</p>
@@ -142,7 +158,7 @@ Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
 <strong>c) Zweck der Datenverarbeitung</strong>
 <p class="bodytext">Die Verwendung von Google Schriftarten dient der visuellen Darstellung von Textinhalten.</p>
 
-<h3 class="smallsubtitle">8. Chat-Funktionalität</h3>
+<h3 class="smallsubtitle">9. Chat-Funktionalität</h3>
 <strong>a) Beschreibung und Umfang der Datenverarbeitung</strong>
 <p class="bodytext">Auf unseren Webseiten (unwritten.studio und zugehörige Subdomains wie concierge.unwritten.studio, wastedwetware.unwritten.studio, flow.unwritten.studio) bieten wir eine Chat-Funktionalität an, die es Nutzern ermöglicht, mit KI-gestützten Assistenten zu interagieren. Diese Funktion dient dazu, die Nutzerfreundlichkeit zu erhöhen und personalisierte Inhalte bereitzustellen.</p>
 <p class="bodytext">Im Rahmen der Chat-Funktionalität werden folgende Daten verarbeitet:</p>
@@ -168,7 +184,7 @@ Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
 <strong>e) Widerspruchsrecht</strong>
 <p class="bodytext">Sie haben jederzeit das Recht, der Verarbeitung Ihrer Daten zu widersprechen. Kontaktieren Sie uns dazu unter post@unwritten.studio.</p>
 
-<h3 class="smallsubtitle">9. E-Mail-Kontakt</h3>
+<h3 class="smallsubtitle">10. E-Mail-Kontakt</h3>
 <strong>a) Beschreibung und Umfang der Datenverarbeitung</strong>
 <p class="bodytext">Eine Kontaktaufnahme ist über die bereitgestellte E-Mail-Adresse (post@unwritten.studio) möglich. In diesem Fall werden die mit der E-Mail übermittelten personenbezogenen Daten des Nutzers gespeichert.</p>
 <p class="bodytext">Es erfolgt in diesem Zusammenhang keine Weitergabe der Daten an Dritte. Die Daten werden ausschließlich für die Verarbeitung der Konversation verwendet.</p>
@@ -186,7 +202,7 @@ Widerspruchsmöglichkeit (Opt-Out): https://optout.aboutads.info</p></p>
 
 
 
-<h3 class="smallsubtitle">10. Ihre Rechte als betroffene Person</h3>
+<h3 class="smallsubtitle">11. Ihre Rechte als betroffene Person</h3>
 <p class="bodytext">Gemäß der EU-DSGVO haben Sie folgende Rechte:</p>
 <strong>a) Auskunftsrecht</strong>
 <p class="bodytext">Sie können von dem Verantwortlichen eine Bestätigung darüber verlangen, ob personenbezogene Daten, die Sie betreffen, von uns verarbeitet werden.<br>
