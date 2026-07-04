@@ -65,52 +65,53 @@ Tel.: 09129 1400929<br />
 <h3 class="smallsubtitle">5. Verwendung von Cookies</h3>
 <strong>a) Beschreibung und Umfang der Datenverarbeitung</strong>
 <p class="bodytext">Unsere Webseite verwendet Cookies. Bei Cookies handelt es sich um Textdateien, die im Internetbrowser bzw. vom Internetbrowser auf dem Computersystem des Nutzers gespeichert werden. Ruft ein Nutzer eine Website auf, so kann ein Cookie auf dem Betriebssystem des Nutzers gespeichert werden. Dieser Cookie enthält eine charakteristische Zeichenfolge, die eine eindeutige Identifizierung des Browsers beim erneuten Aufrufen der Website ermöglicht.</p>
-<p class="bodytext">Wir setzen Cookies ein, um unsere Website nutzerfreundlicher zu gestalten. Einige Elemente unserer Webseite erfordern es, dass der aufrufende Browser auch nach einem Seitenwechsel identifiziert werden kann. Wir verwenden auf unserer Website darüber hinaus Cookies, die eine Analyse des Surfverhaltens der Nutzer ermöglichen.</p>
-<p class="bodytext">Die auf diese Weise erhobenen Daten der Nutzer werden durch technische Vorkehrungen pseudonymisiert. Daher ist eine Zuordnung der Daten zum aufrufenden Nutzer nicht mehr möglich. Die Daten werden nicht gemeinsam mit sonstigen personenbezogenen Daten der Nutzer gespeichert.</p>
+<p class="bodytext">Wir setzen Cookies nur ein, soweit sie technisch erforderlich sind, um unsere Website nutzerfreundlich bereitzustellen. Einige Elemente unserer Webseite erfordern es, dass der aufrufende Browser auch nach einem Seitenwechsel identifiziert werden kann. Darüber hinaus kann das für die Newsletter-Anmeldung eingebundene Script unseres Dienstleisters Mailchimp Cookies setzen (siehe Abschnitt „Newsletter"). Zu Analysezwecken setzen wir keine Cookies ein; die Reichweitenmessung erfolgt cookielos über Plausible (siehe Abschnitt „Webanalyse mit Plausible").</p>
 
 <strong>b) Rechtsgrundlage für die Datenverarbeitung</strong>
 <p class="bodytext">Die Rechtsgrundlage für die Verarbeitung personenbezogener Daten unter Verwendung von Cookies ist Art. 6 Abs. 1 lit. f EU-DSGVO.</p>
 
 <strong>c) Zweck der Verarbeitung</strong>
 <p class="bodytext">Der Zweck der Verwendung technisch notwendiger Cookies ist, die Nutzung von Websites für die Nutzer zu vereinfachen. Einige Funktionen unserer Webseite können ohne den Einsatz von Cookies nicht angeboten werden. Für diese ist es erforderlich, dass der Browser auch nach einem Seitenwechsel wiedererkannt wird. Die durch technisch notwendige Cookies erhobenen Nutzerdaten werden nicht zur Erstellung von Nutzerprofilen verwendet.</p>
-<p class="bodytext">Die Verwendung der Analyse-Cookies erfolgt zu dem Zweck, die Qualität unserer Website und ihre Inhalte zu verbessern. Durch die Analyse-Cookies erfahren wir, wie die Website genutzt wird und können so unser Angebot stetig optimieren.</p>
 <p class="bodytext">In diesen Zwecken liegt auch unser berechtigtes Interesse in der Verarbeitung der personenbezogenen Daten nach Art. 6 Abs. 1 lit. f EU-DSGVO.</p>
 <strong>d) Dauer der Speicherung, Widerspruchs- und Beseitigungsmöglichkeit</strong>
 <p class="bodytext">Cookies werden auf dem Rechner des Nutzers gespeichert und von diesem an unserer Seite übermittelt. Daher haben Sie als Nutzer auch die volle Kontrolle über die Verwendung von Cookies. Durch eine Änderung der Einstellungen in Ihrem Internetbrowser können Sie die Übertragung von Cookies deaktivieren oder einschränken. Bereits gespeicherte Cookies können jederzeit gelöscht werden. Dies kann auch automatisiert erfolgen. Werden Cookies für unsere Website deaktiviert, können möglicherweise nicht mehr alle Funktionen der Website vollumfänglich genutzt werden.</p>
 
 
-<h3 class="smallsubtitle">6. Online-Marketing</h3>
+<h3 class="smallsubtitle">6. Hosting und Content Delivery Networks (CDN)</h3>
 
 <strong>a) Beschreibung und Umfang der Datenverarbeitung</strong>
-<p class="bodytext">Auf unserer Webseite verarbeiten wir personenbezogene Daten zu Zwecken des Onlinemarketings, worunter insbesondere die Darstellung von werbenden und sonstigen Inhalten (zusammenfassend als "Inhalte" bezeichnet) anhand potentieller Interessen der Nutzer sowie die Messung ihrer Effektivität fallen.</p>
-<p class="bodytext">Zu diesen Zwecken werden sogenannte Nutzerprofile angelegt und in sog. Cookies gespeichert oder ähnliche Verfahren genutzt, mittels derer die für die Darstellung der vorgenannten Inhalte relevante Angaben zum Nutzer gespeichert werden. Zu diesen Angaben können z.B. betrachtete Inhalte, besuchte Webseiten, genutzte Onlinenetzwerke, aber auch Kommunikationspartner und technische Angaben, wie der verwendete Browser, das verwendete Computersystem sowie Angaben zu Nutzungszeiten gehören. Sofern der Nutzer in die Erhebung seiner Standortdaten eingewilligt hat, können auch diese verarbeitet werden.</p>
-<p class="bodytext">Es wird auch die IP-Adresse des Nutzers gespeichert. Jedoch verwenden wir IP-Masking-Verfahren (d.h., Pseudonymisierung durch Kürzung der IP-Adresse) zum Schutz des Nutzers. Generell werden im Rahmen des Onlinemarketingverfahren keine Klardaten des Nutzers (wie z.B. E-Mail-Adressen oder Namen) gespeichert, sondern Pseudonyme. D.h., Identität des Nutzers ist nicht bekannt, sondern nur die in dessen Profilen gespeicherten Angaben. Die Angaben im Profil werden im Regelfall in den Cookies oder mittels ähnlicher Verfahren gespeichert. Diese Cookies können später generell auch auf anderen Webseiten, die dasselbe Online-Marketingverfahren einsetzen, ausgelesen und zu Zwecken der Darstellung von Inhalten analysiert als auch mit weiteren Daten ergänzt und auf dem Server des Online-Marketingverfahrens-Anbieters gespeichert werden.</p>
-<p class="bodytext">Ausnahmsweise können Klardaten dem Profil zugeordnet werden. Das ist der Fall, wenn der Nutzer z.B. Mitglied eines sozialen Netzwerks ist, dessen Online-Marketingverfahren wir einsetzen und das Netzwerk das Profil des Nutzers mit den vorgenannten Angaben verbindet. Dabei ist zu beachten, dass der Nutzer mit den Anbietern zusätzliche Abreden, z.B. durch Einwilligung im Rahmen der Registrierung, treffen kann.</p>
-<p class="bodytext">Wir erhalten grundsätzlich nur Zugang zu zusammengefassten Informationen über den Erfolg unserer Werbeanzeigen. Jedoch können wir im Rahmen sogenannter Konversionsmessungen prüfen, welche unserer Online-Marketingverfahren zu einer sogenannten Konversion geführt haben, d.h. z.B., zu einem Vertragsschluss mit uns. Die Konversionsmessung wird alleine zur Analyse des Erfolgs unserer Marketingmaßnahmen verwendet.</p>
+<p class="bodytext">Unsere Webseite wird über den Dienst GitHub Pages der GitHub Inc., 88 Colin P Kelly Jr Street, San Francisco, CA 94107, USA, gehostet. Beim Aufruf unserer Webseite verarbeitet GitHub technisch notwendige Verbindungsdaten, insbesondere die IP-Adresse des Nutzers, in Server-Logs, um die Webseite auszuliefern und die Sicherheit und Stabilität des Dienstes zu gewährleisten.</p>
+<p class="bodytext">Darüber hinaus binden wir zur Bereitstellung von Schriftarten, Icons und Script-Bibliotheken Inhalte von Content Delivery Networks (CDN) ein, insbesondere von Cloudflare (cdnjs), jsDelivr und Font Awesome. Beim Laden dieser Ressourcen erhält der jeweilige Anbieter technisch bedingt die IP-Adresse des Nutzers.</p>
 
 <strong>b) Rechtsgrundlage für die Datenverarbeitung</strong>
-<p class="bodytext">Sofern der Nutzer eine Einwilligung erteilt hat, ist die Rechtsgrundlage für die Verarbeitung personenbezogener Daten Art. 6 Abs. 1 lit. a EU-DSGVO.</p>
-<p class="bodytext">Ansonsten ist die Rechtsgrundlage für die Verarbeitung personenbezogener Daten Art. 6 Abs. 1 lit. f EU-DSGVO, mithin unsere berechtigten Interessen (beispielsweise die Bereitstellung von effizienten, wirtschaftlichen und empfängerfreundlichen Leistungen).</p>
+<p class="bodytext">Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. f EU-DSGVO. Unser berechtigtes Interesse liegt in der sicheren, zuverlässigen und effizienten Bereitstellung unserer Webseite.</p>
 
-<strong>c) Zweck der Verarbeitung</strong>
-<p class="bodytext">Zwecke der Datenverarbeitung sind Tracking (z.B. interessens-/verhaltensbezogenes Profiling, Nutzung von Cookies), Remarketing, Besuchsaktionsauswertung, Interessenbasiertes und verhaltensbezogenes Marketing, Profiling (Erstellen von Nutzerprofilen), Konversionsmessung (Messung der Effektivität von Marketingmaßnahmen), Reichweitenmessung (z.B. Zugriffsstatistiken, Erkennung wiederkehrender Besucher), Zielgruppenbildung (Bestimmung von für Marketingzwecke relevanten Zielgruppen oder sonstige Ausgabe von Inhalten), Cross-Device Tracking (geräteübergreifende Verarbeitung von Nutzerdaten für Marketingzwecke), Clicktracking.</p>
-<p class="bodytext">In diesen Zwecken liegt auch unser berechtigtes Interesse in der Verarbeitung der personenbezogenen Daten nach Art. 6 Abs. 1 lit. f EU-DSGVO.</p>
+<strong>c) Zweck der Datenverarbeitung</strong>
+<p class="bodytext">Die Verarbeitung dient ausschließlich der Auslieferung der Webseite und ihrer Ressourcen sowie der Gewährleistung von Sicherheit und Stabilität.</p>
 
-<strong>d) Dauer der Speicherung, Widerspruchs- und Beseitigungsmöglichkeit</strong>
-<p class="bodytext">Cookies werden auf dem Rechner des Nutzers gespeichert und von diesem an unsere Seite übermittelt. Daher haben Sie als Nutzer auch die volle Kontrolle über die Verwendung von Cookies. Durch eine Änderung der Einstellungen in Ihrem Internetbrowser können Sie die Übertragung von Cookies deaktivieren oder einschränken. Bereits gespeicherte Cookies können jederzeit gelöscht werden. Dies kann auch automatisiert erfolgen. Werden Cookies für unsere Website deaktiviert, können möglicherweise nicht mehr alle Funktionen der Website vollumfänglich genutzt werden.</p>
+<strong>d) eingesetzte Dienste und Diensteanbieter</strong>
 
-<strong>e) eingesetzte Dienste und Diensteanbieter</strong>
+<p class="bodytext"><b>GitHub Pages</b><br>
+<p>Dienstanbieter: GitHub Inc., 88 Colin P Kelly Jr Street, San Francisco, CA 94107, USA<br>
+Website: https://pages.github.com/<br>
+Datenschutzerklärung: https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement<br></p></p>
 
-
-
-<p class="bodytext"><b>CloudFlare</b><br>
+<p class="bodytext"><b>Cloudflare</b><br>
 <p>
 Dienstanbieter: Cloudflare Inc., 101 Townsend St, San Francisco, CA 94107, USA <br>
 Website: https://www.cloudflare.com/<br>
 Datenschutzerklärung: https://www.cloudflare.com/de-de/privacypolicy/<br>
 </p></p>
 
+<p class="bodytext"><b>jsDelivr</b><br>
+<p>Dienstanbieter: Volentio JSD Limited, Suite 2a1, Northside House, Mount Pleasant, Barnet, England, EN4 9EB<br>
+Website: https://www.jsdelivr.com/<br>
+Datenschutzerklärung: https://www.jsdelivr.com/terms/privacy-policy<br></p></p>
 
+<p class="bodytext"><b>Font Awesome</b><br>
+<p>Dienstanbieter: Fonticons Inc., 307 S. Main St., Suite 202, Bentonville, AR 72712, USA<br>
+Website: https://fontawesome.com/<br>
+Datenschutzerklärung: https://fontawesome.com/privacy<br></p></p>
 
 
 
@@ -183,7 +184,26 @@ Datenschutzerklärung: https://www.cloudflare.com/de-de/privacypolicy/<br>
 
 
 
-<h3 class="smallsubtitle">11. Ihre Rechte als betroffene Person</h3>
+<h3 class="smallsubtitle">11. Newsletter (Mailchimp)</h3>
+
+<strong>a) Beschreibung und Umfang der Datenverarbeitung</strong>
+<p class="bodytext">Auf unserer Webseite besteht die Möglichkeit, einen kostenlosen Newsletter zu abonnieren. Für die Verwaltung der Anmeldungen und den Versand nutzen wir den Dienst Mailchimp. Dienstanbieter ist The Rocket Science Group LLC d/b/a Mailchimp, 675 Ponce de Leon Ave NE, Suite 5000, Atlanta, GA 30308, USA, ein Unternehmen der Intuit Inc. (im Folgenden „Mailchimp").</p>
+<p class="bodytext">Bei der Anmeldung zum Newsletter werden die von Ihnen im Formular angegebenen Daten (E-Mail-Adresse sowie optional Vor- und Nachname) an Mailchimp übermittelt und dort gespeichert. Mailchimp speichert darüber hinaus die IP-Adresse und den Zeitpunkt der Anmeldung. Zur Bereitstellung des Anmeldeformulars ist auf unseren Seiten zudem ein Script von Mailchimp (chimpstatic.com) eingebunden; beim Laden dieses Scripts erhält Mailchimp technisch bedingt die IP-Adresse des Nutzers, und es können Cookies gesetzt werden.</p>
+<p class="bodytext">Da Mailchimp seinen Sitz in den USA hat, werden die Daten in ein Drittland übermittelt. Mailchimp bzw. Intuit ist nach dem EU-US Data Privacy Framework zertifiziert; die Übermittlung erfolgt damit auf Grundlage des Angemessenheitsbeschlusses der EU-Kommission (Art. 45 EU-DSGVO).</p>
+
+<strong>b) Rechtsgrundlage für die Datenverarbeitung</strong>
+<p class="bodytext">Rechtsgrundlage für die Verarbeitung ist Ihre Einwilligung gemäß Art. 6 Abs. 1 lit. a EU-DSGVO, die Sie mit der Anmeldung zum Newsletter erteilen.</p>
+
+<strong>c) Zweck der Datenverarbeitung</strong>
+<p class="bodytext">Die Erhebung der E-Mail-Adresse dient dem Versand des Newsletters. Die Erhebung weiterer Daten im Rahmen der Anmeldung dient der persönlichen Ansprache und dazu, einen Missbrauch der Dienste oder der verwendeten E-Mail-Adresse zu verhindern.</p>
+
+<strong>d) Dauer der Speicherung</strong>
+<p class="bodytext">Die Daten werden gespeichert, solange das Newsletter-Abonnement besteht. Nach einer Abmeldung werden die Daten gelöscht, soweit ihrer Löschung keine gesetzlichen Aufbewahrungspflichten oder die Erforderlichkeit des Nachweises der ursprünglich erteilten Einwilligung entgegenstehen.</p>
+
+<strong>e) Widerrufsmöglichkeit</strong>
+<p class="bodytext">Sie können den Newsletter jederzeit abbestellen und damit Ihre Einwilligung widerrufen — über den Abmeldelink in jeder Newsletter-E-Mail oder per Nachricht an post@unwritten.studio. Weitere Informationen finden Sie in der Datenschutzerklärung von Mailchimp unter <a href="https://mailchimp.com/legal/privacy/">https://mailchimp.com/legal/privacy/</a>.</p>
+
+<h3 class="smallsubtitle">12. Ihre Rechte als betroffene Person</h3>
 <p class="bodytext">Gemäß der EU-DSGVO haben Sie folgende Rechte:</p>
 <strong>a) Auskunftsrecht</strong>
 <p class="bodytext">Sie können von dem Verantwortlichen eine Bestätigung darüber verlangen, ob personenbezogene Daten, die Sie betreffen, von uns verarbeitet werden.<br>
