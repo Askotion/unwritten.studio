@@ -1,5 +1,5 @@
 ---
-title: "newsletter"
+title: "Worte, die ankommen."
 # meta title
 meta_title: ""
 # meta description

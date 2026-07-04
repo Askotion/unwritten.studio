@@ -1,5 +1,5 @@
 ---
-title: "Unwritten Terms of Service / Nutzungsbedingungen"
+title: "Nutzungsbedingungen"
 # meta title
 meta_title: ""
 # meta description
