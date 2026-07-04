@@ -333,6 +333,75 @@ Beim ersten Abspielen ist ein sehr kurzer GPU-Compositing-Flash sichtbar (Moment
 
 ---
 
+## Companion-Standard: Datenschutzhinweis (gilt für ALLE Chat-Fenster)
+
+Jedes Companion-Chat-Fenster — auf der Hauptseite **und** auf allen Microsites
+(glitch, kaspar, red, berlinica, kollektiv, resonanzfeld, loop, wastedwetware,
+flow, companion, concierge, afterglow, …) — bekommt denselben Datenschutzhinweis
+unter dem Eingabefeld. Auch bei jedem **neuen** Companion von Anfang an einbauen.
+
+**Verhalten (verbindlich):**
+1. Text „Deine Worte sind sicher bei uns." + Info-Icon mit Link zur
+   Datenschutzerklärung, **rechtsbündig** unter dem Eingabefeld
+2. Nach der **ersten Nachricht des Nutzers** blendet der Text sanft aus
+   (300ms) — nur das Icon bleibt sichtbar, der Hinweistext liegt als
+   Tooltip (`title`) auf dem Icon
+3. Der Link zur Datenschutzerklärung funktioniert jederzeit
+
+Auf der Hauptseite übernimmt das der Partial
+`layouts/partials/companion-datenschutz-hinweis.html`
+(Parameter `hide_after_input` aktivieren!). Für Microsites gilt das folgende
+Referenz-Snippet (Alpine.js, wie in allen Microsites im Einsatz) — die
+`x-show`-Bedingung ggf. an die Message-Struktur der Site anpassen:
+
+```html
+<!-- Companion-Datenschutzhinweis (Standard) — unter dem Eingabefeld,
+     innerhalb des Alpine-Scopes des Chats platzieren -->
+<div class="companion-privacy-hint" role="note" aria-label="Datenschutzhinweis">
+  <span class="companion-privacy-hint-text"
+        x-show="!messages.some(m => m.role === 'user')"
+        x-transition.opacity.duration.300ms>
+    Deine Worte sind sicher bei uns.
+  </span>
+  <a href="https://unwritten.studio/privacy-policy" target="_blank" rel="noopener"
+     aria-label="Datenschutzerklärung"
+     title="Deine Worte sind sicher bei uns. — Zur Datenschutzerklärung">
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+         style="display:inline;vertical-align:middle;">
+      <circle cx="12" cy="12" r="10"/>
+      <line x1="12" y1="8" x2="12" y2="12"/>
+      <line x1="12" y1="16" x2="12.01" y2="16"/>
+    </svg>
+  </a>
+</div>
+
+<style>
+  .companion-privacy-hint {
+    padding: 6px 0 10px;
+    font-size: 11px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.3);   /* dunkler Hintergrund; hell: rgba(0,0,0,0.3) */
+    letter-spacing: 0.01em;
+    text-align: right;
+  }
+  .companion-privacy-hint a {
+    color: rgba(255, 255, 255, 0.35);  /* hell: rgba(0,0,0,0.35) */
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .companion-privacy-hint a:hover {
+    color: rgba(255, 255, 255, 0.65);  /* hell: rgba(0,0,0,0.6) */
+  }
+</style>
+```
+
+**Testen:** Hinweis initial sichtbar und rechtsbündig → erste Nachricht
+senden → Text blendet aus, Icon bleibt → Icon-Link öffnet die
+Datenschutzerklärung → nach Reload (frische Session) ist der Text wieder da.
+
+---
+
 ## Häufige Probleme & Lösungen
 
 ### "Echo wird nicht angezeigt"
