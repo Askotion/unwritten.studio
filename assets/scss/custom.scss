@@ -1,6 +1,24 @@
 // Add your own custom styles here
 
 /* ============================================
+   SECTION HEADLINES — leichter Plakat-Stil
+   ============================================ */
+
+.features-section h2,
+.quotes-section h2,
+.partners-section h2,
+.anwendungen-section h2,
+.schmiede-section h2,
+.microsites-section h2,
+.forschungsbereich-section h2,
+.teams-section h2 {
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  font-weight: 200;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+/* ============================================
    ECHO CHATBOT - Glass Aesthetic
    ============================================ */
 

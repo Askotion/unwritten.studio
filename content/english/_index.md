@@ -54,31 +54,59 @@ partners:
       alt: "O'Reilly Media Partner Logo"
 
 
-# Anwendungen
-anwendungen:
-  title: "Showcases"
+# Bühne
+buehne:
+  title: "Bühne"
+  content: "Was uns nicht loslässt."
 
   applications:
-    - subtitle: "Flow"
-      image: "/images/flow-showcase.jpg"
-      content: "Die EU-KI-Verordnung in fünf Minuten am Tag. Flow begleitet dich rollenspezifisch durch die neuen Anforderungen — als Entwickler, Manager oder HR-Profi — bis zum Zertifikat."
-      link: "https://flow.unwritten.studio/"
     - subtitle: "Pantopia"
       image: "/images/pantopia-showcase.jpg"
       content: "Sprich direkt mit Einbug, der starken KI aus dem Roman, die zur Rettung der Menschheit wird. Ungefiltert, aus erster Hand."
       link: "https://pantopia.world/"
-    - subtitle: "Kaspar"
-      image: "/images/kaspar-showcase.jpg"
-      content: "Nürnberg, 1828. Du bist Kaspar Hauser — und die Welt antwortet auf alles, was du tippst. Eine KI-Liebeserklärung an das Textadventure, neu erfunden ohne Parser-Zwänge."
-      link: "https://kaspar.unwritten.studio/"
+    - subtitle: "Vorsprung"
+      image: "/images/vorsprung-showcase.png"
+      content: "KI-Kompetenzen, die wirklich ankommen. Vorsprung bringt Teams in Bewegung — mit Szenarien aus dem echten Arbeitsalltag statt generischen Folien."
+      link: "https://vorsprung.unwritten.studio/"
+    - subtitle: "Onboarding"
+      image: "/images/onboarding-showcase.png"
+      content: "Erster Tag, fremde Welt. Der KI-Companion begleitet Erstsemester durch den Dschungel aus Prüfungsordnungen, Campusplänen und ungeschriebenen Regeln."
+      link: "https://onboarding.unwritten.studio/"
     - subtitle: "Wasted Wetware"
       image: "/images/wasted-wetware-showcase.png"
       content: "In einer Welt voll KI-generiertem Einerlei schreibt Henry täglich das, was wirklich elektrisiert. Zynisch, ungefiltert, unter die Haut."
       link: "https://wastedwetware.com/"
-    - subtitle: "Glitch"
+
+# Schmiede
+schmiede:
+  title: "Schmiede"
+  content: "Das Metall glüht noch. Hier entsteht, was morgen die Bühne betritt."
+
+  projects:
+    - name: "Flow"
+      image: "/images/flow-showcase.jpg"
+      description: "Die EU-KI-Verordnung in fünf Minuten am Tag — rollenspezifisch, bis zum Zertifikat."
+      url: "https://flow.unwritten.studio/"
+    - name: "Fehlfunktion"
+      image: "/images/uw-fehlfunktion.jpg"
+      description: "42 Essays über gesellschaftliche Dysfunktionen, mit KI geschrieben."
+      url: "https://fehlfunktion.unwritten.studio/"
+    - name: "Glitch"
       image: "/images/glitch-showcase.jpg"
-      content: "Zwei Jahre Fachinformatiker-Ausbildung, ein Begleiter der sich erinnert. Trackt deinen Stand, schließt Wissenslücken, bereitet auf AP1 und AP2 vor."
-      link: "https://glitch.unwritten.studio/"
+      description: "Zwei Jahre Fachinformatiker-Ausbildung, ein Begleiter der sich erinnert."
+      url: "https://glitch.unwritten.studio/"
+    - name: "Nathan"
+      image: "/images/uw-nathan.jpeg"
+      description: "n8n-Automatisierung lernen mit deinem eigenen Use Case."
+      url: "https://nathan.unwritten.studio/"
+    - name: "Kaspar"
+      image: "/images/kaspar-showcase.jpg"
+      description: "Nürnberg, 1828. Du bist Kaspar Hauser — und die Welt antwortet auf alles, was du tippst."
+      url: "https://kaspar.unwritten.studio/"
+    - name: "Buchleim"
+      image: "/images/uw-buchleim.jpeg"
+      description: "Vom Zettelkasten zum gebundenen Buch."
+      url: "https://buchleim.unwritten.studio/"
 
 
 
@@ -89,19 +117,15 @@ forschungsbereich:
   partner_logo: []
 
 
-# Microsites
+# Labor
 microsites:
-  title: "Eintauchen"
-  content: "Petrischale, Prüfstand, Spielfeld - offen, unfertig, lebendig. Keine Ausstellung, kein Shop. Hier passiert etwas zwischen dir, einer Frage und einem Raum, der antwortet. Manche sind klein und zart, andere groß und wild."
+  title: "Labor"
+  content: "Petrischale, Prüfstand, Spielfeld — offen, roh, lebendig. Hier passiert etwas zwischen dir, einer Frage und einem Raum, der antwortet. Manche sind klein und zart, andere groß und wild."
   microsites:
     - name: "Afterglow"
       url: "https://afterglow.unwritten.studio/"
       image: "/images/uw-afterglow.jpg"
       description: "Events zeitsouverän nacherleben"
-    - name: "Buchleim"
-      url: "https://buchleim.unwritten.studio/"
-      image: "/images/uw-buchleim.jpeg"
-      description: "Vom Zettelkasten zum gebundenen Buch"
     - name: "Companion"
       url: "https://companion.unwritten.studio/"
       image: "/images/uw-penny-crystal.jpeg"
@@ -118,10 +142,6 @@ microsites:
       url: "https://echo.unwritten.studio/"
       image: "/images/uw-echo-avatar.png"
       description: "Zauberhafte Worte, die zurückkommen"
-    - name: "Fehlfunktion"
-      url: "https://fehlfunktion.unwritten.studio/"
-      image: "/images/uw-fehlfunktion.jpg"
-      description: "42 Essays über gesellschaftliche Dysfunktionen, mit KI geschrieben"
     - name: "Kollektiv"
       url: "https://kollektiv.unwritten.studio/"
       image: "/images/uw-kollektiv.jpg"
@@ -134,14 +154,6 @@ microsites:
       url: "https://loop.unwritten.studio/"
       image: "/images/uw-loop-icon.png"
       description: "Im Labyrinth von Gödel, Escher, Bach"
-    - name: "Nathan"
-      url: "https://nathan.unwritten.studio/"
-      image: "/images/uw-nathan.jpeg"
-      description: "n8n-Automatisierung lernen mit deinem eigenen Use Case"
-    - name: "Onboarding"
-      url: "https://onboarding.unwritten.studio/"
-      image: "/images/uw-onboarding.jpg"
-      description: "Orientierungs-Companion für Erstsemester an der FAU"
     - name: "Red"
       url: "https://red.unwritten.studio/"
       image: "/images/uw-red.jpeg"
