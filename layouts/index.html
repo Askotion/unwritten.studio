@@ -29,15 +29,58 @@
   </div>
   <div class="container max-w-screen-xl mx-auto">
     <div class="max-w-[780px] mx-auto text-center py-16">
-      <h1 class="text-[#3087b9] text-[2.25rem] lg:text-[2.7rem] font-tertiary font-light mb-4">
+      <h1 class="text-[#3087b9] text-[2.25rem] lg:text-[2.7rem] font-tertiary font-light mb-8">
         {{ .title | markdownify }}
       </h1>
+
+      <!-- Echo Hero Input -->
+      <div class="flex items-center justify-center gap-4 mb-8 max-w-md mx-auto">
+        <button
+          class="echo-hero-sphere flex-shrink-0"
+          onclick="document.getElementById('echo-modal').classList.remove('hidden'); document.getElementById('echo-modal').classList.add('flex')"
+          aria-label="Echo öffnen">
+          <img src="/images/echo-avatar.png" alt="Echo" />
+        </button>
+        <input
+          type="text"
+          id="echo-hero-input"
+          placeholder="Lass mich dich verwandeln..."
+          class="flex-1 bg-transparent py-2 text-[#3e4447] placeholder:text-[#3e4447]/35 font-tertiary text-base outline-none"
+          style="border:none; border-bottom: 1px solid rgba(48,135,185,0.2); border-radius:0; -webkit-appearance:none; appearance:none; box-shadow:none;"
+        />
+      </div>
+
       <div class="max-w-2xl mx-auto">
         <p class="text-[#3e4447] font-tertiary text-lg tracking-wider">{{ .content | markdownify }}</p>
       </div>
+
     </div>
   </div>
 </section>
+<script>
+(function() {
+  var heroInput = document.getElementById('echo-hero-input');
+  if (!heroInput) return;
+  heroInput.addEventListener('keyup', function(e) {
+    if (e.key !== 'Enter') return;
+    var text = this.value.trim();
+    if (!text) return;
+    var modal = document.getElementById('echo-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    this.value = '';
+    setTimeout(function() {
+      var input = modal.querySelector('.echo-input');
+      if (!input) return;
+      input.value = text;
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+      setTimeout(function() {
+        input.dispatchEvent(new KeyboardEvent('keyup', { key: 'Enter', bubbles: true }));
+      }, 50);
+    }, 150);
+  });
+}());
+</script>
 {{ end }}
 <!-- /Banner -->
 
