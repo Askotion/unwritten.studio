@@ -354,7 +354,7 @@
 /* Input Container */
 .echo-input-container {
   display: flex;
-  gap: 12px;
+  flex-direction: column;
   padding: 24px 32px;
   background: rgba(244, 245, 245, 0.5);
   backdrop-filter: blur(10px);
@@ -362,6 +362,14 @@
 
   @media (max-width: 768px) {
     padding: 20px 24px;
+  }
+}
+
+.echo-input-row {
+  display: flex;
+  gap: 12px;
+
+  @media (max-width: 768px) {
     gap: 10px;
   }
 }
