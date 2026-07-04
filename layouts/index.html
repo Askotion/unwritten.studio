@@ -125,7 +125,7 @@
 <section class="quotes-section">
   <div class="container max-w-screen-xl mx-auto pt-16 pb-16 lg:pt-20 lg:pb-20">
     <header class="text-center">
-      <h2 class="text-[#3087b9] font-tertiary font-light mb-4">Quotes</h2>
+      <h2 class="text-[#3087b9] font-tertiary mb-4">Quotes</h2>
     </header>
     <div class="lg:w-[80%] mx-auto pt-6">
       <div class="swiper testimonial-slider">
@@ -159,7 +159,7 @@
 <section class="partners-section bg-[#3F4448]">
   <div class="container max-w-screen-xl mx-auto pt-16 lg:pt-20">
     <header class="text-center">
-      <h2 class="text-gray-100 font-tertiary font-light mb-4">{{ .title | markdownify }}</h2>
+      <h2 class="text-gray-100 font-tertiary mb-4">{{ .title | markdownify }}</h2>
       <div class="max-w-2xl mx-auto">
         <p class="text-gray-100 font-tertiary text-lg font-light tracking-wider">{{ .content | markdownify }}</p>
       </div>
@@ -186,12 +186,12 @@
 
 <!-- /Partners -->
 
-<!-- Anwendungen -->
-{{ with .Params.anwendungen }}
+<!-- Bühne -->
+{{ with .Params.buehne }}
 <section class="anwendungen-section bg-white">
   <div class="container max-w-screen-xl mx-auto pt-16 pb-16 lg:pt-20 lg:pb-20">
     <header class="text-center">
-      <h2 class="text-[#3087b9] font-tertiary font-light mb-4">{{ .title | markdownify }}</h2>
+      <h2 class="text-[#3087b9] font-tertiary mb-4">{{ .title | markdownify }}</h2>
       {{ if .content }}<div>
         <p class="text-[#3e4447] font-tertiary text-lg tracking-wider">{{ .content | markdownify }}</p>
       </div>{{ end }}
@@ -211,7 +211,7 @@
           </div>
           <!-- Image - appears second on mobile, first on desktop -->
           <div class="flex-shrink-0 order-2 md:order-1">
-            <div class="w-[70%] mx-auto md:w-[190px] md:mx-0 lg:w-[230px] aspect-[16/9] overflow-hidden rounded">
+            <div class="w-[70%] mx-auto md:w-[190px] md:mx-0 lg:w-[230px] aspect-[16/9] overflow-hidden rounded bg-[#f4f5f5]">
               <img src="{{ .image }}" alt="{{ .subtitle | default "Showcase" }}" loading="lazy" class="w-full h-full object-cover block transition-transform duration-700 ease-in hover:ease-out group-hover:scale-[1.03]">
             </div>
           </div>
@@ -222,14 +222,48 @@
   </div>
 </section>
 {{ end }}
-<!-- /Anwendungen -->
+<!-- /Bühne -->
+
+<!-- Schmiede -->
+{{ with .Params.schmiede }}
+<section class="schmiede-section bg-[#f8f8f8]">
+  <div class="container max-w-screen-xl mx-auto pt-16 pb-16 lg:pt-20 lg:pb-20">
+    <header class="text-center mb-12">
+      <h2 class="text-[#3087b9] font-tertiary font-light mb-3">{{ .title }}</h2>
+      <p class="text-[#3e4447] font-tertiary text-lg tracking-wider max-w-2xl mx-auto">{{ .content }}</p>
+    </header>
+    <div class="lg:w-[90%] mx-auto">
+      <div class="space-y-10 md:space-y-12">
+        {{ range .projects }}
+        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer"
+           class="showcase-item group flex flex-col md:flex-row items-center md:items-start gap-6 block transition-transform duration-700 ease-in hover:ease-out hover:-translate-y-1">
+          <div class="flex-shrink-0 order-2 md:order-1">
+            <div class="w-[55%] mx-auto md:w-[120px] md:mx-0 lg:w-[140px] aspect-[16/9] overflow-hidden rounded">
+              <img src="{{ .image }}" alt="{{ .name }}" loading="lazy"
+                   class="w-full h-full object-cover block transition-transform duration-700 ease-in hover:ease-out group-hover:scale-[1.03]">
+            </div>
+          </div>
+          <div class="flex-1 text-center md:text-left order-1 md:order-2">
+            <h3 class="font-tertiary text-base lg:text-lg font-light mb-1">
+              <span class="text-[#3087b9]">{{ .name }}</span>
+            </h3>
+            <p class="text-[#3e4447] font-tertiary text-xs lg:text-sm tracking-wider leading-relaxed">{{ .description }}</p>
+          </div>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- /Schmiede -->
 
 <!-- Forschungsbereich -->
 {{ with .Params.forschungsbereich }}
 <section class="forschungsbereich-section bg-[#3F4448]">
   <div class="container max-w-screen-xl mx-auto pt-16 pb-16 lg:pt-20 lg:pb-24">
     <header class="text-center">
-      <h2 class="text-gray-100 font-tertiary font-light mb-4">{{ .title | markdownify }}</h2>
+      <h2 class="text-gray-100 font-tertiary mb-4">{{ .title | markdownify }}</h2>
       <div class="space-y-4 max-w-2xl mx-auto">
         {{ range (split .content "\n") }}
           <p class="text-gray-100 font-tertiary text-lg font-light tracking-wider">{{ . | markdownify }}</p>
@@ -241,12 +275,12 @@
 {{ end }}
 <!-- /Forschungsbereich -->
 
-<!-- Microsites -->
+<!-- Labor -->
 {{ with .Params.microsites }}
 <section class="microsites-section bg-[#f3f4f6]">
   <div class="container max-w-screen-xl mx-auto pt-16 pb-16 lg:pt-20 lg:pb-20">
     <header class="text-center mb-28">
-      <h2 class="text-[#3087b9] font-tertiary font-light mb-4">{{ .title | markdownify }}</h2>
+      <h2 class="text-[#3087b9] font-tertiary mb-4">{{ .title | markdownify }}</h2>
       <div>
         <p class="text-[#3e4447] font-tertiary text-lg tracking-wider max-w-3xl mx-auto">{{ .content | markdownify }}</p>
       </div>
@@ -300,14 +334,14 @@
   </div>
 </section>
 {{ end }}
-<!-- /Microsites -->
+<!-- /Labor -->
 
 <!-- Teams -->
 {{ with .Params.teams }}
 <section class="teams-section bg-white">
   <div class="container max-w-screen-xl mx-auto pt-16 pb-16 lg:pt-20 lg:pb-24">
     <header class="text-center">
-      <h2 class="text-[#3087b9] font-tertiary font-light mb-4">{{ .title | markdownify }}</h2>
+      <h2 class="text-[#3087b9] font-tertiary mb-4">{{ .title | markdownify }}</h2>
       <div class="max-w-2xl mx-auto">
         <p class="text-[#3e4447] font-tertiary text-lg tracking-wider">{{ .content | markdownify }}</p>
       </div>
@@ -344,7 +378,7 @@
 <section class="teams-section bg-[#F5F5F5]">
   <div class="container max-w-screen-xl mx-auto pt-16 pb-16 lg:pt-20 lg:pb-20">
     <header class="text-center">
-      <h2 class="text-[#3087b9] font-tertiary font-light mb-4">{{ .title | markdownify }}</h2>
+      <h2 class="text-[#3087b9] font-tertiary mb-4">{{ .title | markdownify }}</h2>
       <div class="max-w-2xl mx-auto">
         <p class="text-[#3e4447] font-tertiary text-lg tracking-wider">{{ .content | markdownify }}</p>
       </div>
