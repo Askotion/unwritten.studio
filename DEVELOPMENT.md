@@ -128,6 +128,21 @@ vim README.md
 # → echo-chatbot.js section aktualisieren
 ```
 
+**LLM-Files mitpflegen (Pflicht bei inhaltlichen Änderungen!):**
+
+Bei jeder inhaltlichen Änderung oder Ergänzung an der Site (neue/geänderte
+Inhalte, Microsites, Dienste, Datenschutz, Kontaktdaten etc.) müssen die
+LLM-Files für AI-Agenten mit aktualisiert werden, damit sie nicht mit der
+Site auseinanderlaufen:
+
+- `static/llms.txt` — Kurzübersicht (Microsite-Liste, Kontakt, Policy)
+- `static/llms-full.txt` — vollständige Inhaltsdokumentation
+- In beiden Dateien das `Last Updated`-Datum anpassen
+
+Nur die Dateien unter `static/` werden deployed — llms-Dateien an anderen
+Orten sind Altlasten und gehören gelöscht. Reine UI-/Styling-/Technik-Fixes
+ohne inhaltliche Auswirkung brauchen kein llms-Update.
+
 ### 5️⃣ **Committen: Aussagekräftige Messages**
 
 ```bash
@@ -316,6 +331,7 @@ Bevor du pusht:
 - [ ] Kein Konsolen-Errors (F12 → Console)
 - [ ] Responsive: Desktop, Tablet, Mobile testen
 - [ ] Keine Flickering/Flashing beim Laden
+- [ ] Inhaltliche Änderung? → `static/llms.txt` + `static/llms-full.txt` mit aktualisiert (siehe Abschnitt „LLM-Files mitpflegen")
 
 ## Hero Video
 

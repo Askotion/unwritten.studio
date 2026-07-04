@@ -1,7 +1,7 @@
 # llms-full.txt — Unwritten Studio
 # Vollständige Inhaltsdokumentation für AI-Systeme
 # Website: https://unwritten.studio
-# Last Updated: 2026-03-23
+# Last Updated: 2026-07-04
 
 ---
 
@@ -32,7 +32,7 @@ Adlerweg 6, 90530 Wendelstein, Deutschland
 
 ---
 
-## Microsites — 15 Live-Experimente
+## Microsites — 16 Live-Experimente
 
 ---
 
@@ -57,6 +57,12 @@ Chatbot, sondern ein Denkpartner.
 **Stack:** HTML5/CSS3, Alpine.js, Cloudflare Workers, OpenRouter (Claude Haiku 4.5),
 Cloudflare KV (90 Tage TTL)
 **Kuratorin:** Eva Schweitzer, Unwritten GmbH
+
+---
+
+### Buchleim
+**URL:** https://buchleim.unwritten.studio
+**Tagline:** Vom Zettelkasten zum gebundenen Buch. Ein Verfahren in zehn Schritten.
 
 ---
 
@@ -238,6 +244,19 @@ Die meisten Microsites teilen eine Basis-Architektur:
 - **Persistenz:** Cloudflare KV (sessionübergreifendes Gedächtnis ohne Accounts)
 - **Identity:** Drei-Wort-Kennungen statt Logins (bei Glitch, Kaspar)
 - **Compliance:** DSGVO-konform, EU-Infrastruktur
+
+---
+
+## Hauptseite unwritten.studio — Technik & Datenschutz
+
+- **Hosting:** GitHub Pages (statische Hugo-Site), Auto-Deploy via GitHub Actions
+- **Webanalyse:** Plausible Analytics (cookielos, keine personenbezogenen Daten,
+  EU-Hosting) — derzeit testweise aktiv
+- **Newsletter:** Anmeldung über Mailchimp (Abmeldelink in jeder Mail)
+- **Echo:** Konversationelle Eingangstür direkt auf der Hauptseite eingebunden
+  (Chat-Daten: 90 Tage TTL, Cloudflare KV, EU)
+- **Datenschutzerklärung:** https://unwritten.studio/privacy-policy — dokumentiert
+  Hosting, CDN, Plausible, Google Fonts, Chat, E-Mail-Kontakt und Newsletter
 
 ---
 
