@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="legal-page">
+  <!-- Minimal header — no gradient banner -->
+  <div class="legal-header">
+    <div class="container max-w-screen-xl mx-auto">
+
+      <h1 class="legal-title">{{ .Title }}</h1>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="legal-body">
+    <div class="container max-w-screen-xl mx-auto">
+      <div class="legal-content">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

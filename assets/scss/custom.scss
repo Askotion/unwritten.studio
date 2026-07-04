@@ -475,3 +475,104 @@
     height: 46px;
   }
 }
+
+/* ============================================
+   LEGAL PAGES — Datenschutz & Impressum
+   ============================================ */
+
+.legal-page {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.legal-header {
+  padding: 48px 0 40px;
+  border-bottom: 1px solid rgba(62, 68, 71, 0.08);
+
+  @media (max-width: 768px) {
+    padding: 32px 0 28px;
+  }
+}
+
+
+.legal-title {
+  font-family: 'Proxima Nova Alt', 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 200;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: #3087b9;
+  margin: 0;
+}
+
+.legal-body {
+  padding: 56px 0 80px;
+
+  @media (max-width: 768px) {
+    padding: 40px 0 60px;
+  }
+}
+
+.legal-content {
+  max-width: 720px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #3e4447;
+
+  /* Section headings */
+  h3, .smallsubtitle {
+    font-family: 'Proxima Nova Alt', 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: #3087b9;
+    margin: 2.5rem 0 0.75rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+
+  /* Inline labels like "a) personenbezogene Daten" */
+  strong, b {
+    font-weight: 500;
+    color: #3e4447;
+    display: block;
+    margin-top: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  p, .bodytext {
+    margin: 0 0 1rem;
+  }
+
+  ul, ol {
+    margin: 0.5rem 0 1rem 1.25rem;
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  a {
+    color: #3087b9;
+    text-decoration: underline;
+    text-decoration-color: rgba(48, 135, 185, 0.35);
+    transition: text-decoration-color 0.2s;
+
+    &:hover {
+      text-decoration-color: #3087b9;
+    }
+  }
+
+  /* Address block in Impressum */
+  br + br {
+    display: block;
+    content: '';
+    margin-top: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}
