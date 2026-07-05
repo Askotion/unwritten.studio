@@ -1,21 +1,29 @@
 {{/* Dezenter Datenschutzhinweis für alle Companions
      Usage: {{ partial "companion-datenschutz-hinweis.html" (dict "companion" "Echo") }}
-     Optional: "companion" = Name des Companions für personalisierten Text */}}
+     Optional: "companion" = Name des Companions für personalisierten Text
+     Optional: "light" = true für helle Hintergründe
+     Optional: "hide_after_input" = true — Text wird nach der ersten Nutzer-Nachricht
+       ausgeblendet, nur das Icon bleibt (erwartet Alpine-Scope mit messages[{role}]) */}}
 
 {{ $companion := .companion | default "dieser Companion" }}
 {{ $light := .light | default false }}
+{{ $hideAfterInput := .hide_after_input | default false }}
 
 <div class="companion-privacy-hint{{ if $light }} light{{ end }}" role="note" aria-label="Datenschutzhinweis">
-  <span>
+  <span class="companion-privacy-hint-text"
+    {{- if $hideAfterInput }}
+    x-show="!messages.some(m => m.role === 'user')"
+    x-transition.opacity.duration.300ms
+    {{- end }}>
     Deine Worte sind sicher bei uns.
-    <a href="/privacy-policy" target="_blank" rel="noopener" aria-label="Datenschutzerklärung">
-      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline;vertical-align:middle;margin-left:2px;">
-        <circle cx="12" cy="12" r="10"/>
-        <line x1="12" y1="8" x2="12" y2="12"/>
-        <line x1="12" y1="16" x2="12.01" y2="16"/>
-      </svg>
-    </a>
   </span>
+  <a href="/privacy-policy" target="_blank" rel="noopener" aria-label="Datenschutzerklärung" title="Deine Worte sind sicher bei uns. — Zur Datenschutzerklärung">
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline;vertical-align:middle;">
+      <circle cx="12" cy="12" r="10"/>
+      <line x1="12" y1="8" x2="12" y2="12"/>
+      <line x1="12" y1="16" x2="12.01" y2="16"/>
+    </svg>
+  </a>
 </div>
 
 <style>
@@ -25,6 +33,7 @@
     line-height: 1.4;
     color: rgba(255, 255, 255, 0.3);
     letter-spacing: 0.01em;
+    text-align: right;
   }
 
   .companion-privacy-hint a {
