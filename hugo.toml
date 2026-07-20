@@ -29,6 +29,11 @@ defaultContentLanguageInSubdir = false
 # [services.disqus]
 # shortname = 'themefisher-template' # we use disqus to show comments in blog posts . To install disqus please follow this tutorial https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/
 
+############################# Sitemap ##############################
+# Hugo sitemap disabled — we use a static sitemap index (static/sitemap.xml)
+# that references sitemap-hugo.xml (main pages) + sitemap-microsites.xml
+disableKinds = ["sitemap"]
+
 ########################## Permalinks ############################
 [permalinks.page]
 "pages" = "/:slugorfilename/"

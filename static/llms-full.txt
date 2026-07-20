@@ -1,7 +1,7 @@
 # llms-full.txt — Unwritten Studio
 # Vollständige Inhaltsdokumentation für AI-Systeme
 # Website: https://unwritten.studio
-# Last Updated: 2026-03-23
+# Last Updated: 2026-07-20
 
 ---
 
@@ -32,7 +32,7 @@ Adlerweg 6, 90530 Wendelstein, Deutschland
 
 ---
 
-## Microsites — 15 Live-Experimente
+## Microsites — 23 Live-Experimente
 
 ---
 
@@ -60,6 +60,17 @@ Cloudflare KV (90 Tage TTL)
 
 ---
 
+### Buchleim
+**URL:** https://buchleim.unwritten.studio
+**Tagline:** Vom Zettelkasten zum gebundenen Buch
+**Beschreibung:** Systematische Buchproduktion in zehn Schritten. Buchleim überführt
+vorhandene Materialien — Manuskripte, Notizbücher, Zettelkästen — kontrolliert in
+ein neues Buchformat. Inhalt, Struktur, Stil und gestalterische Logik werden getrennt
+analysiert und erst dann zusammengeführt.
+**Leitprinzip:** Erst verstehen, was da ist. Dann entscheiden, was daraus wird.
+
+---
+
 ### Companion — Penelope
 **URL:** https://companion.unwritten.studio
 **Tagline:** A course-specific learning companion with personality
@@ -83,6 +94,18 @@ Interessen und Lernstil — ohne Formulare, ohne algorithmische Manipulation.
 
 ---
 
+### CONTENTshift
+**URL:** https://contentshift.unwritten.studio
+**Tagline:** KI-gestützte literarische Companions für Bücher, Bibliotheken und Bildungseinrichtungen
+**Beschreibung:** Beitrag zum CONTENTshift Accelerator 2026 des Börsenvereins des
+Deutschen Buchhandels Baden-Württemberg. Unwritten entwickelt Companions, die Büchern
+eine Stimme geben — nicht als Ersatz für das Lesen, sondern als Einladung, tiefer
+einzusteigen.
+**Validierte Prototypen:** Pantopia (Theresa Hannig), Kaspar, Wasted Wetware, Penelope
+**Team:** Sven Pfleger, Angelica Gomez, Josia Jourdan
+
+---
+
 ### Echo
 **URL:** https://echo.unwritten.studio
 **Tagline:** Worte, die zurückkommen – verwandelt
@@ -93,6 +116,19 @@ dynamisch eine Produkt-Card. Kein FAQ-Bot, sondern ein Denkpartner im Studio-Ton
 **Stack:** HTML5, Alpine.js, Cloudflare Workers (echo-api.post-666.workers.dev),
 dynamische Produkt-Cards
 **Besonderheit:** Einzige Microsite, die über alle anderen spricht
+
+---
+
+### Fehlfunktion
+**URL:** https://fehlfunktion.unwritten.studio
+**Tagline:** 42 Essays über das, was nicht funktioniert
+**Beschreibung:** Buchwebsite mit integriertem KI-Companion für Josia Jourdans
+Essayband. Der Companion kennt alle 42 Essays und stellt Gegenfragen, statt
+Antworten zu liefern. Vier Themenfelder: System & Sinn, Körper & Identität,
+Digitale Wirklichkeit, Rückkehr zum Echten.
+**Stack:** HTML5, Alpine.js, Cloudflare Workers, OpenRouter (Claude Haiku 4.5),
+Cloudflare KV
+**Charakter:** Direkt, unbequem, fragend — geprägt vom Tonfall des Buches
 
 ---
 
@@ -128,18 +164,11 @@ kein "Super gemacht!"
 begleiten Kaspar Hauser — eines der größten Mysterien der Geschichte — auf
 seiner Reise aus absoluter Dunkelheit in die Welt. Das Spiel erfüllt das
 Versprechen von Zork: Schreib alles, und die Welt antwortet. Wirklich.
-Keine Parser-Fehler. Keine falschen Züge. Nur Dunkelheit — und deine Worte.
-**Kern-Konzept:** Zork machte 1980 ein Versprechen: Schreib, und die Welt
-reagiert. Parser-Grenzen brachen dieses Versprechen für vierzig Jahre. Kaspar
-erfüllt es — mit Kaspar Hausers realem historischen Mysterium als Dungeon und
-Large Language Models als Engine.
-**Erzählstimme:** Zwei Stimmen, die eine sind — Zork-Stil-Erzähler (knapp,
-atmosphärisch, zweite Person, Präsens, Ortsnamen in CAPS) und Kaspar selbst
-(vorsichtig, bildlich, fragend statt behauptend).
+**Erzählstimme:** Zork-Stil-Erzähler (knapp, atmosphärisch, zweite Person,
+Präsens) und Kaspar selbst (vorsichtig, bildlich, fragend).
 **Story-Level:** Der Keller → Das erste Licht → Die Stadt → Der Schutzherr →
 Das Rätsel
-**Save-System:** Drei-Wort-Kennung (word.word.word), thematisch aus dem
-19. Jahrhundert. TTL: 730 Tage.
+**Save-System:** Drei-Wort-Kennung, thematisch aus dem 19. Jahrhundert. TTL: 730 Tage.
 **Stack:** HTML5, Alpine.js, Cloudflare Workers (kaspar-api.post-666.workers.dev),
 OpenRouter (Claude Haiku 4.5), Cloudflare KV (730 Tage TTL)
 **Ästhetik:** VT323 Bitmap-Font, 80-Zeichen-Spalten, blinkender Block-Cursor,
@@ -173,12 +202,40 @@ Erfolgreich getestet mit 12 Bauingenieuren (>100M$ Projektvolumen).
 
 ### Loop
 **URL:** https://loop.unwritten.studio
+**Tagline:** Seltsame Schleifen denken
 **Beschreibung:** Konversationsschnittstelle für Gödel, Escher, Bach (Hofstadter).
 RAG mit 416 GEB-Embeddings, Hover-Footnotes System mit Quellenangaben,
 GEB-thematische Ladeanimation ("Knüpfe seltsame Schleifen...").
 **Stack:** HTML/CSS/JS, Alpine.js, Cloudflare Workers, Claude Sonnet,
 Cloudflare Vectorize
 **Status:** Production Ready (v1.0.1)
+
+---
+
+### Nathan
+**URL:** https://nathan.unwritten.studio
+**Tagline:** Kein Kurs. Deine Spur.
+**Beschreibung:** KI-Lernbegleiter für n8n Workflow-Automation. Kein starres
+Curriculum: du beschreibst, was du bauen willst, Nathan erklärt genau das, was
+du verstehen musst. Fokus auf die Konzepte, an denen n8n-Lernende scheitern:
+Items-Array-Modell, Expression-Syntax, Merge-Logik, Credentials-Scope.
+**Quest-System:** Fünf echte n8n-Aufgaben mit Proof-Words
+**Wiki:** 12 kuratierte Artikel (DE + EN)
+**Save-System:** Drei-Wort-Kennung (z.B. fetch.merge.relay). TTL: 730 Tage.
+**Stack:** HTML5, Alpine.js, Cloudflare Workers, OpenRouter (Claude Haiku 4.5),
+Cloudflare KV
+
+---
+
+### Onboarding — Wiesel
+**URL:** https://onboarding.unwritten.studio
+**Tagline:** Dein flinker Tourguide durch den FAU-Alltag
+**Beschreibung:** KI-Chatbot für Erstsemester an der Wirtschafts- und
+Sozialwissenschaftlichen Fakultät (WiSo) der FAU Erlangen-Nürnberg. Kennt
+WiSo-spezifische Abläufe, Plattformen (Campo, StudOn, FAU-Mail) und
+Anlaufstellen. Fünf Sprachen (DE, EN, TR, AR, UK).
+**Charakter:** Flink, neutral, anonym. Erfindet niemals Informationen.
+**Besonderheit:** Kundenprojekt mit FAU WiSo
 
 ---
 
@@ -194,8 +251,20 @@ adversariales Denken, technische Präzision.
 
 ---
 
+### Renew
+**URL:** https://renew.unwritten.studio
+**Tagline:** AI companions for Dutch-language publishing
+**Beschreibung:** Unwritten Studio's entry for the Renew the Book Award 2026.
+AI-powered literary companions that give books a voice after the last page —
+designed for the Dutch-language market. Addresses the 47% of EU residents who
+have stopped reading books.
+**Validierte Prototypen:** Pantopia, Kaspar, Wasted Wetware, Echo
+
+---
+
 ### Resonanzfeld
 **URL:** https://resonanzfeld.unwritten.studio
+**Tagline:** Komplexität spüren, nicht vereinfachen
 **Beschreibung:** Interaktives KI-Denkwerkzeug basierend auf Peter Kruses
 intellektuellem Erbe. Wendet Kruses Drei-Mechanismen-Modell (Vernetzungsdichte,
 Spontanaktivität, Kreisende Erregung) auf gesellschaftliche Phänomene an —
@@ -218,7 +287,22 @@ keine Disney-Romantik, echte Geschichte. Erste Fälle und Städte: 2026.
 
 ---
 
-### WastedWetware
+### Vorsprung
+**URL:** https://vorsprung.unwritten.studio
+**Tagline:** KI verstehen — nicht nur bedienen
+**Beschreibung:** KI-Training für Geschäftsführer und Vorstände in zwölf Stationen.
+Kein Frontalunterricht — Teilnehmer erarbeiten das Verständnis, das sie brauchen,
+um KI eigenständig und souverän einzusetzen. Drei Blöcke: Das Handwerk (Prompting,
+Iteration), Hinter der Kulisse (Halluzinationen, Sycophancy), Das große Bild
+(Strategie, Verantwortung, Zukunft).
+**Save-System:** Drei-Wort-Kennung. TTL: 730 Tage.
+**Stack:** HTML5, Alpine.js, Cloudflare Workers, OpenRouter (Claude Sonnet),
+Cloudflare KV
+**Besonderheit:** Einziger Worker mit Sonnet als Primärmodell
+
+---
+
+### Wasted Wetware
 **URL:** https://wastedwetware.unwritten.studio
 **Tagline:** Literarische Intelligenz
 **Beschreibung:** Kuratierte Technologiekritik mit philosophischer Tiefe. Kurator
@@ -229,6 +313,20 @@ Essays, 80% Wiederkehrquote.
 
 ---
 
+### Zebra — Denkraum
+**URL:** https://zebra.unwritten.studio
+**Tagline:** Nicht zum Suchen — zum Denken
+**Beschreibung:** KI-Denkpartner des MöbelKollektivs mit persistentem Gedächtnis.
+Zehn Jahre Projekterfahrung in Gespräche verwandelt — Sparringspartner für
+Raumgestaltung, New Work und die Frage, wie Arbeitsorte Menschen stärken.
+Denkt wie Thomas Dormann (Gründer) — strategisch, warm, mit Überzeugung.
+**Wissensfelder:** New Work, Raumgestaltung, Humanisierung, Vertrauenskultur, Nachhaltigkeit
+**Save-System:** Drei-Wort-Kennung. TTL: 730 Tage.
+**Stack:** HTML5, Alpine.js, Cloudflare Workers (zebra-denkraum.post-666.workers.dev),
+Cloudflare KV
+
+---
+
 ## Technische Gemeinsamkeiten
 
 Die meisten Microsites teilen eine Basis-Architektur:
@@ -236,7 +334,7 @@ Die meisten Microsites teilen eine Basis-Architektur:
 - **Backend:** Cloudflare Workers (Edge-Computing, EU-nah)
 - **AI:** OpenRouter → Claude Haiku 4.5 (schnell, kosteneffizient)
 - **Persistenz:** Cloudflare KV (sessionübergreifendes Gedächtnis ohne Accounts)
-- **Identity:** Drei-Wort-Kennungen statt Logins (bei Glitch, Kaspar)
+- **Identity:** Drei-Wort-Kennungen statt Logins (bei Glitch, Kaspar, Nathan, Vorsprung, Zebra)
 - **Compliance:** DSGVO-konform, EU-Infrastruktur
 
 ---
