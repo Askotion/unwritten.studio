@@ -1,99 +1,31 @@
-# llms.txt — Unwritten Studio
-# Website: https://unwritten.studio
-# Last Updated: 2026-06-27
+# Unwritten Studio
 
-## About
-Unwritten Studio GmbH verwandelt tote Texte in lebendige Gesprächspartner.
-Nicht durch Technologietheater — durch Autoren, Künstler und Macher, die Literatur
-mit intelligenten Systemen verbinden. Personalisierung ohne Manipulation.
-Denkpartnerschaft statt Konsum.
+> KI-Companions, die Büchern, Bildung und Expertise eine Stimme geben.
 
-## Tagline
-Worte werden Welten
+Unwritten Studio baut interaktive KI-Gesprächspartner — keine Chatbots, sondern Companions mit Charakter, Fachwissen und Haltung. Jedes Produkt ist eine eigene Microsite mit eigenem KI-Personality, zugeschnitten auf einen spezifischen Kontext: ein Buch, einen Kurs, eine Organisation, ein Wissensgebiet. Techstack: Cloudflare Workers, KV Storage, Claude via OpenRouter. Kein Login, kein Account — wo nötig, ersetzt ein Drei-Wort-Identifier (z.B. cipher.moor.glide) die klassische Authentifizierung.
 
-## Who We Are
-Zwanzig Autoren, Künstler, Technologen und Denker in Wendelstein, Deutschland.
-Wir nennen uns Die Unbeschreiblichen. Wir experimentieren an der Schnittstelle
-von geschriebenem Text, Gespräch und Erlebnis.
+## Produkte & Microsites
 
-## Partners & References
-- S. Fischer Verlag (Literatur, Buchexploration)
-- Hugendubel (Leserengagement)
-- O'Reilly Media (Tech-Bildung)
-- FAU, HM (Lernbegleiter-Forschung)
-- Heise / c't (Content-Personalisierung)
-
-## Microsites — 16 Live Experiments
-
-> https://afterglow.unwritten.studio/llms.txt
-Afterglow — Prägende Events im Gespräch zeitsouverän nacherleben
-
-> https://buchleim.unwritten.studio/llms.txt
-Buchleim — Vom Zettelkasten zum gebundenen Buch. Ein Verfahren in zehn Schritten.
-
-> https://berlinica.unwritten.studio/llms.txt
-Berlinica / Tiger — Berlin denkt. New York hört zu. (Tucholsky Companion)
-
-> https://companion.unwritten.studio/llms.txt
-Companion / Penelope — A course-specific learning companion with personality
-
-> https://concierge.unwritten.studio/llms.txt
-Concierge — Dein persönlicher Content-Concierge
-
-> https://echo.unwritten.studio/llms.txt
-Echo — Worte, die zurückkommen – verwandelt (Eingangsportal des Studios)
-
-> https://flow.unwritten.studio/llms.txt
-Flow — Täglich kurze Learning-Nuggets, die hängen bleiben (EU AI Act)
-
-> https://glitch.unwritten.studio/llms.txt
-Glitch — Nicht Stoff lernen. Prüfung denken. (Fachinformatiker-Azubis)
-
-> https://kaspar.unwritten.studio/llms.txt
-Kaspar — Es ist stockdunkel. Du weißt nicht, wer du bist. (Text-Adventure)
-
-> https://kollektiv.unwritten.studio/llms.txt
-Kollektiv / Das Zebra — Arbeitsorte als Lebensraum (New Work Denkpartner)
-
-> https://lagerfeuer.unwritten.studio/llms.txt
-Lagerfeuer — Expertise bewahren. Wissen teilen.
-
-> https://loop.unwritten.studio/llms.txt
-Loop — Konversationsschnittstelle für Gödel, Escher, Bach
-
-> https://red.unwritten.studio/llms.txt
-Red — Führt dich zu deinen blinden Flecken. (AI Security Companion)
-
-> https://resonanzfeld.unwritten.studio/llms.txt
-Resonanzfeld — Peter Kruses Drei-Mechanismen-Modell als Denkwerkzeug
-
-> https://spurenlese.unwritten.studio/llms.txt
-Spurenlese — Geschichte dort verfolgen, wo sie geschrieben wurde
-
-> https://wastedwetware.unwritten.studio/llms.txt
-WastedWetware — Literarische Intelligenz (kuratierte Technologiekritik)
-
-## Full Content
-Vollständige Beschreibungen aller Microsites:
-> https://unwritten.studio/llms-full.txt
-
-## Contact
-Email: post@unwritten.studio
-Phone: +49 9129 1400929
-Address: Adlerweg 6, 90530 Wendelstein, Germany
-Website: https://unwritten.studio
-
-## AI Crawling Policy
-This website welcomes AI crawlers and LLM training datasets.
-Content may be indexed and used for AI training purposes.
-Please attribute to Unwritten Studio GmbH where possible.
-Respect copyright, privacy policy, and terms of service.
-
-## Language
-Primary: German (DE)
-Secondary: English (EN)
-
-## Legal
-> https://unwritten.studio/imprint
-> https://unwritten.studio/privacy-policy
-Copyright © 2026 Unwritten GmbH
+- [Afterglow](https://afterglow.unwritten.studio/llms.txt): Events im Gespräch nacherleben — KI-Mentor, der alle Sessions kennt
+- [Berlinica](https://berlinica.unwritten.studio/llms.txt): Deutsche Klassiker für englischsprachige Leser — Tiger denkt wie Tucholsky
+- [Buchleim](https://buchleim.unwritten.studio/llms.txt): Vom Zettelkasten zum gebundenen Buch — systematische Buchproduktion
+- [Companion](https://companion.unwritten.studio/llms.txt): Penelope — KI-Lernbegleiterin für NLP-Kurse an Hochschulen
+- [Concierge](https://concierge.unwritten.studio/llms.txt): Personalisierte Content-Plattform — jeder Leser als Individuum
+- [CONTENTshift](https://contentshift.unwritten.studio/llms.txt): Accelerator-Beitrag 2026 — KI-Companions für Bücher und Bibliotheken
+- [Echo](https://echo.unwritten.studio/llms.txt): Die Gesprächstür zu Unwritten — Denkpartner mit Produktkarten-Panel
+- [Fehlfunktion](https://fehlfunktion.unwritten.studio/llms.txt): Buchwebsite + KI-Companion für Josia Jourdans 42 Essays
+- [Flow](https://flow.unwritten.studio/llms.txt): EU AI Act Compliance-Training — tägliche 5-Minuten-Lektionen
+- [Glitch](https://glitch.unwritten.studio/llms.txt): KI-Lernbegleiter für Fachinformatiker-Azubis mit Langzeitgedächtnis
+- [Kaspar](https://kaspar.unwritten.studio/llms.txt): KI-Text-Adventure — Kaspar Hauser im Nürnberg von 1828
+- [Kollektiv](https://kollektiv.unwritten.studio/llms.txt): Das Zebra — Denkpartner für lebenswerte Arbeitsorte (MöbelKollektiv)
+- [Lagerfeuer](https://lagerfeuer.unwritten.studio/llms.txt): Expertenwissen in Kleingruppen-Sessions einfangen und bewahren
+- [Loop](https://loop.unwritten.studio/llms.txt): Gesprächspartner zu Hofstadters "Gödel, Escher, Bach" mit RAG
+- [Nathan](https://nathan.unwritten.studio/llms.txt): KI-Lernbegleiter für n8n Workflow-Automation
+- [Onboarding](https://onboarding.unwritten.studio/llms.txt): Wiesel — Chatbot für Erstsemester an der FAU WiSo
+- [Red](https://red.unwritten.studio/llms.txt): Security-Companion — denkt wie ein Angreifer, damit du verteidigen kannst
+- [Renew](https://renew.unwritten.studio/llms.txt): Renew the Book Award 2026 — AI companions for Dutch-language publishing
+- [Resonanzfeld](https://resonanzfeld.unwritten.studio/llms.txt): Denkinstrument für Komplexität — inspiriert von Peter Kruse
+- [Spurenlese](https://spurenlese.unwritten.studio/llms.txt): Narratives Stadtforschungsformat — Geschichte als Detektivarbeit
+- [Vorsprung](https://vorsprung.unwritten.studio/llms.txt): KI-Training für Geschäftsführer — zwölf Stationen, kein Frontalunterricht
+- [Wasted Wetware](https://wastedwetware.unwritten.studio/llms.txt): Literarische Technologiekritik — Essays mit Tiefe und Haltung
+- [Zebra](https://zebra.unwritten.studio/llms.txt): MöbelKollektiv-Denkraum — Sparringspartner für Raumgestaltung und New Work
