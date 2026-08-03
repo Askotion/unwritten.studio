@@ -1,8 +1,8 @@
-# Unwritten Studio
+# unwritten
 
 > KI-Companions, die Büchern, Bildung und Expertise eine Stimme geben.
 
-Unwritten Studio baut interaktive KI-Gesprächspartner — keine Chatbots, sondern Companions mit Charakter, Fachwissen und Haltung. Jedes Produkt ist eine eigene Microsite mit eigenem KI-Personality, zugeschnitten auf einen spezifischen Kontext: ein Buch, einen Kurs, eine Organisation, ein Wissensgebiet. Techstack: Cloudflare Workers, KV Storage, Claude via OpenRouter. Kein Login, kein Account — wo nötig, ersetzt ein Drei-Wort-Identifier (z.B. cipher.moor.glide) die klassische Authentifizierung.
+unwritten baut interaktive KI-Gesprächspartner — keine Chatbots, sondern Companions mit Charakter, Fachwissen und Haltung. Jedes Produkt ist eine eigene Microsite mit eigenem KI-Personality, zugeschnitten auf einen spezifischen Kontext: ein Buch, einen Kurs, eine Organisation, ein Wissensgebiet. Techstack: Cloudflare Workers, KV Storage, Claude via OpenRouter. Kein Login, kein Account — wo nötig, ersetzt ein Drei-Wort-Identifier (z.B. cipher.moor.glide) die klassische Authentifizierung.
 
 ## Produkte & Microsites
 
