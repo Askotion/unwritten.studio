@@ -50,6 +50,11 @@
         />
       </div>
 
+      {{/* Art. 50 EU AI Act: Die Eingabezeile oben ist die erste Interaktion —
+           von hier geht die Nachricht direkt an die KI, das Chatfenster oeffnet
+           erst danach. Der Hinweis muss deshalb hier stehen, nicht erst im Modal. */}}
+      {{ partial "companion-ki-hinweis.html" (dict "variant" "hero") }}
+
       <div class="max-w-2xl mx-auto">
         <p class="text-[#3e4447] font-tertiary text-lg tracking-wider">{{ .content | markdownify }}</p>
       </div>

@@ -594,3 +594,82 @@
     font-size: 15px;
   }
 }
+
+/* ============================================================
+   KI-Transparenzhinweis (Art. 50 Abs. 1 EU AI Act)
+
+   Groesse absolut gesetzt, nicht relativ zum schwaechsten
+   vorhandenen Element: im Band 16px wie .echo-bubble und
+   .echo-input, im Hero 18px wie der Fliesstext daneben.
+   Nie kleiner oder blasser als die Umgebung — Zurueckhaltung
+   kommt aus Flaeche und Abstand.
+   ============================================================ */
+
+.ki-hinweis-text {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 300;
+}
+
+.ki-hinweis-core {
+  font-weight: 500;
+}
+
+.ki-hinweis-link {
+  color: #3087b9;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(48, 135, 185, 0.35);
+  transition: border-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+
+  &:hover {
+    color: #2c6b94;
+    border-bottom-color: #2c6b94;
+  }
+}
+
+/* Hero — der Slogan ist hier Versprechen, nicht Auflage.
+   Volle Fliesstextgroesse und -farbe, damit er nicht unter die
+   Eingabezeile rutscht, der er gegenuebersteht. */
+.ki-hinweis--hero {
+  max-width: 34rem;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+
+  .ki-hinweis-text {
+    font-size: 18px;
+    line-height: 1.55;
+    color: #3e4447;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+
+    .ki-hinweis-text {
+      font-size: 16px;
+    }
+  }
+}
+
+/* Chatfenster — liest als Rahmen, nicht als Nachricht.
+   Greift Flaeche und Trennlinie des .echo-input-container auf. */
+.ki-hinweis--band {
+  padding: 14px 32px;
+  background: rgba(244, 245, 245, 0.6);
+  border-bottom: 1px solid rgba(62, 68, 71, 0.08);
+  flex-shrink: 0;
+
+  .ki-hinweis-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3e4447;
+  }
+
+  @media (max-width: 768px) {
+    padding: 12px 24px;
+
+    .ki-hinweis-text {
+      font-size: 15px;
+    }
+  }
+}

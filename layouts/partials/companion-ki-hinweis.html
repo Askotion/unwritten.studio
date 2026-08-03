@@ -1,0 +1,35 @@
+{{/* KI-Transparenzhinweis nach Art. 50 Abs. 1 EU AI Act (VO (EU) 2024/1689).
+
+     ARCHITEKTUR — bitte beim Refactoring nicht aufweichen:
+     Der Hinweis wird immer statisch gerendert und ist ohne JavaScript
+     vollstaendig sichtbar. Das Einklappen nach der ersten Nutzereingabe ist
+     reine Progressive Enhancement: Faellt Alpine aus, bleibt der volle Satz
+     stehen. Die Erfuellung der Offenlegungspflicht haengt damit an keiner
+     Stelle vom JS-Zustand ab — nur die Verknappung tut es.
+
+     GROESSE: bewusst nicht kleiner als der umgebende Text (Band 16px wie
+     .echo-bubble und .echo-input, Hero 18px wie der Fliesstext). Zurueckhaltung
+     entsteht ueber Flaeche, Farbe und Abstand, nie ueber Schriftgrad oder
+     Deckkraft — kleiner und blasser als die Umgebung ist genau die Bauart, die
+     die Kommissionsleitlinien als unzureichend benennen.
+
+     Der Satz selbst steht in config/_default/params.toml -> [ki_hinweis].
+
+     Usage:
+       {{ partial "companion-ki-hinweis.html" (dict "variant" "hero") }}
+       {{ partial "companion-ki-hinweis.html" (dict "variant" "band" "collapsible" true) }}
+
+     "collapsible" erwartet einen Alpine-Scope mit messages[{role}].
+*/}}
+
+{{ $c := site.Params.ki_hinweis }}
+{{ $variant := .variant | default "band" }}
+{{ $collapsible := .collapsible | default false }}
+{{ $fold := "" }}
+{{ if $collapsible }}
+  {{ $fold = `x-show="!messages.some(m => m.role === 'user')" x-transition.opacity.duration.400ms` }}
+{{ end }}
+
+<div class="ki-hinweis ki-hinweis--{{ $variant }}" role="note" aria-label="Hinweis zur KI-Nutzung">
+  <p class="ki-hinweis-text"><span {{ $fold | safeHTMLAttr }}>{{ $c.negations }} </span><span class="ki-hinweis-core">{{ $c.core }}</span><span {{ $fold | safeHTMLAttr }}> &mdash; {{ $c.traits }}</span>. <a class="ki-hinweis-link" href="{{ $c.link_url }}">{{ $c.link_text }}&nbsp;<span aria-hidden="true">&rarr;</span></a></p>
+</div>

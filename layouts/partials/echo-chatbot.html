@@ -59,6 +59,11 @@
       </button>
     </div>
 
+    <!-- KI-Hinweis: statisches Band zwischen Kopf und Verlauf.
+         Bewusst ausserhalb von .echo-messages — im Nachrichtenstrom wuerde es
+         nach wenigen Antworten aus dem Bild scrollen und waere faktisch weg. -->
+    {{ partial "companion-ki-hinweis.html" (dict "variant" "band" "collapsible" true) }}
+
     <!-- Messages Container -->
     <div class="echo-messages" x-ref="messages">
       <template x-for="msg in messages" :key="msg.id">
