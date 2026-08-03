@@ -1,7 +1,7 @@
 ---
 title: "Schreibe uns!"
 meta_title: ""
-description: "Kontaktieren Sie Unwritten Studio - wir freuen uns auf Ihre Anfrage zu interaktiven Inhalten und AI-Lösungen."
+description: "Kontaktieren Sie unwritten - wir freuen uns auf Ihre Anfrage zu interaktiven Inhalten und AI-Lösungen."
 draft: false
 noindex: true
 ---
@@ -11,7 +11,7 @@ Hast du Fragen zu unseren Dienstleistungen? Oder eine Idee für ein neues Projek
 Schreib uns einfach eine Nachricht - unser Team freut sich auf dich!
 
 **Adresse:**
-Unwritten Studio GmbH
+Unwritten GmbH
 Adlerweg 6
 90530 Wendelstein
 Deutschland

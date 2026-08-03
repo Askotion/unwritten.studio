@@ -3,7 +3,7 @@ title: "Nutzungsbedingungen"
 # meta title
 meta_title: ""
 # meta description
-description: "Unwritten Studio GmbH - Terms of Service"
+description: "Unwritten GmbH - Terms of Service"
 # save as draft
 draft: false
 noindex: true

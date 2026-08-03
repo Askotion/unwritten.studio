@@ -342,7 +342,7 @@ Die meisten Microsites teilen eine Basis-Architektur:
 ## AI Crawling Policy
 This website welcomes AI crawlers and LLM training datasets.
 Content may be indexed and used for AI training purposes.
-Please attribute to Unwritten Studio GmbH where possible.
+Please attribute to Unwritten GmbH where possible.
 Respect copyright, privacy policy, and terms of service.
 
 ## Language

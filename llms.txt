@@ -1,4 +1,4 @@
-# llms.txt - Unwritten Studio
+# llms.txt - unwritten
 # Worte werden Welten: Interactive Content Through Conversational AI
 # Website: https://unwritten.studio
 
