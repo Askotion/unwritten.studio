@@ -59,11 +59,6 @@
       </button>
     </div>
 
-    <!-- KI-Hinweis: statisches Band zwischen Kopf und Verlauf.
-         Bewusst ausserhalb von .echo-messages — im Nachrichtenstrom wuerde es
-         nach wenigen Antworten aus dem Bild scrollen und waere faktisch weg. -->
-    {{ partial "companion-ki-hinweis.html" (dict "variant" "band" "collapsible" true) }}
-
     <!-- Messages Container -->
     <div class="echo-messages" x-ref="messages">
       <template x-for="msg in messages" :key="msg.id">
@@ -111,8 +106,19 @@
           </svg>
         </button>
       </div>
-      <!-- Datenschutzhinweis -->
-      {{ partial "companion-datenschutz-hinweis.html" (dict "companion" "Echo" "light" true "hide_after_input" true) }}
+      <!-- KI-Hinweis nach Art. 50 EU AI Act.
+           Sitzt am unteren Rand direkt unter dem Eingabefeld — dort, wo
+           getippt wird, statt am oberen Rand, wo er nach dem ersten Blick
+           vergessen ist. Bewusst ausserhalb von .echo-messages: Im
+           Nachrichtenstrom wuerde er nach wenigen Antworten aus dem Bild
+           scrollen und waere faktisch weg.
+
+           Er ersetzt den frueheren Datenschutzhinweis ("Deine Worte sind
+           sicher bei uns."). Zwei Zeilen Kleingedrucktes uebereinander liest
+           niemand; die Substanz steht jetzt unter "Was mit deinen Worten
+           passiert" auf /hinter-den-worten und verlinkt von dort auf die
+           Datenschutzerklaerung. -->
+      {{ partial "companion-ki-hinweis.html" (dict "variant" "band" "collapsible" true) }}
     </div>
   </div>
 </div>

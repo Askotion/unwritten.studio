@@ -1,35 +1,51 @@
 {{/* KI-Transparenzhinweis nach Art. 50 Abs. 1 EU AI Act (VO (EU) 2024/1689).
 
-     ARCHITEKTUR — bitte beim Refactoring nicht aufweichen:
-     Der Hinweis wird immer statisch gerendert und ist ohne JavaScript
-     vollstaendig sichtbar. Das Einklappen nach der ersten Nutzereingabe ist
-     reine Progressive Enhancement: Faellt Alpine aus, bleibt der volle Satz
-     stehen. Die Erfuellung der Offenlegungspflicht haengt damit an keiner
-     Stelle vom JS-Zustand ab — nur die Verknappung tut es.
+     GRUNDGEDANKE — bitte beim Refactoring nicht aufweichen:
+     Die Pflicht ist zeitlich gebunden, nicht raeumlich. Art. 50 Abs. 5 verlangt
+     die Information "spaetestens bei der ersten Interaktion" — das ist eine
+     Aussage ueber einen Zeitpunkt, nicht ueber einen Ort auf der Seite.
 
-     GROESSE: bewusst nicht kleiner als der umgebende Text (Band 16px wie
-     .echo-bubble und .echo-input, Hero 18px wie der Fliesstext). Zurueckhaltung
-     entsteht ueber Flaeche, Farbe und Abstand, nie ueber Schriftgrad oder
-     Deckkraft — kleiner und blasser als die Umgebung ist genau die Bauart, die
-     die Kommissionsleitlinien als unzureichend benennen.
+     Daraus folgen zwei Varianten:
 
-     Der Satz selbst steht in config/_default/params.toml -> [ki_hinweis].
+     "hero"  — haengt am Eingabefeld und erscheint beim Fokus, also bevor
+               abgeschickt werden kann. Der Reveal laeuft ueber :focus-within,
+               d.h. reines CSS: Er kann nicht durch fehlendes oder kaputtes
+               JavaScript ausfallen. Das optionale Skript in hero-ki-hinweis.js
+               sorgt nur dafuer, dass die Zeile nach der ersten Beruehrung
+               stehen bleibt statt bei blur wieder zu verschwinden — reine
+               Zugabe, keine Voraussetzung.
+               Absolut positioniert, damit beim Erscheinen nichts umbricht.
+
+     "band"  — statisches, permanentes Band im Chatfenster zwischen Kopf und
+               Verlauf. Ohne JS vollstaendig sichtbar; das Einklappen nach der
+               ersten Nutzereingabe ist Progressive Enhancement.
+
+     GROESSE: nie kleiner als das Element, zu dem der Hinweis gehoert.
+     Im Band 16px wie .echo-bubble und .echo-input, im Hero 16px wie das
+     Eingabefeld. Kleiner und blasser als die Umgebung ist genau die Bauart,
+     die die Kommissionsleitlinien als unzureichend benennen.
+
+     Satz und Kurzform stehen in config/_default/params.toml -> [ki_hinweis].
 
      Usage:
        {{ partial "companion-ki-hinweis.html" (dict "variant" "hero") }}
        {{ partial "companion-ki-hinweis.html" (dict "variant" "band" "collapsible" true) }}
-
-     "collapsible" erwartet einen Alpine-Scope mit messages[{role}].
 */}}
 
 {{ $c := site.Params.ki_hinweis }}
 {{ $variant := .variant | default "band" }}
 {{ $collapsible := .collapsible | default false }}
+{{ $mode := .mode | default "" }}
+
+{{/* Im Hero entscheidet hero_form, ob der volle Slogan oder nur der
+     Pflichtsatz erscheint. Im Band immer der volle Slogan. */}}
+{{ $short := and (eq $variant "hero") (eq ($c.hero_form | default "short") "short") }}
+
 {{ $fold := "" }}
 {{ if $collapsible }}
   {{ $fold = `x-show="!messages.some(m => m.role === 'user')" x-transition.opacity.duration.400ms` }}
 {{ end }}
 
-<div class="ki-hinweis ki-hinweis--{{ $variant }}" role="note" aria-label="Hinweis zur KI-Nutzung">
-  <p class="ki-hinweis-text"><span {{ $fold | safeHTMLAttr }}>{{ $c.negations }} </span><span class="ki-hinweis-core">{{ $c.core }}</span><span {{ $fold | safeHTMLAttr }}> &mdash; {{ $c.traits }}</span>. <a class="ki-hinweis-link" href="{{ $c.link_url }}">{{ $c.link_text }}&nbsp;<span aria-hidden="true">&rarr;</span></a></p>
+<div {{ if eq $variant "hero" }}id="ki-hinweis-hero" {{ end }}class="ki-hinweis ki-hinweis--{{ $variant }}{{ with $mode }} ki-hinweis--{{ . }}{{ end }}{{ if $short }} ki-hinweis--kurz{{ end }}" role="note" aria-label="Hinweis zur KI-Nutzung">
+  <p class="ki-hinweis-text">{{ if not $short }}<span {{ $fold | safeHTMLAttr }}>{{ $c.negations }} </span>{{ end }}<span class="ki-hinweis-core">{{ $c.core }}</span>{{ if not $short }}<span {{ $fold | safeHTMLAttr }}> &mdash; {{ $c.traits }}</span>{{ end }}. <a class="ki-hinweis-link" href="{{ $c.link_url }}">{{ $c.link_text }}&nbsp;<span aria-hidden="true">&rarr;</span></a></p>
 </div>

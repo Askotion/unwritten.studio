@@ -33,31 +33,49 @@
         {{ .title | markdownify }}
       </h1>
 
-      <!-- Echo Hero Input -->
-      <div class="flex items-center justify-center gap-4 mb-8 max-w-md mx-auto">
-        <button
-          class="echo-hero-sphere flex-shrink-0"
-          onclick="document.getElementById('echo-modal').classList.remove('hidden'); document.getElementById('echo-modal').classList.add('flex')"
-          aria-label="Echo öffnen">
-          <img src="/images/echo-avatar.png" alt="Echo" />
-        </button>
-        <input
-          type="text"
-          id="echo-hero-input"
-          placeholder="Lass mich dich verwandeln..."
-          class="flex-1 bg-transparent py-2 text-[#3e4447] placeholder:text-[#3e4447]/35 font-tertiary text-base outline-none"
-          style="border:none; border-bottom: 1px solid rgba(48,135,185,0.2); border-radius:0; -webkit-appearance:none; appearance:none; box-shadow:none;"
-        />
-      </div>
+      {{/* Art. 50 EU AI Act: Diese Eingabezeile ist die erste Interaktion — von
+           hier geht die Nachricht direkt an die KI, das Chatfenster oeffnet erst
+           danach. Der Hinweis haengt deshalb an diesem Feld.
 
-      {{/* Art. 50 EU AI Act: Die Eingabezeile oben ist die erste Interaktion —
-           von hier geht die Nachricht direkt an die KI, das Chatfenster oeffnet
-           erst danach. Der Hinweis muss deshalb hier stehen, nicht erst im Modal. */}}
-      {{ partial "companion-ki-hinweis.html" (dict "variant" "hero") }}
+           Er erscheint beim Fokus, nicht beim Laden: Die Pflicht ist zeitlich
+           gebunden ("spaetestens bei der ersten Interaktion"), nicht raeumlich.
+           Beim Seitenaufruf bleibt der Dreiklang aus Headline, Chatline und
+           Begleittext unangetastet.
 
-      <div class="max-w-2xl mx-auto">
-        <p class="text-[#3e4447] font-tertiary text-lg tracking-wider">{{ .content | markdownify }}</p>
+           Zwei Spielarten, umschaltbar ueber [ki_hinweis].hero_mode:
+             "swap"  — Der Hinweis nimmt den Platz des Begleittexts ein.
+                       Beide liegen in derselben Grid-Zelle, es verschiebt sich
+                       nichts. Der Dreiklang bleibt immer ein Dreiklang.
+             "fokus" — Die Seite blendet ab, Chatline und Hinweis stehen frei. */}}
+      {{ $mode := site.Params.ki_hinweis.hero_mode | default "fokus" }}
+      <div class="hero-echo hero-echo--{{ $mode }}">
+
+        <!-- Echo Hero Input -->
+        <div class="hero-chatline relative flex items-center justify-center gap-4 mb-8 max-w-md mx-auto">
+          <button
+            class="echo-hero-sphere flex-shrink-0"
+            onclick="document.getElementById('echo-modal').classList.remove('hidden'); document.getElementById('echo-modal').classList.add('flex')"
+            aria-label="Echo öffnen">
+            <img src="/images/echo-avatar.png" alt="Echo" />
+          </button>
+          <input
+            type="text"
+            id="echo-hero-input"
+            placeholder="Lass mich dich verwandeln..."
+            aria-describedby="ki-hinweis-hero"
+            class="flex-1 bg-transparent py-2 text-[#3e4447] placeholder:text-[#3e4447]/35 font-tertiary text-lg outline-none"
+            style="border:none; border-bottom: 1px solid rgba(48,135,185,0.2); border-radius:0; -webkit-appearance:none; appearance:none; box-shadow:none;"
+          />
+          {{ if eq $mode "fokus" }}{{ partial "companion-ki-hinweis.html" (dict "variant" "hero" "mode" $mode) }}{{ end }}
+        </div>
+
+        <div class="hero-text-slot max-w-2xl mx-auto">
+          <p class="hero-manifest text-[#3e4447] font-tertiary text-lg tracking-wider">{{ .content | markdownify }}</p>
+          {{ if eq $mode "swap" }}{{ partial "companion-ki-hinweis.html" (dict "variant" "hero" "mode" $mode) }}{{ end }}
+        </div>
+
       </div>
+      {{ if eq $mode "fokus" }}<div class="hero-scrim" aria-hidden="true"></div>{{ end }}
 
     </div>
   </div>
@@ -66,6 +84,19 @@
 (function() {
   var heroInput = document.getElementById('echo-hero-input');
   if (!heroInput) return;
+
+  // Der KI-Hinweis erscheint per CSS (:focus-within) und funktioniert auch
+  // ohne dieses Skript. Hier bleibt er im Modus "swap" nach der ersten
+  // Beruehrung nur dauerhaft stehen, damit er beim Wegklicken nicht flackert.
+  // Im Modus "fokus" waere das falsch — die Abblendung ist ein Zustand, der
+  // enden soll, wenn man das Feld verlaesst.
+  var swap = heroInput.closest('.hero-echo--swap');
+  if (swap) {
+    heroInput.addEventListener('focus', function() {
+      swap.classList.add('ki-hinweis-sichtbar');
+    }, { once: true });
+  }
+
   heroInput.addEventListener('keyup', function(e) {
     if (e.key !== 'Enter') return;
     var text = this.value.trim();

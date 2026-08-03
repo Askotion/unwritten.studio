@@ -45,6 +45,14 @@ core = "Hier antwortet dir eine KI"
 traits = "wach, schlagfertig, wortgewandt"
 link_text = "Hinter den Worten"
 link_url = "/hinter-den-worten"
+# Nur fuer den Hero: "short" = einzeilig, nur der Pflichtsatz.
+#                    "full"  = ganzer Slogan.
+# Im Chatfenster erscheint immer der volle Slogan.
+hero_form = "full"
+# Wie der Hinweis beim Fokus der Chatline erscheint:
+#   "swap"  = er nimmt den Platz des Begleittexts ein (nichts verschiebt sich)
+#   "fokus" = die Seite blendet ab, Chatline und Hinweis stehen frei
+hero_mode = "fokus"
 
 # plausible analytics (testweise), see https://plausible.io/ — Snippet in layouts/partials/plausible-analytics.html
 [plausible]
