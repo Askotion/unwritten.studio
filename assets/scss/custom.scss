@@ -611,6 +611,14 @@
   font-weight: 300;
 }
 
+/* Der Anker der Offenlegung. Bewusst nur ein Gewichtsschritt ueber dem
+   Grundtext (300 -> 500) und keine Groessenaenderung: Es soll das Auge
+   fuehren, nicht als Warnhinweis lesen. */
+.ki-hinweis-wort {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
 .ki-hinweis-link {
   color: #3087b9;
   text-decoration: none;

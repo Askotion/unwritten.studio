@@ -163,3 +163,28 @@ function echoChat() {
 
 // Make function globally available for Alpine.js
 window.echoChat = echoChat;
+
+/**
+ * Echo öffnen — von der Kugel im Hero, der Kugel unten rechts und der
+ * Chatline aus.
+ *
+ * Der Cursor landet direkt in der Eingabezeile: Der einzige Grund, Echo zu
+ * öffnen, ist das Gespräch. init() läuft beim Seitenladen, nicht beim Öffnen,
+ * und kann den Fokus deshalb nicht setzen.
+ */
+function openEchoModal() {
+  const modal = document.getElementById('echo-modal');
+  if (!modal) return;
+
+  modal.classList.remove('hidden');
+  modal.classList.add('flex');
+
+  // Erst nach dem Layout-Durchlauf — ein display:none-Element nimmt
+  // keinen Fokus an.
+  requestAnimationFrame(() => {
+    const input = modal.querySelector('.echo-input');
+    if (input && !input.disabled) input.focus();
+  });
+}
+
+window.openEchoModal = openEchoModal;

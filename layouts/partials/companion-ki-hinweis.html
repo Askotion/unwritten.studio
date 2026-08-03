@@ -41,11 +41,16 @@
      Pflichtsatz erscheint. Im Band immer der volle Slogan. */}}
 {{ $short := and (eq $variant "hero") (eq ($c.hero_form | default "short") "short") }}
 
+{{/* Nur das Wort "KI" bekommt etwas mehr Gewicht — es ist der Anker der
+     Offenlegung. Der ganze Satzteil in Fett gesetzt liest dagegen als
+     Warnhinweis. Das Wort steht im Konfigsatz, damit dieser lesbar bleibt. */}}
+{{ $coreHtml := replaceRE `\bKI\b` `<span class="ki-hinweis-wort">KI</span>` $c.core }}
+
 {{ $fold := "" }}
 {{ if $collapsible }}
   {{ $fold = `x-show="!messages.some(m => m.role === 'user')" x-transition.opacity.duration.400ms` }}
 {{ end }}
 
 <div {{ if eq $variant "hero" }}id="ki-hinweis-hero" {{ end }}class="ki-hinweis ki-hinweis--{{ $variant }}{{ with $mode }} ki-hinweis--{{ . }}{{ end }}{{ if $short }} ki-hinweis--kurz{{ end }}" role="note" aria-label="Hinweis zur KI-Nutzung">
-  <p class="ki-hinweis-text">{{ if not $short }}<span {{ $fold | safeHTMLAttr }}>{{ $c.negations }} </span>{{ end }}<span class="ki-hinweis-core">{{ $c.core }}</span>{{ if not $short }}<span {{ $fold | safeHTMLAttr }}> &mdash; {{ $c.traits }}</span>{{ end }}. <a class="ki-hinweis-link" href="{{ $c.link_url }}">{{ $c.link_text }}&nbsp;<span aria-hidden="true">&rarr;</span></a></p>
+  <p class="ki-hinweis-text">{{ if not $short }}<span {{ $fold | safeHTMLAttr }}>{{ $c.negations }} </span>{{ end }}<span class="ki-hinweis-core">{{ $coreHtml | safeHTML }}</span>{{ if not $short }}<span {{ $fold | safeHTMLAttr }}> &mdash; {{ $c.traits }}</span>{{ end }}. <a class="ki-hinweis-link" href="{{ $c.link_url }}">{{ $c.link_text }}&nbsp;<span aria-hidden="true">&rarr;</span></a></p>
 </div>

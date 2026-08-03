@@ -7,7 +7,7 @@
     class="echo-sphere group relative"
     aria-label="Open Echo chat"
     x-data="{ tooltip: false }"
-    @click="document.getElementById('echo-modal').classList.remove('hidden'); document.getElementById('echo-modal').classList.add('flex')"
+    @click="openEchoModal()"
     @mouseenter="tooltip = true"
     @mouseleave="tooltip = false"
   >

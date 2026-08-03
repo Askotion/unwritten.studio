@@ -14,7 +14,7 @@
       <!-- Echo trigger: große Kugel im Hero-Bild -->
       <button
         x-data
-        @click="document.getElementById('echo-modal').classList.remove('hidden'); document.getElementById('echo-modal').classList.add('flex')"
+        @click="openEchoModal()"
         aria-label="Echo öffnen"
         style="position:absolute; left:50%; top:55%; transform:translate(-50%,-50%); width:22%; aspect-ratio:1/1; border-radius:50%; background:transparent; border:0; cursor:pointer; z-index:20; transition:box-shadow 600ms ease;"
         @mouseenter="$el.style.boxShadow='0 0 0 2px rgba(255,255,255,0.25)'"
@@ -54,7 +54,7 @@
         <div class="hero-chatline relative flex items-center justify-center gap-4 mb-8 max-w-md mx-auto">
           <button
             class="echo-hero-sphere flex-shrink-0"
-            onclick="document.getElementById('echo-modal').classList.remove('hidden'); document.getElementById('echo-modal').classList.add('flex')"
+            onclick="openEchoModal()"
             aria-label="Echo öffnen">
             <img src="/images/echo-avatar.png" alt="Echo" />
           </button>
@@ -101,9 +101,8 @@
     if (e.key !== 'Enter') return;
     var text = this.value.trim();
     if (!text) return;
+    openEchoModal();
     var modal = document.getElementById('echo-modal');
-    modal.classList.remove('hidden');
-    modal.classList.add('flex');
     this.value = '';
     setTimeout(function() {
       var input = modal.querySelector('.echo-input');
