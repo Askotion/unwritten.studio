@@ -7,6 +7,11 @@ description: "Impressum der Unwritten Studio GmbH. Kontaktdaten, Geschäftsführ
 # save as draft
 draft: false
 noindex: true
+# Mehrere Microsites verlinken auf /impressum — das lief bislang ins 404.
+# GitHub Pages wertet die _redirects-Datei nicht aus (Netlify-Syntax),
+# Hugo-Aliases erzeugen dagegen statische Weiterleitungsseiten.
+aliases:
+  - "/impressum"
 
 ---
 Unwritten GmbH<br><br>

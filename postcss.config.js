@@ -32,6 +32,9 @@ const purgecss = {
     /current/,
     /active/,
     /mark/,
+    // Wird erst zur Laufzeit per JS gesetzt (KI-Hinweis bleibt nach der
+    // ersten Beruehrung stehen) und taucht daher nicht in hugo_stats.json auf.
+    /^ki-hinweis-sichtbar$/,
   ],
 };
 

@@ -33,6 +33,27 @@ custom_script = ""
 # copyright
 copyright = "Copyright &copy; 2026 unwritten GmbH"
 
+# KI-Transparenzhinweis nach Art. 50 Abs. 1 EU AI Act (VO (EU) 2024/1689).
+# Eine Quelle fuer alle Companions — hier geaendert, wirkt es ueberall.
+# Der Satz ist bewusst einheitlich: Der Hinweis kommt vom Haus, nicht vom
+# Gefaehrten. Wechselnde Formulierungen pro Companion wuerden ihn wieder als
+# Teil der Rolle lesbar machen statt als Rahmen um das Gespraech.
+# REGEL: Kein Adjektiv darf eine der drei Negationen wieder aufmachen.
+[ki_hinweis]
+negations = "Kein Mensch, kein Alien, kein Orakel."
+core = "Hier antwortet dir eine KI"
+traits = "wach, schlagfertig, wortgewandt"
+link_text = "Hinter den Worten"
+link_url = "/hinter-den-worten"
+# Nur fuer den Hero: "short" = einzeilig, nur der Pflichtsatz.
+#                    "full"  = ganzer Slogan.
+# Im Chatfenster erscheint immer der volle Slogan.
+hero_form = "full"
+# Wie der Hinweis beim Fokus der Chatline erscheint:
+#   "swap"  = er nimmt den Platz des Begleittexts ein (nichts verschiebt sich)
+#   "fokus" = die Seite blendet ab, Chatline und Hinweis stehen frei
+hero_mode = "fokus"
+
 # plausible analytics (testweise), see https://plausible.io/ — Snippet in layouts/partials/plausible-analytics.html
 [plausible]
 enable = true

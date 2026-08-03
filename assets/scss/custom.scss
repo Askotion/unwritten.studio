@@ -594,3 +594,220 @@
     font-size: 15px;
   }
 }
+
+/* ============================================================
+   KI-Transparenzhinweis (Art. 50 Abs. 1 EU AI Act)
+
+   Groesse absolut gesetzt, nicht relativ zum schwaechsten
+   vorhandenen Element: im Band 16px wie .echo-bubble und
+   .echo-input, im Hero 18px wie der Fliesstext daneben.
+   Nie kleiner oder blasser als die Umgebung — Zurueckhaltung
+   kommt aus Flaeche und Abstand.
+   ============================================================ */
+
+.ki-hinweis-text {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 300;
+}
+
+/* Der Anker der Offenlegung. Bewusst nur ein Gewichtsschritt ueber dem
+   Grundtext (300 -> 500) und keine Groessenaenderung: Es soll das Auge
+   fuehren, nicht als Warnhinweis lesen. */
+.ki-hinweis-wort {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.ki-hinweis-link {
+  color: #3087b9;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(48, 135, 185, 0.35);
+  transition: border-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+
+  &:hover {
+    color: #2c6b94;
+    border-bottom-color: #2c6b94;
+  }
+}
+
+/* Hero — erscheint beim Fokus des Eingabefelds, nicht beim Laden.
+   Der Dreiklang aus Headline, Chatline und Begleittext bleibt beim
+   Seitenaufruf unangetastet; die Offenlegung kommt in dem Moment, in
+   dem sie faellig wird.
+
+   Der Reveal laeuft ueber :focus-within — reines CSS, kann also nicht
+   durch fehlendes JavaScript ausfallen. Die Klasse .ki-hinweis-sichtbar
+   setzt ein Skript nach der ersten Beruehrung, damit die Zeile stehen
+   bleibt statt bei blur zu flackern. Das ist Zugabe, keine Bedingung.
+
+   Absolut positioniert: Beim Erscheinen darf nichts umbrechen. */
+/* Bewusst OHNE z-index: Ein Stacking-Context hier wuerde den Begleittext
+   mit ueber den Scrim heben, und genau der soll im Fokusmodus zuruecktreten.
+   Gehoben wird nur die Chatline, siehe .hero-echo--fokus .hero-chatline. */
+.hero-echo {
+  position: relative;
+}
+
+.ki-hinweis--hero {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+
+  .ki-hinweis-text {
+    color: #3e4447;
+  }
+}
+
+.hero-echo:focus-within .ki-hinweis--hero,
+.hero-echo.ki-hinweis-sichtbar .ki-hinweis--hero {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0s;
+}
+
+/* --- Modus "swap": Hinweis nimmt den Platz des Begleittexts ein ----------
+   Beide liegen in derselben Grid-Zelle. Die Zellenhoehe richtet sich nach
+   dem laengeren von beiden, also verschiebt sich beim Wechsel nichts —
+   weder beim Erscheinen noch beim Zurueckgehen. */
+.hero-text-slot {
+  display: grid;
+}
+
+.hero-text-slot > * {
+  grid-area: 1 / 1;
+}
+
+.hero-manifest {
+  transition: opacity 0.5s ease;
+}
+
+.hero-echo--swap:focus-within .hero-manifest,
+.hero-echo--swap.ki-hinweis-sichtbar .hero-manifest {
+  opacity: 0;
+}
+
+/* Volle Manifest-Typografie: Der Hinweis erbettelt sich keinen Platz,
+   er uebernimmt einen. */
+.ki-hinweis--swap {
+  text-align: center;
+
+  .ki-hinweis-text {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    letter-spacing: 0.05em;
+  }
+}
+
+/* Im Hero traegt der Satz die Offenlegung, der Link nur die Vertiefung.
+   Er darf deshalb deutlich zuruecktreten — und er muss es: Auf gleicher
+   Groesse, blau und unterstrichen liest er als Handlungsaufforderung und
+   tritt gegen die Eingabezeile an, auf die dieser Moment alles ausrichtet.
+   Die Pflicht bleibt davon unberuehrt, sie haengt am Satz. */
+.ki-hinweis--swap,
+.ki-hinweis--fokus {
+  .ki-hinweis-link {
+    display: block;
+    /* Eng an den Satz gebunden: Mit groesserem Abstand rutscht er in die
+       Zone des ausgeblendeten Begleittexts und liest dann gegen dessen
+       Rest an. */
+    margin-top: 0.5rem;
+    font-size: 0.8125rem;
+    font-weight: 300;
+    letter-spacing: 0.09em;
+    color: rgba(62, 68, 71, 0.45);
+    border-bottom: 0;
+
+    &:hover {
+      color: #3087b9;
+      border-bottom: 0;
+    }
+  }
+}
+
+/* --- Modus "fokus": Seite blendet ab, Chatline steht frei ---------------- */
+/* Nur die Chatline (und der Hinweis darin) stehen vor dem Scrim.
+   Headline, Begleittext und Hero-Bild treten zurueck. */
+.hero-echo--fokus .hero-chatline {
+  z-index: 40;
+}
+
+.hero-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  /* Hoch genug, dass der Begleittext dahinter wirklich verschwindet —
+     bei 0.88 schimmerte er durch und der Hinweis lag optisch darauf.
+     Die Headline bleibt bei 0.97 als zarter Schatten ahnbar, der
+     Begleittext direkt hinter dem Hinweis nicht mehr. */
+  background: rgba(255, 255, 255, 0.97);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+}
+
+.hero-echo--fokus:focus-within ~ .hero-scrim {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0s;
+}
+
+.ki-hinweis--fokus {
+  position: absolute;
+  top: calc(100% + 1.4rem);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32rem;
+  max-width: 90vw;
+  text-align: center;
+
+  .ki-hinweis-text {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    letter-spacing: 0.05em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ki-hinweis--hero,
+  .hero-manifest,
+  .hero-scrim {
+    transition-duration: 0.01s;
+  }
+}
+
+/* Chatfenster — sitzt im .echo-input-container direkt unter dem Eingabefeld,
+   also an der Stelle, an der getippt wird. Keine eigene Flaeche und kein
+   eigener Rahmen: Der Container bringt beides schon mit. */
+.ki-hinweis--band {
+  padding: 12px 2px 0;
+
+  .ki-hinweis-text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgba(62, 68, 71, 0.85);
+  }
+
+  /* Wie im Hero: Der Satz traegt die Pflicht, der Link nur die Vertiefung. */
+  .ki-hinweis-link {
+    margin-left: 0.35rem;
+    font-size: 0.8125rem;
+    letter-spacing: 0.06em;
+    color: rgba(62, 68, 71, 0.45);
+    border-bottom: 0;
+    white-space: nowrap;
+
+    &:hover {
+      color: #3087b9;
+      border-bottom: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .ki-hinweis-text {
+      font-size: 14px;
+    }
+  }
+}

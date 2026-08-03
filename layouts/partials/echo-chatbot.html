@@ -7,7 +7,7 @@
     class="echo-sphere group relative"
     aria-label="Open Echo chat"
     x-data="{ tooltip: false }"
-    @click="document.getElementById('echo-modal').classList.remove('hidden'); document.getElementById('echo-modal').classList.add('flex')"
+    @click="openEchoModal()"
     @mouseenter="tooltip = true"
     @mouseleave="tooltip = false"
   >
@@ -106,8 +106,19 @@
           </svg>
         </button>
       </div>
-      <!-- Datenschutzhinweis -->
-      {{ partial "companion-datenschutz-hinweis.html" (dict "companion" "Echo" "light" true "hide_after_input" true) }}
+      <!-- KI-Hinweis nach Art. 50 EU AI Act.
+           Sitzt am unteren Rand direkt unter dem Eingabefeld — dort, wo
+           getippt wird, statt am oberen Rand, wo er nach dem ersten Blick
+           vergessen ist. Bewusst ausserhalb von .echo-messages: Im
+           Nachrichtenstrom wuerde er nach wenigen Antworten aus dem Bild
+           scrollen und waere faktisch weg.
+
+           Er ersetzt den frueheren Datenschutzhinweis ("Deine Worte sind
+           sicher bei uns."). Zwei Zeilen Kleingedrucktes uebereinander liest
+           niemand; die Substanz steht jetzt unter "Wo deine Worte landen"
+           auf /hinter-den-worten und verlinkt von dort auf die
+           Datenschutzerklaerung. -->
+      {{ partial "companion-ki-hinweis.html" (dict "variant" "band" "collapsible" true) }}
     </div>
   </div>
 </div>
