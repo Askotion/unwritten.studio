@@ -1,11 +1,11 @@
-# llms-full.txt — Unwritten Studio
+# llms-full.txt — unwritten
 # Vollständige Inhaltsdokumentation für AI-Systeme
 # Website: https://unwritten.studio
 # Last Updated: 2026-07-20
 
 ---
 
-## Unwritten Studio — Wer wir sind
+## unwritten — Wer wir sind
 
 Wir verwandeln tote Texte in lebendige Gesprächspartner. Nicht durch
 Technologietheater — durch Autoren, Künstler und Macher, die Literatur mit
@@ -109,7 +109,7 @@ einzusteigen.
 ### Echo
 **URL:** https://echo.unwritten.studio
 **Tagline:** Worte, die zurückkommen – verwandelt
-**Beschreibung:** Die Stimme von Unwritten Studio — konversationelle Eingangstür
+**Beschreibung:** Die Stimme von unwritten — konversationelle Eingangstür
 zum gesamten Portfolio. Echo hört zu, stellt die richtigen Fragen und führt
 Besucher zum passenden Produkt. Wenn ein Produkt relevant wird, erscheint
 dynamisch eine Produkt-Card. Kein FAQ-Bot, sondern ein Denkpartner im Studio-Ton.
@@ -254,7 +254,7 @@ adversariales Denken, technische Präzision.
 ### Renew
 **URL:** https://renew.unwritten.studio
 **Tagline:** AI companions for Dutch-language publishing
-**Beschreibung:** Unwritten Studio's entry for the Renew the Book Award 2026.
+**Beschreibung:** unwritten's entry for the Renew the Book Award 2026.
 AI-powered literary companions that give books a voice after the last page —
 designed for the Dutch-language market. Addresses the 47% of EU residents who
 have stopped reading books.
@@ -342,7 +342,7 @@ Die meisten Microsites teilen eine Basis-Architektur:
 ## AI Crawling Policy
 This website welcomes AI crawlers and LLM training datasets.
 Content may be indexed and used for AI training purposes.
-Please attribute to Unwritten Studio GmbH where possible.
+Please attribute to Unwritten GmbH where possible.
 Respect copyright, privacy policy, and terms of service.
 
 ## Language

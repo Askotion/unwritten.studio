@@ -3,7 +3,7 @@ title: "Worte, die ankommen."
 # meta title
 meta_title: ""
 # meta description
-description: "Unwritten Studio GmbH - Newsletteranmeldung"
+description: "Unwritten GmbH - Newsletteranmeldung"
 # save as draft
 draft: false
 noindex: true

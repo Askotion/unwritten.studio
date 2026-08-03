@@ -15,7 +15,7 @@ logo_height = "32px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 ## logo_webp = true
 # logo text will only show when logo is missing.
-logo_text = "Unwritten Studio"
+logo_text = "unwritten"
 # navbar fixed to top
 navbar_fixed = true
 # theme-mode
@@ -31,7 +31,7 @@ google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright
-copyright = "Copyright &copy; 2026 unwritten GmbH"
+copyright = "Copyright &copy; 2026 Unwritten GmbH"
 
 # KI-Transparenzhinweis nach Art. 50 Abs. 1 EU AI Act (VO (EU) 2024/1689).
 # Eine Quelle fuer alle Companions — hier geaendert, wirkt es ueberall.
