@@ -142,27 +142,44 @@ Datenschutzerklärung: https://fontawesome.com/privacy<br></p></p>
 
 <h3 class="smallsubtitle">9. Chat-Funktionalität</h3>
 <strong>a) Beschreibung und Umfang der Datenverarbeitung</strong>
-<p class="bodytext">Auf unseren Webseiten (unwritten.studio und zugehörige Subdomains wie concierge.unwritten.studio, wastedwetware.unwritten.studio, flow.unwritten.studio) bieten wir eine Chat-Funktionalität an, die es Nutzern ermöglicht, mit KI-gestützten Assistenten zu interagieren. Diese Funktion dient dazu, die Nutzerfreundlichkeit zu erhöhen und personalisierte Inhalte bereitzustellen.</p>
+<p class="bodytext">Auf unseren Webseiten (unwritten.studio und zugehörige Subdomains) bieten wir eine Chat-Funktionalität an, die es Nutzern ermöglicht, mit KI-gestützten Assistenten zu interagieren. Diese Funktion dient dazu, die Nutzerfreundlichkeit zu erhöhen und personalisierte Inhalte bereitzustellen.</p>
 <p class="bodytext">Im Rahmen der Chat-Funktionalität werden folgende Daten verarbeitet:</p>
 <ul>
     <li><strong>Session-ID</strong> (automatisch generiert, kein Personenbezug)</li>
+    <li><strong>Wiedererkennungs-Kennung</strong> – bei einigen Assistenten eine aus drei Wörtern bestehende Kennung, die der Nutzer selbst erhält und aufbewahrt. Sie enthält keine personenbezogenen Angaben und wird von uns keiner Person zugeordnet.</li>
     <li><strong>Zeitstempel</strong> (Beginn und Ende der Chat-Session)</li>
     <li><strong>Anzahl der gesendeten Nachrichten</strong></li>
     <li><strong>URL der Webseite</strong>, auf der der Chat genutzt wird</li>
-    <li><strong>Auszüge aus Chat-Nachrichten</strong> (erste 100 Zeichen jeder Nachricht)</li>
-    <li><strong>Extrahierte Nutzerprofile</strong> (z.B. Rolle, Interessen, Lernstil – anonymisiert)</li>
+    <li><strong>Vollständige Chat-Nachrichten</strong> (Eingaben des Nutzers und Antworten des Assistenten)</li>
+    <li><strong>Extrahierte Nutzerprofile</strong> (z.B. Rolle, Interessen, Lernstil, Lernfortschritt, Sprache – anonymisiert)</li>
+    <li><strong>Technische Angaben zur Verarbeitung</strong> (verwendetes KI-Modell, betroffene Microsite)</li>
 </ul>
-<p class="bodytext">Die Daten werden auf Servern von Cloudflare (Cloudflare Workers & KV Storage) in der EU gespeichert und nach 90 Tagen automatisch gelöscht.</p>
+<p class="bodytext">Die Daten werden auf Servern von Cloudflare (Cloudflare Workers &amp; KV Storage) in der EU gespeichert. IP-Adressen werden dabei nicht erhoben.</p>
+<p class="bodytext">Es bestehen zwei getrennte Speicherungen mit unterschiedlichem Zweck und unterschiedlicher Dauer:</p>
+<ul>
+    <li><strong>Gesprächsgedächtnis</strong> – Bei Assistenten, die ein Gespräch über mehrere Sitzungen fortsetzen können, wird der Verlauf unter der oben genannten Wiedererkennungs-Kennung gespeichert. Ohne diese Speicherung wäre die Funktion nicht möglich: Ein Lernbegleiter, der eine mehrjährige Ausbildung begleitet, muss sich an den bisherigen Verlauf erinnern können. Speicherdauer: längstens zwei Jahre ab dem letzten Gespräch.</li>
+    <li><strong>Auswertungsprotokoll</strong> – Gesprächsverläufe werden zusätzlich in einer getrennten Ablage gespeichert, um die Assistenten auswerten und verbessern zu können. Speicherdauer: 90 Tage.</li>
+</ul>
 <strong>b) Rechtsgrundlage</strong>
-<p class="bodytext">Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f EU-DSGVO (berechtigtes Interesse). Unser berechtigtes Interesse liegt darin, die Qualität unserer Dienste zu verbessern und Nutzern eine personalisierte Erfahrung zu bieten.</p>
+<p class="bodytext">Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f EU-DSGVO (berechtigtes Interesse). Unser berechtigtes Interesse liegt darin, die Assistenten funktionsfähig zu halten – ein Gespräch über mehrere Sitzungen hinweg fortsetzen zu können – sowie die Qualität unserer Dienste zu verbessern.</p>
 <strong>c) Zweck der Datenverarbeitung</strong>
-<p class="bodytext">Die Chat-Daten werden ausschließlich zur Verbesserung der Nutzerfreundlichkeit und zur Analyse der Chat-Performance verwendet. Es erfolgt keine Weitergabe an Dritte, außer an die folgenden Dienstleister:</p>
+<p class="bodytext">Die Chat-Daten werden zu folgenden Zwecken verwendet:</p>
+<ul>
+    <li><strong>Fortsetzung des Gesprächs</strong> – damit ein Assistent an einen früheren Verlauf anknüpfen kann.</li>
+    <li><strong>Auswertung und Verbesserung</strong> – damit wir erkennen, wo Assistenten gut arbeiten und wo nicht. Die Auswertung erfolgt überwiegend automatisiert und betrachtet Muster und Auffälligkeiten über viele Gespräche hinweg, nicht einzelne Personen.</li>
+</ul>
+<p class="bodytext">Eine Weitergabe an Dritte erfolgt nicht, außer an die folgenden Dienstleister:</p>
 <ul>
     <li><strong>Cloudflare Inc.</strong> (Hosting & Speicherung)</li>
     <li><strong>OpenRouter AI</strong> (KI-Modell-Zugang für Chat-Antworten)</li>
 </ul>
 <strong>d) Dauer der Speicherung</strong>
-<p class="bodytext">Alle Chat-Logs werden nach 90 Tagen automatisch gelöscht (Time-to-Live in Cloudflare KV).</p>
+<p class="bodytext">Die Löschung erfolgt automatisch über eine Ablauffrist in Cloudflare KV (Time-to-Live):</p>
+<ul>
+    <li><strong>Auswertungsprotokolle</strong> – 90 Tage.</li>
+    <li><strong>Gesprächsgedächtnis</strong> – längstens zwei Jahre ab dem letzten Gespräch. Bei einzelnen Assistenten ist die Frist kürzer; zwei Jahre ist die Obergrenze.</li>
+</ul>
+<p class="bodytext">Sie können ein Gesprächsgedächtnis jederzeit vorzeitig löschen lassen. Senden Sie uns dazu Ihre Wiedererkennungs-Kennung an <a href="mailto:post@unwritten.studio">post@unwritten.studio</a>. Ohne diese Kennung können wir einen Verlauf nicht zuordnen und daher auch nicht gezielt löschen.</p>
 <strong>e) Widerspruchsrecht</strong>
 <p class="bodytext">Sie haben jederzeit das Recht, der Verarbeitung Ihrer Daten zu widersprechen. Kontaktieren Sie uns dazu unter post@unwritten.studio.</p>
 

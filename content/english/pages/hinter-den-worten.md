@@ -20,8 +20,14 @@ draft: false
 <p class="bodytext">Alles andere ist unsere Arbeit: das Material, das ein Companion kennt, seine Haltung, sein Ton, seine Grenzen. Ein Modell ist der Rohstoff. Der Charakter entsteht bei uns.</p>
 
 <h3 class="smallsubtitle">Wo deine Worte landen</h3>
-<p class="bodytext">Kein Login, kein Account. Wir bauen keine Nutzerprofile und verkaufen nichts weiter. Deine Eingaben gehen an das Sprachmodell, damit es antworten kann — das ist der Zweck und die Grenze.</p>
-<p class="bodytext">Was genau gespeichert wird, wie lange und auf welcher Rechtsgrundlage, steht in der <a href="/privacy-policy">Datenschutzerklärung</a>.</p>
+<p class="bodytext">Kein Login, kein Account. Wir bauen keine Nutzerprofile und verkaufen nichts weiter. Deine Eingaben gehen an das Sprachmodell, damit es antworten kann.</p>
+<p class="bodytext">Weil niemand prüft, wer da tippt: Was nicht hinausgehen darf, gehört nicht hinein. Keine Interna, kein NDA-Material, keine Echtnamen.</p>
+<p class="bodytext">Fristen, Speicherorte und Rechtsgrundlagen stehen vollständig in der <a href="/privacy-policy">Datenschutzerklärung</a>.</p>
+
+<h3 class="smallsubtitle">Wie du wiederkommst</h3>
+<p class="bodytext">Einige von unseren Companions merken sich, wo ihr aufgehört habt — Glitch über zwei Jahre Ausbildung, Kaspar über ein ganzes Spiel. Dafür brauchen sie kein Konto. Sie geben dir drei „magic words" — ein Triplet wie <em>run.loop.stage</em>. Damit kannst du dein Gespräch fortsetzen. Zu jeder Zeit, von überall aus.</p>
+<p class="bodytext">Wir wissen dabei nicht, wer du bist. Kein Name, keine E-Mail, kein Login. Dein Triplet ist alles, was dich mit deinem Verlauf verbindet — verlierst du es, ist der Faden weg, auch für uns.</p>
+<p class="bodytext">Gespeichert wird bei Cloudflare, in Rechenzentren in Europa. Nach spätestens zwei Jahren löscht sich der Verlauf von selbst. Möchtest du ihn vorher schon gezielt löschen lassen, dann schick uns kurz dein Triplet an <a href="mailto:post@unwritten.studio">post@unwritten.studio</a>.</p>
 
 <h3 class="smallsubtitle">Wo es aufhört</h3>
 <p class="bodytext">Ein Companion erfindet mit derselben Ruhe, mit der er recht hat. Er merkt den Unterschied nicht, und er wird dich nicht warnen.</p>
