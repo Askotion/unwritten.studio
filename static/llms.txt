@@ -29,3 +29,9 @@ unwritten baut interaktive KI-Gesprächspartner — keine Chatbots, sondern Comp
 - [Vorsprung](https://vorsprung.unwritten.studio/llms.txt): KI-Training für Geschäftsführer — zwölf Stationen, kein Frontalunterricht
 - [Wasted Wetware](https://wastedwetware.unwritten.studio/llms.txt): Literarische Technologiekritik — Essays mit Tiefe und Haltung
 - [Zebra](https://zebra.unwritten.studio/llms.txt): MöbelKollektiv-Denkraum — Sparringspartner für Raumgestaltung und New Work
+
+## Transparenz
+
+- [Hinter den Worten](https://unwritten.studio/hinter-den-worten): Wer bei unwritten antwortet, woraus es gebaut ist, wo deine Worte landen und wo es aufhört. KI-Transparenzhinweis nach Art. 50 EU AI Act.
+- [Datenschutzerklärung](https://unwritten.studio/privacy-policy)
+- [Impressum](https://unwritten.studio/imprint)
