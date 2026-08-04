@@ -8,6 +8,7 @@ unwritten baut interaktive KI-Gesprächspartner — keine Chatbots, sondern Comp
 
 - [Afterglow](https://afterglow.unwritten.studio/llms.txt): Events im Gespräch nacherleben — KI-Mentor, der alle Sessions kennt
 - [Berlinica](https://berlinica.unwritten.studio/llms.txt): Deutsche Klassiker für englischsprachige Leser — Tiger denkt wie Tucholsky
+- [to BIAS](https://bias.unwritten.studio/llms.txt): Verzerrungen in Sprachmodellen verstehen — Lernbegleiter für den VHB-Kurs an der HM (Landingpage live, Companion in Entwicklung)
 - [Buchleim](https://buchleim.unwritten.studio/llms.txt): Vom Zettelkasten zum gebundenen Buch — systematische Buchproduktion
 - [Companion](https://companion.unwritten.studio/llms.txt): Penelope — KI-Lernbegleiterin für NLP-Kurse an Hochschulen
 - [Concierge](https://concierge.unwritten.studio/llms.txt): Personalisierte Content-Plattform — jeder Leser als Individuum

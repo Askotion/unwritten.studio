@@ -32,7 +32,7 @@ Adlerweg 6, 90530 Wendelstein, Deutschland
 
 ---
 
-## Microsites — 23 Live-Experimente
+## Microsites — 24 Live-Experimente
 
 ---
 
@@ -57,6 +57,24 @@ Chatbot, sondern ein Denkpartner.
 **Stack:** HTML5/CSS3, Alpine.js, Cloudflare Workers, OpenRouter (Claude Haiku 4.5),
 Cloudflare KV (90 Tage TTL)
 **Kuratorin:** Eva Schweitzer, Unwritten GmbH
+
+---
+
+### to BIAS
+**URL:** https://bias.unwritten.studio
+**Tagline:** Verzerrung verstehen.
+**Beschreibung:** KI-Lernbegleiter für Studierende des VHB-Kurses „Bias in
+Sprachmodellen" an der Hochschule München. Kein allgemeiner KI-Chatbot —
+spezialisiert auf Verzerrungen in Sprachmodellen: kognitive, statistische und
+algorithmische Verzerrung, wie Modelle lernen, Fairness messen, Bias erkennen,
+Gegenmaßnahmen, sowie Ethik und rechtlicher Rahmen (EU AI Act). Der Name spielt
+mit „to bias" als Verb — etwas verzerren.
+**Charakter:** Konzeptuell stark, neutral, anonym. Benennt Wissenslücken, statt
+zu erfinden. Kein Dozent, kein Prüfer — begleitet die Prüfungsvorbereitung,
+bewertet aber nicht.
+**Sprachen:** DE, EN, ES, ZH, HI
+**Stack:** HTML5, Alpine.js, GitHub Pages
+**Status:** Landingpage live, Companion noch in Entwicklung
 
 ---
 
