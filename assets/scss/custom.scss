@@ -770,6 +770,49 @@
   }
 }
 
+/* --- Telefone -----------------------------------------------------------
+   Bewusst 640px statt der sonst ueblichen 768px: Das Problem ist auf
+   Telefone beschraenkt, und auf Tablets waere die kleinere Schrift eine
+   Verschlechterung ohne Anlass.
+
+   Drei Korrekturen:
+
+   1. Der Kasten haengt am Elternelement statt ueber 90vw zentriert zu sein.
+      left/right: 0 kann den Viewport konstruktionsbedingt nicht ueberragen,
+      egal wie schmal das Geraet ist — die Zentrierung ueber left: 50% plus
+      translateX(-50%) bezieht sich dagegen auf die Chatline, waehrend 90vw
+      sich auf den Viewport bezieht. Zwei verschiedene Bezugssysteme, deren
+      Zusammenspiel nur zufaellig passt.
+
+   2. Kleinere Schrift und weniger Sperrung: Bei 1.125rem plus 0.05em
+      Laufweite braucht der Slogan auf einem Telefon drei Zeilen.
+
+   3. Der Begleittext blendet aus. Bei 97 % Abblendung schimmert er durch,
+      und der dreizeilige Hinweis liegt mitten darin — zwei ineinander
+      laufende Textbloecke sind auch dann Matsch, wenn einer blass ist.
+      Auf einem Telefon ist fuer beides ohnehin kein Platz. */
+@media (max-width: 640px) {
+  .ki-hinweis--fokus {
+    left: 0;
+    right: 0;
+    width: auto;
+    max-width: none;
+    transform: none;
+    padding: 0 0.25rem;
+  }
+
+  .ki-hinweis--fokus .ki-hinweis-text,
+  .ki-hinweis--swap .ki-hinweis-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+  }
+
+  .hero-echo--fokus:focus-within .hero-manifest {
+    opacity: 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .ki-hinweis--hero,
   .hero-manifest,
