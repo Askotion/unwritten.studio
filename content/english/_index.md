@@ -83,16 +83,14 @@ schmiede:
   content: "Das Metall glüht noch. Hier entsteht, was morgen die Bühne betritt."
 
   projects:
-    # Reihenfolge nach visueller Lautstaerke: Fehlfunktion (Gelb) und Kaspar
-    # (Schwarz) rahmen den Abschnitt ein, die vier hellen liegen dazwischen.
-    - name: "Fehlfunktion"
-      image: "/images/uw-fehlfunktion.jpg"
-      description: "42 Essays über gesellschaftliche Dysfunktionen, mit KI geschrieben."
-      url: "https://fehlfunktion.unwritten.studio/"
     - name: "Flow"
       image: "/images/flow-showcase.jpg"
       description: "Die EU-KI-Verordnung in fünf Minuten am Tag — rollenspezifisch, bis zum Zertifikat."
       url: "https://flow.unwritten.studio/"
+    - name: "Fehlfunktion"
+      image: "/images/uw-fehlfunktion.jpg"
+      description: "42 Essays über gesellschaftliche Dysfunktionen, mit KI geschrieben."
+      url: "https://fehlfunktion.unwritten.studio/"
     - name: "Glitch"
       image: "/images/glitch-showcase.jpg"
       description: "Zwei Jahre Fachinformatiker-Ausbildung, ein Begleiter der sich erinnert."
@@ -101,14 +99,14 @@ schmiede:
       image: "/images/uw-bias.jpg"
       description: "Verzerrung verstehen. Tobias begleitet durch den VHB-Kurs über Bias in Sprachmodellen."
       url: "https://bias.unwritten.studio/"
-    - name: "Buchleim"
-      image: "/images/uw-buchleim.jpeg"
-      description: "Vom Zettelkasten zum gebundenen Buch."
-      url: "https://buchleim.unwritten.studio/"
     - name: "Kaspar"
       image: "/images/kaspar-showcase.jpg"
       description: "Nürnberg, 1828. Du bist Kaspar Hauser — und die Welt antwortet auf alles, was du tippst."
       url: "https://kaspar.unwritten.studio/"
+    - name: "Buchleim"
+      image: "/images/uw-buchleim.jpeg"
+      description: "Vom Zettelkasten zum gebundenen Buch."
+      url: "https://buchleim.unwritten.studio/"
 
 
 
