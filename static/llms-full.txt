@@ -227,14 +227,18 @@ Cloudflare KV
 
 ---
 
-### Onboarding — Wiesel
+### Onboarding — Wisdom
 **URL:** https://onboarding.unwritten.studio
-**Tagline:** Dein flinker Tourguide durch den FAU-Alltag
+**Tagline:** Dein Kompass durch den FAU-Alltag
 **Beschreibung:** KI-Chatbot für Erstsemester an der Wirtschafts- und
-Sozialwissenschaftlichen Fakultät (WiSo) der FAU Erlangen-Nürnberg. Kennt
-WiSo-spezifische Abläufe, Plattformen (Campo, StudOn, FAU-Mail) und
-Anlaufstellen. Fünf Sprachen (DE, EN, TR, AR, UK).
-**Charakter:** Flink, neutral, anonym. Erfindet niemals Informationen.
+Sozialwissenschaftlichen Fakultät (WiSo) der FAU Erlangen-Nürnberg. Kein
+allgemeiner Uni-Chatbot — Wisdom kennt die WiSo-spezifischen Fristen, Systeme,
+Formulare und Anlaufstellen: Campusnavigation, Module und Kurse, Prüfungen,
+Plattformen (Campo, StudOn, FAU-Mail, VPN), Studienberatung und Finanzen.
+Fünf Sprachen (DE, EN, ES, ZH, HI), Sprachwahl beim Einstieg.
+**Charakter:** Verlässlich, neutral, anonym. Erfindet niemals Informationen und
+sagt klar, wenn etwas außerhalb seines Wissens liegt.
+**Stack:** HTML5, Alpine.js, GitHub Pages; KI-API via chatbot-wiso.de
 **Besonderheit:** Kundenprojekt mit FAU WiSo
 
 ---
