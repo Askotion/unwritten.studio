@@ -166,7 +166,7 @@ Datenschutzerklärung: https://fontawesome.com/privacy<br></p></p>
 <p class="bodytext">Die Chat-Daten werden zu folgenden Zwecken verwendet:</p>
 <ul>
     <li><strong>Fortsetzung des Gesprächs</strong> – damit ein Assistent an einen früheren Verlauf anknüpfen kann.</li>
-    <li><strong>Auswertung und Verbesserung</strong> – damit wir erkennen, wo Assistenten gut arbeiten und wo nicht. Die Auswertung erfolgt überwiegend automatisiert und betrachtet Muster und Auffälligkeiten über viele Gespräche hinweg, nicht einzelne Personen.</li>
+    <li><strong>Auswertung und Verbesserung</strong> – damit wir erkennen, wo Assistenten gut arbeiten und wo nicht. Die Auswertung erfolgt überwiegend automatisiert und betrachtet Muster und Auffälligkeiten über viele Gespräche hinweg.</li>
 </ul>
 <p class="bodytext">Eine Weitergabe an Dritte erfolgt nicht, außer an die folgenden Dienstleister:</p>
 <ul>

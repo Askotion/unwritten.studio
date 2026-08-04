@@ -143,6 +143,24 @@ Nur die Dateien unter `static/` werden deployed — llms-Dateien an anderen
 Orten sind Altlasten und gehören gelöscht. Reine UI-/Styling-/Technik-Fixes
 ohne inhaltliche Auswirkung brauchen kein llms-Update.
 
+**Aufbewahrungsfristen stehen an drei Orten (Pflicht bei jeder Änderung!):**
+
+Ändert sich, wie lange oder wo Gesprächsdaten gespeichert werden, muss das
+überall nachgezogen werden — sonst sagt die Website etwas anderes, als die
+Technik tut:
+
+1. **Der Worker der Microsite** — `KV_TTL` und alle hartkodierten
+   `expirationTtl`. Achtung: Manche Worker schreiben zweimal, mit
+   unterschiedlichen Fristen (Gesprächsgedächtnis und Auswertungsprotokoll).
+2. **Die Datenschutzerklärung** — `content/english/pages/privacy-policy.md`,
+   Abschnitt „Chat-Funktionalität". Das ist das rechtlich maßgebliche Dokument.
+3. **`/hinter-den-worten`** — die allgemeinverständliche Erläuterung.
+
+Die Website nennt bewusst eine **Obergrenze** („längstens zwei Jahre"), nicht
+den Wert einer einzelnen Site. Kürzere Fristen sind damit jederzeit gedeckt,
+längere nicht — wer eine Frist verlängert, muss zwingend alle drei Orte
+anfassen.
+
 ### 5️⃣ **Committen: Aussagekräftige Messages**
 
 ```bash
@@ -332,6 +350,7 @@ Bevor du pusht:
 - [ ] Responsive: Desktop, Tablet, Mobile testen
 - [ ] Keine Flickering/Flashing beim Laden
 - [ ] Inhaltliche Änderung? → `static/llms.txt` + `static/llms-full.txt` mit aktualisiert (siehe Abschnitt „LLM-Files mitpflegen")
+- [ ] Aufbewahrungsfrist geändert? → Worker, Datenschutzerklärung und `/hinter-den-worten` abgeglichen (siehe Abschnitt „Aufbewahrungsfristen stehen an drei Orten")
 
 ## Hero Video
 
