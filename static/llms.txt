@@ -21,7 +21,7 @@ unwritten baut interaktive KI-Gesprächspartner — keine Chatbots, sondern Comp
 - [Lagerfeuer](https://lagerfeuer.unwritten.studio/llms.txt): Expertenwissen in Kleingruppen-Sessions einfangen und bewahren
 - [Loop](https://loop.unwritten.studio/llms.txt): Gesprächspartner zu Hofstadters "Gödel, Escher, Bach" mit RAG
 - [Nathan](https://nathan.unwritten.studio/llms.txt): KI-Lernbegleiter für n8n Workflow-Automation
-- [Onboarding](https://onboarding.unwritten.studio/llms.txt): Wiesel — Chatbot für Erstsemester an der FAU WiSo
+- [Onboarding](https://onboarding.unwritten.studio/llms.txt): Wisdom — Kompass durch den FAU-Alltag, Chatbot für Erstsemester an der FAU WiSo
 - [Red](https://red.unwritten.studio/llms.txt): Security-Companion — denkt wie ein Angreifer, damit du verteidigen kannst
 - [Renew](https://renew.unwritten.studio/llms.txt): Renew the Book Award 2026 — AI companions for Dutch-language publishing
 - [Resonanzfeld](https://resonanzfeld.unwritten.studio/llms.txt): Denkinstrument für Komplexität — inspiriert von Peter Kruse

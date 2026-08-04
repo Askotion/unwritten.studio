@@ -70,7 +70,7 @@ buehne:
       link: "https://vorsprung.unwritten.studio/"
     - subtitle: "Onboarding"
       image: "/images/onboarding-showcase.png"
-      content: "Erster Tag, fremde Welt. Der KI-Companion begleitet Erstsemester durch den Dschungel aus Prüfungsordnungen, Campusplänen und ungeschriebenen Regeln."
+      content: "Erster Tag, fremde Welt. Wisdom ist der Kompass durch Prüfungsordnungen, Campuspläne und ungeschriebene Regeln der FAU WiSo."
       link: "https://onboarding.unwritten.studio/"
     - subtitle: "Wasted Wetware"
       image: "/images/wasted-wetware-showcase.png"
