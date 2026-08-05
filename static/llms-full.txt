@@ -320,7 +320,6 @@ Iteration), Hinter der Kulisse (Halluzinationen, Sycophancy), Das große Bild
 **Save-System:** Drei-Wort-Kennung. TTL: 730 Tage.
 **Stack:** HTML5, Alpine.js, Cloudflare Workers, externes Modell-Routing,
 Cloudflare KV
-**Besonderheit:** Einziger Worker mit einem größeren Modell als Standard
 
 ---
 
