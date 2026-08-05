@@ -42,7 +42,7 @@ Adlerweg 6, 90530 Wendelstein, Deutschland
 **Beschreibung:** KI-gestützte Event-Nachbearbeitung — Konferenzaufnahmen werden
 in interaktive Diskussionen verwandelt. Teilnehmer können verpasste Sessions
 nacherleben und sich im Dialog mit dem Content auseinandersetzen.
-**Stack:** HTML/CSS, Cloudflare Workers, OpenRouter API, RAG-indexierte Transkripte
+**Stack:** HTML/CSS, Cloudflare Workers, externes Modell-Routing, RAG-indexierte Transkripte
 **Besonderheit:** DSGVO-konform, EU-Infrastruktur
 
 ---
@@ -54,7 +54,7 @@ nacherleben und sich im Dialog mit dem Content auseinandersetzen.
 englischen Sprachraum. Tiger (Theobald Tiger) ist ein charaktergetriebener
 KI-Gesprächspartner, der mit Nutzern über Tucholskys Werk nachdenkt — kein
 Chatbot, sondern ein Denkpartner.
-**Stack:** HTML5/CSS3, Alpine.js, Cloudflare Workers, OpenRouter (Claude Haiku 4.5),
+**Stack:** HTML5/CSS3, Alpine.js, Cloudflare Workers, externes Modell-Routing,
 Cloudflare KV (90 Tage TTL)
 **Kuratorin:** Eva Schweitzer, Unwritten GmbH
 
@@ -144,7 +144,7 @@ dynamische Produkt-Cards
 Essayband. Der Companion kennt alle 42 Essays und stellt Gegenfragen, statt
 Antworten zu liefern. Vier Themenfelder: System & Sinn, Körper & Identität,
 Digitale Wirklichkeit, Rückkehr zum Echten.
-**Stack:** HTML5, Alpine.js, Cloudflare Workers, OpenRouter (Claude Haiku 4.5),
+**Stack:** HTML5, Alpine.js, Cloudflare Workers, externes Modell-Routing,
 Cloudflare KV
 **Charakter:** Direkt, unbequem, fragend — geprägt vom Tonfall des Buches
 
@@ -169,7 +169,7 @@ Gedächtnis über 2 Jahre — ohne Account. Identifikation via Drei-Wort-Kennung
 (z.B. cipher.moor.glide). Alle 4 Fachrichtungen (AE, SI, DV, DPA), KI als
 Referenzmodell für jedes Thema.
 **Stack:** HTML5, Alpine.js, Marked.js, DOMPurify, Cloudflare Workers,
-OpenRouter (Claude Haiku 4.5), Cloudflare KV (730 Tage TTL)
+externes Modell-Routing, Cloudflare KV (730 Tage TTL)
 **Charakter:** Maurice Moss (IT Crowd) — literal, kein Condescension,
 kein "Super gemacht!"
 
@@ -188,7 +188,7 @@ Präsens) und Kaspar selbst (vorsichtig, bildlich, fragend).
 Das Rätsel
 **Save-System:** Drei-Wort-Kennung, thematisch aus dem 19. Jahrhundert. TTL: 730 Tage.
 **Stack:** HTML5, Alpine.js, Cloudflare Workers (kaspar-api.post-666.workers.dev),
-OpenRouter (Claude Haiku 4.5), Cloudflare KV (730 Tage TTL)
+externes Modell-Routing, Cloudflare KV (730 Tage TTL)
 **Ästhetik:** VT323 Bitmap-Font, 80-Zeichen-Spalten, blinkender Block-Cursor,
 Phosphorgrün auf Void-Schwarz
 
@@ -224,7 +224,7 @@ Erfolgreich getestet mit 12 Bauingenieuren (>100M$ Projektvolumen).
 **Beschreibung:** Konversationsschnittstelle für Gödel, Escher, Bach (Hofstadter).
 RAG mit 416 GEB-Embeddings, Hover-Footnotes System mit Quellenangaben,
 GEB-thematische Ladeanimation ("Knüpfe seltsame Schleifen...").
-**Stack:** HTML/CSS/JS, Alpine.js, Cloudflare Workers, Claude Sonnet,
+**Stack:** HTML/CSS/JS, Alpine.js, Cloudflare Workers, externes Modell-Routing,
 Cloudflare Vectorize
 **Status:** Production Ready (v1.0.1)
 
@@ -240,7 +240,7 @@ Items-Array-Modell, Expression-Syntax, Merge-Logik, Credentials-Scope.
 **Quest-System:** Fünf echte n8n-Aufgaben mit Proof-Words
 **Wiki:** 12 kuratierte Artikel (DE + EN)
 **Save-System:** Drei-Wort-Kennung (z.B. fetch.merge.relay). TTL: 730 Tage.
-**Stack:** HTML5, Alpine.js, Cloudflare Workers, OpenRouter (Claude Haiku 4.5),
+**Stack:** HTML5, Alpine.js, Cloudflare Workers, externes Modell-Routing,
 Cloudflare KV
 
 ---
@@ -291,7 +291,7 @@ have stopped reading books.
 intellektuellem Erbe. Wendet Kruses Drei-Mechanismen-Modell (Vernetzungsdichte,
 Spontanaktivität, Kreisende Erregung) auf gesellschaftliche Phänomene an —
 AI-Emergenz, demokratische Erosion, kollektive Irrationalität.
-**Stack:** GitHub Pages, Cloudflare Worker, OpenRouter (Claude Haiku 4.5),
+**Stack:** GitHub Pages, Cloudflare Worker, externes Modell-Routing,
 max_tokens 1500
 **Charakter:** Präzise, direkt, ruhig — beschreibt Resonanzmuster, gibt keine
 Ratschläge, schärft Wahrnehmung
@@ -318,9 +318,9 @@ um KI eigenständig und souverän einzusetzen. Drei Blöcke: Das Handwerk (Promp
 Iteration), Hinter der Kulisse (Halluzinationen, Sycophancy), Das große Bild
 (Strategie, Verantwortung, Zukunft).
 **Save-System:** Drei-Wort-Kennung. TTL: 730 Tage.
-**Stack:** HTML5, Alpine.js, Cloudflare Workers, OpenRouter (Claude Sonnet),
+**Stack:** HTML5, Alpine.js, Cloudflare Workers, externes Modell-Routing,
 Cloudflare KV
-**Besonderheit:** Einziger Worker mit Sonnet als Primärmodell
+**Besonderheit:** Einziger Worker mit einem größeren Modell als Standard
 
 ---
 
@@ -374,7 +374,7 @@ Cloudflare KV
 Die meisten Microsites teilen eine Basis-Architektur:
 - **Frontend:** HTML5 + Alpine.js (reaktiv, kein Build-Step nötig)
 - **Backend:** Cloudflare Workers (Edge-Computing, EU-nah)
-- **AI:** OpenRouter → Claude Haiku 4.5 (schnell, kosteneffizient)
+- **AI:** Große Sprachmodelle, je nach Bedarf ausgewählt, angebunden über externes Routing
 - **Persistenz:** Cloudflare KV (sessionübergreifendes Gedächtnis ohne Accounts)
 - **Identity:** Drei-Wort-Kennungen statt Logins (bei Glitch, Kaspar, Nathan, Vorsprung, Zebra)
 - **Compliance:** DSGVO-konform, EU-Infrastruktur
