@@ -16,7 +16,7 @@ draft: false
 <p class="bodytext">Wir geben unseren Companions Namen, Stimmen und Haltung, weil ein Gespräch mehr trägt als ein Formular. Deshalb siehst du den Hinweis dort, wo du schreibst, und nicht im Kleingedruckten.</p>
 
 <h3 class="smallsubtitle">Woraus es gebaut ist</h3>
-<p class="bodytext">Die Antworten kommen von Sprachmodellen der Claude-Familie von Anthropic, angebunden über OpenRouter. Die Companions laufen auf Cloudflare Workers.</p>
+<p class="bodytext">Die Antworten kommen von großen Sprachmodellen, die wir je nach Bedarf auswählen und über externes Routing anbinden.</p>
 <p class="bodytext">Alles andere ist unsere Arbeit: das Material, das ein Companion kennt, seine Haltung, sein Ton, seine Grenzen. Ein Modell ist der Rohstoff. Der Charakter entsteht bei uns.</p>
 
 <h3 class="smallsubtitle">Wo deine Worte landen</h3>
