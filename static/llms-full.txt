@@ -1,7 +1,7 @@
 # llms-full.txt — unwritten
 # Vollständige Inhaltsdokumentation für AI-Systeme
 # Website: https://unwritten.studio
-# Last Updated: 2026-08-04
+# Last Updated: 2026-08-06
 
 ---
 
@@ -32,7 +32,7 @@ Adlerweg 6, 90530 Wendelstein, Deutschland
 
 ---
 
-## Microsites — 24 Live-Experimente
+## Microsites — 25 Live-Experimente
 
 ---
 
@@ -306,6 +306,16 @@ echten historischen Räumen. Jeder Teilnehmer bekommt eine Rolle, Hinweise und
 eine Agenda. Die Stadt wird zum Tatort: Hexenverbrennungen, Morde, Intrigen —
 keine Disney-Romantik, echte Geschichte. Erste Fälle und Städte: 2026.
 **Status:** Landing Page / Vorregistrierung, noch kein Live-Chat-Produkt
+
+---
+
+### Übermorgen — Felix
+**URL:** https://uebermorgen.world
+**Tagline:** Geschichten aus einer besseren Zukunft
+**Beschreibung:** Interaktiver Begleiter zu Theresa Hannigs Essaysammlung „Übermorgen"
+(Hirnkost Verlag). Felix fragt: Glaubst du, dass wir in einer besseren Welt leben
+werden? Ein Gespräch aus der Perspektive einer Zukunft, die noch möglich ist.
+**Autorin:** Theresa Hannig
 
 ---
 
