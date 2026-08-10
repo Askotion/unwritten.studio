@@ -358,9 +358,71 @@ Das Hero-Bild auf der Startseite wird durch ein loopedes Video ersetzt (Crossfad
 
 - **Datei**: `static/images/hero-video.mp4`
 - **Feature Flag**: `config/_default/params.toml` → `heroVideo = true/false`
-- **JS-Logik**: `assets/js/hero-video.js` — wartet auf `playing`-Event, blendet Video ein (opacity 0→1), Bild bleibt darunter
-- **Desktop Safari**: wird per UA-Detection ausgeschlossen (autoplay unzuverlässig, nativer Play-Button würde erscheinen)
+- **JS-Logik**: `assets/js/hero-video.js` — blendet über, sobald `currentTime > 0` (echtes `timeupdate`), Bild bleibt bis dahin oben liegen
+- **Desktop Safari**: blockiert Autoplay im macOS-**Energiesparmodus** (siehe unten). Es gibt **keine** UA-Detection — das Video wird an alle Browser ausgeliefert.
 - **iOS Safari**: funktioniert (muted autoplay mit `playsinline` wird unterstützt)
+- **Alle anderen Browser**: Autoplay funktioniert ohne Zutun
+
+### Gelöst: Der Energiesparmodus war die Ursache
+
+**Wenn das Hero-Video in Safari nicht startet, ist zuerst der macOS-Energiesparmodus
+zu prüfen — nicht der Code.** Gelbes Batteriesymbol in der Menüleiste, bzw.
+Systemeinstellungen → Batterie → Energiesparmodus.
+
+Im Energiesparmodus blockiert Safari **jedes** Video-Autoplay, auch stummes —
+rechnerweit, auf allen Websites gleichzeitig, unabhängig von jeder
+Website-Einstellung. Der Modus schaltet sich unterhalb von 20 % Akku
+selbsttätig ein und am Netzteil wieder aus. Genau daher rührte die über ein
+Jahr beobachtete Sprunghaftigkeit („mal läuft es, mal nicht") und der Umstand,
+dass keine Einstellung je etwas geändert hat.
+
+Beweisführung vom 10.08.2026, damit die Sackgassen nicht erneut abgelaufen werden:
+
+| Verdacht | Ergebnis |
+|---|---|
+| Datei/Codec (H.264 Main 4.2, 2000×1054) | ❌ Microsite-Datei (624×624, Level 3.0), die sonst zuverlässig läuft, scheiterte unter denselben Bedingungen genauso |
+| Faststart, Dateigröße, Byte-Range, Auslieferung | ❌ alle in Ordnung |
+| `opacity:0` beim Laden | ❌ Variante mit sichtbarem Video verhielt sich identisch |
+| Service Worker | ❌ cached nur `destination === "image"`, nicht `"video"` |
+| Origin / Website-Erlaubnis | ❌ alle Sites identisch auf „Für Medien mit Ton deaktivieren" (erlaubt stummes Autoplay) |
+| Markup, Alpine, Echo-Button | ❌ nackte Testseite ohne alles scheiterte ebenso |
+| **macOS-Energiesparmodus** | ✅ auf „Nie" gestellt → alle Videos starten sofort |
+
+Der entscheidende Hinweis war, dass zeitgleich **alle** Microsites aufhörten zu
+laufen: Nur ein rechnerweiter, sich selbst ein- und ausschaltender Faktor
+erklärt gleichzeitige Betroffenheit *und* zeitliche Sprunghaftigkeit.
+
+### Warum die JS-Logik trotzdem geändert wurde
+
+Der Energiesparmodus lässt sich nicht wegprogrammieren, und jeder Besucher mit
+schwachem Laptop-Akku bekommt ihn zu sehen. Die vorherige Fassung zeigte in
+diesem Fall dauerhaft Safaris nativen Play-Button — es sah aus, als sei die
+Seite kaputt. Zwei Fallen sorgten dafür, dass sich das nie von selbst erholte:
+
+1. Safari feuert `playing`, ohne dass je ein Frame läuft — `currentTime` bleibt
+   auf `0.00`, unmittelbar folgt `pause`. Ein daran gebundenes `running`-Flag
+   stand danach dauerhaft auf `true`.
+2. Die Gesten-Listener waren `{ once: true }`, feuerten also genau einmal,
+   liefen wegen (1) ins Leere und meldeten sich ab.
+
+Deshalb gilt für dieses und jedes künftige Hero-Video: **niemals** an `playing`
+festmachen, sondern an `currentTime > 0`, und die Gesten-Listener offen halten,
+bis das Video tatsächlich spielt. Der Ablehnungsgrund wird als
+`[hero-video] play() abgelehnt (<trigger>): <Fehlername>` in die Konsole
+geschrieben.
+
+**Welche Geste freischaltet:** Nur „activation triggering input events" im Sinne
+der HTML-Spezifikation — Klick, Maustaste, Tastendruck, Touch-Ende.
+Mausbewegung, Scrollen und `wheel` erzeugen **keine** Nutzeraktivierung und
+schalten Autoplay nie frei, egal wie oft sie feuern.
+
+Ergebnis im Energiesparmodus: Standbild bleibt liegen, Video startet beim
+ersten Klick oder Tastendruck. Kein Play-Button, kein kaputt wirkender Zustand.
+Ohne Energiesparmodus startet das Video wie überall sonst sofort.
+
+Für Microsites siehe den Abschnitt „Safari Video Autoplay Fix" im Skill
+`unwritten-microsites` — dort greift der einfachere Alpine-`init()`-Fix, weil
+er diesen Latch nie hatte.
 
 ### Known Issue: kurzer Flash beim Video-Start
 
