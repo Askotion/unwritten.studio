@@ -1,19 +1,34 @@
 // Hero Video crossfade: static image → video.
 //
-// Safari startet das Video nicht ueber das autoplay-Attribut, ein expliziter
-// .play()-Aufruf ist noetig. Die vorherige Fassung machte genau einen Versuch
-// und verschluckte das Scheitern:
+// URSACHE (ermittelt 10.08.2026): Im macOS-Energiesparmodus blockiert Safari
+// jedes Video-Autoplay — auch stummes, rechnerweit, auf allen Seiten
+// gleichzeitig, unabhaengig von jeder Website-Einstellung. Der Modus schaltet
+// sich unterhalb von 20 % Akku selbsttaetig ein und am Netzteil wieder aus.
+// Genau daher ruehrte die jahrelange Sprunghaftigkeit ("mal laeuft es, mal
+// nicht") und der Umstand, dass keine Einstellung je etwas geaendert hat.
 //
-//     video.play().catch(function () {});
+// Belegt durch: 766 play()-Aufrufe mit NotAllowedError auf einer nackten
+// Testseite; dasselbe Verhalten mit einer Microsite-Videodatei, die sonst
+// zuverlaessig laeuft; Aufloesung, Codec, Faststart, Origin und Markup damit
+// ausgeschlossen. Energiesparmodus auf "Nie" gestellt -> alles laeuft sofort.
 //
-// Lehnt Safari in genau diesem Moment ab — Tab im Hintergrund, Seite noch
-// nicht sichtbar, Stromsparmodus, Netz haengt —, bleibt der Play-Button fuer
-// den Rest der Sitzung stehen, ohne jede Spur in der Konsole.
+// Der Fall ist also nicht der Regelfall, aber ein haeufiger: Jeder Besucher
+// mit schwachem Laptop-Akku sieht ihn. Deshalb muss der abgelehnte Zustand
+// wuerdig aussehen — Standbild statt Play-Button — und die erste Nutzergeste
+// muss das Video nachtraeglich starten koennen.
 //
-// Diese Fassung versucht es an jedem Punkt erneut, an dem sich die Lage
-// geaendert haben kann, und schreibt den Ablehnungsgrund in die Konsole.
-// Ein abgelehnter Versuch ist damit nicht mehr das Ende — und beim naechsten
-// Auftreten steht dort, WARUM abgelehnt wurde, statt dass wir raten muessen.
+// Zwei Fallen, die die vorherige Fassung fuer die gesamte Sitzung lahmlegten:
+//
+//   1. Safari feuert 'playing', ohne dass je ein Frame laeuft — currentTime
+//      bleibt auf 0.00 und unmittelbar folgt 'pause'. Ein daran gebundenes
+//      running-Flag stand danach dauerhaft auf true und liess jeden weiteren
+//      Versuch wirkungslos zurueckkehren.
+//   2. Die Gesten-Listener waren { once: true }. Sie feuerten also genau
+//      einmal, liefen wegen (1) ins Leere und meldeten sich dann ab.
+//
+// Ergebnis: ein Play-Button, der bis zum Reload stehen blieb. Diese Fassung
+// glaubt deshalb nur der laufenden Zeit und haelt die Gesten offen, bis das
+// Video tatsaechlich spielt.
 (function () {
   'use strict';
 
@@ -21,19 +36,45 @@
   if (!video) return;
 
   var img = document.querySelector('#hero-media img');
-  var running = false;
+  var revealed = false;
+  var attempts = 0;
+  var MAX_ATTEMPTS = 25;
 
-  video.addEventListener('playing', function () {
-    running = true;
+  // Einzige verlaessliche Wahrheit. 'playing' luegt, currentTime nicht.
+  function isRunning() {
+    return !video.paused && !video.ended && video.currentTime > 0;
+  }
+
+  // Erst wenn wirklich Bilder laufen, wird ueberblendet. Bleibt das Video
+  // stumm stehen, liegt weiterhin das Standbild oben — statt eines
+  // eingeblendeten Videos mit Safaris nativem Play-Button darauf.
+  function reveal() {
+    if (revealed) return;
+    revealed = true;
     video.style.opacity = '1';
     if (img) {
       img.style.transition = 'opacity 300ms ease';
       img.style.opacity = '0';
     }
-  }, { once: true });
+    // Ab hier laeuft es nachweislich — die Gesten werden nicht mehr gebraucht.
+    // Hier abmelden und nicht direkt nach attempt(): play() ist asynchron, dort
+    // stuende isRunning() noch auf false.
+    stopListeningForGestures();
+  }
 
-  function attempt(trigger) {
-    if (running || !video.paused) return;
+  video.addEventListener('timeupdate', function () {
+    if (video.currentTime > 0) reveal();
+  });
+
+  // Die Obergrenze bremst nur die automatischen Versuche. Eine Nutzergeste ist
+  // genau das, was die Sperre aufhebt — sie darf nie ins Limit laufen. Ein
+  // einzelner Klick feuert mehrere Events (pointerdown, click, …), sonst waere
+  // das Kontingent nach wenigen Klicks aufgebraucht und das Video endgueltig
+  // tot, obwohl der Nutzer alles richtig macht.
+  function attempt(trigger, byGesture) {
+    if (isRunning()) return;
+    if (!byGesture && attempts >= MAX_ATTEMPTS) return;
+    attempts++;
 
     var p = video.play();
     // Aeltere Browser geben kein Promise zurueck.
@@ -61,12 +102,30 @@
     if (!document.hidden) attempt('visible');
   });
 
-  // Letzter Ausweg: Die erste Nutzerinteraktion hebt jede Autoplay-Sperre auf.
-  ['pointerdown', 'keydown', 'touchstart'].forEach(function (evt) {
-    document.addEventListener(evt, function () { attempt(evt); }, {
-      once: true,
-      passive: true
+  // Rettungsanker im Energiesparmodus: Die erste Nutzerinteraktion hebt die
+  // Sperre auf.
+  //
+  // Nur "activation triggering input events" im Sinne der HTML-Spezifikation
+  // schalten frei — Klick, Maustaste, Tastendruck, Touch-Ende. Mausbewegung,
+  // Scrollen und wheel erzeugen KEINE Nutzeraktivierung und sind hier bewusst
+  // nicht gelistet: sie wuerden nur Versuche verbrauchen, ohne je zu wirken.
+  //
+  // Bewusst ohne { once: true } — eine einzelne Geste kann zu frueh kommen
+  // (Video noch nicht geladen) und darf die Chance nicht verbrauchen.
+  var gestures = ['pointerdown', 'pointerup', 'mousedown', 'keydown', 'touchend', 'click'];
+
+  function onGesture(evt) {
+    attempt(evt.type, true);
+  }
+
+  function stopListeningForGestures() {
+    gestures.forEach(function (g) {
+      document.removeEventListener(g, onGesture);
     });
+  }
+
+  gestures.forEach(function (g) {
+    document.addEventListener(g, onGesture, { passive: true });
   });
 
   video.addEventListener('error', function () {
