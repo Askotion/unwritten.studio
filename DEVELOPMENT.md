@@ -499,6 +499,74 @@ Datenschutzerklärung → nach Reload (frische Session) ist der Text wieder da.
 
 ---
 
+## Laufschrift ("meet us"-Anlässe)
+
+Schmale Laufschrift unter dem Hero-Bild der Startseite, für Messen und
+Termine. Eingeführt für die Frankfurter Buchmesse 2026 (CONTENTshift,
+8. Oktober). Das Element bleibt nach dem Anlass im Code und wird nur
+abgeschaltet.
+
+**Dateien:**
+- `config/_default/params.toml` → `[laufschrift]`: alle Texte und Schalter
+- `layouts/partials/messe-laufschrift.html`: Markup + kleines Skript
+- `layouts/index.html`: Einbindung direkt unter dem Hero-Bild
+- `assets/scss/custom.scss` → Abschnitt "Laufschrift"
+
+**Für den nächsten Anlass** nur `params.toml` anfassen:
+
+```toml
+[laufschrift]
+enable = true                               # false = komplett aus
+until = "2026-10-09T00:00:00+02:00"         # leer = kein Auto-Ausblenden
+items = ["…", "…", "Lust auf ein Gespräch?"] # laufen durch die Leiste
+fokus_text = "…"                            # erscheint beim Klick
+email = "post@unwritten.studio"
+mail_subject = "…"                          # Klartext, Hugo kodiert selbst
+```
+
+**Verhalten:**
+- Hover hält die Schrift an und zeigt den Klick-Cursor.
+- Klick/Tap/Tab: Fokusmodus nach dem Muster der Echo-Zeile. Die Seite
+  blendet ab (Scrim, 97 % Weiß), stehen bleiben Leiste und Einladung mit
+  E-Mail-Adresse. Läuft über `:focus-within`, also reines CSS. Das Skript
+  hilft nur nach: Fokus bei Klick (Safari), Esc schließt, und sanftes
+  Nachscrollen, falls die Einladung unter die Fensterkante ragt.
+- Die Adresse ist Link und markierbarer Text zugleich (für alle ohne
+  Mail-Client). `tabindex="0"` am Link ist Absicht: Safari fokussiert Links
+  beim Klick sonst nicht und die Einladung würde sich schließen.
+- "Bewegung reduzieren": stehender, zentrierter Text.
+
+**Automatisches Ausblenden (`until`):** Die Seite ist statisch, aber das
+Skript läuft im Browser des Besuchers und vergleicht mit dessen Uhr. Ab
+`until` wird die Leiste entfernt, bevor sie gezeichnet wird - auch ohne
+neuen Deploy. Ohne JavaScript oder bei falsch gestellter Uhr bleibt sie
+sichtbar, deshalb nach dem Anlass trotzdem `enable = false` setzen.
+
+**Ebenen (z-index), falls sich etwas überlagert:**
+
+| Element | z-index |
+|---|---|
+| Echo-Scrim (`.hero-scrim`) | 30 |
+| Echo-Chatline (dauerhaft) | 40 |
+| Echo-Widget unten rechts | 50 |
+| Laufschrift-Scrim | 55 |
+| Laufschrift im Fokus | 60 |
+| Echo-Chatfenster | 100 |
+
+**Testen:** Hover → Schrift steht. Klick → Seite inkl. Echo-Zeile und
+Echo-Widget blendet ab, Einladung komplett sichtbar (ggf. sanft
+nachgescrollt). Klick auf die Adresse → Mail-Client öffnet. Klick daneben
+oder Esc → zurück. Echo-Zeile danach normal fokussieren → Echo-Fokus
+unverändert. Für den Ablauf `until` testweise in die Vergangenheit setzen
+→ Leiste fehlt.
+
+**Achtung beim lokalen Testen:** Im Standard-Modus von `hugo server`
+(Fast Render) werden Änderungen an Templates wie `baseof.html` und
+`index.html` teils nicht übernommen. Für diese Arbeit
+`hugo server --disableFastRender` verwenden.
+
+---
+
 ## Häufige Probleme & Lösungen
 
 ### "Echo wird nicht angezeigt"
