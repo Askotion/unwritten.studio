@@ -1,0 +1,73 @@
+{{/* Laufschrift-Leiste fuer "meet us"-Anlaesse (Messen, Termine).
+     Nur auf der Startseite, unter dem Hero-Bild (layouts/index.html).
+     Inhalt und Schalter: params.toml [laufschrift].
+
+     Verhalten - angelehnt an den Fokusmodus der Echo-Zeile:
+       Hover   haelt die Schrift an, der Cursor zeigt: hier passiert etwas.
+       Klick   (oder Tab + Enter) setzt den Fokus auf die Leiste. Ueber
+               :focus-within blendet die Seite ab wie bei der Echo-Zeile;
+               stehen bleiben die Leiste und darunter die Einladung mit der
+               E-Mail-Adresse. Reines CSS, das Skript ist nur Zugabe.
+       Zu      per Klick daneben oder Esc.
+
+     Die Adresse ist ein mailto-Link UND markierbarer Text - wer keinen
+     Mail-Client eingerichtet hat, kann sie kopieren. tabindex="0" ist
+     Absicht: Safari fokussiert Links beim Klick sonst nicht, der Fokus
+     wuerde die Leiste verlassen und die Einladung schliessen.
+
+     Die Spur enthaelt die Items zweimal hintereinander. Die Animation schiebt
+     sie um genau die halbe Breite nach links - dann steht die zweite Kopie
+     exakt dort, wo die erste begann, und die Schleife springt unsichtbar.
+
+     Ablauf: Das Skript laeuft im Browser des Besuchers und entfernt die
+     Leiste ab "until" nach dessen Uhr, bevor sie gezeichnet wird. So
+     verschwindet sie auch ohne neuen Deploy. Leeres "until" = kein Ablauf.
+     Nach dem Anlass trotzdem enable = false setzen. */}}
+{{ with site.Params.laufschrift }}
+{{ if .enable }}
+<div class="laufschrift-fokus" id="laufschrift" data-until="{{ .until }}">
+  <div class="laufschrift" tabindex="0" role="button" aria-label="{{ .fokus_text }} {{ .email }}">
+    <span class="laufschrift__spur" aria-hidden="true">
+      {{ range seq 2 }}
+      <span class="laufschrift__gruppe">
+        {{ range site.Params.laufschrift.items }}<span class="laufschrift__item">{{ . }}</span>{{ end }}
+      </span>
+      {{ end }}
+    </span>
+  </div>
+  <div class="laufschrift__einladung">
+    <p class="laufschrift__einladung-text">{{ .fokus_text }}</p>
+    <a class="laufschrift__mail" tabindex="0" href="mailto:{{ .email }}?subject={{ .mail_subject }}">{{ .email }}</a>
+  </div>
+</div>
+<div class="laufschrift-scrim" aria-hidden="true"></div>
+<script>
+  (function () {
+    var box = document.getElementById("laufschrift");
+    var until = Date.parse(box.dataset.until);
+    if (!isNaN(until) && Date.now() >= until) {
+      box.nextElementSibling.remove();
+      box.remove();
+      return;
+    }
+    // Safari setzt beim Klick nicht immer den Fokus - hier nachhelfen.
+    var bar = box.querySelector(".laufschrift");
+    bar.addEventListener("click", function () { bar.focus(); });
+    // Die Leiste sitzt oft knapp ueber der Unterkante des Fensters. Ragt
+    // die Einladung beim Oeffnen darueber hinaus, sanft genau so weit
+    // scrollen, dass sie ganz zu sehen ist - sonst bewegt sich nichts.
+    var card = box.querySelector(".laufschrift__einladung");
+    box.addEventListener("focusin", function () {
+      var overflow = card.getBoundingClientRect().bottom + 24 - window.innerHeight;
+      if (overflow > 0) {
+        var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        window.scrollBy({ top: overflow, behavior: reduce ? "auto" : "smooth" });
+      }
+    });
+    box.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") document.activeElement.blur();
+    });
+  })();
+</script>
+{{ end }}
+{{ end }}

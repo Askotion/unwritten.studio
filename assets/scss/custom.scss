@@ -596,6 +596,184 @@
 }
 
 /* ============================================================
+   Laufschrift ("meet us"-Anlaesse) - partials/messe-laufschrift.html
+   Bewusst leise: kleine Versalien im Hausblau, leicht
+   zurueckgenommen, kaum sichtbarer Grund, langsames Tempo.
+
+   Klick auf die Leiste = Fokusmodus nach dem Muster der Echo-Zeile
+   (.hero-scrim weiter unten): :focus-within hebt die Leiste ueber
+   einen Scrim, darunter erscheint die Einladung mit E-Mail-Adresse.
+   ============================================================ */
+.laufschrift-fokus {
+  position: relative;
+}
+
+/* Ebenen: Echo-Chatline 40 (dauerhaft), Echo-Widget unten rechts 50,
+   Echo-Chatfenster 100. Scrim (55) und Leiste (60) liegen ueber Chatline
+   und Widget, damit beide mit abblenden - aber unter dem Chatfenster. */
+.laufschrift-fokus:focus-within {
+  z-index: 60;
+}
+
+.laufschrift {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0.5rem 0;
+  background: rgba(48, 135, 185, 0.035);
+  border-bottom: 1px solid rgba(48, 135, 185, 0.08);
+  color: rgba(48, 135, 185, 0.8);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+.laufschrift__spur {
+  display: inline-flex;
+  width: max-content;
+  // Zwei identische Gruppen: -50% ist genau eine Gruppenbreite.
+  animation: laufschrift 70s linear infinite;
+}
+
+// Hover haelt an und kuendigt den Klick an; im Fokus steht sie ebenfalls.
+.laufschrift:hover .laufschrift__spur,
+.laufschrift-fokus:focus-within .laufschrift__spur {
+  animation-play-state: paused;
+}
+
+.laufschrift__gruppe {
+  display: inline-flex;
+}
+
+// Trenner auch nach dem letzten Item, damit der Uebergang
+// zwischen den Gruppen denselben Abstand hat wie alle anderen.
+.laufschrift__item::after {
+  content: '·';
+  margin: 0 1.75em;
+  opacity: 0.5;
+}
+
+@keyframes laufschrift {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Einladung: Typografie wie der KI-Hinweis im Fokusmodus. Absolut
+   positioniert, damit beim Erscheinen nichts verrutscht. Weisser Grund,
+   damit die Headline dahinter nicht durchschimmert. */
+.laufschrift__einladung {
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32rem;
+  max-width: 90vw;
+  padding: 0.5rem 1rem 1rem;
+  background: #fff;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+}
+
+.laufschrift-fokus:focus-within .laufschrift__einladung {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0s;
+}
+
+.laufschrift__einladung-text {
+  margin: 0;
+  color: #3e4447;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.75;
+  letter-spacing: 0.05em;
+}
+
+.laufschrift__mail {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: #3087b9;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(48, 135, 185, 0.3);
+  user-select: text;
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-bottom-color: #3087b9;
+  }
+}
+
+// Gleicher Scrim wie bei der Echo-Zeile (.hero-scrim), Ebene siehe oben.
+.laufschrift-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 55;
+  background: rgba(255, 255, 255, 0.97);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+}
+
+.laufschrift-fokus:focus-within ~ .laufschrift-scrim {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0s;
+}
+
+@media (max-width: 640px) {
+  .laufschrift__einladung {
+    left: 1rem;
+    right: 1rem;
+    width: auto;
+    max-width: none;
+    transform: none;
+  }
+
+  .laufschrift__einladung-text,
+  .laufschrift__mail {
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+  }
+}
+
+// "Bewegung reduzieren": stehender, zentrierter Text, darf umbrechen.
+@media (prefers-reduced-motion: reduce) {
+  .laufschrift {
+    white-space: normal;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .laufschrift__spur {
+    display: inline;
+    width: auto;
+    animation: none;
+  }
+  .laufschrift__gruppe {
+    display: inline;
+    & + .laufschrift__gruppe { display: none; }
+  }
+  .laufschrift__item:last-child::after { display: none; }
+  .laufschrift__einladung,
+  .laufschrift-scrim {
+    transition-duration: 0.01s;
+  }
+}
+
+/* ============================================================
    KI-Transparenzhinweis (Art. 50 Abs. 1 EU AI Act)
 
    Groesse absolut gesetzt, nicht relativ zum schwaechsten

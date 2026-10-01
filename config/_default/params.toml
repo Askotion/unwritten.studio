@@ -33,6 +33,25 @@ custom_script = ""
 # copyright
 copyright = "Copyright &copy; 2026 Unwritten GmbH"
 
+# Laufschrift unter dem Hero-Bild der Startseite fuer "meet us"-Anlaesse
+# (Messen, Termine). Nach dem Anlass enable = false setzen, Element bleibt.
+# "until": Ein kleines Skript im Browser des Besuchers blendet die Leiste ab
+# diesem Zeitpunkt aus (nach dessen Uhr) - auch ohne neuen Deploy.
+# Leer lassen = kein automatisches Ausblenden.
+[laufschrift]
+enable = true
+until = "2026-10-09T00:00:00+02:00"
+# Laufen durch die Leiste
+items = [
+  "Am 8. Oktober auf der Frankfurter Buchmesse",
+  "THE LÄND Stand · Halle 5.0 B86",
+  "Lust auf ein Gespräch?",
+]
+# Erscheint beim Klick auf die Leiste, darunter die E-Mail-Adresse
+fokus_text = "Am 8. Oktober sind wir auf der Frankfurter Buchmesse, THE LÄND Stand, Halle 5.0 B86. Lust auf ein Gespräch? Schreib uns, wir verabreden uns am Stand."
+email = "post@unwritten.studio"
+mail_subject = "Buchmesse 8. Oktober"
+
 # KI-Transparenzhinweis nach Art. 50 Abs. 1 EU AI Act (VO (EU) 2024/1689).
 # Eine Quelle fuer alle Companions — hier geaendert, wirkt es ueberall.
 # Der Satz ist bewusst einheitlich: Der Hinweis kommt vom Haus, nicht vom
