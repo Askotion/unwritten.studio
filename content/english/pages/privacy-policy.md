@@ -92,26 +92,24 @@ Tel.: 09129 1400929<br />
 <strong>d) eingesetzte Dienste und Diensteanbieter</strong>
 
 <p class="bodytext"><b>GitHub Pages</b><br>
-<p>Dienstanbieter: GitHub Inc., 88 Colin P Kelly Jr Street, San Francisco, CA 94107, USA<br>
+Dienstanbieter: GitHub Inc., 88 Colin P Kelly Jr Street, San Francisco, CA 94107, USA<br>
 Website: https://pages.github.com/<br>
-Datenschutzerklärung: https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement<br></p></p>
+Datenschutzerklärung: https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement</p>
 
 <p class="bodytext"><b>Cloudflare</b><br>
-<p>
-Dienstanbieter: Cloudflare Inc., 101 Townsend St, San Francisco, CA 94107, USA <br>
+Dienstanbieter: Cloudflare Inc., 101 Townsend St, San Francisco, CA 94107, USA<br>
 Website: https://www.cloudflare.com/<br>
-Datenschutzerklärung: https://www.cloudflare.com/de-de/privacypolicy/<br>
-</p></p>
+Datenschutzerklärung: https://www.cloudflare.com/de-de/privacypolicy/</p>
 
 <p class="bodytext"><b>jsDelivr</b><br>
-<p>Dienstanbieter: Volentio JSD Limited, Suite 2a1, Northside House, Mount Pleasant, Barnet, England, EN4 9EB<br>
+Dienstanbieter: Volentio JSD Limited, Suite 2a1, Northside House, Mount Pleasant, Barnet, England, EN4 9EB<br>
 Website: https://www.jsdelivr.com/<br>
-Datenschutzerklärung: https://www.jsdelivr.com/terms/privacy-policy<br></p></p>
+Datenschutzerklärung: https://www.jsdelivr.com/terms/privacy-policy</p>
 
 <p class="bodytext"><b>Font Awesome</b><br>
-<p>Dienstanbieter: Fonticons Inc., 307 S. Main St., Suite 202, Bentonville, AR 72712, USA<br>
+Dienstanbieter: Fonticons Inc., 307 S. Main St., Suite 202, Bentonville, AR 72712, USA<br>
 Website: https://fontawesome.com/<br>
-Datenschutzerklärung: https://fontawesome.com/privacy<br></p></p>
+Datenschutzerklärung: https://fontawesome.com/privacy</p>
 
 
 
